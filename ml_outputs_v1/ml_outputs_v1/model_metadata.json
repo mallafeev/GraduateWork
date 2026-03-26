@@ -1,0 +1,48 @@
+{
+  "n_rows_total": 730,
+  "n_rows_train": 519,
+  "n_rows_test": 211,
+  "n_datasets_total": 14,
+  "n_datasets_train": 10,
+  "n_datasets_test": 4,
+  "mae": 12.915857819905218,
+  "rmse": 17.209801594603398,
+  "r2": 0.6781877563138208,
+  "feature_columns": [
+    "branch_length",
+    "depth",
+    "n_leaves_subtree",
+    "subtree_fraction",
+    "subtree_balance",
+    "mean_child_branch_length",
+    "std_child_branch_length",
+    "taxa_count",
+    "alignment_length",
+    "gap_fraction_global",
+    "gc_mean_global",
+    "gc_std_global",
+    "variable_site_fraction_global",
+    "gap_fraction_clade",
+    "gc_mean_clade",
+    "gc_std_clade",
+    "mean_pairwise_pdist_clade"
+  ],
+  "train_datasets": [
+    "dt10",
+    "dt11",
+    "dt12",
+    "dt13",
+    "dt14",
+    "dt15",
+    "dt16",
+    "dt19",
+    "dt20",
+    "dt8"
+  ],
+  "test_datasets": [
+    "dt1",
+    "dt2",
+    "dt5",
+    "dt7"
+  ]
+}

@@ -33,6 +33,8 @@ def iter_internal_nodes(tree: Tree) -> Iterable[Clade]:
 def build_node_rows(tree: Tree) -> list[dict]:
     rows: list[dict] = []
     depths = tree.depths()
+    if not max(depths.values(), default=0):
+        depths = tree.depths(unit_branch_lengths=True)
     for idx, clade in enumerate(iter_internal_nodes(tree), start=1):
         descendants = clade.get_terminals()
         support = getattr(clade, "confidence", None)
@@ -40,11 +42,20 @@ def build_node_rows(tree: Tree) -> list[dict]:
             {
                 "node_id": f"N{idx}",
                 "name": clade.name or "<internal>",
-                "branch_length": float(clade.branch_length or 0.0),
+                "branch_length": float(max(clade.branch_length or 0.0, 0.0)),
                 "depth": float(depths.get(clade, 0.0)),
                 "leaf_count": len(descendants),
                 "bootstrap": float(support) if support is not None else None,
+                "predicted_bootstrap": None,
+                "support_source": "observed" if support is not None else "none",
                 "descendants": ", ".join(t.name or "?" for t in descendants[:6]) + (" ..." if len(descendants) > 6 else ""),
             }
         )
     return rows
+
+
+def build_clade_node_id_map(tree: Tree) -> dict[Clade, str]:
+    mapping: dict[Clade, str] = {}
+    for idx, clade in enumerate(iter_internal_nodes(tree), start=1):
+        mapping[clade] = f"N{idx}"
+    return mapping

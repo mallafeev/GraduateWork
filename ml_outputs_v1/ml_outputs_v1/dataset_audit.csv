@@ -1,0 +1,16 @@
+﻿dataset_id,alignment_file,tree_file,ok,error,n_rows
+dt1,c:\GitHubMain\GraduateWork\ml_outputs_v1\datasets\dt1\1_1563290054_Physarales_SSU_EF1A_COI_20190525_final2.nexorg,c:\GitHubMain\GraduateWork\ml_outputs_v1\datasets\dt1\dt1,True,,29.0
+dt10,c:\GitHubMain\GraduateWork\ml_outputs_v1\datasets\dt10\M4139.nexorg,c:\GitHubMain\GraduateWork\ml_outputs_v1\datasets\dt10\dt10,True,,90.0
+dt11,c:\GitHubMain\GraduateWork\ml_outputs_v1\datasets\dt11\M4155.nexorg,c:\GitHubMain\GraduateWork\ml_outputs_v1\datasets\dt11\dt11,True,,37.0
+dt12,c:\GitHubMain\GraduateWork\ml_outputs_v1\datasets\dt12\M416.nexorg,c:\GitHubMain\GraduateWork\ml_outputs_v1\datasets\dt12\dt12,True,,18.0
+dt13,c:\GitHubMain\GraduateWork\ml_outputs_v1\datasets\dt13\1_1433953687_Ravinia_COI_COII.nexorg,c:\GitHubMain\GraduateWork\ml_outputs_v1\datasets\dt13\dt13,True,,103.0
+dt14,c:\GitHubMain\GraduateWork\ml_outputs_v1\datasets\dt14\1_1418164038_Eupristina_treebase.nexorg,c:\GitHubMain\GraduateWork\ml_outputs_v1\datasets\dt14\dt14,True,,54.0
+dt15,c:\GitHubMain\GraduateWork\ml_outputs_v1\datasets\dt15\M3730.nexorg,c:\GitHubMain\GraduateWork\ml_outputs_v1\datasets\dt15\dt15,True,,42.0
+dt16,c:\GitHubMain\GraduateWork\ml_outputs_v1\datasets\dt16\M3672.nexorg,c:\GitHubMain\GraduateWork\ml_outputs_v1\datasets\dt16\dt16,True,,41.0
+dt19,c:\GitHubMain\GraduateWork\ml_outputs_v1\datasets\dt19\M2859.nexorg,c:\GitHubMain\GraduateWork\ml_outputs_v1\datasets\dt19\dt19,True,,51.0
+dt2,c:\GitHubMain\GraduateWork\ml_outputs_v1\datasets\dt2\M3740.nexorg,c:\GitHubMain\GraduateWork\ml_outputs_v1\datasets\dt2\dt2,True,,62.0
+dt20,c:\GitHubMain\GraduateWork\ml_outputs_v1\datasets\dt20\M685.nexorg,c:\GitHubMain\GraduateWork\ml_outputs_v1\datasets\dt20\dt20,True,,65.0
+dt4,c:\GitHubMain\GraduateWork\ml_outputs_v1\datasets\dt4\COI_with_outgroups.nexorg,c:\GitHubMain\GraduateWork\ml_outputs_v1\datasets\dt4\dt4,False,В файле не найдено BEGIN CHARACTERS.,
+dt5,c:\GitHubMain\GraduateWork\ml_outputs_v1\datasets\dt5\1_1381571722_Xmesostena_97.nexorg,c:\GitHubMain\GraduateWork\ml_outputs_v1\datasets\dt5\dt5,True,,94.0
+dt7,c:\GitHubMain\GraduateWork\ml_outputs_v1\datasets\dt7\M3448.nexorg,c:\GitHubMain\GraduateWork\ml_outputs_v1\datasets\dt7\dt7,True,,26.0
+dt8,c:\GitHubMain\GraduateWork\ml_outputs_v1\datasets\dt8\1_1499518959_Fig.2.Coccidae.nexorg,c:\GitHubMain\GraduateWork\ml_outputs_v1\datasets\dt8\dt8,True,,18.0

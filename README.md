@@ -1,19 +1,28 @@
-# Phylo App Prototype
+# Phylo App Prototype v4
 
-Что уже умеет прототип:
-- загружать alignment из `.nex/.nexus/.txt` и `.fasta`;
-- извлекать матрицу из TreeBASE-подобного NEXUS;
-- строить филогенетическое дерево методом Neighbor Joining;
-- показывать ASCII-представление дерева;
-- выводить таблицу внутренних узлов, глубины и длины ветвей;
-- сохранять построенное дерево в формате Newick.
+Что добавлено:
+- загрузка `model_v1.pkl`
+- предсказание bootstrap через Random Forest для внутренних узлов
+- отображение predicted bootstrap в таблице
+- подсветка ветвей дерева по predicted bootstrap
+- более аккуратная визуализация, подписи таксонов справа
 
-## Структура
-- `main.py` — точка входа
-- `app_state.py` — состояние приложения
-- `parsers/nexus_parser.py` — парсинг NEXUS/FASTA
-- `phylo/distance.py` — p-distance с pairwise deletion
-- `phylo/nj_builder.py` — построение NJ-дерева
-- `phylo/tree_utils.py` — сводка и работа с узлами дерева
-- `services/analysis_service.py` — связывает парсер и дерево
-- `ui/main_window.py` — графический интерфейс
+## Зависимости
+
+```bash
+python -m pip install pyqt5 biopython matplotlib pandas joblib scikit-learn numpy
+```
+
+## Запуск
+
+```bash
+python main.py
+```
+
+## Как использовать
+
+1. Загрузить alignment (`.nex/.nexus/.fasta`)
+2. Построить NJ-дерево или загрузить готовое `.nwk`
+3. Загрузить `model_v1.pkl`
+4. Нажать **Предсказать bootstrap**
+5. Смотреть результаты в таблице и на дереве

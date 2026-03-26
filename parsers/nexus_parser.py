@@ -19,7 +19,7 @@ def load_alignment(path: str | Path) -> MultipleSeqAlignment:
     suffix = path.suffix.lower()
     if suffix in {".fasta", ".fa", ".fas", ".aln"}:
         return AlignIO.read(str(path), "fasta")
-    if suffix in {".nex", ".nexus", ".txt"}:
+    if suffix in {".nex", ".nexus", ".nexorg", ".txt"}:
         return load_nexus_alignment(path)
     raise NexusParseError(f"Неподдерживаемый формат файла: {path.suffix}")
 
