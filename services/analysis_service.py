@@ -1,65 +1,58 @@
 from __future__ import annotations
 
-from dataclasses import dataclass
 from pathlib import Path
 
 from Bio.Align import MultipleSeqAlignment
 from Bio.Phylo.BaseTree import Tree
 
-from ml.model_inference import RandomForestBootstrapPredictor
-from parsers.nexus_parser import alignment_summary, load_alignment
-from phylo.nj_builder import build_neighbor_joining_tree, load_tree, save_tree_newick
-from phylo.tree_utils import build_node_rows, summarize_tree
-
-
-@dataclass
-class AnalysisArtifacts:
-    alignment: MultipleSeqAlignment | None
-    tree: Tree | None
-    alignment_info: dict
-    tree_info: dict
-    node_rows: list[dict]
+from domain.analysis_models import AnalysisArtifacts
+from services.input_services import AlignmentInspectionService, AlignmentLoadingService, TreeInspectionService, TreeLoadingService
+from services.tree_services import TreeBuildingService
 
 
 class AnalysisService:
     def __init__(self) -> None:
-        self.predictor = RandomForestBootstrapPredictor()
+        self._predictor = None
+        self._model_loading_service = None
+        self._bootstrap_prediction_service = None
+        self.alignment_inspection_service = AlignmentInspectionService()
+        self.tree_inspection_service = TreeInspectionService()
+        self.alignment_loading_service = AlignmentLoadingService()
+        self.tree_loading_service = TreeLoadingService()
+        self.tree_building_service = TreeBuildingService()
+
+    def _ensure_predictor_services(self) -> None:
+        if self._predictor is None:
+            from ml.model_inference import RandomForestBootstrapPredictor
+            from services.model_services import ModelLoadingService
+            from services.prediction_services import BootstrapPredictionService
+
+            self._predictor = RandomForestBootstrapPredictor()
+            self._model_loading_service = ModelLoadingService(self._predictor)
+            self._bootstrap_prediction_service = BootstrapPredictionService(self._predictor)
+
+    def inspect_alignment_file(self, path: str | Path) -> dict:
+        return self.alignment_inspection_service.inspect(path)
+
+    def inspect_tree_file(self, path: str | Path) -> dict:
+        return self.tree_inspection_service.inspect(path)
 
     def load_alignment(self, path: str | Path) -> AnalysisArtifacts:
-        alignment = load_alignment(path)
-        return AnalysisArtifacts(
-            alignment=alignment,
-            tree=None,
-            alignment_info=alignment_summary(alignment),
-            tree_info={},
-            node_rows=[],
-        )
+        return self.alignment_loading_service.load(path)
 
-    def build_tree_from_alignment(self, alignment: MultipleSeqAlignment, output_path: str | Path | None = None) -> AnalysisArtifacts:
-        tree = build_neighbor_joining_tree(alignment)
-        if output_path is not None:
-            save_tree_newick(tree, output_path)
-        return AnalysisArtifacts(
-            alignment=alignment,
-            tree=tree,
-            alignment_info=alignment_summary(alignment),
-            tree_info=summarize_tree(tree),
-            node_rows=build_node_rows(tree),
-        )
+    def build_tree_from_alignment(self, alignment: MultipleSeqAlignment, method: str = 'Neighbor Joining', output_path: str | Path | None = None) -> AnalysisArtifacts:
+        return self.tree_building_service.build_from_alignment(alignment, method=method, output_path=output_path)
 
     def load_tree(self, path: str | Path) -> AnalysisArtifacts:
-        tree = load_tree(path)
-        return AnalysisArtifacts(
-            alignment=None,
-            tree=tree,
-            alignment_info={},
-            tree_info=summarize_tree(tree),
-            node_rows=build_node_rows(tree),
-        )
+        return self.tree_loading_service.load(path)
 
-    def load_model(self, model_path: str | Path, metadata_path: str | Path | None = None) -> dict:
-        self.predictor.load(model_path, metadata_path)
-        return self.predictor.metadata
+    def load_model(self, model_path: str | Path, metadata_path: str | Path | None = None) -> tuple[dict, bool]:
+        self._ensure_predictor_services()
+        return self._model_loading_service.load(model_path, metadata_path)
 
     def predict_bootstrap(self, tree: Tree, alignment: MultipleSeqAlignment) -> list[dict]:
-        return self.predictor.predict_tree(tree, alignment)
+        self._ensure_predictor_services()
+        return self._bootstrap_prediction_service.predict(tree, alignment)
+
+
+__all__ = ['AnalysisService', 'AnalysisArtifacts']

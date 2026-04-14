@@ -1,0 +1,22 @@
+FEATURE_COLUMNS = [
+    'branch_length',
+    'depth',
+    'n_leaves_subtree',
+    'subtree_fraction',
+    'subtree_balance',
+    'mean_child_branch_length',
+    'std_child_branch_length',
+    'taxa_count',
+    'alignment_length',
+    'gap_fraction_global',
+    'gc_mean_global',
+    'gc_std_global',
+    'variable_site_fraction_global',
+    'gap_fraction_clade',
+    'gc_mean_clade',
+    'gc_std_clade',
+    'mean_pairwise_pdist_clade',
+]
+
+VALID_DNA = set('ACGT')
+DNA_PLUS_GAP = set('ACGT-?')
