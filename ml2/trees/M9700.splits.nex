@@ -1,0 +1,71 @@
+#nexus
+
+BEGIN Taxa;
+DIMENSIONS ntax=10;
+TAXLABELS
+[1] 'Geomydoecus_bulleri_10_MSH_1695_COI'
+[2] 'Geomydoecus_bulleri_11_MSH_1588_COI'
+[3] 'Geomydoecus_bulleri_2_MSH_1590_COI'
+[4] 'Geomydoecus_bulleri_3_MSH_1505_COI'
+[5] 'Geomydoecus_bulleri_4_MSH_1589_COI'
+[6] 'Geomydoecus_bulleri_5_MSH_1696_COI'
+[7] 'Geomydoecus_bulleri_6_MSH_1697_COI'
+[8] 'Geomydoecus_burti_7_MSH_1692_COI'
+[9] 'Geomydoecus_burti_9_MSH_1586_COI'
+[10] 'Geomydoecus_pricei_1_MSH_1689_COI'
+;
+END; [Taxa]
+
+BEGIN Splits;
+DIMENSIONS ntax=10 nsplits=46;
+FORMAT labels=no weights=yes confidences=no intervals=no;
+MATRIX
+	100	 2,
+	100	 6,
+	100	 7,
+	86	 6 7,
+	100	 8,
+	53	 6 7 8,
+	8	 2 6 7 8,
+	100	 3,
+	100	 4,
+	100	 5,
+	100	 4 5,
+	63	 3 4 5,
+	100	 10,
+	100	 3 4 5 10,
+	100	 9,
+	16	 1 2 6 7 8,
+	100	 1,
+	12	 1 6 7 8 9,
+	19	 6 7 8 9,
+	19	 2 9,
+	35	 1 2 9,
+	35	 3 10,
+	36	 1 2,
+	1	 1 6 7 8,
+	36	 1 2 8 9,
+	23	 2 8,
+	5	 1 6 7 9,
+	16	 1 9,
+	5	 2 8 9,
+	10	 6 8,
+	1	 1 2 7 8 9,
+	2	 1 2 8,
+	8	 8 9,
+	2	 4 5 10,
+	1	 1 8 9,
+	4	 1 2 6 8 9,
+	1	 1 3 4 5 10,
+	1	 6 8 9,
+	3	 6 7 9,
+	0	 2 7,
+	0	 1 2 7,
+	0	 1 6 7,
+	1	 7 8,
+	0	 2 7 8,
+	0	 1 2 6 7 9,
+	0	 1 6,
+;
+END; [Splits]
+

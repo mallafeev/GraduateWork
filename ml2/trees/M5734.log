@@ -1,0 +1,395 @@
+IQ-TREE version 3.1.1 for Windows 64-bit built Apr  2 2026
+Developed by Bui Quang Minh, Thomas Wong, Nhan Ly-Trong, Huaiyan Ren
+Contributed by Lam-Tung Nguyen, Dominik Schrempf, Chris Bielow,
+Olga Chernomor, Michael Woodhams, Diep Thi Hoang, Heiko Schmidt
+
+Host:    DESKTOP-I0VDDLU (AVX2, FMA3, 15 GB RAM)
+Command: iqtree-3.1.1-Windows\bin\iqtree3.exe -s ml2\datasets\M5734.nex -m MFP -B 1000 -bnni -T AUTO --prefix ml2\trees\M5734 --redo
+Seed:    245667 (Using SPRNG - Scalable Parallel Random Number Generator)
+Time:    Mon May 04 14:02:02 2026
+Kernel:  AVX+FMA - auto-detect threads (16 CPU cores detected)
+
+Reading alignment file ml2\datasets\M5734.nex ... Nexus format detected
+Skipping unknown block (CODONS)...
+Alignment has 69 sequences with 658 columns, 218 distinct patterns
+201 parsimony-informative, 19 singleton sites, 438 constant sites
+                         Gap/Ambiguity  Composition  p-value
+Analyzing sequences: done in 0.0001169 secs
+   1  Eumida_alkyone_N40         0.00%    passed     66.73%
+   2  Eumida_alkyone_S37         0.00%    passed     61.65%
+   3  Eumida_alkyone_S38         0.00%    passed     66.73%
+   4  Eumida_alkyone_S39         0.00%    passed     75.63%
+   5  Eumida_asterope_F27        0.00%    passed     75.58%
+   6  Eumida_asterope_F28        0.00%    passed     79.31%
+   7  Eumida_elektra_N23         0.00%    passed     61.30%
+   8  Eumida_elektra_N24         0.00%    passed     56.17%
+   9  Eumida_elektra_N25         0.00%    passed     56.17%
+  10  Eumida_elektra_N26         0.00%    passed     62.52%
+  11  Eumida_kelaino_S29         0.00%    passed     83.66%
+  12  Eumida_kelaino_S30         0.00%    passed     91.28%
+  13  Eumida_kelaino_S31         0.00%    passed     92.71%
+  14  Eumida_kelaino_S32         0.00%    passed     92.28%
+  15  Eumida_kelaino_S33         0.00%    passed     91.33%
+  16  Eumida_kelaino_S34         0.00%    passed     88.87%
+  17  Eumida_kelaino_S35         0.00%    passed     88.87%
+  18  Eumida_kelaino_S36         0.00%    passed     84.14%
+  19  Eumida_maia_F1             0.00%    passed     94.13%
+  20  Eumida_maia_F10            0.00%    passed     94.59%
+  21  Eumida_maia_F11            0.00%    passed     94.59%
+  22  Eumida_maia_F12            0.00%    passed     93.89%
+  23  Eumida_maia_F13            0.00%    passed     93.89%
+  24  Eumida_maia_F14            0.00%    passed     92.48%
+  25  Eumida_maia_F15            0.00%    passed     92.00%
+  26  Eumida_maia_F2             0.00%    passed     93.59%
+  27  Eumida_maia_F3             0.00%    passed     90.98%
+  28  Eumida_maia_F4             0.00%    passed     92.30%
+  29  Eumida_maia_F5             0.00%    passed     94.46%
+  30  Eumida_maia_F6             0.00%    passed     94.59%
+  31  Eumida_maia_F7             0.00%    passed     94.59%
+  32  Eumida_maia_F8             0.00%    passed     94.59%
+  33  Eumida_maia_F9             0.00%    passed     94.59%
+  34  Eumida_merope_C64          0.00%    passed     98.76%
+  35  Eumida_merope_F60          0.00%    passed     92.16%
+  36  Eumida_merope_F61          0.00%    passed     96.81%
+  37  Eumida_merope_F62          0.00%    passed     97.52%
+  38  Eumida_merope_F63          0.00%    passed     97.52%
+  39  Eumida_merope_F65          0.00%    passed     97.54%
+  40  Eumida_merope_F66          0.00%    passed     94.71%
+  41  Eumida_merope_F67          0.00%    passed     96.42%
+  42  Eumida_merope_F68          0.00%    passed     96.42%
+  43  Eumida_merope_F69          0.00%    passed     96.42%
+  44  Eumida_notata_M54          0.00%    passed     91.61%
+  45  Eumida_notata_M55          0.00%    passed     96.69%
+  46  Eumida_notata_M56          0.00%    passed     95.98%
+  47  Eumida_notata_M57          0.00%    passed     98.14%
+  48  Eumida_notata_M58          0.00%    passed     97.44%
+  49  Eumida_notata_M59          0.00%    passed     96.42%
+  50  Eumida_sanguinea_D49       0.00%    passed     94.17%
+  51  Eumida_sanguinea_G44       0.00%    passed     92.20%
+  52  Eumida_sanguinea_N43       0.00%    passed     92.20%
+  53  Eumida_sanguinea_N46       0.00%    passed     94.17%
+  54  Eumida_sanguinea_S41       0.00%    passed     92.20%
+  55  Eumida_sanguinea_S42       0.00%    passed     93.30%
+  56  Eumida_sanguinea_S45       0.00%    passed     94.17%
+  57  Eumida_sanguinea_S47       0.00%    passed     94.17%
+  58  Eumida_sanguinea_S48       0.00%    passed     94.17%
+  59  Eumida_sanguinea_S50       0.00%    passed     82.14%
+  60  Eumida_sanguinea_S51       0.00%    passed     94.42%
+  61  Eumida_sanguinea_S52       0.00%    passed     92.46%
+  62  Eumida_sanguinea_S53       0.00%    passed     89.83%
+  63  Eumida_sanguinea_sc_F22    0.00%    passed     87.27%
+  64  Eumida_sanguinea_sc_S21    0.00%    passed     25.53%
+  65  Eumida_taygete_C16         0.00%    passed     98.00%
+  66  Eumida_taygete_F17         0.00%    passed     98.00%
+  67  Eumida_taygete_F18         0.00%    passed     97.44%
+  68  Eumida_taygete_F19         0.00%    passed     97.44%
+  69  Eumida_taygete_F20         0.00%    passed     97.44%
+****  TOTAL                      0.00%  0 sequences failed composition chi2 test (p-value<5%; df=3)
+NOTE: Eumida_elektra_N25 is identical to Eumida_elektra_N24 but kept for subsequent analysis
+NOTE: Eumida_kelaino_S35 is identical to Eumida_kelaino_S34 but kept for subsequent analysis
+NOTE: Eumida_maia_F11 is identical to Eumida_maia_F10 but kept for subsequent analysis
+NOTE: Eumida_maia_F13 is identical to Eumida_maia_F12 but kept for subsequent analysis
+NOTE: Eumida_merope_F68 is identical to Eumida_merope_F67 but kept for subsequent analysis
+NOTE: Eumida_sanguinea_S48 is identical to Eumida_sanguinea_D49 but kept for subsequent analysis
+NOTE: Eumida_sanguinea_S45 is identical to Eumida_sanguinea_N46 but kept for subsequent analysis
+NOTE: Eumida_taygete_F17 is identical to Eumida_taygete_C16 but kept for subsequent analysis
+NOTE: Eumida_taygete_F19 is identical to Eumida_taygete_F18 but kept for subsequent analysis
+Checking for duplicate sequences: done in 0.0655872 secs using 476.5% CPU
+Identifying sites to remove: done in 0.0013536 secs
+NOTE: 6 identical sequences (see below) will be ignored for subsequent analysis
+NOTE: Eumida_maia_F6 (identical to Eumida_maia_F10) is ignored but added at the end
+NOTE: Eumida_maia_F7 (identical to Eumida_maia_F10) is ignored but added at the end
+NOTE: Eumida_maia_F8 (identical to Eumida_maia_F10) is ignored but added at the end
+NOTE: Eumida_maia_F9 (identical to Eumida_maia_F10) is ignored but added at the end
+NOTE: Eumida_merope_F69 (identical to Eumida_merope_F67) is ignored but added at the end
+NOTE: Eumida_sanguinea_S47 (identical to Eumida_sanguinea_N46) is ignored but added at the end
+Alignment was printed to ml2\trees\M5734.uniqueseq.phy
+
+For your convenience alignment with unique sequences printed to ml2\trees\M5734.uniqueseq.phy
+
+
+Create initial parsimony tree by phylogenetic likelihood library (PLL)... 0.012 seconds
+Measuring multi-threading efficiency up to 16 CPU cores
+Increase to 10 rounds for branch lengths
+417 trees examined
+Threads: 1 / Time: 16.014 sec / Speedup: 1.000 / Efficiency: 100% / LogL: -11224
+Threads: 2 / Time: 13.264 sec / Speedup: 1.207 / Efficiency: 60% / LogL: -11224
+Threads: 3 / Time: 13.066 sec / Speedup: 1.226 / Efficiency: 41% / LogL: -11224
+Determining AUTO threadcount: done in 42.3716 secs using 196% CPU
+BEST NUMBER OF THREADS: 2
+
+Perform fast likelihood tree search using GTR+I+G model...
+Estimate model parameters (epsilon = 5.000)
+Perform nearest neighbor interchange...
+Estimate model parameters (epsilon = 1.000)
+1. Initial log-likelihood: -3758.046
+Optimal log-likelihood: -3757.050
+Rate parameters:  A-C: 0.15526  A-G: 7.70960  A-T: 1.61689  C-G: 0.37402  C-T: 7.13503  G-T: 1.00000
+Base frequencies:  A: 0.219  C: 0.167  G: 0.197  T: 0.416
+Proportion of invariable sites: 0.324
+Gamma shape alpha: 0.307
+Parameters optimization took 1 rounds (0.076 sec)
+Time for fast ML tree search: 0.354 seconds
+
+NOTE: ModelFinder requires 5 MB RAM!
+ModelFinder will test up to 968 DNA models (sample size: 658 epsilon: 0.100) ...
+ No. Model         -LnL         df  AIC          AICc         BIC
+  1  JC            4370.976     123 8987.951     9045.075     9540.124
+  2  JC+I          4029.659     124 8307.318     8365.479     8863.979
+  3  JC+G4         4015.050     124 8278.100     8336.261     8834.761
+  4  JC+I+G4       4016.370     125 8282.741     8341.951     8843.892
+  5  JC+R2         4016.016     125 8282.032     8341.243     8843.183
+  6  JC+R3         4014.280     127 8282.561     8343.904     8852.690
+ 14  JC+I+R2       4015.583     126 8283.166     8343.438     8848.806
+ 15  JC+I+R3       4013.071     128 8282.142     8344.569     8856.760
+ 25  JC+G4         4015.050     124 8278.100     8336.261     8834.761
+ 26  JC+I+G4       4016.370     125 8282.741     8341.951     8843.892
+ 27  JC+R2         4016.016     125 8282.032     8341.243     8843.183
+ 47  F81+G4        4015.051     124 8278.103     8336.264     8834.764
+ 48  F81+I+G4      4016.366     125 8282.733     8341.943     8843.884
+ 49  F81+R2        4016.024     125 8282.048     8341.258     8843.198
+ 69  F81+F+G4      3965.658     127 8185.316     8246.659     8755.445
+ 70  F81+F+I+G4    3967.513     128 8191.025     8253.453     8765.644
+ 71  F81+F+R2      3967.138     128 8190.277     8252.704     8764.895
+ 91  K2P+G4        3877.637     125 8005.274     8064.484     8566.425
+ 92  K2P+I+G4      3877.122     126 8006.244     8066.515     8571.883
+ 93  K2P+R2        3879.195     126 8010.389     8070.660     8576.029
+113  K2P+G4        3877.637     125 8005.274     8064.484     8566.425
+114  K2P+I+G4      3877.122     126 8006.244     8066.515     8571.883
+115  K2P+R2        3879.195     126 8010.389     8070.660     8576.029
+135  HKY+G4        3877.638     125 8005.276     8064.487     8566.427
+136  HKY+I+G4      3877.113     126 8006.227     8066.498     8571.866
+137  HKY+R2        3879.194     126 8010.388     8070.660     8576.028
+157  HKY+F+G4      3769.986     128 7795.972     7858.400     8370.591
+158  HKY+F+I+G4    3766.066     129 7790.132     7853.655     8369.239
+159  HKY+F+R2      3774.556     129 7807.112     7870.635     8386.220
+179  TNe+G4        3874.650     126 8001.300     8061.571     8566.940
+180  TNe+I+G4      3874.636     127 8003.272     8064.616     8573.401
+181  TNe+R2        3876.312     127 8006.624     8067.968     8576.753
+201  TNe+G4        3874.650     126 8001.300     8061.571     8566.940
+202  TNe+I+G4      3874.636     127 8003.272     8064.616     8573.401
+203  TNe+R2        3876.312     127 8006.624     8067.968     8576.753
+223  TN+G4         3874.648     126 8001.296     8061.567     8566.935
+224  TN+I+G4       3874.634     127 8003.268     8064.611     8573.397
+225  TN+R2         3876.311     127 8006.622     8067.965     8576.751
+245  TN+F+G4       3769.987     129 7797.975     7861.498     8377.082
+246  TN+F+I+G4     3765.957     130 7791.915     7856.545     8375.512
+247  TN+F+R2       3774.268     130 7808.535     7873.165     8392.132
+267  K3P+G4        3870.341     126 7992.681     8052.952     8558.321
+268  K3P+I+G4      3869.408     127 7992.817     8054.160     8562.946
+269  K3P+R2        3872.045     127 7998.090     8059.434     8568.219
+289  K3P+G4        3870.341     126 7992.681     8052.952     8558.321
+290  K3P+I+G4      3869.408     127 7992.817     8054.160     8562.946
+291  K3P+R2        3872.045     127 7998.090     8059.434     8568.219
+311  K3Pu+G4       3870.342     126 7992.684     8052.955     8558.324
+312  K3Pu+I+G4     3869.389     127 7992.778     8054.122     8562.907
+313  K3Pu+R2       3872.035     127 7998.070     8059.414     8568.199
+333  K3Pu+F+G4     3766.726     129 7791.451     7854.974     8370.559
+334  K3Pu+F+I+G4   3763.183     130 7786.367     7850.997     8369.964
+335  K3Pu+F+R2     3771.219     130 7802.438     7867.068     8386.035
+355  TPM2+G4       3875.004     126 8002.007     8062.278     8567.647
+356  TPM2+I+G4     3874.281     127 8002.563     8063.906     8572.692
+357  TPM2+R2       3876.575     127 8007.150     8068.494     8577.279
+377  TPM2+G4       3875.004     126 8002.007     8062.278     8567.647
+378  TPM2+I+G4     3874.281     127 8002.563     8063.906     8572.692
+379  TPM2+R2       3876.575     127 8007.150     8068.494     8577.279
+399  TPM2u+G4      3875.002     126 8002.003     8062.275     8567.643
+400  TPM2u+I+G4    3874.272     127 8002.545     8063.888     8572.674
+401  TPM2u+R2      3876.573     127 8007.146     8068.490     8577.275
+421  TPM2u+F+G4    3768.771     129 7795.541     7859.064     8374.649
+422  TPM2u+F+I+G4  3765.076     130 7790.152     7854.782     8373.748
+423  TPM2u+F+R2    3773.424     130 7806.847     7871.477     8390.444
+443  TPM3+G4       3846.758     126 7945.516     8005.787     8511.156
+444  TPM3+I+G4     3845.503     127 7945.006     8006.349     8515.135
+445  TPM3+R2       3848.591     127 7951.183     8012.526     8521.312
+465  TPM3+G4       3846.758     126 7945.516     8005.787     8511.156
+466  TPM3+I+G4     3845.503     127 7945.006     8006.349     8515.135
+467  TPM3+R2       3848.591     127 7951.183     8012.526     8521.312
+487  TPM3u+G4      3846.751     126 7945.502     8005.774     8511.142
+488  TPM3u+I+G4    3845.470     127 7944.939     8006.282     8515.068
+489  TPM3u+R2      3848.580     127 7951.160     8012.503     8521.289
+509  TPM3u+F+G4    3761.566     129 7781.131     7844.654     8360.238
+510  TPM3u+F+I+G4  3758.908     130 7777.816     7842.446     8361.412
+511  TPM3u+F+R2    3765.956     130 7791.913     7856.543     8375.509
+531  TIMe+G4       3867.266     127 7988.532     8049.875     8558.661
+532  TIMe+I+G4     3866.909     128 7989.817     8052.244     8564.435
+533  TIMe+R2       3869.226     128 7994.453     8056.880     8569.071
+553  TIMe+G4       3867.266     127 7988.532     8049.875     8558.661
+554  TIMe+I+G4     3866.909     128 7989.817     8052.244     8564.435
+555  TIMe+R2       3869.226     128 7994.453     8056.880     8569.071
+575  TIM+G4        3867.265     127 7988.530     8049.874     8558.659
+576  TIM+I+G4      3866.903     128 7989.806     8052.234     8564.425
+577  TIM+R2        3869.190     128 7994.380     8056.808     8568.999
+597  TIM+F+G4      3766.729     130 7793.457     7858.087     8377.054
+598  TIM+F+I+G4    3763.125     131 7788.249     7853.998     8376.335
+599  TIM+F+R2      3770.920     131 7803.841     7869.590     8391.927
+619  TIM2e+G4      3871.780     127 7997.559     8058.903     8567.688
+620  TIM2e+I+G4    3871.646     128 7999.291     8061.719     8573.910
+621  TIM2e+R2      3873.488     128 8002.977     8065.404     8577.595
+641  TIM2e+G4      3871.780     127 7997.559     8058.903     8567.688
+642  TIM2e+I+G4    3871.646     128 7999.291     8061.719     8573.910
+643  TIM2e+R2      3873.488     128 8002.977     8065.404     8577.595
+663  TIM2+G4       3871.780     127 7997.559     8058.902     8567.688
+664  TIM2+I+G4     3871.643     128 7999.286     8061.713     8573.904
+665  TIM2+R2       3873.486     128 8002.971     8065.398     8577.589
+685  TIM2+F+G4     3768.792     130 7797.584     7862.214     8381.181
+686  TIM2+F+I+G4   3764.988     131 7791.975     7857.724     8380.061
+687  TIM2+F+R2     3773.069     131 7808.137     7873.886     8396.223
+707  TIM3e+G4      3844.455     127 7942.910     8004.253     8513.039
+708  TIM3e+I+G4    3844.042     128 7944.084     8006.511     8518.702
+709  TIM3e+R2      3846.017     128 7948.035     8010.462     8522.653
+729  TIM3e+G4      3844.455     127 7942.910     8004.253     8513.039
+730  TIM3e+I+G4    3844.042     128 7944.084     8006.511     8518.702
+731  TIM3e+R2      3846.017     128 7948.035     8010.462     8522.653
+751  TIM3+G4       3844.457     127 7942.913     8004.256     8513.042
+752  TIM3+I+G4     3844.029     128 7944.058     8006.486     8518.677
+753  TIM3+R2       3846.017     128 7948.033     8010.460     8522.651
+773  TIM3+F+G4     3761.433     130 7782.867     7847.497     8366.463
+774  TIM3+F+I+G4   3758.852     131 7779.705     7845.454     8367.790
+775  TIM3+F+R2     3765.348     131 7792.696     7858.445     8380.782
+795  TVMe+G4       3842.965     128 7941.931     8004.358     8516.549
+796  TVMe+I+G4     3841.324     129 7940.649     8004.171     8519.756
+797  TVMe+R2       3844.833     129 7947.666     8011.189     8526.773
+817  TVMe+G4       3842.965     128 7941.931     8004.358     8516.549
+818  TVMe+I+G4     3841.324     129 7940.649     8004.171     8519.756
+819  TVMe+R2       3844.833     129 7947.666     8011.189     8526.773
+839  TVM+G4        3842.965     128 7941.929     8004.357     8516.548
+840  TVM+I+G4      3841.278     129 7940.557     8004.079     8519.664
+841  TVM+R2        3844.832     129 7947.664     8011.186     8526.771
+861  TVM+F+G4      3759.661     131 7781.321     7847.070     8369.407
+862  TVM+F+I+G4    3756.930     132 7777.860     7844.740     8370.435
+863  TVM+F+R2      3763.443     132 7790.887     7857.767     8383.462
+883  SYM+G4        3840.497     129 7938.994     8002.516     8518.101
+884  SYM+I+G4      3839.691     130 7939.381     8004.011     8522.978
+885  SYM+R2        3842.154     130 7944.309     8008.939     8527.906
+905  SYM+G4        3840.497     129 7938.994     8002.516     8518.101
+906  SYM+I+G4      3839.691     130 7939.381     8004.011     8522.978
+907  SYM+R2        3842.154     130 7944.309     8008.939     8527.906
+927  GTR+G4        3840.498     129 7938.997     8002.519     8518.104
+928  GTR+I+G4      3839.662     130 7939.323     8003.953     8522.920
+929  GTR+R2        3842.152     130 7944.304     8008.934     8527.900
+949  GTR+F+G4      3759.493     132 7782.985     7849.865     8375.561
+950  GTR+F+I+G4    3756.875     133 7779.750     7847.773     8376.814
+951  GTR+F+R2      3763.050     133 7792.101     7860.124     8389.165
+Akaike Information Criterion:           TPM3u+F+I+G4
+Corrected Akaike Information Criterion: TPM3u+F+I+G4
+Bayesian Information Criterion:         TPM3u+F+G4
+Best-fit model: TPM3u+F+G4 chosen according to BIC
+
+All model information printed to ml2\trees\M5734.model.gz
+CPU time for ModelFinder: 96.297 seconds (0h:1m:36s)
+Wall-clock time for ModelFinder: 49.586 seconds (0h:0m:49s)
+Generating 1000 samples for ultrafast bootstrap (seed: 245667)...
+
+NOTE: 2 MB RAM (0 GB) is required!
+Estimate model parameters (epsilon = 0.100)
+1. Initial log-likelihood: -3762.062
+2. Current log-likelihood: -3761.597
+Optimal log-likelihood: -3761.581
+Rate parameters:  A-C: 0.17813  A-G: 5.25726  A-T: 1.00000  C-G: 0.17813  C-T: 5.25726  G-T: 1.00000
+Base frequencies:  A: 0.219  C: 0.167  G: 0.197  T: 0.416
+Gamma shape alpha: 0.162
+Parameters optimization took 2 rounds (0.058 sec)
+Wrote distance file to... 
+Computing ML distances based on estimated model parameters...
+Calculating distance matrix: done in 0.014775 secs using 211.5% CPU
+Computing ML distances took 0.027636 sec (of wall-clock time) 0.031250 sec (of CPU time)
+Setting up auxiliary I and S matrices: done in 0.000221 secs
+Constructing RapidNJ tree: done in 0.0004805 secs
+Computing RapidNJ tree took 0.010735 sec (of wall-clock time) 0.015625 sec (of CPU time)
+Log-likelihood of RapidNJ tree: -3767.751
+--------------------------------------------------------------------
+|             INITIALIZING CANDIDATE TREE SET                      |
+--------------------------------------------------------------------
+Generating 98 parsimony trees... 0.726 second
+Computing log-likelihood of 98 initial trees ... 0.463 seconds
+Current best score: -3761.581
+
+Do NNI search on 20 best initial trees
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 1: -3761.417
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 2: -3761.395
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 3: -3760.173
+BETTER TREE FOUND at iteration 6: -3760.173
+BETTER TREE FOUND at iteration 7: -3760.172
+Iteration 10 / LogL: -3760.174 / Time: 0h:0m:55s
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 12: -3759.306
+Iteration 20 / LogL: -3761.548 / Time: 0h:1m:0s
+Finish initializing candidate tree set (20)
+Current best tree score: -3759.306 / CPU time: 10.628
+Number of iterations: 20
+--------------------------------------------------------------------
+|               OPTIMIZING CANDIDATE TREE SET                      |
+--------------------------------------------------------------------
+Iteration 30 / LogL: -3759.310 / Time: 0h:1m:4s (0h:0m:41s left)
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 34: -3758.268
+Iteration 40 / LogL: -3759.327 / Time: 0h:1m:8s (0h:0m:44s left)
+Iteration 50 / LogL: -3758.277 / Time: 0h:1m:11s (0h:0m:38s left)
+Iteration 60 / LogL: -3760.226 / Time: 0h:1m:15s (0h:0m:31s left)
+Iteration 70 / LogL: -3759.329 / Time: 0h:1m:18s (0h:0m:26s left)
+Iteration 80 / LogL: -3758.826 / Time: 0h:1m:22s (0h:0m:22s left)
+Iteration 90 / LogL: -3758.273 / Time: 0h:1m:26s (0h:0m:18s left)
+Iteration 100 / LogL: -3758.276 / Time: 0h:1m:29s (0h:0m:13s left)
+Iteration 110 / LogL: -3758.268 / Time: 0h:1m:33s (0h:0m:9s left)
+Iteration 120 / LogL: -3786.376 / Time: 0h:1m:36s (0h:0m:5s left)
+Iteration 130 / LogL: -3758.271 / Time: 0h:1m:40s (0h:0m:1s left)
+Refining ufboot trees with NNI 1 branch...
+100 samples done
+200 samples done
+300 samples done
+400 samples done
+500 samples done
+600 samples done
+700 samples done
+800 samples done
+900 samples done
+1000 samples done
+Total 1000 ufboot trees refined
+TREE SEARCH COMPLETED AFTER 135 ITERATIONS / Time: 0h:2m:22s
+
+--------------------------------------------------------------------
+|                    FINALIZING TREE SEARCH                        |
+--------------------------------------------------------------------
+Performs final model parameters optimization
+Estimate model parameters (epsilon = 0.010)
+1. Initial log-likelihood: -3758.268
+Optimal log-likelihood: -3758.266
+Rate parameters:  A-C: 0.17931  A-G: 5.66271  A-T: 1.00000  C-G: 0.17931  C-T: 5.66271  G-T: 1.00000
+Base frequencies:  A: 0.219  C: 0.167  G: 0.197  T: 0.416
+Gamma shape alpha: 0.160
+Parameters optimization took 1 rounds (0.034 sec)
+BEST SCORE FOUND : -3758.266
+Creating bootstrap support values...
+Split supports printed to NEXUS file ml2\trees\M5734.splits.nex
+Total tree length: 1.657
+
+Total number of iterations: 135
+CPU time used for tree search: 176.688 sec (0h:2m:56s)
+Wall-clock time used for tree search: 92.944 sec (0h:1m:32s)
+Total CPU time used: 274.453 sec (0h:4m:34s)
+Total wall-clock time used: 143.431 sec (0h:2m:23s)
+UFBoot trees printed to ml2\trees\M5734.ufboot
+
+Computing bootstrap consensus tree...
+Reading input file ml2\trees\M5734.splits.nex...
+63 taxa and 585 splits.
+Consensus tree written to ml2\trees\M5734.contree
+Reading input trees file ml2\trees\M5734.contree
+Log-likelihood of consensus tree: -3758.301
+
+Analysis results written to: 
+  IQ-TREE report:                ml2\trees\M5734.iqtree
+  Maximum-likelihood tree:       ml2\trees\M5734.treefile
+  Likelihood distances:          ml2\trees\M5734.mldist
+
+Ultrafast bootstrap approximation results written to:
+  Split support values:          ml2\trees\M5734.splits.nex
+  Consensus tree:                ml2\trees\M5734.contree
+  UFBoot trees:                  ml2\trees\M5734.ufboot
+  Screen log file:               ml2\trees\M5734.log
+
+Date and Time: Mon May 04 14:04:27 2026

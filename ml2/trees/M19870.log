@@ -1,0 +1,685 @@
+IQ-TREE version 3.1.1 for Windows 64-bit built Apr  2 2026
+Developed by Bui Quang Minh, Thomas Wong, Nhan Ly-Trong, Huaiyan Ren
+Contributed by Lam-Tung Nguyen, Dominik Schrempf, Chris Bielow,
+Olga Chernomor, Michael Woodhams, Diep Thi Hoang, Heiko Schmidt
+
+Host:    DESKTOP-I0VDDLU (AVX2, FMA3, 15 GB RAM)
+Command: iqtree-3.1.1-Windows\bin\iqtree3.exe -s ml2\datasets\M19870.nex -m MFP -B 1000 -bnni -T AUTO --prefix ml2\trees\M19870 --redo
+Seed:    850721 (Using SPRNG - Scalable Parallel Random Number Generator)
+Time:    Mon May 04 13:01:57 2026
+Kernel:  AVX+FMA - auto-detect threads (16 CPU cores detected)
+
+Reading alignment file ml2\datasets\M19870.nex ... Nexus format detected
+WARNING: 1 sites contain only gaps or ambiguous characters.
+Alignment has 113 sequences with 857 columns, 197 distinct patterns
+287 parsimony-informative, 0 singleton sites, 570 constant sites
+                                   Gap/Ambiguity  Composition  p-value
+Analyzing sequences: done in 0.0091775 secs
+   1  Acanthococcus_sp_S3_523a             3.03%    passed     36.86%
+   2  Acanthococcus_sp_S3_523b             3.03%    passed     36.86%
+   3  Acanthococcus_sp_S3_523c             3.03%    passed     36.86%
+   4  Acanthococcus_sp_S3_523d             3.03%    passed     36.86%
+   5  Ceroplastes_ceriferus_C0020B         2.80%    passed     99.35%
+   6  Ceroplastes_ceriferus_S2011_001a     2.92%    passed     99.29%
+   7  Ceroplastes_ceriferus_S2011_001b     2.92%    passed     99.29%
+   8  Ceroplastes_ceriferus_S2011_001c     2.92%    passed     99.29%
+   9  Ceroplastes_ceriferus_S2011_010a1    2.92%    passed     95.93%
+  10  Ceroplastes_ceriferus_S2011_010a2    2.92%    passed     95.93%
+  11  Ceroplastes_ceriferus_S2011_010b1    2.92%    passed     95.93%
+  12  Ceroplastes_ceriferus_S2011_010b2    2.92%    passed     95.93%
+  13  Ceroplastes_ceriferus_S2011_022a     2.92%    passed     99.29%
+  14  Ceroplastes_ceriferus_S2011_022b     2.92%    passed     99.29%
+  15  Ceroplastes_ceriferus_S2011_022c     2.92%    passed     99.29%
+  16  Ceroplastes_ceriferus_S2011_028a     2.92%    passed     97.05%
+  17  Ceroplastes_ceriferus_S2011_028b     2.92%    passed     97.05%
+  18  Ceroplastes_ceriferus_S2011_053a     2.80%    passed     98.90%
+  19  Ceroplastes_ceriferus_S2011_053b     2.80%    passed     98.90%
+  20  Ceroplastes_ceriferus_S2011_135a     2.80%    passed     98.90%
+  21  Ceroplastes_ceriferus_S2011_135b     2.80%    passed     98.90%
+  22  Ceroplastes_ceriferus_S2011_135c     2.80%    passed     98.90%
+  23  Ceroplastes_ceriferus_S2011_135d     2.80%    passed     98.90%
+  24  Ceroplastes_ceriferus_S2011_135e     2.80%    passed     98.90%
+  25  Ceroplastes_ceriferus_S2011_141a     2.80%    passed     99.35%
+  26  Ceroplastes_ceriferus_S2011_141b     2.80%    passed     99.35%
+  27  Ceroplastes_ceriferus_S2011_141c     2.80%    passed     99.35%
+  28  Ceroplastes_ceriferus_S2011_146a     2.92%    passed     99.29%
+  29  Ceroplastes_ceriferus_S2011_146b     2.92%    passed     99.29%
+  30  Ceroplastes_ceriferus_S2011_146c     2.92%    passed     99.29%
+  31  Ceroplastes_japonicus_S2011_002a     3.03%    passed     49.29%
+  32  Ceroplastes_japonicus_S2011_002b     3.03%    passed     49.29%
+  33  Ceroplastes_japonicus_S2011_005a     3.03%    passed     54.58%
+  34  Ceroplastes_japonicus_S2011_005b     3.03%    passed     54.58%
+  35  Ceroplastes_japonicus_S2011_006a     3.03%    passed     53.90%
+  36  Ceroplastes_japonicus_S2011_006b     3.03%    passed     53.90%
+  37  Ceroplastes_japonicus_S2011_006c     3.03%    passed     53.90%
+  38  Ceroplastes_japonicus_S2011_014a     3.03%    passed     54.58%
+  39  Ceroplastes_japonicus_S2011_014b     3.03%    passed     54.58%
+  40  Ceroplastes_japonicus_S2011_014c     3.03%    passed     54.58%
+  41  Ceroplastes_japonicus_S2011_016a     3.03%    passed     54.83%
+  42  Ceroplastes_japonicus_S2011_016b     3.15%    passed     54.21%
+  43  Ceroplastes_japonicus_S2011_016c     3.15%    passed     54.21%
+  44  Ceroplastes_japonicus_S2011_04a      3.03%    passed     54.83%
+  45  Ceroplastes_japonicus_S2011_04b      3.03%    passed     54.83%
+  46  Ceroplastes_japonicus_S2011_051a     3.03%    passed     54.83%
+  47  Ceroplastes_japonicus_S2011_051b     3.03%    passed     54.83%
+  48  Ceroplastes_japonicus_S2011_074a     3.03%    passed     54.63%
+  49  Ceroplastes_japonicus_S2011_074b     3.03%    passed     54.63%
+  50  Ceroplastes_japonicus_S2011_074c     3.03%    passed     54.63%
+  51  Ceroplastes_japonicus_S2011_082a     3.03%    passed     54.63%
+  52  Ceroplastes_japonicus_S2011_082b     3.03%    passed     54.63%
+  53  Ceroplastes_japonicus_S2011_082c     3.03%    passed     54.63%
+  54  Ceroplastes_japonicus_S2011_085a     3.03%    passed     54.83%
+  55  Ceroplastes_japonicus_S2011_085b     3.03%    passed     54.83%
+  56  Ceroplastes_japonicus_S2011_085c     3.03%    passed     54.83%
+  57  Ceroplastes_japonicus_S2011_137a     3.03%    passed     43.88%
+  58  Ceroplastes_japonicus_S2011_137b     3.03%    passed     43.88%
+  59  Ceroplastes_japonicus_S2011_137c     3.03%    passed     43.88%
+  60  Ceroplastes_japonicus_S2011_138a     3.03%    passed     54.58%
+  61  Ceroplastes_japonicus_S2011_138b     3.03%    passed     54.58%
+  62  Ceroplastes_japonicus_S2011_138c     3.03%    passed     54.58%
+  63  Ceroplastes_japonicus_S2011_139a     3.03%    passed     54.83%
+  64  Ceroplastes_japonicus_S2011_139b     3.03%    passed     54.83%
+  65  Ceroplastes_japonicus_S2011_139c     3.03%    passed     54.83%
+  66  Ceroplastes_japonicus_S2011_139d     3.03%    passed     54.83%
+  67  Ceroplastes_japonicus_S2011_139e     3.03%    passed     54.83%
+  68  Ceroplastes_rubens_S2011_003a        3.38%    passed     62.50%
+  69  Ceroplastes_rubens_S2011_003b        3.38%    passed     62.50%
+  70  Ceroplastes_rubens_S2011_003c        3.38%    passed     62.50%
+  71  Ceroplastes_rubens_S2011_030a        3.38%    passed     56.80%
+  72  Ceroplastes_rubens_S2011_030b        3.38%    passed     56.80%
+  73  Ceroplastes_rubens_S2011_030c        3.38%    passed     56.80%
+  74  Ceroplastes_rubens_S2011_036a        3.38%    passed     62.50%
+  75  Ceroplastes_rubens_S2011_036b        3.38%    passed     62.50%
+  76  Ceroplastes_rubens_S2011_046a        3.38%    passed     62.50%
+  77  Ceroplastes_rubens_S2011_046b        3.38%    passed     62.50%
+  78  Ceroplastes_rubens_S2011_058a        3.38%    passed     62.50%
+  79  Ceroplastes_rubens_S2011_058b        3.38%    passed     62.50%
+  80  Ceroplastes_rubens_S2011_076a        3.38%    passed     56.80%
+  81  Ceroplastes_rubens_S2011_076b        3.38%    passed     56.80%
+  82  Ceroplastes_rubens_S2011_076c        3.38%    passed     56.80%
+  83  Ceroplastes_rubens_S2011_128a        3.38%    passed     62.50%
+  84  Ceroplastes_rubens_S2011_128b        3.38%    passed     62.50%
+  85  Ceroplastes_rubens_S2011_129a        3.38%    passed     62.50%
+  86  Ceroplastes_rubens_S2011_129b        3.38%    passed     62.50%
+  87  Ceroplastes_rubens_S2011_129c        3.38%    passed     62.50%
+  88  Ceroplastes_rubens_S2011_129d        3.38%    passed     62.50%
+  89  Ceroplastes_rubens_S2011_142a        3.38%    passed     62.50%
+  90  Ceroplastes_rubens_S2011_142b        3.38%    passed     62.50%
+  91  Ceroplastes_rubens_S2011_142c        3.38%    passed     62.50%
+  92  Ceroplastes_rubens_WHa               3.38%    passed     62.50%
+  93  Ceroplastes_rubens_WHb               3.38%    passed     62.50%
+  94  Ceroplastes_rubens_WHc               3.38%    passed     62.50%
+  95  Ceroplastes_rubens_WHd               3.38%    passed     62.50%
+  96  Ceroplastes_rubens_var_C0002a        3.38%    passed     75.08%
+  97  Ceroplastes_rubens_var_C0002b        3.38%    passed     75.08%
+  98  Ceroplastes_rubens_var_C0002c        3.38%    passed     75.08%
+  99  Ceroplastes_rubens_var_C0002d        3.38%    passed     75.08%
+ 100  Ceroplastes_rubens_var_C0003a        3.38%    passed     75.08%
+ 101  Ceroplastes_rubens_var_C0003b        3.38%    passed     75.08%
+ 102  Ceroplastes_rubens_var_C0003c        3.38%    passed     75.08%
+ 103  Ceroplastes_rubens_var_C0003d        3.38%    passed     75.08%
+ 104  Ceroplastes_rubens_var_S2011_070a    3.38%    passed     75.08%
+ 105  Ceroplastes_rubens_var_S2011_070b    3.38%    passed     75.08%
+ 106  Ceroplastes_rubens2_S2011_030a       3.38%    passed     56.80%
+ 107  Ceroplastes_rubens2_S2011_030b       3.38%    passed     56.80%
+ 108  Ceroplastes_rubens2_S2011_046a       3.38%    passed     62.50%
+ 109  Ceroplastes_rubens2_S2011_046b       3.38%    passed     62.50%
+ 110  Parasaissetia_S2_240a                4.08%    passed     67.67%
+ 111  Parasaissetia_S2_240b                4.08%    passed     67.67%
+ 112  Pulvinaria_aurantii_S2_161a          3.27%    passed     95.65%
+ 113  Pulvinaria_aurantii_S2_161b          3.27%    passed     95.65%
+****  TOTAL                                3.15%  0 sequences failed composition chi2 test (p-value<5%; df=3)
+NOTE: Acanthococcus_sp_S3_523b is identical to Acanthococcus_sp_S3_523a but kept for subsequent analysis
+NOTE: Ceroplastes_ceriferus_S2011_141a is identical to Ceroplastes_ceriferus_C0020B but kept for subsequent analysis
+NOTE: Ceroplastes_ceriferus_S2011_001b is identical to Ceroplastes_ceriferus_S2011_001a but kept for subsequent analysis
+NOTE: Ceroplastes_ceriferus_S2011_010a2 is identical to Ceroplastes_ceriferus_S2011_010a1 but kept for subsequent analysis
+NOTE: Ceroplastes_ceriferus_S2011_028b is identical to Ceroplastes_ceriferus_S2011_028a but kept for subsequent analysis
+NOTE: Ceroplastes_ceriferus_S2011_053b is identical to Ceroplastes_ceriferus_S2011_053a but kept for subsequent analysis
+NOTE: Ceroplastes_ceriferus_S2011_135b is identical to Ceroplastes_ceriferus_S2011_135a but kept for subsequent analysis
+NOTE: Ceroplastes_japonicus_S2011_002b is identical to Ceroplastes_japonicus_S2011_002a but kept for subsequent analysis
+NOTE: Ceroplastes_japonicus_S2011_005b is identical to Ceroplastes_japonicus_S2011_005a but kept for subsequent analysis
+NOTE: Ceroplastes_japonicus_S2011_006b is identical to Ceroplastes_japonicus_S2011_006a but kept for subsequent analysis
+NOTE: Ceroplastes_japonicus_S2011_04a is identical to Ceroplastes_japonicus_S2011_016a but kept for subsequent analysis
+NOTE: Ceroplastes_japonicus_S2011_016c is identical to Ceroplastes_japonicus_S2011_016b but kept for subsequent analysis
+NOTE: Ceroplastes_japonicus_S2011_074b is identical to Ceroplastes_japonicus_S2011_074a but kept for subsequent analysis
+NOTE: Ceroplastes_japonicus_S2011_137b is identical to Ceroplastes_japonicus_S2011_137a but kept for subsequent analysis
+NOTE: Ceroplastes_rubens_S2011_003b is identical to Ceroplastes_rubens_S2011_003a but kept for subsequent analysis
+NOTE: Ceroplastes_rubens_S2011_030b is identical to Ceroplastes_rubens_S2011_030a but kept for subsequent analysis
+NOTE: Ceroplastes_rubens_S2011_076b is identical to Ceroplastes_rubens_S2011_076a but kept for subsequent analysis
+NOTE: Ceroplastes_rubens_var_C0002b is identical to Ceroplastes_rubens_var_C0002a but kept for subsequent analysis
+NOTE: Parasaissetia_S2_240b is identical to Parasaissetia_S2_240a but kept for subsequent analysis
+NOTE: Pulvinaria_aurantii_S2_161b is identical to Pulvinaria_aurantii_S2_161a but kept for subsequent analysis
+Checking for duplicate sequences: done in 0.418714 secs using 186.6% CPU
+Identifying sites to remove: done in 0.0015405 secs
+NOTE: 73 identical sequences (see below) will be ignored for subsequent analysis
+NOTE: Acanthococcus_sp_S3_523c (identical to Acanthococcus_sp_S3_523a) is ignored but added at the end
+NOTE: Acanthococcus_sp_S3_523d (identical to Acanthococcus_sp_S3_523a) is ignored but added at the end
+NOTE: Ceroplastes_ceriferus_S2011_141b (identical to Ceroplastes_ceriferus_C0020B) is ignored but added at the end
+NOTE: Ceroplastes_ceriferus_S2011_141c (identical to Ceroplastes_ceriferus_C0020B) is ignored but added at the end
+NOTE: Ceroplastes_ceriferus_S2011_001c (identical to Ceroplastes_ceriferus_S2011_001a) is ignored but added at the end
+NOTE: Ceroplastes_ceriferus_S2011_022a (identical to Ceroplastes_ceriferus_S2011_001a) is ignored but added at the end
+NOTE: Ceroplastes_ceriferus_S2011_022b (identical to Ceroplastes_ceriferus_S2011_001a) is ignored but added at the end
+NOTE: Ceroplastes_ceriferus_S2011_022c (identical to Ceroplastes_ceriferus_S2011_001a) is ignored but added at the end
+NOTE: Ceroplastes_ceriferus_S2011_146a (identical to Ceroplastes_ceriferus_S2011_001a) is ignored but added at the end
+NOTE: Ceroplastes_ceriferus_S2011_146b (identical to Ceroplastes_ceriferus_S2011_001a) is ignored but added at the end
+NOTE: Ceroplastes_ceriferus_S2011_146c (identical to Ceroplastes_ceriferus_S2011_001a) is ignored but added at the end
+NOTE: Ceroplastes_ceriferus_S2011_010b1 (identical to Ceroplastes_ceriferus_S2011_010a1) is ignored but added at the end
+NOTE: Ceroplastes_ceriferus_S2011_010b2 (identical to Ceroplastes_ceriferus_S2011_010a1) is ignored but added at the end
+NOTE: Ceroplastes_ceriferus_S2011_135c (identical to Ceroplastes_ceriferus_S2011_135a) is ignored but added at the end
+NOTE: Ceroplastes_ceriferus_S2011_135d (identical to Ceroplastes_ceriferus_S2011_135a) is ignored but added at the end
+NOTE: Ceroplastes_ceriferus_S2011_135e (identical to Ceroplastes_ceriferus_S2011_135a) is ignored but added at the end
+NOTE: Ceroplastes_japonicus_S2011_014a (identical to Ceroplastes_japonicus_S2011_005a) is ignored but added at the end
+NOTE: Ceroplastes_japonicus_S2011_014b (identical to Ceroplastes_japonicus_S2011_005a) is ignored but added at the end
+NOTE: Ceroplastes_japonicus_S2011_014c (identical to Ceroplastes_japonicus_S2011_005a) is ignored but added at the end
+NOTE: Ceroplastes_japonicus_S2011_138a (identical to Ceroplastes_japonicus_S2011_005a) is ignored but added at the end
+NOTE: Ceroplastes_japonicus_S2011_138b (identical to Ceroplastes_japonicus_S2011_005a) is ignored but added at the end
+NOTE: Ceroplastes_japonicus_S2011_138c (identical to Ceroplastes_japonicus_S2011_005a) is ignored but added at the end
+NOTE: Ceroplastes_japonicus_S2011_006c (identical to Ceroplastes_japonicus_S2011_006a) is ignored but added at the end
+NOTE: Ceroplastes_japonicus_S2011_04b (identical to Ceroplastes_japonicus_S2011_016a) is ignored but added at the end
+NOTE: Ceroplastes_japonicus_S2011_051a (identical to Ceroplastes_japonicus_S2011_016a) is ignored but added at the end
+NOTE: Ceroplastes_japonicus_S2011_051b (identical to Ceroplastes_japonicus_S2011_016a) is ignored but added at the end
+NOTE: Ceroplastes_japonicus_S2011_085a (identical to Ceroplastes_japonicus_S2011_016a) is ignored but added at the end
+NOTE: Ceroplastes_japonicus_S2011_085b (identical to Ceroplastes_japonicus_S2011_016a) is ignored but added at the end
+NOTE: Ceroplastes_japonicus_S2011_085c (identical to Ceroplastes_japonicus_S2011_016a) is ignored but added at the end
+NOTE: Ceroplastes_japonicus_S2011_139a (identical to Ceroplastes_japonicus_S2011_016a) is ignored but added at the end
+NOTE: Ceroplastes_japonicus_S2011_139b (identical to Ceroplastes_japonicus_S2011_016a) is ignored but added at the end
+NOTE: Ceroplastes_japonicus_S2011_139c (identical to Ceroplastes_japonicus_S2011_016a) is ignored but added at the end
+NOTE: Ceroplastes_japonicus_S2011_139d (identical to Ceroplastes_japonicus_S2011_016a) is ignored but added at the end
+NOTE: Ceroplastes_japonicus_S2011_139e (identical to Ceroplastes_japonicus_S2011_016a) is ignored but added at the end
+NOTE: Ceroplastes_japonicus_S2011_074c (identical to Ceroplastes_japonicus_S2011_074a) is ignored but added at the end
+NOTE: Ceroplastes_japonicus_S2011_082a (identical to Ceroplastes_japonicus_S2011_074a) is ignored but added at the end
+NOTE: Ceroplastes_japonicus_S2011_082b (identical to Ceroplastes_japonicus_S2011_074a) is ignored but added at the end
+NOTE: Ceroplastes_japonicus_S2011_082c (identical to Ceroplastes_japonicus_S2011_074a) is ignored but added at the end
+NOTE: Ceroplastes_japonicus_S2011_137c (identical to Ceroplastes_japonicus_S2011_137a) is ignored but added at the end
+NOTE: Ceroplastes_rubens_S2011_003c (identical to Ceroplastes_rubens_S2011_003a) is ignored but added at the end
+NOTE: Ceroplastes_rubens_S2011_036a (identical to Ceroplastes_rubens_S2011_003a) is ignored but added at the end
+NOTE: Ceroplastes_rubens_S2011_036b (identical to Ceroplastes_rubens_S2011_003a) is ignored but added at the end
+NOTE: Ceroplastes_rubens_S2011_046a (identical to Ceroplastes_rubens_S2011_003a) is ignored but added at the end
+NOTE: Ceroplastes_rubens_S2011_046b (identical to Ceroplastes_rubens_S2011_003a) is ignored but added at the end
+NOTE: Ceroplastes_rubens_S2011_058a (identical to Ceroplastes_rubens_S2011_003a) is ignored but added at the end
+NOTE: Ceroplastes_rubens_S2011_058b (identical to Ceroplastes_rubens_S2011_003a) is ignored but added at the end
+NOTE: Ceroplastes_rubens_S2011_128a (identical to Ceroplastes_rubens_S2011_003a) is ignored but added at the end
+NOTE: Ceroplastes_rubens_S2011_128b (identical to Ceroplastes_rubens_S2011_003a) is ignored but added at the end
+NOTE: Ceroplastes_rubens_S2011_129a (identical to Ceroplastes_rubens_S2011_003a) is ignored but added at the end
+NOTE: Ceroplastes_rubens_S2011_129b (identical to Ceroplastes_rubens_S2011_003a) is ignored but added at the end
+NOTE: Ceroplastes_rubens_S2011_129c (identical to Ceroplastes_rubens_S2011_003a) is ignored but added at the end
+NOTE: Ceroplastes_rubens_S2011_129d (identical to Ceroplastes_rubens_S2011_003a) is ignored but added at the end
+NOTE: Ceroplastes_rubens_S2011_142a (identical to Ceroplastes_rubens_S2011_003a) is ignored but added at the end
+NOTE: Ceroplastes_rubens_S2011_142b (identical to Ceroplastes_rubens_S2011_003a) is ignored but added at the end
+NOTE: Ceroplastes_rubens_S2011_142c (identical to Ceroplastes_rubens_S2011_003a) is ignored but added at the end
+NOTE: Ceroplastes_rubens_WHa (identical to Ceroplastes_rubens_S2011_003a) is ignored but added at the end
+NOTE: Ceroplastes_rubens_WHb (identical to Ceroplastes_rubens_S2011_003a) is ignored but added at the end
+NOTE: Ceroplastes_rubens_WHc (identical to Ceroplastes_rubens_S2011_003a) is ignored but added at the end
+NOTE: Ceroplastes_rubens_WHd (identical to Ceroplastes_rubens_S2011_003a) is ignored but added at the end
+NOTE: Ceroplastes_rubens2_S2011_046a (identical to Ceroplastes_rubens_S2011_003a) is ignored but added at the end
+NOTE: Ceroplastes_rubens2_S2011_046b (identical to Ceroplastes_rubens_S2011_003a) is ignored but added at the end
+NOTE: Ceroplastes_rubens_S2011_030c (identical to Ceroplastes_rubens_S2011_030a) is ignored but added at the end
+NOTE: Ceroplastes_rubens2_S2011_030a (identical to Ceroplastes_rubens_S2011_030a) is ignored but added at the end
+NOTE: Ceroplastes_rubens2_S2011_030b (identical to Ceroplastes_rubens_S2011_030a) is ignored but added at the end
+NOTE: Ceroplastes_rubens_S2011_076c (identical to Ceroplastes_rubens_S2011_076a) is ignored but added at the end
+NOTE: Ceroplastes_rubens_var_C0002c (identical to Ceroplastes_rubens_var_C0002a) is ignored but added at the end
+NOTE: Ceroplastes_rubens_var_C0002d (identical to Ceroplastes_rubens_var_C0002a) is ignored but added at the end
+NOTE: Ceroplastes_rubens_var_C0003a (identical to Ceroplastes_rubens_var_C0002a) is ignored but added at the end
+NOTE: Ceroplastes_rubens_var_C0003b (identical to Ceroplastes_rubens_var_C0002a) is ignored but added at the end
+NOTE: Ceroplastes_rubens_var_C0003c (identical to Ceroplastes_rubens_var_C0002a) is ignored but added at the end
+NOTE: Ceroplastes_rubens_var_C0003d (identical to Ceroplastes_rubens_var_C0002a) is ignored but added at the end
+NOTE: Ceroplastes_rubens_var_S2011_070a (identical to Ceroplastes_rubens_var_C0002a) is ignored but added at the end
+NOTE: Ceroplastes_rubens_var_S2011_070b (identical to Ceroplastes_rubens_var_C0002a) is ignored but added at the end
+Alignment was printed to ml2\trees\M19870.uniqueseq.phy
+
+For your convenience alignment with unique sequences printed to ml2\trees\M19870.uniqueseq.phy
+
+
+Create initial parsimony tree by phylogenetic likelihood library (PLL)... 0.013 seconds
+Measuring multi-threading efficiency up to 16 CPU cores
+Increase to 10 rounds for branch lengths
+551 trees examined
+Threads: 1 / Time: 16.021 sec / Speedup: 1.000 / Efficiency: 100% / LogL: -7372
+Threads: 2 / Time: 13.569 sec / Speedup: 1.181 / Efficiency: 59% / LogL: -7372
+Threads: 3 / Time: 13.526 sec / Speedup: 1.184 / Efficiency: 39% / LogL: -7372
+Determining AUTO threadcount: done in 43.1798 secs using 194.6% CPU
+BEST NUMBER OF THREADS: 2
+
+Perform fast likelihood tree search using GTR+I+G model...
+Estimate model parameters (epsilon = 5.000)
+Perform nearest neighbor interchange...
+Estimate model parameters (epsilon = 1.000)
+1. Initial log-likelihood: -3097.363
+Optimal log-likelihood: -3097.229
+Rate parameters:  A-C: 2.01321  A-G: 4.28679  A-T: 5.39434  C-G: 4.21134  C-T: 19.92786  G-T: 1.00000
+Base frequencies:  A: 0.297  C: 0.216  G: 0.173  T: 0.314
+Proportion of invariable sites: 0.321
+Gamma shape alpha: 0.904
+Parameters optimization took 1 rounds (0.091 sec)
+Time for fast ML tree search: 0.317 seconds
+
+NOTE: ModelFinder requires 3 MB RAM!
+ModelFinder will test up to 968 DNA models (sample size: 857 epsilon: 0.100) ...
+ No. Model         -LnL         df  AIC          AICc         BIC
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+  1  JC            3296.568     77  6747.136     6762.556     7113.151
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+  2  JC+I          3242.736     78  6641.473     6657.313     7012.241
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+  3  JC+G4         3242.176     78  6640.353     6656.193     7011.121
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+  4  JC+I+G4       3242.254     79  6642.507     6658.775     7018.029
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+  5  JC+R2         3242.062     79  6642.124     6658.391     7017.645
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
++R3 reinitialized from +R2 with factor 0.500
+  6  JC+R3         3242.018     81  6646.036     6663.176     7031.064
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+ 14  JC+I+R2       3242.072     80  6644.143     6660.845     7024.419
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+ 15  JC+I+R3       3242.091     82  6648.182     6665.769     7037.964
+ 24  JC+I          3242.736     78  6641.473     6657.313     7012.241
+ 25  JC+G4         3242.176     78  6640.353     6656.193     7011.121
+ 26  JC+I+G4       3242.254     79  6642.507     6658.775     7018.029
+ 27  JC+R2         3242.062     79  6642.124     6658.391     7017.645
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+ 46  F81+I         3242.740     78  6641.480     6657.321     7012.249
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+ 47  F81+G4        3242.180     78  6640.361     6656.201     7011.129
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+ 48  F81+I+G4      3242.257     79  6642.514     6658.782     7018.036
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+ 49  F81+R2        3242.036     79  6642.072     6658.340     7017.594
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+ 68  F81+F+I       3198.561     81  6559.122     6576.263     6944.151
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+ 69  F81+F+G4      3197.175     81  6556.350     6573.491     6941.378
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+ 70  F81+F+I+G4    3197.324     82  6558.649     6576.235     6948.431
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+ 71  F81+F+R2      3197.357     82  6558.714     6576.301     6948.496
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+ 90  K2P+I         3197.042     79  6552.084     6568.352     6927.605
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+ 91  K2P+G4        3195.836     79  6549.671     6565.939     6925.193
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+ 92  K2P+I+G4      3195.904     80  6551.808     6568.509     6932.083
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+ 93  K2P+R2        3196.007     80  6552.014     6568.715     6932.289
+112  K2P+I         3197.042     79  6552.084     6568.352     6927.605
+113  K2P+G4        3195.836     79  6549.671     6565.939     6925.193
+114  K2P+I+G4      3195.904     80  6551.808     6568.509     6932.083
+115  K2P+R2        3196.007     80  6552.014     6568.715     6932.289
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+134  HKY+I         3197.043     79  6552.087     6568.354     6927.608
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+135  HKY+G4        3195.837     79  6549.674     6565.942     6925.196
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+136  HKY+I+G4      3195.905     80  6551.810     6568.511     6932.085
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+137  HKY+R2        3195.965     80  6551.930     6568.632     6932.206
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+156  HKY+F+I       3143.218     82  6450.435     6468.022     6840.217
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+157  HKY+F+G4      3141.060     82  6446.121     6463.707     6835.903
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+158  HKY+F+I+G4    3141.200     83  6448.400     6466.439     6842.936
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+159  HKY+F+R2      3141.353     83  6448.707     6466.746     6843.242
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+178  TNe+I         3155.748     80  6471.496     6488.197     6851.771
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+179  TNe+G4        3152.773     80  6465.545     6482.246     6845.820
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+180  TNe+I+G4      3153.124     81  6468.248     6485.389     6853.277
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+181  TNe+R2        3152.540     81  6467.081     6484.222     6852.109
+200  TNe+I         3155.748     80  6471.496     6488.197     6851.771
+201  TNe+G4        3152.773     80  6465.545     6482.246     6845.820
+202  TNe+I+G4      3153.124     81  6468.248     6485.389     6853.277
+203  TNe+R2        3152.540     81  6467.081     6484.222     6852.109
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+222  TN+I          3155.747     80  6471.495     6488.196     6851.770
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+223  TN+G4         3152.772     80  6465.543     6482.244     6845.818
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+224  TN+I+G4       3153.121     81  6468.242     6485.383     6853.270
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+225  TN+R2         3152.510     81  6467.019     6484.160     6852.048
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+244  TN+F+I        3113.144     83  6392.289     6410.328     6786.824
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+245  TN+F+G4       3109.651     83  6385.301     6403.340     6779.837
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+246  TN+F+I+G4     3110.042     84  6388.083     6406.581     6787.372
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+247  TN+F+R2       3109.414     84  6386.827     6405.325     6786.116
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+266  K3P+I         3178.637     80  6517.273     6533.974     6897.548
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+267  K3P+G4        3177.759     80  6515.518     6532.219     6895.793
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+268  K3P+I+G4      3177.906     81  6517.812     6534.953     6902.840
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+269  K3P+R2        3177.591     81  6517.182     6534.322     6902.210
+288  K3P+I         3178.637     80  6517.273     6533.974     6897.548
+289  K3P+G4        3177.759     80  6515.518     6532.219     6895.793
+290  K3P+I+G4      3177.906     81  6517.812     6534.953     6902.840
+291  K3P+R2        3177.591     81  6517.182     6534.322     6902.210
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+310  K3Pu+I        3178.637     80  6517.273     6533.974     6897.548
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+311  K3Pu+G4       3177.759     80  6515.519     6532.220     6895.794
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+312  K3Pu+I+G4     3177.906     81  6517.812     6534.952     6902.840
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+313  K3Pu+R2       3177.583     81  6517.165     6534.306     6902.194
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+332  K3Pu+F+I      3132.098     83  6430.197     6448.235     6824.732
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+333  K3Pu+F+G4     3130.149     83  6426.298     6444.336     6820.833
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+334  K3Pu+F+I+G4   3130.386     84  6428.771     6447.268     6828.060
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+335  K3Pu+F+R2     3130.216     84  6428.432     6446.930     6827.721
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+354  TPM2+I        3181.193     80  6522.387     6539.088     6902.662
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+355  TPM2+G4       3179.835     80  6519.670     6536.371     6899.945
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+356  TPM2+I+G4     3179.843     81  6521.685     6538.826     6906.714
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+357  TPM2+R2       3179.938     81  6521.877     6539.018     6906.905
+376  TPM2+I        3181.193     80  6522.387     6539.088     6902.662
+377  TPM2+G4       3179.835     80  6519.670     6536.371     6899.945
+378  TPM2+I+G4     3179.843     81  6521.685     6538.826     6906.714
+379  TPM2+R2       3179.938     81  6521.877     6539.018     6906.905
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+398  TPM2u+I       3181.192     80  6522.384     6539.085     6902.659
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+399  TPM2u+G4      3179.833     80  6519.667     6536.368     6899.942
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+400  TPM2u+I+G4    3179.841     81  6521.683     6538.823     6906.711
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+401  TPM2u+R2      3179.925     81  6521.850     6538.990     6906.878
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+420  TPM2u+F+I     3138.663     83  6443.325     6461.364     6837.861
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+421  TPM2u+F+G4    3137.129     83  6440.258     6458.297     6834.794
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+422  TPM2u+F+I+G4  3137.283     84  6442.567     6461.064     6841.855
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+423  TPM2u+F+R2    3137.127     84  6442.255     6460.752     6841.544
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+442  TPM3+I        3193.311     80  6546.623     6563.324     6926.898
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+443  TPM3+G4       3191.421     80  6542.842     6559.543     6923.117
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+444  TPM3+I+G4     3191.421     81  6544.842     6561.983     6929.871
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+445  TPM3+R2       3191.805     81  6545.610     6562.751     6930.639
+464  TPM3+I        3193.311     80  6546.623     6563.324     6926.898
+465  TPM3+G4       3191.421     80  6542.842     6559.543     6923.117
+466  TPM3+I+G4     3191.421     81  6544.842     6561.983     6929.871
+467  TPM3+R2       3191.805     81  6545.610     6562.751     6930.639
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+486  TPM3u+I       3193.310     80  6546.619     6563.320     6926.894
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+487  TPM3u+G4      3191.419     80  6542.839     6559.540     6923.114
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+488  TPM3u+I+G4    3191.420     81  6544.839     6561.980     6929.868
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+489  TPM3u+R2      3191.746     81  6545.493     6562.633     6930.521
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+508  TPM3u+F+I     3142.159     83  6450.318     6468.357     6844.853
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+509  TPM3u+F+G4    3139.753     83  6445.507     6463.546     6840.042
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+510  TPM3u+F+I+G4  3139.821     84  6447.642     6466.140     6846.931
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+511  TPM3u+F+R2    3139.911     84  6447.821     6466.319     6847.110
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+530  TIMe+I        3137.673     81  6437.346     6454.487     6822.375
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+531  TIMe+G4       3135.043     81  6432.087     6449.228     6817.115
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+532  TIMe+I+G4     3135.424     82  6434.847     6452.434     6824.629
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+533  TIMe+R2       3134.578     82  6433.156     6450.742     6822.938
+552  TIMe+I        3137.673     81  6437.346     6454.487     6822.375
+553  TIMe+G4       3135.043     81  6432.087     6449.228     6817.115
+554  TIMe+I+G4     3135.424     82  6434.847     6452.434     6824.629
+555  TIMe+R2       3134.578     82  6433.156     6450.742     6822.938
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+574  TIM+I         3137.673     81  6437.347     6454.487     6822.375
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+575  TIM+G4        3135.043     81  6432.087     6449.227     6817.115
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+576  TIM+I+G4      3135.421     82  6434.842     6452.429     6824.624
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+577  TIM+R2        3134.572     82  6433.144     6450.731     6822.926
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+596  TIM+F+I       3101.833     84  6371.667     6390.164     6770.956
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+597  TIM+F+G4      3098.447     84  6364.894     6383.392     6764.183
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+598  TIM+F+I+G4    3098.948     85  6367.897     6386.859     6771.939
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+599  TIM+F+R2      3097.979     85  6365.958     6384.920     6770.000
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+618  TIM2e+I       3141.304     81  6444.608     6461.748     6829.636
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+619  TIM2e+G4      3139.357     81  6440.714     6457.855     6825.742
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+620  TIM2e+I+G4    3139.606     82  6443.213     6460.800     6832.995
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+621  TIM2e+R2      3138.952     82  6441.903     6459.490     6831.685
+640  TIM2e+I       3141.304     81  6444.608     6461.748     6829.636
+641  TIM2e+G4      3139.357     81  6440.714     6457.855     6825.742
+642  TIM2e+I+G4    3139.606     82  6443.213     6460.800     6832.995
+643  TIM2e+R2      3138.952     82  6441.903     6459.490     6831.685
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+662  TIM2+I        3141.303     81  6444.606     6461.747     6829.634
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+663  TIM2+G4       3139.356     81  6440.712     6457.853     6825.740
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+664  TIM2+I+G4     3139.601     82  6443.201     6460.788     6832.983
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+665  TIM2+R2       3138.941     82  6441.882     6459.468     6831.664
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+684  TIM2+F+I      3107.972     84  6383.943     6402.441     6783.232
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+685  TIM2+F+G4     3105.364     84  6378.728     6397.225     6778.017
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+686  TIM2+F+I+G4   3105.713     85  6381.426     6400.388     6785.468
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+687  TIM2+F+R2     3104.852     85  6379.705     6398.667     6783.747
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+706  TIM3e+I       3152.014     81  6466.029     6483.169     6851.057
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+707  TIM3e+G4      3147.817     81  6457.633     6474.774     6842.662
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+708  TIM3e+I+G4    3148.149     82  6460.297     6477.884     6850.079
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+709  TIM3e+R2      3147.731     82  6459.463     6477.049     6849.245
+728  TIM3e+I       3152.014     81  6466.029     6483.169     6851.057
+729  TIM3e+G4      3147.817     81  6457.633     6474.774     6842.662
+730  TIM3e+I+G4    3148.149     82  6460.297     6477.884     6850.079
+731  TIM3e+R2      3147.731     82  6459.463     6477.049     6849.245
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+750  TIM3+I        3152.014     81  6466.028     6483.169     6851.057
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+751  TIM3+G4       3147.816     81  6457.631     6474.772     6842.660
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+752  TIM3+I+G4     3148.147     82  6460.293     6477.880     6850.075
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+753  TIM3+R2       3147.676     82  6459.352     6476.938     6849.133
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+772  TIM3+F+I      3112.258     84  6392.517     6411.014     6791.805
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+773  TIM3+F+G4     3108.594     84  6385.188     6403.685     6784.477
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+774  TIM3+F+I+G4   3108.923     85  6387.846     6406.808     6791.888
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+775  TIM3+F+R2     3108.405     85  6386.810     6405.772     6790.852
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+794  TVMe+I        3167.692     82  6499.383     6516.970     6889.165
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+795  TVMe+G4       3166.271     82  6496.543     6514.129     6886.325
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+796  TVMe+I+G4     3166.344     83  6498.689     6516.728     6893.224
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+797  TVMe+R2       3166.208     83  6498.416     6516.455     6892.951
+816  TVMe+I        3167.692     82  6499.383     6516.970     6889.165
+817  TVMe+G4       3166.271     82  6496.543     6514.129     6886.325
+818  TVMe+I+G4     3166.344     83  6498.689     6516.728     6893.224
+819  TVMe+R2       3166.208     83  6498.416     6516.455     6892.951
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+838  TVM+I         3167.691     82  6499.383     6516.969     6889.165
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+839  TVM+G4        3166.270     82  6496.539     6514.126     6886.321
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+840  TVM+I+G4      3166.344     83  6498.688     6516.727     6893.223
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+841  TVM+R2        3166.199     83  6498.397     6516.436     6892.933
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+860  TVM+F+I       3129.800     85  6429.600     6448.563     6833.642
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+861  TVM+F+G4      3128.308     85  6426.615     6445.577     6830.657
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+862  TVM+F+I+G4    3128.564     86  6429.129     6448.562     6837.924
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+863  TVM+F+R2      3128.173     86  6428.345     6447.779     6837.141
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+882  SYM+I         3127.925     83  6421.851     6439.890     6816.386
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+883  SYM+G4        3125.331     83  6416.661     6434.700     6811.197
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+884  SYM+I+G4      3125.674     84  6419.347     6437.845     6818.636
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+885  SYM+R2        3124.907     84  6417.814     6436.312     6817.103
+904  SYM+I         3127.925     83  6421.851     6439.890     6816.386
+905  SYM+G4        3125.331     83  6416.661     6434.700     6811.197
+906  SYM+I+G4      3125.674     84  6419.347     6437.845     6818.636
+907  SYM+R2        3124.907     84  6417.814     6436.312     6817.103
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+926  GTR+I         3127.925     83  6421.850     6439.889     6816.385
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+927  GTR+G4        3125.330     83  6416.661     6434.700     6811.196
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+928  GTR+I+G4      3125.673     84  6419.347     6437.844     6818.636
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+929  GTR+R2        3124.906     84  6417.812     6436.310     6817.101
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+948  GTR+F+I       3099.492     86  6370.983     6390.417     6779.779
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+949  GTR+F+G4      3096.696     86  6365.391     6384.825     6774.187
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+950  GTR+F+I+G4    3097.198     87  6368.396     6388.308     6781.945
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+951  GTR+F+R2      3096.063     87  6366.126     6386.038     6779.675
+Akaike Information Criterion:           TIM+F+G4
+Corrected Akaike Information Criterion: TIM+F+G4
+Bayesian Information Criterion:         TIM+F+G4
+Best-fit model: TIM+F+G4 chosen according to BIC
+
+All model information printed to ml2\trees\M19870.model.gz
+CPU time for ModelFinder: 99.984 seconds (0h:1m:39s)
+Wall-clock time for ModelFinder: 53.728 seconds (0h:0m:53s)
+Generating 1000 samples for ultrafast bootstrap (seed: 850721)...
+
+NOTE: 1 MB RAM (0 GB) is required!
+WARNING: Number of threads seems too high for short alignments. Use -T AUTO to determine best number of threads.
+Estimate model parameters (epsilon = 0.100)
+1. Initial log-likelihood: -3098.602
+2. Current log-likelihood: -3098.455
+Optimal log-likelihood: -3098.446
+Rate parameters:  A-C: 1.00000  A-G: 2.92803  A-T: 3.51170  C-G: 3.51170  C-T: 14.19857  G-T: 1.00000
+Base frequencies:  A: 0.297  C: 0.216  G: 0.173  T: 0.314
+Gamma shape alpha: 0.345
+Parameters optimization took 2 rounds (0.076 sec)
+Wrote distance file to... 
+Computing ML distances based on estimated model parameters...
+Calculating distance matrix: done in 0.0094513 secs
+Computing ML distances took 0.032642 sec (of wall-clock time) 0.046875 sec (of CPU time)
+Setting up auxiliary I and S matrices: done in 0.0001666 secs
+Constructing RapidNJ tree: done in 0.0004009 secs
+Computing RapidNJ tree took 0.018119 sec (of wall-clock time) 0.046875 sec (of CPU time)
+Log-likelihood of RapidNJ tree: -3102.420
+--------------------------------------------------------------------
+|             INITIALIZING CANDIDATE TREE SET                      |
+--------------------------------------------------------------------
+Generating 98 parsimony trees... 0.546 second
+Computing log-likelihood of 98 initial trees ... 0.399 seconds
+Current best score: -3098.446
+
+Do NNI search on 20 best initial trees
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 1: -3098.446
+Iteration 10 / LogL: -3098.446 / Time: 0h:0m:57s
+Iteration 20 / LogL: -3098.446 / Time: 0h:0m:59s
+Finish initializing candidate tree set (20)
+Current best tree score: -3098.446 / CPU time: 5.195
+Number of iterations: 20
+--------------------------------------------------------------------
+|               OPTIMIZING CANDIDATE TREE SET                      |
+--------------------------------------------------------------------
+Iteration 30 / LogL: -3098.456 / Time: 0h:1m:1s (0h:0m:20s left)
+Iteration 40 / LogL: -3098.450 / Time: 0h:1m:4s (0h:0m:16s left)
+Iteration 50 / LogL: -3098.455 / Time: 0h:1m:7s (0h:0m:13s left)
+Iteration 60 / LogL: -3098.450 / Time: 0h:1m:9s (0h:0m:11s left)
+Iteration 70 / LogL: -3098.450 / Time: 0h:1m:12s (0h:0m:8s left)
+Iteration 80 / LogL: -3098.451 / Time: 0h:1m:14s (0h:0m:5s left)
+Iteration 90 / LogL: -3098.460 / Time: 0h:1m:17s (0h:0m:2s left)
+Iteration 100 / LogL: -3098.452 / Time: 0h:1m:19s (0h:0m:0s left)
+Refining ufboot trees with NNI 1 branch...
+100 samples done
+200 samples done
+300 samples done
+400 samples done
+500 samples done
+600 samples done
+700 samples done
+800 samples done
+900 samples done
+1000 samples done
+Total 994 ufboot trees refined
+TREE SEARCH COMPLETED AFTER 102 ITERATIONS / Time: 0h:2m:0s
+
+--------------------------------------------------------------------
+|                    FINALIZING TREE SEARCH                        |
+--------------------------------------------------------------------
+Performs final model parameters optimization
+Estimate model parameters (epsilon = 0.010)
+1. Initial log-likelihood: -3098.446
+Optimal log-likelihood: -3098.446
+Rate parameters:  A-C: 1.00000  A-G: 2.94071  A-T: 3.52177  C-G: 3.52177  C-T: 14.20101  G-T: 1.00000
+Base frequencies:  A: 0.297  C: 0.216  G: 0.173  T: 0.314
+Gamma shape alpha: 0.346
+Parameters optimization took 1 rounds (0.070 sec)
+BEST SCORE FOUND : -3098.446
+Creating bootstrap support values...
+Split supports printed to NEXUS file ml2\trees\M19870.splits.nex
+Total tree length: 0.847
+
+Total number of iterations: 102
+CPU time used for tree search: 124.281 sec (0h:2m:4s)
+Wall-clock time used for tree search: 66.598 sec (0h:1m:6s)
+Total CPU time used: 225.484 sec (0h:3m:45s)
+Total wall-clock time used: 121.492 sec (0h:2m:1s)
+UFBoot trees printed to ml2\trees\M19870.ufboot
+
+Computing bootstrap consensus tree...
+Reading input file ml2\trees\M19870.splits.nex...
+40 taxa and 407 splits.
+Consensus tree written to ml2\trees\M19870.contree
+Reading input trees file ml2\trees\M19870.contree
+Log-likelihood of consensus tree: -3098.495
+
+Analysis results written to: 
+  IQ-TREE report:                ml2\trees\M19870.iqtree
+  Maximum-likelihood tree:       ml2\trees\M19870.treefile
+  Likelihood distances:          ml2\trees\M19870.mldist
+
+Ultrafast bootstrap approximation results written to:
+  Split support values:          ml2\trees\M19870.splits.nex
+  Consensus tree:                ml2\trees\M19870.contree
+  UFBoot trees:                  ml2\trees\M19870.ufboot
+  Screen log file:               ml2\trees\M19870.log
+
+Date and Time: Mon May 04 13:04:05 2026

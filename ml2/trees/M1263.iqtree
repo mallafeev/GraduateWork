@@ -1,0 +1,445 @@
+IQ-TREE 3.1.1 built Apr  2 2026
+
+Input file name: ml2\datasets\M1263.nex
+Type of analysis: ModelFinder + tree reconstruction + ultrafast bootstrap (1000 replicates)
+Random seed number: 386682
+
+REFERENCES
+----------
+
+To cite IQ-TREE 3 please use:
+
+Thomas K.F. Wong, Nhan Ly-Trong, Huaiyan Ren, Hector Banos, Andrew J. Roger,
+Edward Susko, Chris Bielow, Nicola De Maio, Nick Goldman, Matthew W. Hahn,
+Gavin Huttley, Robert Lanfear, Bui Quang Minh (2025)
+IQ-TREE 3: Phylogenomic Inference Software using Complex Evolutionary Models.
+Submitted.
+
+Since you used ModelFinder please also cite: 
+
+Subha Kalyaanamoorthy, Bui Quang Minh, Thomas KF Wong, Arndt von Haeseler,
+and Lars S Jermiin (2017) ModelFinder: Fast model selection for
+accurate phylogenetic estimates. Nature Methods, 14:587–589.
+https://doi.org/10.1038/nmeth.4285
+
+Since you used ultrafast bootstrap (UFBoot) please also cite: 
+
+Diep Thi Hoang, Olga Chernomor, Arndt von Haeseler, Bui Quang Minh,
+and Le Sy Vinh (2018) UFBoot2: Improving the ultrafast bootstrap
+approximation. Mol. Biol. Evol., 35:518–522.
+https://doi.org/10.1093/molbev/msx281
+
+SEQUENCE ALIGNMENT
+------------------
+
+NOTE: Alignment sequence type is auto-detected. If in doubt, specify it via -st option.
+Input data: 27 sequences with 540 nucleotide sites
+Number of constant sites: 369 (= 68.3333% of all sites)
+Number of invariant (constant or ambiguous constant) sites: 369 (= 68.3333% of all sites)
+Number of parsimony informative sites: 94
+Number of distinct site patterns: 227
+
+ModelFinder
+-----------
+
+Best-fit model according to BIC: K3Pu+F+G4
+
+List of models sorted by BIC scores: 
+
+Model                  LogL         AIC      w-AIC        AICc     w-AICc         BIC      w-BIC
+K3Pu+F+G4         -2151.526    4417.051 +   0.0583    4430.769 +   0.0939    4661.671 +    0.394
+K3Pu+F+I          -2151.648    4417.296 +   0.0516    4431.014 +   0.0831    4661.916 +    0.349
+TIM+F+G4          -2149.600    4415.200 +    0.147    4429.429 +    0.184    4664.111 +    0.116
+TIM+F+I           -2149.963    4415.925 +    0.102    4430.154 +    0.128    4664.836 +   0.0809
+K3Pu+F+R2         -2151.479    4418.958 -   0.0225    4433.187 -    0.028    4667.869 -   0.0178
+TIM+F+R2          -2149.376    4416.751 +   0.0677    4431.501 +   0.0651    4669.954 -  0.00626
+TVM+F+G4          -2149.451    4416.902 +   0.0628    4431.652 +   0.0604    4670.105 -  0.00581
+K3Pu+F+I+G4       -2152.604    4421.208 -  0.00729    4435.437 -   0.0091    4670.119 -  0.00577
+TVM+F+I           -2150.058    4418.116 -   0.0342    4432.866 -   0.0329    4671.319 -  0.00317
+TPM3u+F+G4        -2156.441    4426.882 - 0.000428    4440.600 - 0.000689    4671.501 -  0.00289
+TPM3u+F+I         -2156.554    4427.108 - 0.000382    4440.826 - 0.000615    4671.727 -  0.00258
+GTR+F+G4          -2147.312    4414.624 +    0.196    4429.906 +    0.145    4672.118 -  0.00212
+TPM2u+F+G4        -2156.969    4427.939 - 0.000252    4441.657 - 0.000406    4672.558 -   0.0017
+HKY+F+I           -2160.127    4432.254 - 2.91e-005    4445.471 - 6.03e-005    4672.582 -  0.00168
+TPM2u+F+I         -2157.022    4428.044 - 0.000239    4441.762 - 0.000385    4672.664 -  0.00162
+TIM3+F+G4         -2153.961    4423.923 -  0.00188    4438.152 -  0.00234    4672.834 -  0.00148
+HKY+F+G4          -2160.270    4432.540 - 2.53e-005    4445.757 - 5.23e-005    4672.868 -  0.00146
+TIM+F+I+G4        -2150.946    4419.891 -   0.0141    4434.641 -   0.0136    4673.094 -   0.0013
+TIM3+F+I          -2154.227    4424.455 -  0.00144    4438.683 -   0.0018    4673.366 -  0.00114
+GTR+F+I           -2148.223    4416.446 +   0.0789    4431.727 +   0.0582    4673.940 - 0.000854
+TN+F+G4           -2158.239    4430.478 - 7.08e-005    4444.196 - 0.000114    4675.098 - 0.000478
+TN+F+I            -2158.275    4430.550 - 6.83e-005    4444.268 -  0.00011    4675.169 - 0.000462
+TIM2+F+G4         -2155.193    4426.387 - 0.000548    4440.615 - 0.000684    4675.298 - 0.000433
+TIM2+F+I          -2155.578    4427.156 - 0.000373    4441.384 - 0.000465    4676.067 - 0.000295
+TVM+F+R2          -2149.353    4418.707 -   0.0255    4433.989 -   0.0188    4676.201 - 0.000276
+GTR+F+R2          -2147.105    4416.209 +   0.0888    4432.033 -   0.0499    4677.995 - 0.000112
+TVM+F+I+G4        -2150.274    4420.548 -   0.0101    4435.830 -  0.00748    4678.042 -  0.00011
+HKY+F+R2          -2159.948    4433.896 - 1.28e-005    4447.614 - 2.07e-005    4678.515 - 8.66e-005
+TPM3u+F+R2        -2156.828    4429.656 - 0.000107    4443.885 - 0.000133    4678.567 - 8.44e-005
+TIM3+F+R2         -2154.045    4426.090 - 0.000635    4440.840 - 0.000611    4679.293 - 5.87e-005
+TPM2u+F+R2        -2157.246    4430.491 - 7.03e-005    4444.720 - 8.78e-005    4679.402 - 5.56e-005
+TPM3u+F+I+G4      -2157.466    4430.932 - 5.64e-005    4445.161 - 7.04e-005    4679.843 - 4.46e-005
+TN+F+R2           -2157.737    4431.473 - 4.31e-005    4445.702 - 5.37e-005    4680.384 - 3.4e-005
+GTR+F+I+G4        -2148.362    4418.724 -   0.0253    4434.549 -   0.0142    4680.510 - 3.2e-005
+TPM2u+F+I+G4      -2157.854    4431.707 - 3.83e-005    4445.936 - 4.78e-005    4680.618 - 3.03e-005
+HKY+F+I+G4        -2161.442    4436.885 - 2.88e-006    4450.603 - 4.63e-006    4681.504 - 1.94e-005
+TIM2+F+R2         -2155.203    4428.407 - 0.000199    4443.157 - 0.000192    4681.609 - 1.84e-005
+TIM3+F+I+G4       -2155.353    4428.706 - 0.000172    4443.456 - 0.000165    4681.909 - 1.59e-005
+TIM2+F+I+G4       -2156.384    4430.768 - 6.13e-005    4445.518 - 5.89e-005    4683.970 - 5.66e-006
+TN+F+I+G4         -2159.820    4435.640 - 5.36e-006    4449.868 - 6.69e-006    4684.551 - 4.24e-006
+TVM+G4            -2188.263    4488.527 - 1.76e-017    4501.744 - 3.64e-017    4728.855 - 1.02e-015
+TVMe+G4           -2188.263    4488.527 - 1.76e-017    4501.744 - 3.64e-017    4728.855 - 1.02e-015
+TVMe+G4           -2188.263    4488.527 - 1.76e-017    4501.744 - 3.64e-017    4728.855 - 1.02e-015
+GTR+G4            -2186.397    4486.794 - 4.18e-017    4500.512 - 6.74e-017    4731.414 - 2.82e-016
+SYM+G4            -2186.398    4486.796 - 4.18e-017    4500.514 - 6.73e-017    4731.416 - 2.82e-016
+SYM+G4            -2186.398    4486.796 - 4.18e-017    4500.514 - 6.73e-017    4731.416 - 2.82e-016
+TVM+I             -2190.615    4493.231 - 1.67e-018    4506.448 - 3.46e-018    4733.559 - 9.66e-017
+TVMe+I            -2190.616    4493.233 - 1.67e-018    4506.450 - 3.46e-018    4733.561 - 9.66e-017
+TVMe+I            -2190.616    4493.233 - 1.67e-018    4506.450 - 3.46e-018    4733.561 - 9.66e-017
+TVM+R2            -2188.265    4490.530 - 6.46e-018    4504.247 - 1.04e-017    4735.149 - 4.36e-017
+TVMe+R2           -2188.272    4490.544 - 6.41e-018    4504.262 - 1.03e-017    4735.163 - 4.33e-017
+TVMe+R2           -2188.272    4490.544 - 6.41e-018    4504.262 - 1.03e-017    4735.163 - 4.33e-017
+GTR+I             -2188.307    4490.614 - 6.19e-018    4504.332 - 9.98e-018    4735.233 - 4.18e-017
+SYM+I             -2188.313    4490.626 - 6.15e-018    4504.344 - 9.91e-018    4735.246 - 4.16e-017
+SYM+I             -2188.313    4490.626 - 6.15e-018    4504.344 - 9.91e-018    4735.246 - 4.16e-017
+TVMe+I+G4         -2188.352    4490.704 - 5.92e-018    4504.422 - 9.54e-018    4735.323 -   4e-017
+TVMe+I+G4         -2188.352    4490.704 - 5.92e-018    4504.422 - 9.54e-018    4735.323 -   4e-017
+TVM+I+G4          -2188.352    4490.704 - 5.92e-018    4504.422 - 9.54e-018    4735.323 -   4e-017
+GTR+R2            -2186.348    4488.696 - 1.62e-017    4502.924 - 2.02e-017    4737.607 - 1.28e-017
+SYM+R2            -2186.348    4488.696 - 1.62e-017    4502.925 - 2.02e-017    4737.607 - 1.28e-017
+SYM+R2            -2186.348    4488.696 - 1.62e-017    4502.925 - 2.02e-017    4737.607 - 1.28e-017
+GTR+I+G4          -2186.642    4489.283 - 1.2e-017    4503.512 - 1.5e-017    4738.194 - 9.52e-018
+SYM+I+G4          -2186.642    4489.284 - 1.2e-017    4503.512 - 1.5e-017    4738.195 - 9.52e-018
+SYM+I+G4          -2186.642    4489.284 - 1.2e-017    4503.512 - 1.5e-017    4738.195 - 9.52e-018
+K3P+G4            -2199.593    4507.186 - 1.56e-021    4519.433 - 5.24e-021    4738.930 - 6.59e-018
+K3P+G4            -2199.593    4507.186 - 1.56e-021    4519.433 - 5.24e-021    4738.930 - 6.59e-018
+K3Pu+G4           -2199.593    4507.187 - 1.56e-021    4519.434 - 5.24e-021    4738.931 - 6.58e-018
+K3P+I             -2200.585    4509.169 - 5.79e-022    4521.417 - 1.95e-021    4740.914 - 2.44e-018
+K3P+I             -2200.585    4509.169 - 5.79e-022    4521.417 - 1.95e-021    4740.914 - 2.44e-018
+K3Pu+I            -2200.587    4509.174 - 5.77e-022    4521.421 - 1.94e-021    4740.919 - 2.44e-018
+TIM+G4            -2197.678    4505.356 - 3.89e-021    4518.084 - 1.03e-020    4741.393 - 1.92e-018
+TIMe+G4           -2197.679    4505.357 - 3.89e-021    4518.084 - 1.03e-020    4741.393 - 1.92e-018
+TIMe+G4           -2197.679    4505.357 - 3.89e-021    4518.084 - 1.03e-020    4741.393 - 1.92e-018
+TIMe+I            -2198.292    4506.584 - 2.11e-021    4519.311 - 5.57e-021    4742.620 - 1.04e-018
+TIMe+I            -2198.292    4506.584 - 2.11e-021    4519.311 - 5.57e-021    4742.620 - 1.04e-018
+TIM+I             -2198.292    4506.585 - 2.11e-021    4519.312 - 5.57e-021    4742.621 - 1.04e-018
+TPM3u+G4          -2202.402    4512.804 - 9.4e-023    4525.051 - 3.16e-022    4744.549 - 3.97e-019
+TPM3+G4           -2202.402    4512.804 - 9.4e-023    4525.052 - 3.16e-022    4744.549 - 3.97e-019
+TPM3+G4           -2202.402    4512.804 - 9.4e-023    4525.052 - 3.16e-022    4744.549 - 3.97e-019
+K3Pu+R2           -2199.453    4508.906 - 6.6e-022    4521.633 - 1.75e-021    4744.942 - 3.26e-019
+K3P+R2            -2199.454    4508.908 - 6.59e-022    4521.635 - 1.74e-021    4744.944 - 3.26e-019
+K3P+R2            -2199.454    4508.908 - 6.59e-022    4521.635 - 1.74e-021    4744.944 - 3.26e-019
+K3P+I+G4          -2200.082    4510.164 - 3.52e-022    4522.891 - 9.31e-022    4746.200 - 1.74e-019
+K3P+I+G4          -2200.082    4510.164 - 3.52e-022    4522.891 - 9.31e-022    4746.200 - 1.74e-019
+K3Pu+I+G4         -2200.082    4510.164 - 3.52e-022    4522.891 - 9.31e-022    4746.200 - 1.74e-019
+TIM3e+G4          -2200.548    4511.095 - 2.21e-022    4523.823 - 5.84e-022    4747.132 - 1.09e-019
+TIM3e+G4          -2200.548    4511.095 - 2.21e-022    4523.823 - 5.84e-022    4747.132 - 1.09e-019
+TIM3+G4           -2200.548    4511.095 - 2.21e-022    4523.823 - 5.84e-022    4747.132 - 1.09e-019
+TIM+R2            -2197.473    4506.946 - 1.76e-021    4520.163 - 3.64e-021    4747.274 - 1.02e-019
+TIMe+R2           -2197.488    4506.975 - 1.73e-021    4520.193 - 3.59e-021    4747.303 -   1e-019
+TIMe+R2           -2197.488    4506.975 - 1.73e-021    4520.193 - 3.59e-021    4747.303 -   1e-019
+TIMe+I+G4         -2198.377    4508.754 - 7.12e-022    4521.971 - 1.47e-021    4749.082 - 4.11e-020
+TIMe+I+G4         -2198.377    4508.754 - 7.12e-022    4521.971 - 1.47e-021    4749.082 - 4.11e-020
+TIM+I+G4          -2198.377    4508.754 - 7.12e-022    4521.972 - 1.47e-021    4749.082 - 4.11e-020
+TPM3u+I           -2204.780    4517.560 - 8.72e-024    4529.807 - 2.93e-023    4749.304 - 3.68e-020
+TPM3+I            -2204.780    4517.560 - 8.72e-024    4529.808 - 2.93e-023    4749.305 - 3.68e-020
+TPM3+I            -2204.780    4517.560 - 8.72e-024    4529.808 - 2.93e-023    4749.305 - 3.68e-020
+TIM3+I            -2202.135    4514.269 - 4.52e-023    4526.996 - 1.19e-022    4750.305 - 2.23e-020
+TIM3e+I           -2202.135    4514.270 - 4.52e-023    4526.997 - 1.19e-022    4750.306 - 2.23e-020
+TIM3e+I           -2202.135    4514.270 - 4.52e-023    4526.997 - 1.19e-022    4750.306 - 2.23e-020
+TPM3u+R2          -2202.458    4514.916 - 3.27e-023    4527.644 - 8.65e-023    4750.953 - 1.61e-020
+TPM3+R2           -2202.480    4514.960 - 3.2e-023    4527.687 - 8.46e-023    4750.996 - 1.58e-020
+TPM3+R2           -2202.480    4514.960 - 3.2e-023    4527.687 - 8.46e-023    4750.996 - 1.58e-020
+TPM3+I+G4         -2202.489    4514.977 - 3.17e-023    4527.705 - 8.39e-023    4751.014 - 1.57e-020
+TPM3+I+G4         -2202.489    4514.977 - 3.17e-023    4527.705 - 8.39e-023    4751.014 - 1.57e-020
+TPM3u+I+G4        -2202.489    4514.978 - 3.17e-023    4527.705 - 8.38e-023    4751.014 - 1.57e-020
+TIM3+R2           -2200.497    4512.994 - 8.55e-023    4526.212 - 1.77e-022    4753.322 - 4.94e-021
+TIM3e+R2          -2200.499    4512.997 - 8.54e-023    4526.215 - 1.77e-022    4753.325 - 4.93e-021
+TIM3e+R2          -2200.499    4512.997 - 8.54e-023    4526.215 - 1.77e-022    4753.325 - 4.93e-021
+TIM3e+I+G4        -2200.850    4513.700 - 6.01e-023    4526.917 - 1.24e-022    4754.027 - 3.47e-021
+TIM3e+I+G4        -2200.850    4513.700 - 6.01e-023    4526.917 - 1.24e-022    4754.027 - 3.47e-021
+TIM3+I+G4         -2200.850    4513.700 - 6.01e-023    4526.917 - 1.24e-022    4754.028 - 3.47e-021
+TPM2u+G4          -2207.890    4523.779 - 3.89e-025    4536.027 - 1.31e-024    4755.524 - 1.64e-021
+TPM2+G4           -2207.891    4523.783 - 3.88e-025    4536.030 - 1.31e-024    4755.527 - 1.64e-021
+TPM2+G4           -2207.891    4523.783 - 3.88e-025    4536.030 - 1.31e-024    4755.527 - 1.64e-021
+TIM2+G4           -2205.814    4521.629 - 1.14e-024    4534.356 - 3.01e-024    4757.665 - 5.63e-022
+TIM2e+G4          -2205.815    4521.629 - 1.14e-024    4534.356 - 3.01e-024    4757.666 - 5.63e-022
+TIM2e+G4          -2205.815    4521.629 - 1.14e-024    4534.356 - 3.01e-024    4757.666 - 5.63e-022
+TPM2+I            -2209.247    4526.494 -   1e-025    4538.741 - 3.37e-025    4758.238 - 4.23e-022
+TPM2+I            -2209.247    4526.494 -   1e-025    4538.741 - 3.37e-025    4758.238 - 4.23e-022
+TPM2u+I           -2209.247    4526.494 -   1e-025    4538.741 - 3.36e-025    4758.239 - 4.23e-022
+TIM2+I            -2207.156    4524.311 - 2.98e-025    4537.038 - 7.88e-025    4760.347 - 1.47e-022
+TIM2e+I           -2207.156    4524.311 - 2.98e-025    4537.039 - 7.88e-025    4760.348 - 1.47e-022
+TIM2e+I           -2207.156    4524.311 - 2.98e-025    4537.039 - 7.88e-025    4760.348 - 1.47e-022
+TPM2u+R2          -2207.879    4525.758 - 1.45e-025    4538.486 - 3.82e-025    4761.795 - 7.14e-023
+TPM2+R2           -2207.881    4525.763 - 1.44e-025    4538.490 - 3.82e-025    4761.799 - 7.13e-023
+TPM2+R2           -2207.881    4525.763 - 1.44e-025    4538.490 - 3.82e-025    4761.799 - 7.13e-023
+TPM2+I+G4         -2208.095    4526.191 - 1.16e-025    4538.918 - 3.08e-025    4762.227 - 5.75e-023
+TPM2+I+G4         -2208.095    4526.191 - 1.16e-025    4538.918 - 3.08e-025    4762.227 - 5.75e-023
+TPM2u+I+G4        -2208.096    4526.192 - 1.16e-025    4538.920 - 3.08e-025    4762.229 - 5.75e-023
+TIM2+R2           -2205.700    4523.400 - 4.7e-025    4536.618 - 9.73e-025    4763.728 - 2.72e-023
+TIM2e+R2          -2205.702    4523.403 - 4.7e-025    4536.621 - 9.72e-025    4763.731 - 2.71e-023
+TIM2e+R2          -2205.702    4523.403 - 4.7e-025    4536.621 - 9.72e-025    4763.731 - 2.71e-023
+TIM2+I+G4         -2206.196    4524.393 - 2.86e-025    4537.610 - 5.92e-025    4764.720 - 1.65e-023
+TIM2e+I+G4        -2206.197    4524.394 - 2.86e-025    4537.611 - 5.92e-025    4764.722 - 1.65e-023
+TIM2e+I+G4        -2206.197    4524.394 - 2.86e-025    4537.611 - 5.92e-025    4764.722 - 1.65e-023
+HKY+G4            -2216.849    4539.697 - 1.36e-028    4551.475 - 5.78e-028    4767.151 - 4.91e-024
+K2P+G4            -2216.849    4539.698 - 1.36e-028    4551.476 - 5.78e-028    4767.151 - 4.9e-024
+K2P+G4            -2216.849    4539.698 - 1.36e-028    4551.476 - 5.78e-028    4767.151 - 4.9e-024
+TNe+G4            -2214.709    4537.418 - 4.25e-028    4549.665 - 1.43e-027    4769.163 - 1.79e-024
+TNe+G4            -2214.709    4537.418 - 4.25e-028    4549.665 - 1.43e-027    4769.163 - 1.79e-024
+TN+G4             -2214.709    4537.418 - 4.25e-028    4549.666 - 1.43e-027    4769.163 - 1.79e-024
+HKY+I             -2218.005    4542.011 - 4.28e-029    4553.789 - 1.82e-028    4769.464 - 1.54e-024
+K2P+I             -2218.006    4542.013 - 4.27e-029    4553.791 - 1.82e-028    4769.466 - 1.54e-024
+K2P+I             -2218.006    4542.013 - 4.27e-029    4553.791 - 1.82e-028    4769.466 - 1.54e-024
+TN+I              -2215.508    4539.015 - 1.91e-028    4551.263 - 6.43e-028    4770.760 - 8.07e-025
+TNe+I             -2215.508    4539.016 - 1.91e-028    4551.264 - 6.42e-028    4770.761 - 8.07e-025
+TNe+I             -2215.508    4539.016 - 1.91e-028    4551.264 - 6.42e-028    4770.761 - 8.07e-025
+HKY+R2            -2216.838    4541.676 - 5.06e-029    4553.923 - 1.7e-028    4773.421 - 2.13e-025
+K2P+R2            -2216.845    4541.689 - 5.02e-029    4553.937 - 1.69e-028    4773.434 - 2.12e-025
+K2P+R2            -2216.845    4541.689 - 5.02e-029    4553.937 - 1.69e-028    4773.434 - 2.12e-025
+HKY+I+G4          -2217.193    4542.386 - 3.54e-029    4554.633 - 1.19e-028    4774.131 - 1.5e-025
+K2P+I+G4          -2217.193    4542.386 - 3.54e-029    4554.634 - 1.19e-028    4774.131 - 1.5e-025
+K2P+I+G4          -2217.193    4542.386 - 3.54e-029    4554.634 - 1.19e-028    4774.131 - 1.5e-025
+TN+R2             -2214.496    4538.992 - 1.93e-028    4551.719 - 5.12e-028    4775.028 - 9.55e-026
+TNe+R2            -2214.497    4538.994 - 1.93e-028    4551.721 - 5.11e-028    4775.030 - 9.54e-026
+TNe+R2            -2214.497    4538.994 - 1.93e-028    4551.721 - 5.11e-028    4775.030 - 9.54e-026
+TN+I+G4           -2215.322    4540.643 - 8.47e-029    4553.371 - 2.24e-028    4776.680 - 4.18e-026
+TNe+I+G4          -2215.323    4540.646 - 8.46e-029    4553.373 - 2.24e-028    4776.682 - 4.18e-026
+TNe+I+G4          -2215.323    4540.646 - 8.46e-029    4553.373 - 2.24e-028    4776.682 - 4.18e-026
+F81+F+I           -2244.236    4598.473 - 2.35e-041    4611.200 - 6.21e-041    4834.509 - 1.16e-038
+F81+F+G4          -2245.130    4600.259 - 9.61e-042    4612.987 - 2.54e-041    4836.296 - 4.74e-039
+F81+F+R2          -2244.118    4600.236 - 9.72e-042    4613.453 - 2.01e-041    4840.564 - 5.61e-040
+F81+F+I+G4        -2246.194    4604.388 - 1.22e-042    4617.605 - 2.52e-042    4844.716 - 7.04e-041
+F81+I             -2279.490    4662.981 - 2.31e-055    4674.299 - 1.23e-054    4886.142 - 7.11e-050
+JC+I              -2279.493    4662.985 - 2.3e-055    4674.304 - 1.23e-054    4886.147 - 7.1e-050
+JC+I              -2279.493    4662.985 - 2.3e-055    4674.304 - 1.23e-054    4886.147 - 7.1e-050
+JC+G4             -2279.683    4663.367 - 1.9e-055    4674.685 - 1.02e-054    4886.529 - 5.86e-050
+JC+G4             -2279.683    4663.367 - 1.9e-055    4674.685 - 1.02e-054    4886.529 - 5.86e-050
+F81+G4            -2279.684    4663.367 - 1.9e-055    4674.685 - 1.02e-054    4886.529 - 5.86e-050
+F81+R2            -2279.137    4664.274 - 1.21e-055    4676.052 - 5.13e-055    4891.727 - 4.36e-051
+JC+R2             -2279.150    4664.299 - 1.19e-055    4676.077 - 5.07e-055    4891.752 - 4.3e-051
+JC+R2             -2279.150    4664.299 - 1.19e-055    4676.077 - 5.07e-055    4891.752 - 4.3e-051
+F81+I+G4          -2280.337    4666.674 - 3.64e-056    4678.452 - 1.55e-055    4894.127 - 1.31e-051
+JC+I+G4           -2280.337    4666.674 - 3.64e-056    4678.452 - 1.55e-055    4894.127 - 1.31e-051
+JC+I+G4           -2280.337    4666.674 - 3.64e-056    4678.452 - 1.55e-055    4894.127 - 1.31e-051
+JC+I+R2           -2279.184    4666.368 - 4.24e-056    4678.615 - 1.42e-055    4898.113 - 1.79e-052
+JC+R3             -2279.139    4668.279 - 1.63e-056    4681.006 - 4.31e-056    4904.315 - 8.05e-054
+JC+I+R3           -2279.254    4670.509 - 5.35e-057    4683.726 - 1.11e-056    4910.837 - 3.09e-055
+JC                -2348.254    4798.507 - 8.58e-085    4809.376 - 5.75e-084    5017.377 - 2.26e-078
+
+AIC, w-AIC   : Akaike information criterion scores and weights.
+AICc, w-AICc : Corrected AIC scores and weights.
+BIC, w-BIC   : Bayesian information criterion scores and weights.
+
+Plus signs denote the 95% confidence sets.
+Minus signs denote significant exclusion.
+
+SUBSTITUTION PROCESS
+--------------------
+
+Model of substitution: K3Pu+F+G4
+
+Rate parameter R:
+
+  A-C: 1.0000
+  A-G: 16.5296
+  A-T: 4.4549
+  C-G: 4.4549
+  C-T: 16.5296
+  G-T: 1.0000
+
+State frequencies: (empirical counts from alignment)
+
+  pi(A) = 0.2606
+  pi(C) = 0.1728
+  pi(G) = 0.1914
+  pi(T) = 0.3752
+
+Rate matrix Q:
+
+  A   -0.9645   0.03329    0.6093    0.3219
+  C    0.0502    -1.409    0.1642     1.194
+  G    0.8297    0.1483     -1.05   0.07226
+  T    0.2236    0.5502   0.03686   -0.8107
+
+Model of rate heterogeneity: Gamma with 4 categories
+Gamma shape alpha: 0.226
+
+ Category  Relative_rate  Proportion
+  1         0.001177       0.25
+  2         0.05002        0.25
+  3         0.4482         0.25
+  4         3.501          0.25
+Relative rates are computed as MEAN of the portion of the Gamma distribution falling in the category.
+
+MAXIMUM LIKELIHOOD TREE
+-----------------------
+
+Log-likelihood of the tree: -2151.5197 (s.e. 88.0003)
+Unconstrained log-likelihood (without tree): -2541.6347
+Number of free parameters (#branches + #model parameters): 57
+Akaike information criterion (AIC) score: 4417.0393
+Corrected Akaike information criterion (AICc) score: 4430.7571
+Bayesian information criterion (BIC) score: 4661.6587
+
+Total tree length (sum of branch lengths): 0.8035
+Sum of internal branch lengths: 0.2272 (28.2770% of tree length)
+
+WARNING: 8 near-zero internal branches (<0.0019) should be treated with caution
+         Such branches are denoted by '**' in the figure below
+
+NOTE: Tree is UNROOTED although outgroup taxon 'Austropyrgus_rectus' is drawn at root
+Numbers in parentheses are  ultrafast bootstrap support (%)
+
++---------------------------------------------------Austropyrgus_rectus
+|
+|                                                                       +--Caldicochlea_globosa_A1_1
+|                                                                    +**| (44)
+|                                                                    |  +--Caldicochlea_globosa_A1_3
+|                                                                 +**| (99)
+|                                                                 |  +**Caldicochlea_globosa_A1_2
+|                                                              +**| (66)
+|                                                              |  +**Caldicochlea_globosa_A1_5
+|                                                           +--| (58)
+|                                                           |  +**Caldicochlea_globosa_A1_4
+|                                                        +--| (67)
+|                                                        |  +--Caldicochlea_globosa_Ca1_1
+|                                                     +**| (9)
+|                                                     |  +**Caldicochlea_globosa_Ca1_4
+|                                                  +--| (61)
+|                                                  |  |     +**Caldicochlea_globosa_Cd1_4
+|                                                  |  |  +**| (97)
+|                                                  |  |  |  +**Caldicochlea_harrisi_Cd1_3
+|                                                  |  +--| (88)
+|                                                  |     +--Caldicochlea_globosa_Cd1_5
+|                                               +**| (69)
+|                                               |  +**Caldicochlea_globosa_Cd1_1
+|                                         +-----| (89)
+|                                         |     +-----Caldicochlea_globosa_Ca1_6
+|                                    +----| (64)
+|                                    |    |     +--Caldicochlea_globosa_Ca5B_5
+|                                    |    +-----| (94)
+|                                    |          |              +**Caldicochlea_harrisi_Db4_1
+|                                    |          |           +--| (93)
+|                                    |          |           |  +--Caldicochlea_harrisi_Db4_5
+|                                    |          |        +--| (53)
+|                                    |          |        |  |     +**Caldicochlea_harrisi_H1_1
+|                                    |          |        |  |  +**| (63)
+|                                    |          |        |  |  |  +**Caldicochlea_harrisi_H1_4
+|                                    |          |        |  +--| (98)
+|                                    |          |        |     +**Caldicochlea_harrisi_H1_2
+|                                    |          |     +--| (61)
+|                                    |          |     |  +**Caldicochlea_harrisi_E1_1
+|                                    |          |  +**| (37)
+|                                    |          |  |  +--Caldicochlea_harrisi_E1_4
+|                                    |          +--| (66)
+|                                    |             |   +**Caldicochlea_harrisi_E1_3
+|                                    |             +---| (98)
+|                                    |                 +**Caldicochlea_harrisi_E1_5
+|                      +-------------| (97)
+|                      |             +----------Caldicochlea_harrisi_Ca1_3
+|              +-------| (72)
+|              |       +--------------Fonscochlea_zeidleri
++--------------| (63)
+|              +------------------------Trochidrobia_punicea
+|
++----------------------------------------Jardinella_isolata
+
+Tree in newick format:
+
+(Austropyrgus_rectus:0.1753772086,(((((((((((((Caldicochlea_globosa_A1_1:0.0025941691,Caldicochlea_globosa_A1_3:0.0037698139)44:0.0000584693,Caldicochlea_globosa_A1_2:0.0000010000)99:0.0000028909,Caldicochlea_globosa_A1_5:0.0000010000)66:0.0000010000,Caldicochlea_globosa_A1_4:0.0000010000)58:0.0018578294,Caldicochlea_globosa_Ca1_1:0.0060923794)67:0.0019005907,Caldicochlea_globosa_Ca1_4:0.0000010000)9:0.0000010000,((Caldicochlea_globosa_Cd1_4:0.0000010000,Caldicochlea_harrisi_Cd1_3:0.0000010000)97:0.0018088863,Caldicochlea_globosa_Cd1_5:0.0019147948)88:0.0082527797)61:0.0018779474,Caldicochlea_globosa_Cd1_1:0.0000010000)69:0.0000025136,Caldicochlea_globosa_Ca1_6:0.0209431545)89:0.0214488638,(Caldicochlea_globosa_Ca5B_5:0.0067592577,(((((Caldicochlea_harrisi_Db4_1:0.0000010000,Caldicochlea_harrisi_Db4_5:0.0099025629)93:0.0079758430,((Caldicochlea_harrisi_H1_1:0.0000010000,Caldicochlea_harrisi_H1_4:0.0000010000)63:0.0000010000,Caldicochlea_harrisi_H1_2:0.0000010000)98:0.0120091585)53:0.0027813980,Caldicochlea_harrisi_E1_1:0.0000010000)61:0.0028626612,Caldicochlea_harrisi_E1_4:0.0019378711)37:0.0000022924,(Caldicochlea_harrisi_E1_3:0.0000010000,Caldicochlea_harrisi_E1_5:0.0000010000)98:0.0164990562)66:0.0069685695)94:0.0224384746)64:0.0178502551,Caldicochlea_harrisi_Ca1_3:0.0402496805)97:0.0499787650,Fonscochlea_zeidleri:0.0513177365)72:0.0294640671,Trochidrobia_punicea:0.0868269385)63:0.0514666215,Jardinella_isolata:0.1382429060);
+
+CONSENSUS TREE
+--------------
+
+Consensus tree is constructed from 1000 bootstrap trees
+Log-likelihood of consensus tree: -2151.532494
+Robinson-Foulds distance between ML tree and consensus tree: 2
+
+Branches with support >0.000000% are kept (extended consensus)
+Branch lengths are optimized by maximum likelihood on original alignment
+Numbers in parentheses are bootstrap supports (%)
+
++---------------------------------------------------Austropyrgus_rectus
+|
+|                                                                       +--Caldicochlea_globosa_A1_1
+|                                                                    +--| (44)
+|                                                                    |  +--Caldicochlea_globosa_A1_3
+|                                                                 +--| (99)
+|                                                                 |  +--Caldicochlea_globosa_A1_2
+|                                                              +--| (66)
+|                                                              |  +--Caldicochlea_globosa_A1_5
+|                                                           +--| (58)
+|                                                           |  +--Caldicochlea_globosa_A1_4
+|                                                        +--| (67)
+|                                                        |  +--Caldicochlea_globosa_Ca1_1
+|                                                     +--| (30)
+|                                                     |  |     +--Caldicochlea_globosa_Cd1_4
+|                                                     |  |  +--| (97)
+|                                                     |  |  |  +--Caldicochlea_harrisi_Cd1_3
+|                                                     |  +--| (88)
+|                                                     |     +--Caldicochlea_globosa_Cd1_5
+|                                                  +--| (61)
+|                                                  |  +--Caldicochlea_globosa_Ca1_4
+|                                               +--| (69)
+|                                               |  +--Caldicochlea_globosa_Cd1_1
+|                                         +-----| (89)
+|                                         |     +-----Caldicochlea_globosa_Ca1_6
+|                                    +----| (64)
+|                                    |    |     +--Caldicochlea_globosa_Ca5B_5
+|                                    |    +-----| (94)
+|                                    |          |              +--Caldicochlea_harrisi_Db4_1
+|                                    |          |           +--| (93)
+|                                    |          |           |  +--Caldicochlea_harrisi_Db4_5
+|                                    |          |        +--| (53)
+|                                    |          |        |  |     +--Caldicochlea_harrisi_H1_1
+|                                    |          |        |  |  +--| (63)
+|                                    |          |        |  |  |  +--Caldicochlea_harrisi_H1_4
+|                                    |          |        |  +--| (98)
+|                                    |          |        |     +--Caldicochlea_harrisi_H1_2
+|                                    |          |     +--| (61)
+|                                    |          |     |  +--Caldicochlea_harrisi_E1_1
+|                                    |          |  +--| (37)
+|                                    |          |  |  +--Caldicochlea_harrisi_E1_4
+|                                    |          +--| (66)
+|                                    |             |   +--Caldicochlea_harrisi_E1_3
+|                                    |             +---| (98)
+|                                    |                 +--Caldicochlea_harrisi_E1_5
+|                      +-------------| (97)
+|                      |             +----------Caldicochlea_harrisi_Ca1_3
+|              +-------| (72)
+|              |       +--------------Fonscochlea_zeidleri
++--------------| (63)
+|              +------------------------Trochidrobia_punicea
+|
++----------------------------------------Jardinella_isolata
+
+
+Consensus tree in newick format: 
+
+(Austropyrgus_rectus:0.1754229563,(((((((((((((Caldicochlea_globosa_A1_1:0.0025943685,Caldicochlea_globosa_A1_3:0.0000881449)44:0.0000040683,Caldicochlea_globosa_A1_2:0.0000028201)99:0.0037329249,Caldicochlea_globosa_A1_5:0.0000028201)66:0.0000028201,Caldicochlea_globosa_A1_4:0.0000028201)58:0.0018579659,Caldicochlea_globosa_Ca1_1:0.0060924858)67:0.0019002441,((Caldicochlea_globosa_Cd1_4:0.0000028201,Caldicochlea_harrisi_Cd1_3:0.0000029221)97:0.0013713054,Caldicochlea_globosa_Cd1_5:0.0019327967)88:0.0087019229)30:0.0000028201,Caldicochlea_globosa_Ca1_4:0.0000028201)61:0.0018778149,Caldicochlea_globosa_Cd1_1:0.0000028201)69:0.0000028594,Caldicochlea_globosa_Ca1_6:0.0209458652)89:0.0214530205,(Caldicochlea_globosa_Ca5B_5:0.0067588820,(((((Caldicochlea_harrisi_Db4_1:0.0000028333,Caldicochlea_harrisi_Db4_5:0.0099041988)93:0.0079749518,((Caldicochlea_harrisi_H1_1:0.0000028201,Caldicochlea_harrisi_H1_4:0.0000028333)63:0.0000023848,Caldicochlea_harrisi_H1_2:0.0000028201)98:0.0120100011)53:0.0027805222,Caldicochlea_harrisi_E1_1:0.0000028201)61:0.0028630067,Caldicochlea_harrisi_E1_4:0.0019371271)37:0.0000023848,(Caldicochlea_harrisi_E1_3:0.0000020012,Caldicochlea_harrisi_E1_5:0.0000028201)98:0.0165007123)66:0.0069696850)94:0.0224413660)64:0.0178576291,Caldicochlea_harrisi_Ca1_3:0.0402534468)97:0.0499887817,Fonscochlea_zeidleri:0.0513272607)72:0.0294724163,Trochidrobia_punicea:0.0868422243)63:0.0514832598,Jardinella_isolata:0.1382751648);
+
+ALISIM COMMAND
+--------------
+To simulate an alignment of the same length as the original alignment, using the tree and model parameters estimated from this analysis, you can use the following command:
+
+--alisim simulated_MSA -t ml2\trees\M1263.treefile -m "K3Pu{16.5296,4.45495}+F{0.260621,0.172821,0.191379,0.375178}+G4{0.226045}" --length 540
+
+To mimic the alignment used to produce this analysis, i.e. simulate an alignment of the same length as the original alignment, using the tree and model parameters estimated from this analysis *and* copying the same gap positions as the original alignment, you can use the following command:
+
+iqtree -s ml2\datasets\M1263.nex --alisim mimicked_MSA
+
+To simulate any number of alignments in either of the two commandlines above, use the --num-alignments options, for example mimic 100 alignments you would use the command line:
+
+iqtree -s ml2\datasets\M1263.nex --alisim mimicked_MSA --num-alignments 100
+
+For more information on using AliSim, please visit: www.iqtree.org/doc/AliSim
+
+TIME STAMP
+----------
+
+Date and time: Mon May 04 12:48:28 2026
+Total CPU time used: 199.578125 seconds (0h:3m:19s)
+Total wall-clock time used: 108.3013779 seconds (0h:1m:48s)
+

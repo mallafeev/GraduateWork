@@ -1,0 +1,515 @@
+IQ-TREE 3.1.1 built Apr  2 2026
+
+Input file name: ml2\datasets\M1614.nex
+Type of analysis: ModelFinder + tree reconstruction + ultrafast bootstrap (1000 replicates)
+Random seed number: 991517
+
+REFERENCES
+----------
+
+To cite IQ-TREE 3 please use:
+
+Thomas K.F. Wong, Nhan Ly-Trong, Huaiyan Ren, Hector Banos, Andrew J. Roger,
+Edward Susko, Chris Bielow, Nicola De Maio, Nick Goldman, Matthew W. Hahn,
+Gavin Huttley, Robert Lanfear, Bui Quang Minh (2025)
+IQ-TREE 3: Phylogenomic Inference Software using Complex Evolutionary Models.
+Submitted.
+
+Since you used ModelFinder please also cite: 
+
+Subha Kalyaanamoorthy, Bui Quang Minh, Thomas KF Wong, Arndt von Haeseler,
+and Lars S Jermiin (2017) ModelFinder: Fast model selection for
+accurate phylogenetic estimates. Nature Methods, 14:587–589.
+https://doi.org/10.1038/nmeth.4285
+
+Since you used ultrafast bootstrap (UFBoot) please also cite: 
+
+Diep Thi Hoang, Olga Chernomor, Arndt von Haeseler, Bui Quang Minh,
+and Le Sy Vinh (2018) UFBoot2: Improving the ultrafast bootstrap
+approximation. Mol. Biol. Evol., 35:518–522.
+https://doi.org/10.1093/molbev/msx281
+
+SEQUENCE ALIGNMENT
+------------------
+
+NOTE: Alignment sequence type is auto-detected. If in doubt, specify it via -st option.
+Input data: 54 sequences with 1011 nucleotide sites
+Number of constant sites: 443 (= 43.818% of all sites)
+Number of invariant (constant or ambiguous constant) sites: 443 (= 43.818% of all sites)
+Number of parsimony informative sites: 514
+Number of distinct site patterns: 587
+
+ModelFinder
+-----------
+
+Best-fit model according to BIC: K3Pu+F+I+G4
+
+List of models sorted by BIC scores: 
+
+Model                  LogL         AIC      w-AIC        AICc     w-AICc         BIC      w-BIC
+K3Pu+F+I+G4      -16180.497   32584.993 +    0.131   32613.181 +    0.187   33135.887 +     0.72
+TIM+F+I+G4       -16177.991   32581.981 +    0.591   32610.704 +    0.644   33137.794 +    0.278
+TVM+F+I+G4       -16179.517   32587.034 -   0.0473   32616.297 -   0.0393   33147.765 -   0.0019
+GTR+F+I+G4       -16177.188   32584.377 +    0.178   32614.187 +    0.113   33150.026 - 0.000612
+K3Pu+F+R4        -16179.294   32590.588 -  0.00799   32620.951 -  0.00383   33161.157 - 2.34e-006
+HKY+F+I+G4       -16196.713   32615.426 - 3.23e-008   32643.083 - 5.99e-008   33161.401 - 2.08e-006
+TN+F+I+G4        -16194.181   32612.361 - 1.49e-007   32640.548 - 2.13e-007   33163.255 - 8.21e-007
+TIM+F+R4         -16177.029   32588.058 -   0.0283   32618.978 -   0.0103   33163.545 - 7.1e-007
+TPM2u+F+I+G4     -16195.653   32615.307 - 3.43e-008   32643.494 - 4.88e-008   33166.201 - 1.88e-007
+K3Pu+F+I+R3      -16185.325   32600.650 - 5.22e-005   32630.460 - 3.3e-005   33166.300 - 1.79e-007
+TPM3u+F+I+G4     -16196.171   32616.342 - 2.04e-008   32644.529 - 2.91e-008   33167.236 - 1.12e-007
+TIM2+F+I+G4      -16192.949   32611.897 - 1.89e-007   32640.620 - 2.05e-007   33167.710 - 8.85e-008
+TIM3+F+I+G4      -16193.847   32613.693 - 7.68e-008   32642.416 - 8.36e-008   33169.506 - 3.61e-008
+TIM+F+I+R3       -16184.542   32601.084 - 4.2e-005   32631.447 - 2.02e-005   33171.653 - 1.23e-008
+TVM+F+R4         -16177.954   32591.908 -  0.00413   32623.393 -  0.00113   33172.314 - 8.86e-009
+GTR+F+R4         -16175.901   32589.803 -   0.0118   32621.857 -  0.00244   33175.127 - 2.17e-009
+TVM+F+I+R3       -16183.872   32601.745 - 3.02e-005   32632.665 - 1.1e-005   33177.232 - 7.57e-010
+GTR+F+I+R3       -16183.223   32602.446 - 2.13e-005   32633.931 - 5.82e-006   33182.852 - 4.56e-011
+HKY+F+R4         -16195.752   32621.504 - 1.55e-009   32651.314 - 9.78e-010   33187.154 - 5.31e-012
+TN+F+R4          -16193.411   32618.822 - 5.91e-009   32649.185 - 2.84e-009   33189.391 - 1.73e-012
+TPM2u+F+R4       -16194.778   32621.556 - 1.51e-009   32651.918 - 7.23e-010   33192.124 - 4.42e-013
+TPM3u+F+R4       -16194.979   32621.957 - 1.23e-009   32652.320 - 5.91e-010   33192.526 - 3.62e-013
+TIM2+F+R4        -16191.999   32617.998 - 8.92e-009   32648.919 - 3.24e-009   33193.486 - 2.24e-013
+HKY+F+I+R3       -16202.700   32633.401 - 4.04e-012   32662.664 - 3.35e-012   33194.132 - 1.62e-013
+TIM3+F+R4        -16192.784   32619.569 - 4.07e-009   32650.489 - 1.48e-009   33195.056 - 1.02e-013
+TPM2u+F+I+R3     -16201.261   32632.521 - 6.26e-012   32662.332 - 3.96e-012   33198.171 - 2.15e-014
+TPM3u+F+I+R3     -16201.736   32633.473 - 3.89e-012   32663.283 - 2.46e-012   33199.123 - 1.34e-014
+TN+F+I+R3        -16201.895   32633.789 - 3.32e-012   32663.599 - 2.1e-012   33199.439 - 1.14e-014
+TIM2+F+I+R3      -16200.381   32632.762 - 5.55e-012   32663.124 - 2.66e-012   33203.331 - 1.63e-015
+TIM3+F+I+R3      -16200.985   32633.971 - 3.04e-012   32664.333 - 1.46e-012   33204.539 - 8.91e-016
+TVM+I+G4         -16429.889   33081.778 - 1.75e-109   33109.435 - 3.24e-109   33627.753 - 1.12e-107
+TVMe+I+G4        -16429.904   33081.807 - 1.72e-109   33109.464 - 3.19e-109   33627.782 - 1.11e-107
+TVMe+I+G4        -16429.904   33081.807 - 1.72e-109   33109.464 - 3.19e-109   33627.782 - 1.11e-107
+GTR+I+G4         -16428.063   33080.126 - 3.99e-109   33108.313 - 5.68e-109   33631.020 - 2.19e-108
+SYM+I+G4         -16428.072   33080.145 - 3.95e-109   33108.332 - 5.62e-109   33631.039 - 2.17e-108
+SYM+I+G4         -16428.072   33080.145 - 3.95e-109   33108.332 - 5.62e-109   33631.039 - 2.17e-108
+TVM+R4           -16419.033   33068.065 - 1.66e-106   33097.875 - 1.05e-106   33633.715 - 5.69e-109
+TVMe+R4          -16419.081   33068.161 - 1.58e-106   33097.971 -   1e-106   33633.811 - 5.43e-109
+TVMe+R4          -16419.081   33068.161 - 1.58e-106   33097.971 -   1e-106   33633.811 - 5.43e-109
+GTR+R4           -16416.807   33065.614 - 5.65e-106   33095.976 - 2.71e-106   33636.183 - 1.66e-109
+SYM+R4           -16416.810   33065.620 - 5.63e-106   33095.982 - 2.7e-106   33636.189 - 1.65e-109
+SYM+R4           -16416.810   33065.620 - 5.63e-106   33095.982 - 2.7e-106   33636.189 - 1.65e-109
+TVM+I+R3         -16426.632   33081.263 - 2.26e-109   33110.527 - 1.88e-109   33641.994 - 9.07e-111
+TVMe+I+R3        -16426.693   33081.386 - 2.12e-109   33110.649 - 1.77e-109   33642.117 - 8.53e-111
+TVMe+I+R3        -16426.693   33081.386 - 2.12e-109   33110.649 - 1.77e-109   33642.117 - 8.53e-111
+SYM+I+R3         -16424.151   33078.302 - 9.93e-109   33108.112 - 6.28e-109   33643.952 - 3.41e-111
+SYM+I+R3         -16424.151   33078.302 - 9.93e-109   33108.112 - 6.28e-109   33643.952 - 3.41e-111
+GTR+I+R3         -16424.153   33078.306 - 9.91e-109   33108.116 - 6.27e-109   33643.956 - 3.4e-111
+TPM3u+I+G4       -16478.323   33174.646 - 1.19e-129   33201.261 - 3.72e-129   33710.783 - 1.05e-125
+TPM3+I+G4        -16478.334   33174.668 - 1.18e-129   33201.283 - 3.68e-129   33710.806 - 1.04e-125
+TPM3+I+G4        -16478.334   33174.668 - 1.18e-129   33201.283 - 3.68e-129   33710.806 - 1.04e-125
+TIM3+I+G4        -16476.242   33172.485 - 3.51e-129   33199.618 - 8.46e-129   33713.541 - 2.64e-126
+TIM3e+I+G4       -16476.256   33172.512 - 3.46e-129   33199.645 - 8.35e-129   33713.568 - 2.6e-126
+TIM3e+I+G4       -16476.256   33172.512 - 3.46e-129   33199.645 - 8.35e-129   33713.568 - 2.6e-126
+TIM3+R4          -16465.676   33159.351 - 2.5e-126   33188.615 - 2.07e-126   33720.082 -   1e-127
+TIM3e+R4         -16465.716   33159.432 - 2.4e-126   33188.695 - 1.99e-126   33720.163 - 9.63e-128
+TIM3e+R4         -16465.716   33159.432 - 2.4e-126   33188.695 - 1.99e-126   33720.163 - 9.63e-128
+TPM3u+R4         -16469.631   33165.263 - 1.3e-127   33193.985 - 1.41e-127   33721.075 - 6.1e-128
+TPM3+R4          -16469.774   33165.548 - 1.13e-127   33194.271 - 1.23e-127   33721.361 - 5.29e-128
+TPM3+R4          -16469.774   33165.548 - 1.13e-127   33194.271 - 1.23e-127   33721.361 - 5.29e-128
+TPM3u+I+R3       -16476.113   33176.226 - 5.41e-130   33204.413 - 7.7e-130   33727.120 - 2.97e-129
+TPM3+I+R3        -16476.118   33176.236 - 5.38e-130   33204.423 - 7.66e-130   33727.130 - 2.96e-129
+TPM3+I+R3        -16476.118   33176.236 - 5.38e-130   33204.423 - 7.66e-130   33727.130 - 2.96e-129
+TIM3+I+R3        -16473.253   33172.506 - 3.47e-129   33201.229 - 3.78e-129   33728.319 - 1.63e-129
+TIM3e+I+R3       -16473.297   33172.594 - 3.32e-129   33201.316 - 3.62e-129   33728.406 - 1.56e-129
+TIM3e+I+R3       -16473.297   33172.594 - 3.32e-129   33201.316 - 3.62e-129   33728.406 - 1.56e-129
+K3P+I+G4         -16488.391   33194.781 - 5.06e-134   33221.396 - 1.58e-133   33730.919 - 4.44e-130
+K3P+I+G4         -16488.391   33194.781 - 5.06e-134   33221.396 - 1.58e-133   33730.919 - 4.44e-130
+K3Pu+I+G4        -16488.393   33194.785 - 5.05e-134   33221.400 - 1.58e-133   33730.923 - 4.44e-130
+TIM+I+G4         -16486.370   33192.740 - 1.4e-133   33219.873 - 3.38e-133   33733.797 - 1.05e-130
+TIMe+I+G4        -16486.375   33192.749 - 1.4e-133   33219.882 - 3.37e-133   33733.806 - 1.05e-130
+TIMe+I+G4        -16486.375   33192.749 - 1.4e-133   33219.882 - 3.37e-133   33733.806 - 1.05e-130
+K3Pu+R4          -16477.289   33180.577 - 6.14e-131   33209.300 - 6.69e-131   33736.390 - 2.88e-131
+TIM+R4           -16473.904   33175.808 - 6.66e-130   33205.071 - 5.54e-130   33736.539 - 2.68e-131
+K3P+R4           -16477.383   33180.766 - 5.59e-131   33209.488 - 6.08e-131   33736.579 - 2.62e-131
+K3P+R4           -16477.383   33180.766 - 5.59e-131   33209.488 - 6.08e-131   33736.579 - 2.62e-131
+TIMe+R4          -16473.997   33175.994 - 6.07e-130   33205.258 - 5.04e-130   33736.726 - 2.44e-131
+TIMe+R4          -16473.997   33175.994 - 6.07e-130   33205.258 - 5.04e-130   33736.726 - 2.44e-131
+K3Pu+I+R3        -16484.977   33193.953 - 7.65e-134   33222.140 - 1.09e-133   33744.847 - 4.2e-133
+K3P+I+R3         -16485.004   33194.008 - 7.44e-134   33222.195 - 1.06e-133   33744.902 - 4.09e-133
+K3P+I+R3         -16485.004   33194.008 - 7.44e-134   33222.195 - 1.06e-133   33744.902 - 4.09e-133
+TIM+I+R3         -16481.710   33189.421 - 7.37e-133   33218.143 - 8.03e-133   33745.233 - 3.46e-133
+TIMe+I+R3        -16481.767   33189.535 - 6.97e-133   33218.257 - 7.59e-133   33745.347 - 3.27e-133
+TIMe+I+R3        -16481.767   33189.535 - 6.97e-133   33218.257 - 7.59e-133   33745.347 - 3.27e-133
+TPM2+I+G4        -16535.353   33288.705 - 2.03e-154   33315.320 - 6.35e-154   33824.843 - 1.79e-150
+TPM2+I+G4        -16535.353   33288.705 - 2.03e-154   33315.320 - 6.35e-154   33824.843 - 1.79e-150
+TPM2u+I+G4       -16535.354   33288.708 - 2.03e-154   33315.323 - 6.35e-154   33824.846 - 1.79e-150
+TIM2+I+G4        -16533.612   33287.223 - 4.27e-154   33314.356 - 1.03e-153   33828.280 - 3.21e-151
+TIM2e+I+G4       -16533.616   33287.232 - 4.25e-154   33314.365 - 1.02e-153   33828.288 - 3.19e-151
+TIM2e+I+G4       -16533.616   33287.232 - 4.25e-154   33314.365 - 1.02e-153   33828.288 - 3.19e-151
+TPM2u+R4         -16528.508   33283.015 - 3.5e-153   33311.738 - 3.81e-153   33838.828 - 1.64e-153
+TPM2+R4          -16528.619   33283.238 - 3.13e-153   33311.960 - 3.41e-153   33839.050 - 1.47e-153
+TPM2+R4          -16528.619   33283.238 - 3.13e-153   33311.960 - 3.41e-153   33839.050 - 1.47e-153
+TIM2+R4          -16525.388   33278.776 - 2.91e-152   33308.040 - 2.42e-152   33839.508 - 1.17e-153
+TIM2e+R4         -16525.437   33278.874 - 2.77e-152   33308.138 - 2.31e-152   33839.606 - 1.11e-153
+TIM2e+R4         -16525.437   33278.874 - 2.77e-152   33308.138 - 2.31e-152   33839.606 - 1.11e-153
+TPM2u+I+R3       -16534.243   33292.486 - 3.07e-155   33320.674 - 4.37e-155   33843.380 - 1.69e-154
+TPM2+I+R3        -16534.246   33292.492 - 3.06e-155   33320.679 - 4.36e-155   33843.385 - 1.68e-154
+TPM2+I+R3        -16534.246   33292.492 - 3.06e-155   33320.679 - 4.36e-155   33843.385 - 1.68e-154
+HKY+I+G4         -16548.418   33312.836 - 1.17e-159   33338.938 - 4.73e-159   33844.055 - 1.2e-154
+K2P+I+G4         -16548.421   33312.843 - 1.17e-159   33338.945 - 4.71e-159   33844.062 - 1.2e-154
+K2P+I+G4         -16548.421   33312.843 - 1.17e-159   33338.945 - 4.71e-159   33844.062 - 1.2e-154
+TIM2+I+R3        -16531.385   33288.771 - 1.97e-154   33317.493 - 2.14e-154   33844.583 - 9.25e-155
+TIM2e+I+R3       -16531.436   33288.871 - 1.87e-154   33317.594 - 2.04e-154   33844.684 - 8.79e-155
+TIM2e+I+R3       -16531.436   33288.871 - 1.87e-154   33317.594 - 2.04e-154   33844.684 - 8.79e-155
+TN+I+G4          -16546.622   33311.244 - 2.6e-159   33337.858 - 8.11e-159   33847.381 - 2.28e-155
+TNe+I+G4         -16546.630   33311.261 - 2.57e-159   33337.876 - 8.04e-159   33847.399 - 2.26e-155
+TNe+I+G4         -16546.630   33311.261 - 2.57e-159   33337.876 - 8.04e-159   33847.399 - 2.26e-155
+TN+R4            -16537.760   33301.520 - 3.35e-157   33330.243 - 3.65e-157   33857.333 - 1.58e-157
+TNe+R4           -16537.800   33301.600 - 3.22e-157   33330.322 - 3.51e-157   33857.412 - 1.51e-157
+TNe+R4           -16537.800   33301.600 - 3.22e-157   33330.322 - 3.51e-157   33857.412 - 1.51e-157
+HKY+R4           -16541.381   33306.762 - 2.44e-158   33334.949 - 3.47e-158   33857.656 - 1.34e-157
+K2P+R4           -16541.554   33307.107 - 2.05e-158   33335.295 - 2.92e-158   33858.001 - 1.13e-157
+K2P+R4           -16541.554   33307.107 - 2.05e-158   33335.295 - 2.92e-158   33858.001 - 1.13e-157
+HKY+I+R3         -16547.614   33317.229 - 1.3e-160   33344.886 - 2.42e-160   33863.204 - 8.37e-159
+K2P+I+R3         -16547.660   33317.319 - 1.24e-160   33344.977 - 2.31e-160   33863.295 - 7.99e-159
+K2P+I+R3         -16547.660   33317.319 - 1.24e-160   33344.977 - 2.31e-160   33863.295 - 7.99e-159
+TN+I+R3          -16544.382   33312.764 - 1.21e-159   33340.951 - 1.73e-159   33863.658 - 6.67e-159
+TNe+I+R3         -16544.398   33312.797 - 1.19e-159   33340.984 - 1.7e-159   33863.691 - 6.56e-159
+TNe+I+R3         -16544.398   33312.797 - 1.19e-159   33340.984 - 1.7e-159   33863.691 - 6.56e-159
+F81+F+I+R3       -17254.447   34734.894 -        0   34763.616 -        0   35290.707 -        0
+F81+F+R4         -17253.102   34734.205 -        0   34763.468 -        0   35294.936 -        0
+F81+F+I+G4       -17269.248   34758.496 -        0   34785.629 -        0   35299.552 -        0
+F81+I+R3         -17316.139   34852.279 -        0   34879.412 -        0   35393.335 -        0
+JC+I+R3          -17316.176   34852.353 -        0   34879.486 -        0   35393.409 -        0
+JC+I+R3          -17316.176   34852.353 -        0   34879.486 -        0   35393.409 -        0
+F81+R4           -17313.428   34848.856 -        0   34876.513 -        0   35394.831 -        0
+JC+R4            -17313.667   34849.333 -        0   34876.991 -        0   35395.308 -        0
+JC+R4            -17313.667   34849.333 -        0   34876.991 -        0   35395.308 -        0
+F81+I+G4         -17328.904   34871.807 -        0   34897.402 -        0   35398.108 -        0
+JC+I+G4          -17328.911   34871.823 -        0   34897.417 -        0   35398.123 -        0
+JC+I+G4          -17328.911   34871.823 -        0   34897.417 -        0   35398.123 -        0
+JC+I+R4          -17315.011   34854.021 -        0   34882.209 -        0   35404.915 -        0
+JC+R5            -17313.491   34852.982 -        0   34881.705 -        0   35408.795 -        0
+JC+R3            -17331.797   34881.594 -        0   34908.209 -        0   35417.732 -        0
+JC+I+R2          -17362.684   34941.368 -        0   34967.470 -        0   35472.587 -        0
+JC+G4            -17395.810   35003.620 -        0   35028.712 -        0   35525.001 -        0
+JC+R2            -17468.627   35151.255 -        0   35176.849 -        0   35677.555 -        0
+JC+I             -17809.609   35831.217 -        0   35856.310 -        0   36352.599 -        0
+JC               -19679.093   39568.186 -        0   39592.783 -        0   40084.649 -        0
+
+AIC, w-AIC   : Akaike information criterion scores and weights.
+AICc, w-AICc : Corrected AIC scores and weights.
+BIC, w-BIC   : Bayesian information criterion scores and weights.
+
+Plus signs denote the 95% confidence sets.
+Minus signs denote significant exclusion.
+
+SUBSTITUTION PROCESS
+--------------------
+
+Model of substitution: K3Pu+F+I+G4
+
+Rate parameter R:
+
+  A-C: 1.0000
+  A-G: 12.8002
+  A-T: 2.2736
+  C-G: 2.2736
+  C-T: 12.8002
+  G-T: 1.0000
+
+State frequencies: (empirical counts from alignment)
+
+  pi(A) = 0.2401
+  pi(C) = 0.1592
+  pi(G) = 0.2158
+  pi(T) = 0.3848
+
+Rate matrix Q:
+
+  A    -1.022   0.04286    0.7438    0.2356
+  C   0.06465    -1.523    0.1321     1.326
+  G    0.8275   0.09746    -1.029    0.1036
+  T     0.147    0.5487   0.05811   -0.7538
+
+Model of rate heterogeneity: Invar+Gamma with 4 categories
+Proportion of invariable sites: 0.391
+Gamma shape alpha: 0.737
+
+ Category  Relative_rate  Proportion
+  0         0              0.391
+  1         0.1348         0.1523
+  2         0.6247         0.1523
+  3         1.54           0.1523
+  4         4.269          0.1523
+Relative rates are computed as MEAN of the portion of the Gamma distribution falling in the category.
+
+MAXIMUM LIKELIHOOD TREE
+-----------------------
+
+Log-likelihood of the tree: -16180.4327 (s.e. 482.3718)
+Unconstrained log-likelihood (without tree): -5304.3711
+Number of free parameters (#branches + #model parameters): 112
+Akaike information criterion (AIC) score: 32584.8654
+Corrected Akaike information criterion (AICc) score: 32613.0525
+Bayesian information criterion (BIC) score: 33135.7593
+
+Total tree length (sum of branch lengths): 9.4778
+Sum of internal branch lengths: 4.3239 (45.6214% of tree length)
+
+WARNING: 3 near-zero internal branches (<0.0010) should be treated with caution
+         Such branches are denoted by '**' in the figure below
+
+NOTE: Tree is UNROOTED although outgroup taxon 'Fahrenholzia_boleni' is drawn at root
+Numbers in parentheses are  ultrafast bootstrap support (%)
+
++--Fahrenholzia_boleni
+|
+|                                          +--Fahrenholzia_ehrlichi_10
+|                                  +-------| (100)
+|                                  |       |     +--Fahrenholzia_ehrlichi_11
+|                                  |       |  +--| (100)
+|                                  |       |  |  +**Fahrenholzia_ehrlichi_12
+|                                  |       +--| (73)
+|                                  |          |     +--Fahrenholzia_ehrlichi_17
+|                                  |          |  +--| (100)
+|                                  |          |  |  +--Fahrenholzia_ehrlichi_8
+|                                  |          +--| (63)
+|                                  |             +--Fahrenholzia_ehrlichi_39
+|                             +----| (99)
+|                             |    |  +----------Fahrenholzia_microcephala_14
+|                             |    +--| (47)
+|                             |       +------------Fahrenholzia_microcephala_9
+|                          +--| (45)
+|                          |  |         +**Fahrenholzia_ehrlichi_7
+|                          |  +---------| (100)
+|                          |            +**Fahrenholzia_texana
+|                       +--| (95)
+|                       |  |     +-------------Fahrenholzia_fairchildi
+|                       |  |  +--| (95)
+|                       |  |  |  +------Fahrenholzia_hertigi
+|                       |  +--| (72)
+|                       |     +------------Fahrenholzia_ferrisi
+|              +--------| (100)
+|              |        |             +---------Fahrenholzia_reducta_19
+|              |        |          +--| (82)
+|              |        |          |  |     +--Fahrenholzia_tribulosa_22
+|              |        |          |  +-----| (100)
+|              |        |          |        +**Fahrenholzia_tribulosa_23
+|              |        |       +--| (74)
+|              |        |       |  |          +**Fahrenholzia_reducta_27
+|              |        |       |  |       +--| (97)
+|              |        |       |  |       |  +--Fahrenholzia_reducta_30
+|              |        |       |  +-------| (100)
+|              |        |       |          +**Fahrenholzia_reducta_31
+|              |        |  +----| (91)
+|              |        |  |    |        +--Fahrenholzia_zacatecae_26
+|              |        |  |    |   +----| (100)
+|              |        |  |    |   |    |  +--Fahrenholzia_zacatecae_4
+|              |        |  |    |   |    +--| (99)
+|              |        |  |    |   |       +--Fahrenholzia_zacatecae_40
+|              |        |  |    +---| (100)
+|              |        |  |        +---Fahrenholzia_zacatecae_28
+|              |        +--| (93)
+|              |           |         +----------------Polyplax_auricularis
+|              |           +---------| (100)
+|              |                     +--------------------------Polyplax_borealis
+|           +--| (70)
+|           |  |        +--Fahrenholzia_pinnata_16
+|           |  |     +--| (100)
+|           |  |     |  +--Fahrenholzia_pinnata_3
+|           |  |  +--| (89)
+|           |  |  |  |  +--Fahrenholzia_pinnata_28
+|           |  |  |  +--| (100)
+|           |  |  |     +--Fahrenholzia_pinnata_38
+|           |  +--| (97)
+|           |     +---Fahrenholzia_pinnata_37
+|        +--| (47)
+|        |  |     +--Fahrenholzia_pinnata_18
+|        |  |  +--| (100)
+|        |  |  |  +--Fahrenholzia_pinnata_23
+|        |  +--| (99)
+|        |     +----Fahrenholzia_pinnata_36MLZ2047
+|     +--| (100)
+|     |  |         +--Fahrenholzia_pinnata_10
+|     |  |     +---| (100)
+|     |  |     |   +---Fahrenholzia_pinnata_17
+|     |  |  +--| (86)
+|     |  |  |  |                +--Fahrenholzia_pinnata_19MLZ1880
+|     |  |  |  |             +--| (92)
+|     |  |  |  |             |  +--Fahrenholzia_pinnata_20
+|     |  |  |  |          +**| (63)
+|     |  |  |  |          |  +**Fahrenholzia_pinnata_35UNLV3862
+|     |  |  |  |       +--| (64)
+|     |  |  |  |       |  +--Fahrenholzia_pinnata_35UNLV3886
+|     |  |  |  |    +--| (99)
+|     |  |  |  |    |  +--Fahrenholzia_pinnata_21
+|     |  |  |  +----| (100)
+|     |  |  |       |           +**Fahrenholzia_pinnata_2
+|     |  |  |       |        +**| (86)
+|     |  |  |       |        |  +--Fahrenholzia_pinnata_32
+|     |  |  |       |     +--| (87)
+|     |  |  |       |     |  +--Fahrenholzia_pinnata_26
+|     |  |  |       |  +**| (59)
+|     |  |  |       |  |  |  +--Fahrenholzia_pinnata_33
+|     |  |  |       |  |  +--| (84)
+|     |  |  |       |  |     +--Fahrenholzia_pinnata_34
+|     |  |  |       +--| (98)
+|     |  |  |          +--Fahrenholzia_pinnata_6
+|     |  +--| (61)
+|     |     |    +--Fahrenholzia_pinnata_29
+|     |     +----| (100)
+|     |          +--Fahrenholzia_pinnata_4
+|  +--| (98)
+|  |  |  +--Fahrenholzia_pinnata_19MLZ1878
+|  |  +--| (100)
+|  |     +--Fahrenholzia_pinnata_36MLZ2046
++--| (98)
+|  |  +--Fahrenholzia_pinnata_24
+|  +--| (100)
+|     +**Fahrenholzia_pinnata_25
+|
++--Fahrenholzia_pinnata_13
+
+Tree in newick format:
+
+(Fahrenholzia_boleni:0.0495315751,((((((((((Fahrenholzia_ehrlichi_10:0.1102198915,((Fahrenholzia_ehrlichi_11:0.0070261638,Fahrenholzia_ehrlichi_12:0.0000015728)100:0.0708825148,((Fahrenholzia_ehrlichi_17:0.0439874165,Fahrenholzia_ehrlichi_8:0.0267149841)100:0.1056868797,Fahrenholzia_ehrlichi_39:0.1049599554)63:0.0217851820)73:0.0415132581)100:0.2576817193,(Fahrenholzia_microcephala_14:0.3364155522,Fahrenholzia_microcephala_9:0.4143648178)47:0.0419451741)99:0.1695413659,(Fahrenholzia_ehrlichi_7:0.0000009993,Fahrenholzia_texana:0.0000009993)100:0.3174728242)45:0.0254862682,((Fahrenholzia_fairchildi:0.4471244105,Fahrenholzia_hertigi:0.2288982264)95:0.1089716391,Fahrenholzia_ferrisi:0.4082461721)72:0.0831880314)95:0.0897465532,((((Fahrenholzia_reducta_19:0.3027641869,(Fahrenholzia_tribulosa_22:0.0045631923,Fahrenholzia_tribulosa_23:0.0000009993)100:0.2010133180)82:0.0789524591,((Fahrenholzia_reducta_27:0.0000009993,Fahrenholzia_reducta_30:0.0010198618)97:0.0029649830,Fahrenholzia_reducta_31:0.0001978585)100:0.2591351302)74:0.0716158081,((Fahrenholzia_zacatecae_26:0.0184535542,(Fahrenholzia_zacatecae_4:0.0058602613,Fahrenholzia_zacatecae_40:0.0054106105)99:0.0297543445)100:0.1605731812,Fahrenholzia_zacatecae_28:0.1377313125)100:0.1344037617)91:0.1557039260,(Polyplax_auricularis:0.5281803599,Polyplax_borealis:0.8369064873)100:0.3149173513)93:0.1057970000)100:0.2764017405,(((Fahrenholzia_pinnata_16:0.0023231983,Fahrenholzia_pinnata_3:0.0018838513)100:0.0837289874,(Fahrenholzia_pinnata_28:0.0145354061,Fahrenholzia_pinnata_38:0.0059456516)100:0.0474004391)89:0.0629863119,Fahrenholzia_pinnata_37:0.1451548422)97:0.0648334298)70:0.0368056148,((Fahrenholzia_pinnata_18:0.0182364207,Fahrenholzia_pinnata_23:0.0183294441)100:0.1049591650,Fahrenholzia_pinnata_36MLZ2047:0.1606187185)99:0.0767719714)47:0.0267230083,(((Fahrenholzia_pinnata_10:0.0789662661,Fahrenholzia_pinnata_17:0.1287883956)100:0.1407705271,(((((Fahrenholzia_pinnata_19MLZ1880:0.0109910680,Fahrenholzia_pinnata_20:0.0013857164)92:0.0027045027,Fahrenholzia_pinnata_35UNLV3862:0.0000009993)63:0.0000016827,Fahrenholzia_pinnata_35UNLV3886:0.0082837850)64:0.0019040253,Fahrenholzia_pinnata_21:0.0066774975)99:0.0261118037,((((Fahrenholzia_pinnata_2:0.0009806482,Fahrenholzia_pinnata_32:0.0017055070)86:0.0003346273,Fahrenholzia_pinnata_26:0.0042502934)87:0.0020586626,(Fahrenholzia_pinnata_33:0.0046130465,Fahrenholzia_pinnata_34:0.0102552257)84:0.0033113416)59:0.0005412937,Fahrenholzia_pinnata_6:0.0057762034)98:0.0275128040)100:0.1641922112)86:0.0691136056,(Fahrenholzia_pinnata_29:0.0422487132,Fahrenholzia_pinnata_4:0.0565625976)100:0.1702595177)61:0.0142991244)100:0.1186632014,(Fahrenholzia_pinnata_19MLZ1878:0.0173477710,Fahrenholzia_pinnata_36MLZ2046:0.0240809159)100:0.1108396996)98:0.0521069753,(Fahrenholzia_pinnata_24:0.0057699510,Fahrenholzia_pinnata_25:0.0004239262)100:0.0687973932)98:0.0384978540,Fahrenholzia_pinnata_13:0.0416891130);
+
+CONSENSUS TREE
+--------------
+
+Consensus tree is constructed from 1000 bootstrap trees
+Log-likelihood of consensus tree: -16180.442169
+Robinson-Foulds distance between ML tree and consensus tree: 0
+
+Branches with support >0.000000% are kept (extended consensus)
+Branch lengths are optimized by maximum likelihood on original alignment
+Numbers in parentheses are bootstrap supports (%)
+
++--Fahrenholzia_boleni
+|
+|                                          +--Fahrenholzia_ehrlichi_10
+|                                  +-------| (100)
+|                                  |       |     +--Fahrenholzia_ehrlichi_11
+|                                  |       |  +--| (100)
+|                                  |       |  |  +--Fahrenholzia_ehrlichi_12
+|                                  |       +--| (73)
+|                                  |          |     +--Fahrenholzia_ehrlichi_17
+|                                  |          |  +--| (100)
+|                                  |          |  |  +--Fahrenholzia_ehrlichi_8
+|                                  |          +--| (63)
+|                                  |             +--Fahrenholzia_ehrlichi_39
+|                             +----| (99)
+|                             |    |  +----------Fahrenholzia_microcephala_14
+|                             |    +--| (47)
+|                             |       +------------Fahrenholzia_microcephala_9
+|                          +--| (45)
+|                          |  |         +--Fahrenholzia_ehrlichi_7
+|                          |  +---------| (100)
+|                          |            +--Fahrenholzia_texana
+|                       +--| (95)
+|                       |  |     +-------------Fahrenholzia_fairchildi
+|                       |  |  +--| (95)
+|                       |  |  |  +------Fahrenholzia_hertigi
+|                       |  +--| (72)
+|                       |     +------------Fahrenholzia_ferrisi
+|              +--------| (100)
+|              |        |             +---------Fahrenholzia_reducta_19
+|              |        |          +--| (82)
+|              |        |          |  |     +--Fahrenholzia_tribulosa_22
+|              |        |          |  +-----| (100)
+|              |        |          |        +--Fahrenholzia_tribulosa_23
+|              |        |       +--| (74)
+|              |        |       |  |          +--Fahrenholzia_reducta_27
+|              |        |       |  |       +--| (97)
+|              |        |       |  |       |  +--Fahrenholzia_reducta_30
+|              |        |       |  +-------| (100)
+|              |        |       |          +--Fahrenholzia_reducta_31
+|              |        |  +----| (91)
+|              |        |  |    |        +--Fahrenholzia_zacatecae_26
+|              |        |  |    |   +----| (100)
+|              |        |  |    |   |    |  +--Fahrenholzia_zacatecae_4
+|              |        |  |    |   |    +--| (99)
+|              |        |  |    |   |       +--Fahrenholzia_zacatecae_40
+|              |        |  |    +---| (100)
+|              |        |  |        +---Fahrenholzia_zacatecae_28
+|              |        +--| (93)
+|              |           |         +----------------Polyplax_auricularis
+|              |           +---------| (100)
+|              |                     +--------------------------Polyplax_borealis
+|           +--| (70)
+|           |  |        +--Fahrenholzia_pinnata_16
+|           |  |     +--| (100)
+|           |  |     |  +--Fahrenholzia_pinnata_3
+|           |  |  +--| (89)
+|           |  |  |  |  +--Fahrenholzia_pinnata_28
+|           |  |  |  +--| (100)
+|           |  |  |     +--Fahrenholzia_pinnata_38
+|           |  +--| (97)
+|           |     +---Fahrenholzia_pinnata_37
+|        +--| (47)
+|        |  |     +--Fahrenholzia_pinnata_18
+|        |  |  +--| (100)
+|        |  |  |  +--Fahrenholzia_pinnata_23
+|        |  +--| (99)
+|        |     +----Fahrenholzia_pinnata_36MLZ2047
+|     +--| (100)
+|     |  |         +--Fahrenholzia_pinnata_10
+|     |  |     +---| (100)
+|     |  |     |   +---Fahrenholzia_pinnata_17
+|     |  |  +--| (86)
+|     |  |  |  |                +--Fahrenholzia_pinnata_19MLZ1880
+|     |  |  |  |             +--| (92)
+|     |  |  |  |             |  +--Fahrenholzia_pinnata_20
+|     |  |  |  |          +--| (63)
+|     |  |  |  |          |  +--Fahrenholzia_pinnata_35UNLV3862
+|     |  |  |  |       +--| (64)
+|     |  |  |  |       |  +--Fahrenholzia_pinnata_35UNLV3886
+|     |  |  |  |    +--| (99)
+|     |  |  |  |    |  +--Fahrenholzia_pinnata_21
+|     |  |  |  +----| (100)
+|     |  |  |       |           +--Fahrenholzia_pinnata_2
+|     |  |  |       |        +--| (86)
+|     |  |  |       |        |  +--Fahrenholzia_pinnata_32
+|     |  |  |       |     +--| (87)
+|     |  |  |       |     |  +--Fahrenholzia_pinnata_26
+|     |  |  |       |  +--| (59)
+|     |  |  |       |  |  |  +--Fahrenholzia_pinnata_33
+|     |  |  |       |  |  +--| (84)
+|     |  |  |       |  |     +--Fahrenholzia_pinnata_34
+|     |  |  |       +--| (98)
+|     |  |  |          +--Fahrenholzia_pinnata_6
+|     |  +--| (61)
+|     |     |    +--Fahrenholzia_pinnata_29
+|     |     +----| (100)
+|     |          +--Fahrenholzia_pinnata_4
+|  +--| (98)
+|  |  |  +--Fahrenholzia_pinnata_19MLZ1878
+|  |  +--| (100)
+|  |     +--Fahrenholzia_pinnata_36MLZ2046
++--| (98)
+|  |  +--Fahrenholzia_pinnata_24
+|  +--| (100)
+|     +--Fahrenholzia_pinnata_25
+|
++--Fahrenholzia_pinnata_13
+
+
+Consensus tree in newick format: 
+
+(Fahrenholzia_boleni:0.0495418328,((((((((((Fahrenholzia_ehrlichi_10:0.1101967889,((Fahrenholzia_ehrlichi_11:0.0070274088,Fahrenholzia_ehrlichi_12:0.0000024555)100:0.0708993639,((Fahrenholzia_ehrlichi_17:0.0440029273,Fahrenholzia_ehrlichi_8:0.0267185490)100:0.1057287212,Fahrenholzia_ehrlichi_39:0.1049917965)63:0.0217851532)73:0.0416057231)100:0.2577477007,(Fahrenholzia_microcephala_14:0.3365170024,Fahrenholzia_microcephala_9:0.4144982021)47:0.0419721654)99:0.1695985941,(Fahrenholzia_ehrlichi_7:0.0000029372,Fahrenholzia_texana:0.0000029330)100:0.3175601746)45:0.0254895612,((Fahrenholzia_fairchildi:0.4472733450,Fahrenholzia_hertigi:0.2289616981)95:0.1089978408,Fahrenholzia_ferrisi:0.4083788151)72:0.0832110141)95:0.0897652678,((((Fahrenholzia_reducta_19:0.3028460910,(Fahrenholzia_tribulosa_22:0.0045635799,Fahrenholzia_tribulosa_23:0.0000029330)100:0.2010801220)82:0.0788868274,((Fahrenholzia_reducta_27:0.0000029330,Fahrenholzia_reducta_30:0.0010195191)97:0.0029889680,Fahrenholzia_reducta_31:0.0001742109)100:0.2592340142)74:0.0717236445,((Fahrenholzia_zacatecae_26:0.0184620084,(Fahrenholzia_zacatecae_4:0.0058616665,Fahrenholzia_zacatecae_40:0.0054116993)99:0.0297588718)100:0.1606263211,Fahrenholzia_zacatecae_28:0.1377608056)100:0.1344393709)91:0.1557453119,(Polyplax_auricularis:0.5283633793,Polyplax_borealis:0.8372080116)100:0.3150257636)93:0.1058160180)100:0.2764953421,(((Fahrenholzia_pinnata_16:0.0023232363,Fahrenholzia_pinnata_3:0.0018849847)100:0.0837167057,(Fahrenholzia_pinnata_28:0.0145394051,Fahrenholzia_pinnata_38:0.0059459129)100:0.0474465397)89:0.0629916350,Fahrenholzia_pinnata_37:0.1452093732)97:0.0648386679)70:0.0368180835,((Fahrenholzia_pinnata_18:0.0182336522,Fahrenholzia_pinnata_23:0.0183380221)100:0.1049909249,Fahrenholzia_pinnata_36MLZ2047:0.1606585585)99:0.0767910726)47:0.0267255438,(((Fahrenholzia_pinnata_10:0.0789791480,Fahrenholzia_pinnata_17:0.1288208143)100:0.1407993160,(((((Fahrenholzia_pinnata_19MLZ1880:0.0109931272,Fahrenholzia_pinnata_20:0.0013854439)92:0.0027038019,Fahrenholzia_pinnata_35UNLV3862:0.0000029330)63:0.0000029372,Fahrenholzia_pinnata_35UNLV3886:0.0082846816)64:0.0019035780,Fahrenholzia_pinnata_21:0.0066787174)99:0.0261016775,((((Fahrenholzia_pinnata_2:0.0009808871,Fahrenholzia_pinnata_32:0.0017063018)86:0.0003339337,Fahrenholzia_pinnata_26:0.0042510412)87:0.0020582172,(Fahrenholzia_pinnata_33:0.0046138783,Fahrenholzia_pinnata_34:0.0102574004)84:0.0033108547)59:0.0005408022,Fahrenholzia_pinnata_6:0.0057777490)98:0.0275287981)100:0.1642313837)86:0.0691339464,(Fahrenholzia_pinnata_29:0.0422613245,Fahrenholzia_pinnata_4:0.0565736258)100:0.1703103184)61:0.0142991433)100:0.1187000010,(Fahrenholzia_pinnata_19MLZ1878:0.0173507308,Fahrenholzia_pinnata_36MLZ2046:0.0240868234)100:0.1108647281)98:0.0521214741,(Fahrenholzia_pinnata_24:0.0057715434,Fahrenholzia_pinnata_25:0.0004234638)100:0.0688141865)98:0.0385049010,Fahrenholzia_pinnata_13:0.0416984806);
+
+ALISIM COMMAND
+--------------
+To simulate an alignment of the same length as the original alignment, using the tree and model parameters estimated from this analysis, you can use the following command:
+
+--alisim simulated_MSA -t ml2\trees\M1614.treefile -m "K3Pu{12.8002,2.27364}+F{0.240136,0.159217,0.215828,0.384819}+I{0.390991}+G4{0.737003}" --length 1011
+
+To mimic the alignment used to produce this analysis, i.e. simulate an alignment of the same length as the original alignment, using the tree and model parameters estimated from this analysis *and* copying the same gap positions as the original alignment, you can use the following command:
+
+iqtree -s ml2\datasets\M1614.nex --alisim mimicked_MSA
+
+To simulate any number of alignments in either of the two commandlines above, use the --num-alignments options, for example mimic 100 alignments you would use the command line:
+
+iqtree -s ml2\datasets\M1614.nex --alisim mimicked_MSA --num-alignments 100
+
+For more information on using AliSim, please visit: www.iqtree.org/doc/AliSim
+
+TIME STAMP
+----------
+
+Date and time: Mon May 04 12:58:31 2026
+Total CPU time used: 503.640625 seconds (0h:8m:23s)
+Total wall-clock time used: 192.8431232 seconds (0h:3m:12s)
+

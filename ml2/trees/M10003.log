@@ -1,0 +1,14 @@
+IQ-TREE version 3.1.1 for Windows 64-bit built Apr  2 2026
+Developed by Bui Quang Minh, Thomas Wong, Nhan Ly-Trong, Huaiyan Ren
+Contributed by Lam-Tung Nguyen, Dominik Schrempf, Chris Bielow,
+Olga Chernomor, Michael Woodhams, Diep Thi Hoang, Heiko Schmidt
+
+Host:    DESKTOP-I0VDDLU (AVX2, FMA3, 15 GB RAM)
+Command: iqtree-3.1.1-Windows\bin\iqtree3.exe -s ml2\datasets\M10003.nex -m MFP -B 1000 -bnni -T AUTO --prefix ml2\trees\M10003 --redo
+Seed:    32926 (Using SPRNG - Scalable Parallel Random Number Generator)
+Time:    Mon May 04 12:45:22 2026
+Kernel:  AVX+FMA - auto-detect threads (16 CPU cores detected)
+
+Reading alignment file ml2\datasets\M10003.nex ... Nexus format detected
+Skipping unknown block (CODONS)...
+Alignment has 545 sequences with 456 columns, 105 distinct patterns

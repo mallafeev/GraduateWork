@@ -1,0 +1,420 @@
+IQ-TREE version 3.1.1 for Windows 64-bit built Apr  2 2026
+Developed by Bui Quang Minh, Thomas Wong, Nhan Ly-Trong, Huaiyan Ren
+Contributed by Lam-Tung Nguyen, Dominik Schrempf, Chris Bielow,
+Olga Chernomor, Michael Woodhams, Diep Thi Hoang, Heiko Schmidt
+
+Host:    DESKTOP-I0VDDLU (AVX2, FMA3, 15 GB RAM)
+Command: iqtree-3.1.1-Windows\bin\iqtree3.exe -s ml2\datasets\M47702.nex -m MFP -B 1000 -bnni -T AUTO --prefix ml2\trees\M47702 --redo
+Seed:    770054 (Using SPRNG - Scalable Parallel Random Number Generator)
+Time:    Mon May 04 13:52:29 2026
+Kernel:  AVX+FMA - auto-detect threads (16 CPU cores detected)
+
+Reading alignment file ml2\datasets\M47702.nex ... Nexus format detected
+Alignment has 76 sequences with 1475 columns, 752 distinct patterns
+483 parsimony-informative, 139 singleton sites, 853 constant sites
+WARNING: Some sequence names are changed as follows:
+Aeropetes tulbaghia CP13_01 -> Aeropetes_tulbaghia_CP13_01
+Bicyclus anynana EW10_5 -> Bicyclus_anynana_EW10_5
+Brassolis sophorae NW122_21 -> Brassolis_sophorae_NW122_21
+Calisto smintheus PM07_05 -> Calisto_smintheus_PM07_05
+Cithaerias andromeda PM14_21 -> Cithaerias_andromeda_PM14_21
+Cithaerias aurora CP01_52 -> Cithaerias_aurora_CP01_52
+Cithaerias aurora NW92_1 -> Cithaerias_aurora_NW92_1
+Cithaerias aurora NW93_1 -> Cithaerias_aurora_NW93_1
+Cithaerias cliftoni LEP_08919 -> Cithaerias_cliftoni_LEP_08919
+Cithaerias cliftoni LEP_10406 -> Cithaerias_cliftoni_LEP_10406
+Cithaerias cliftoni PM14_17 -> Cithaerias_cliftoni_PM14_17
+Cithaerias pireta LEP_09925 -> Cithaerias_pireta_LEP_09925
+Cithaerias pireta LEP_09926 -> Cithaerias_pireta_LEP_09926
+Cithaerias pyropina LEP_14256 -> Cithaerias_pyropina_LEP_14256
+Cithaerias pyropina LEP_14257 -> Cithaerias_pyropina_LEP_14257
+Dulcedo polita LEP_14258 -> Dulcedo_polita_LEP_14258
+Dulcedo polita PM11_05 -> Dulcedo_polita_PM11_05
+Elymnias casiphone NW121_20 -> Elymnias_casiphone_NW121_20
+Erebia oeme EW24_7 -> Erebia_oeme_EW24_7
+Haetera piera CP01_84 -> Haetera_piera_CP01_84
+Haetera piera LEP_04409 -> Haetera_piera_LEP_04409
+Haetera piera LEP_08916 -> Haetera_piera_LEP_08916
+Lethe minerva NW121_17 -> Lethe_minerva_NW121_17
+Manerebia cyclopina CP03_63 -> Manerebia_cyclopina_CP03_63
+Melanitis leda NW66_6 -> Melanitis_leda_NW66_6
+Morpho helenor NW66_5 -> Morpho_helenor_NW66_5
+Oressinoma sorata CP06_89 -> Oressinoma_sorata_CP06_89
+Orsotriaena medus EW25_17 -> Orsotriaena_medus_EW25_17
+Pararge aegeria EW1_1 -> Pararge_aegeria_EW1_1
+Pierella chalybaea LEP_04597 -> Pierella_chalybaea_LEP_04597
+Pierella chalybaea LEP_08934 -> Pierella_chalybaea_LEP_08934
+Pierella chalybaea PM14_11 -> Pierella_chalybaea_PM14_11
+Pierella chalybaea PM14_20 -> Pierella_chalybaea_PM14_20
+Pierella helvina PM24_01 -> Pierella_helvina_PM24_01
+Pierella helvina PM24_02 -> Pierella_helvina_PM24_02
+Pierella helvina PM24_03 -> Pierella_helvina_PM24_03
+Pierella hortona LEP_08928 -> Pierella_hortona_LEP_08928
+Pierella hyceta CP02_85 -> Pierella_hyceta_CP02_85
+Pierella hyceta CP03_60 -> Pierella_hyceta_CP03_60
+Pierella hyceta CP04_47 -> Pierella_hyceta_CP04_47
+Pierella hyceta LEP_08925 -> Pierella_hyceta_LEP_08925
+Pierella hyceta LEP_08926 -> Pierella_hyceta_LEP_08926
+Pierella keithbrowni NW108_2 -> Pierella_keithbrowni_NW108_2
+Pierella lena LEP_08908 -> Pierella_lena_LEP_08908
+Pierella lena LEP_08911 -> Pierella_lena_LEP_08911
+Pierella lena LEP_08912 -> Pierella_lena_LEP_08912
+Pierella lena NW93_2 -> Pierella_lena_NW93_2
+Pierella lena PM14_13 -> Pierella_lena_PM14_13
+Pierella lena PM14_19 -> Pierella_lena_PM14_19
+Pierella lucia CP05_11 -> Pierella_lucia_CP05_11
+Pierella lucia LEP_04613 -> Pierella_lucia_LEP_04613
+Pierella lucia LEP_08935 -> Pierella_lucia_LEP_08935
+Pierella lucia PM14_12 -> Pierella_lucia_PM14_12
+Pierella luna LEP_09797 -> Pierella_luna_LEP_09797
+Pierella luna LEP_09921 -> Pierella_luna_LEP_09921
+Pierella luna PM24_04 -> Pierella_luna_PM24_04
+Pierella nereis CP14_08 -> Pierella_nereis_CP14_08
+Pseudohaetera hypaesia CP03_99 -> Pseudohaetera_hypaesia_CP03_99
+Pseudohaetera hypaesia CP04_57 -> Pseudohaetera_hypaesia_CP04_57
+Pseudohaetera hypaesia LEP_08924 -> Pseudohaetera_hypaesia_LEP_08924
+Pseudohaetera hypaesia LEP_09562 -> Pseudohaetera_hypaesia_LEP_09562
+Satyrus actaea NW162_21 -> Satyrus_actaea_NW162_21
+Taygetis virgilia NW108_3 -> Taygetis_virgilia_NW108_3
+Zeuxidia dorhni NW101_2 -> Zeuxidia_dorhni_NW101_2
+
+                                  Gap/Ambiguity  Composition  p-value
+Analyzing sequences: done in 0.0001457 secs
+   1  Aeropetes_tulbaghia_CP13_01         3.12%    passed     96.44%
+   2  Bicyclus_anynana_EW10_5             2.85%    passed     64.30%
+   3  Brassolis_sophorae_NW122_21         1.83%    passed     69.53%
+   4  Calisto_smintheus_PM07_05           3.53%    passed     86.47%
+   5  Cithaerias_andromeda_PM14_21        0.14%    passed     95.24%
+   6  Cithaerias_aurora_CP01_52          14.44%    passed     30.65%
+   7  Cithaerias_aurora_NW92_1           55.39%    passed     23.38%
+   8  Cithaerias_aurora_NW93_1            3.86%    passed     58.82%
+   9  Cithaerias_cliftoni_LEP_08919       0.00%    passed     57.55%
+  10  Cithaerias_cliftoni_LEP_10406       3.86%    passed     45.01%
+  11  Cithaerias_cliftoni_PM14_17        60.61%    failed      3.43%
+  12  Cithaerias_pireta_BCI86376         55.39%    passed     28.52%
+  13  Cithaerias_pireta_LEP_09925         0.00%    passed     83.37%
+  14  Cithaerias_pireta_LEP_09926         8.95%    passed     77.80%
+  15  Cithaerias_pyropina_LEP_14256      13.29%    passed     30.65%
+  16  Cithaerias_pyropina_LEP_14257       9.15%    passed     48.44%
+  17  Cithaerias_pyropina_PM0095          6.37%    passed     40.38%
+  18  Dulcedo_polita_LEP_14258            9.56%    passed     53.50%
+  19  Dulcedo_polita_PM11_05              1.02%    passed     18.04%
+  20  Elymnias_casiphone_NW121_20         1.69%    passed     24.39%
+  21  Erebia_oeme_EW24_7                  1.69%    passed     58.31%
+  22  Haetera_macleannania_FLMNH284117   11.93%    passed     88.96%
+  23  Haetera_piera_CP01_84               2.78%    passed     65.83%
+  24  Haetera_piera_LEP_04409             0.00%    passed     64.79%
+  25  Haetera_piera_LEP_08916             0.00%    passed     54.24%
+  26  Haetera_piera_PM0091               21.36%    passed     65.94%
+  27  Lethe_minerva_NW121_17              1.69%    passed     65.33%
+  28  Manerebia_cyclopina_CP03_63         2.78%    passed     54.63%
+  29  Melanitis_leda_NW66_6               4.81%    passed     99.82%
+  30  Morpho_helenor_NW66_5               4.88%    passed     93.20%
+  31  Oressinoma_sorata_CP06_89           8.07%    passed     98.68%
+  32  Orsotriaena_medus_EW25_17           2.71%    passed     83.49%
+  33  Pararge_aegeria_EW1_1               2.37%    passed     96.31%
+  34  Pierella_chalybaea_LEP_04597        8.54%    passed     73.16%
+  35  Pierella_chalybaea_LEP_08934        3.86%    passed     84.01%
+  36  Pierella_chalybaea_PM14_11         27.32%    passed     47.72%
+  37  Pierella_chalybaea_PM14_20          9.02%    passed     81.13%
+  38  Pierella_helvina_BCI80049          73.56%    passed     31.25%
+  39  Pierella_helvina_FLMNH146191       82.51%    passed     30.36%
+  40  Pierella_helvina_LEP55828           1.83%    passed     95.19%
+  41  Pierella_helvina_PM24_01           58.58%    passed     84.68%
+  42  Pierella_helvina_PM24_02           48.61%    passed     79.92%
+  43  Pierella_helvina_PM24_03           57.97%    passed     77.92%
+  44  Pierella_hortona_LEP_08928          2.92%    passed     52.09%
+  45  Pierella_hyceta_CP02_85            60.14%    passed     90.77%
+  46  Pierella_hyceta_CP03_60            55.39%    passed     99.95%
+  47  Pierella_hyceta_CP04_47            55.32%    passed     98.06%
+  48  Pierella_hyceta_LEP_08925           2.92%    passed     88.69%
+  49  Pierella_hyceta_LEP_08926          57.97%    passed     97.61%
+  50  Pierella_hyceta_PM0089              0.47%    passed     77.51%
+  51  Pierella_hyceta_PM0090             57.90%    passed     99.20%
+  52  Pierella_hyceta_SnPe05             58.58%    passed     96.41%
+  53  Pierella_keithbrowni_NW108_2       55.32%    passed     97.46%
+  54  Pierella_lena_LEP_08908             7.53%    passed     82.14%
+  55  Pierella_lena_LEP_08911            10.31%    passed     94.60%
+  56  Pierella_lena_LEP_08912             3.39%    passed     99.63%
+  57  Pierella_lena_NW93_2                1.76%    passed     99.08%
+  58  Pierella_lena_PM14_13              77.97%    passed     71.08%
+  59  Pierella_lena_PM14_19              50.31%    passed     60.23%
+  60  Pierella_lucia_CP05_11             59.25%    passed     95.25%
+  61  Pierella_lucia_LEP_04613            4.00%    passed     98.28%
+  62  Pierella_lucia_LEP_08935            0.00%    passed     95.52%
+  63  Pierella_lucia_PM14_12             10.44%    passed     87.14%
+  64  Pierella_luna_BCI90713             55.39%    passed     97.06%
+  65  Pierella_luna_LEP_09797             6.92%    passed     80.30%
+  66  Pierella_luna_LEP_09921             2.92%    passed     95.17%
+  67  Pierella_luna_PM24_04              65.63%    passed     27.97%
+  68  Pierella_nereis_CP14_08            55.32%    passed     97.86%
+  69  Pseudohaetera_hypaesia_CP03_99      2.71%    passed     81.84%
+  70  Pseudohaetera_hypaesia_CP04_57     55.32%    passed     42.39%
+  71  Pseudohaetera_hypaesia_LEP_08924    3.32%    passed     87.46%
+  72  Pseudohaetera_hypaesia_LEP_09562    3.86%    passed     84.83%
+  73  Pseudohaetera_hypaesia_PM0062      57.97%    passed     36.01%
+  74  Satyrus_actaea_NW162_21             0.27%    passed     57.25%
+  75  Taygetis_virgilia_NW108_3           1.69%    passed     91.33%
+  76  Zeuxidia_dorhni_NW101_2             4.00%    passed     76.57%
+WARNING: 22 sequences contain more than 50% gaps/ambiguity
+****  TOTAL                              21.57%  1 sequences failed composition chi2 test (p-value<5%; df=3)
+Checking for duplicate sequences: done in 0.0005033 secs
+
+
+Create initial parsimony tree by phylogenetic likelihood library (PLL)... 0.033 seconds
+Measuring multi-threading efficiency up to 16 CPU cores
+Increase to 10 rounds for branch lengths
+118 trees examined
+Threads: 1 / Time: 16.043 sec / Speedup: 1.000 / Efficiency: 100% / LogL: -22942
+Threads: 2 / Time: 10.840 sec / Speedup: 1.480 / Efficiency: 74% / LogL: -22942
+Threads: 3 / Time: 9.276 sec / Speedup: 1.730 / Efficiency: 58% / LogL: -22942
+Threads: 4 / Time: 8.491 sec / Speedup: 1.890 / Efficiency: 47% / LogL: -22942
+Determining AUTO threadcount: done in 44.6944 secs using 226% CPU
+BEST NUMBER OF THREADS: 3
+
+Perform fast likelihood tree search using GTR+I+G model...
+Estimate model parameters (epsilon = 5.000)
+Perform nearest neighbor interchange...
+Estimate model parameters (epsilon = 1.000)
+1. Initial log-likelihood: -15093.761
+2. Current log-likelihood: -15092.450
+3. Current log-likelihood: -15091.441
+Optimal log-likelihood: -15090.444
+Rate parameters:  A-C: 3.24690  A-G: 15.75244  A-T: 10.31373  C-G: 1.30838  C-T: 46.71422  G-T: 1.00000
+Base frequencies:  A: 0.292  C: 0.157  G: 0.137  T: 0.414
+Proportion of invariable sites: 0.377
+Gamma shape alpha: 0.481
+Parameters optimization took 3 rounds (0.203 sec)
+Time for fast ML tree search: 0.887 seconds
+
+NOTE: ModelFinder requires 21 MB RAM!
+ModelFinder will test up to 968 DNA models (sample size: 1475 epsilon: 0.100) ...
+ No. Model         -LnL         df  AIC          AICc         BIC
+  1  JC            18663.844    149 37625.688    37659.424    38414.854
+  2  JC+I          16942.389    150 34184.778    34218.993    34979.240
+  3  JC+G4         16552.437    150 33404.874    33439.088    34199.336
+  4  JC+I+G4       16507.948    151 33317.897    33352.594    34117.655
+  5  JC+R2         16626.168    151 33554.337    33589.034    34354.095
+  6  JC+R3         16514.939    153 33335.878    33371.551    34146.229
+  7  JC+R4         16501.747    155 33313.493    33350.157    34134.437
+  8  JC+R5         16501.558    157 33317.117    33354.787    34148.654
+ 14  JC+I+R2       16529.154    152 33362.307    33397.490    34167.362
+ 15  JC+I+R3       16499.571    154 33307.141    33343.308    34122.789
+ 16  JC+I+R4       16498.651    156 33309.302    33346.467    34135.542
+ 26  JC+I+G4       16507.948    151 33317.897    33352.594    34117.655
+ 37  JC+I+R3       16499.571    154 33307.141    33343.308    34122.789
+ 48  F81+I+G4      16507.799    151 33317.598    33352.295    34117.356
+ 59  F81+I+R3      16499.529    154 33307.058    33343.224    34122.705
+ 70  F81+F+I+G4    16070.902    154 32449.804    32485.971    33265.452
+ 81  F81+F+I+R3    16063.122    157 32440.244    32477.915    33271.781
+ 92  K2P+I+G4      16080.560    152 32465.119    32500.303    33270.174
+103  K2P+I+R3      16070.939    155 32451.877    32488.542    33272.822
+114  K2P+I+G4      16080.560    152 32465.119    32500.303    33270.174
+125  K2P+I+R3      16070.939    155 32451.877    32488.542    33272.822
+136  HKY+I+G4      16080.543    152 32465.086    32500.269    33270.141
+147  HKY+I+R3      16070.939    155 32451.878    32488.542    33272.822
+158  HKY+F+I+G4    15335.861    155 30981.721    31018.385    31802.665
+169  HKY+F+I+R3    15334.133    158 30984.265    31022.445    31821.099
+180  TNe+I+G4      15941.469    153 32188.938    32224.611    32999.289
+191  TNe+I+R3      15930.654    156 32173.308    32210.474    32999.549
+202  TNe+I+G4      15941.469    153 32188.938    32224.611    32999.289
+213  TNe+I+R3      15930.654    156 32173.308    32210.474    32999.549
+224  TN+I+G4       15941.369    153 32188.738    32224.411    32999.090
+235  TN+I+R3       15930.536    156 32173.073    32210.238    32999.313
+246  TN+F+I+G4     15252.745    156 30817.491    30854.656    31643.731
+257  TN+F+I+R3     15252.934    159 30823.869    30862.561    31665.998
+268  K3P+I+G4      15716.400    153 31738.800    31774.473    32549.151
+279  K3P+I+R3      15706.436    156 31724.871    31762.037    32551.112
+290  K3P+I+G4      15716.400    153 31738.800    31774.473    32549.151
+301  K3P+I+R3      15706.436    156 31724.871    31762.037    32551.112
+312  K3Pu+I+G4     15716.379    153 31738.757    31774.430    32549.108
+323  K3Pu+I+R3     15706.427    156 31724.855    31762.020    32551.095
+334  K3Pu+F+I+G4   15227.845    156 30767.689    30804.855    31593.930
+345  K3Pu+F+I+R3   15224.018    159 30766.037    30804.729    31608.167
+356  TPM2+I+G4     15714.773    153 31735.546    31771.219    32545.897
+367  TPM2+I+R3     15707.843    156 31727.685    31764.850    32553.926
+378  TPM2+I+G4     15714.773    153 31735.546    31771.219    32545.897
+389  TPM2+I+R3     15707.843    156 31727.685    31764.850    32553.926
+400  TPM2u+I+G4    15714.708    153 31735.415    31771.088    32545.766
+411  TPM2u+I+R3    15707.791    156 31727.581    31764.747    32553.822
+422  TPM2u+F+I+G4  15213.634    156 30739.267    30776.433    31565.508
+433  TPM2u+F+I+R3  15211.226    159 30740.451    30779.143    31582.581
+444  TPM3+I+G4     15975.696    153 32257.393    32293.066    33067.744
+455  TPM3+I+R3     15960.544    156 32233.089    32270.254    33059.329
+466  TPM3+I+G4     15975.696    153 32257.393    32293.066    33067.744
+477  TPM3+I+R3     15960.544    156 32233.089    32270.254    33059.329
+488  TPM3u+I+G4    15975.589    153 32257.177    32292.850    33067.529
+499  TPM3u+I+R3    15960.462    156 32232.925    32270.090    33059.165
+510  TPM3u+F+I+G4  15314.370    156 30940.741    30977.906    31766.981
+521  TPM3u+F+I+R3  15310.417    159 30938.834    30977.526    31780.963
+532  TIMe+I+G4     15570.902    154 31449.804    31485.970    32265.451
+543  TIMe+I+R3     15560.500    157 31435.000    31472.670    32266.537
+554  TIMe+I+G4     15570.902    154 31449.804    31485.970    32265.451
+565  TIMe+I+R3     15560.500    157 31435.000    31472.670    32266.537
+576  TIM+I+G4      15570.874    154 31449.748    31485.915    32265.396
+587  TIM+I+R3      15560.372    157 31434.745    31472.415    32266.282
+598  TIM+F+I+G4    15137.907    157 30589.814    30627.484    31421.350
+609  TIM+F+I+R3    15138.484    160 30596.969    30636.177    31444.395
+620  TIM2e+I+G4    15591.000    154 31490.000    31526.166    32305.647
+631  TIM2e+I+R3    15583.082    157 31480.163    31517.833    32311.700
+642  TIM2e+I+G4    15591.000    154 31490.000    31526.166    32305.647
+653  TIM2e+I+R3    15583.082    157 31480.163    31517.834    32311.700
+664  TIM2+I+G4     15590.866    154 31489.731    31525.898    32305.379
+675  TIM2+I+R3     15582.954    157 31479.909    31517.579    32311.446
+686  TIM2+F+I+G4   15115.824    157 30545.648    30583.319    31377.185
+697  TIM2+F+I+R3   15116.930    160 30553.860    30593.069    31401.286
+708  TIM3e+I+G4    15811.978    154 31931.956    31968.123    32747.604
+719  TIM3e+I+R3    15789.810    157 31893.620    31931.290    32725.157
+730  TIM3e+I+G4    15811.978    154 31931.956    31968.123    32747.604
+741  TIM3e+I+R3    15789.810    157 31893.620    31931.290    32725.157
+752  TIM3+I+G4     15811.962    154 31931.925    31968.091    32747.572
+763  TIM3+I+R3     15789.763    157 31893.527    31931.197    32725.064
+774  TIM3+F+I+G4   15235.388    157 30784.776    30822.447    31616.313
+785  TIM3+F+I+R3   15234.671    160 30789.343    30828.551    31636.769
+796  TVMe+I+G4     15557.543    155 31425.085    31461.749    32246.029
+807  TVMe+I+R3     15547.158    158 31410.317    31448.496    32247.150
+818  TVMe+I+G4     15557.543    155 31425.085    31461.749    32246.029
+829  TVMe+I+R3     15547.158    158 31410.317    31448.496    32247.150
+840  TVM+I+G4      15557.424    155 31424.848    31461.512    32245.792
+851  TVM+I+R3      15546.974    158 31409.948    31448.127    32246.781
+862  TVM+F+I+G4    15182.564    158 30681.128    30719.307    31517.961
+873  TVM+F+I+R3    15178.482    161 30678.963    30718.692    31531.686
+884  SYM+I+G4      15406.842    156 31125.684    31162.849    31951.925
+895  SYM+I+R3      15388.687    159 31095.375    31134.067    31937.504
+906  SYM+I+G4      15406.842    156 31125.684    31162.850    31951.925
+917  SYM+I+R3      15388.687    159 31095.375    31134.067    31937.504
+928  GTR+I+G4      15406.759    156 31125.519    31162.684    31951.759
+939  GTR+I+R3      15388.655    159 31095.310    31134.002    31937.439
+950  GTR+F+I+G4    15087.421    159 30492.842    30531.534    31334.972
+961  GTR+F+I+R3    15087.469    162 30498.937    30539.190    31356.956
+Akaike Information Criterion:           GTR+F+I+G4
+Corrected Akaike Information Criterion: GTR+F+I+G4
+Bayesian Information Criterion:         GTR+F+I+G4
+Best-fit model: GTR+F+I+G4 chosen according to BIC
+
+All model information printed to ml2\trees\M47702.model.gz
+CPU time for ModelFinder: 186.156 seconds (0h:3m:6s)
+Wall-clock time for ModelFinder: 74.214 seconds (0h:1m:14s)
+Generating 1000 samples for ultrafast bootstrap (seed: 770054)...
+
+NOTE: 10 MB RAM (0 GB) is required!
+Estimate model parameters (epsilon = 0.100)
+Thoroughly optimizing +I+G parameters from 10 start values...
+Init pinv, alpha: 0.000, 0.620 / Estimate: 0.000, 0.252 / LogL: -15161.065
+Init pinv, alpha: 0.064, 0.620 / Estimate: 0.431, 0.587 / LogL: -15087.600
+Init pinv, alpha: 0.129, 0.620 / Estimate: 0.431, 0.587 / LogL: -15087.594
+Init pinv, alpha: 0.193, 0.620 / Estimate: 0.430, 0.585 / LogL: -15087.620
+Init pinv, alpha: 0.257, 0.620 / Estimate: 0.432, 0.588 / LogL: -15087.590
+Init pinv, alpha: 0.321, 0.620 / Estimate: 0.431, 0.586 / LogL: -15087.608
+Init pinv, alpha: 0.386, 0.620 / Estimate: 0.429, 0.582 / LogL: -15087.650
+Init pinv, alpha: 0.450, 0.620 / Estimate: 0.448, 0.632 / LogL: -15087.363
+Init pinv, alpha: 0.514, 0.620 / Estimate: 0.471, 0.707 / LogL: -15087.638
+Init pinv, alpha: 0.578, 0.620 / Estimate: 0.468, 0.697 / LogL: -15087.566
+Optimal pinv,alpha: 0.448, 0.632 / LogL: -15087.363
+
+Parameters optimization took 5.454 sec
+Wrote distance file to... 
+Computing ML distances based on estimated model parameters...
+Calculating distance matrix: done in 0.0224089 secs using 209.2% CPU
+Computing ML distances took 0.039206 sec (of wall-clock time) 0.125000 sec (of CPU time)
+Setting up auxiliary I and S matrices: done in 0.0003437 secs
+Constructing RapidNJ tree: done in 0.000748 secs
+Computing RapidNJ tree took 0.014052 sec (of wall-clock time) 0.000000 sec (of CPU time)
+Log-likelihood of RapidNJ tree: -15261.285
+--------------------------------------------------------------------
+|             INITIALIZING CANDIDATE TREE SET                      |
+--------------------------------------------------------------------
+Generating 98 parsimony trees... 1.882 second
+Computing log-likelihood of 98 initial trees ... 1.154 seconds
+Current best score: -15085.667
+
+Do NNI search on 20 best initial trees
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 1: -15055.669
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 3: -15055.045
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 9: -15053.584
+Iteration 10 / LogL: -15068.004 / Time: 0h:1m:28s
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 12: -15052.951
+Iteration 20 / LogL: -15066.586 / Time: 0h:1m:34s
+Finish initializing candidate tree set (19)
+Current best tree score: -15052.951 / CPU time: 14.847
+Number of iterations: 20
+--------------------------------------------------------------------
+|               OPTIMIZING CANDIDATE TREE SET                      |
+--------------------------------------------------------------------
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 23: -15052.002
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 29: -15050.231
+Iteration 30 / LogL: -15051.841 / Time: 0h:1m:39s (0h:1m:26s left)
+Iteration 40 / LogL: -15051.100 / Time: 0h:1m:45s (0h:1m:11s left)
+Iteration 50 / LogL: -15051.995 / Time: 0h:1m:50s (0h:0m:58s left)
+Iteration 60 / LogL: -15050.306 / Time: 0h:1m:56s (0h:0m:48s left)
+Iteration 70 / LogL: -15050.565 / Time: 0h:2m:1s (0h:0m:40s left)
+Iteration 80 / LogL: -15050.307 / Time: 0h:2m:6s (0h:0m:32s left)
+Iteration 90 / LogL: -15056.537 / Time: 0h:2m:12s (0h:0m:25s left)
+Iteration 100 / LogL: -15052.200 / Time: 0h:2m:18s (0h:0m:18s left)
+Iteration 110 / LogL: -15051.859 / Time: 0h:2m:24s (0h:0m:12s left)
+Iteration 120 / LogL: -15050.306 / Time: 0h:2m:30s (0h:0m:5s left)
+UPDATE BEST LOG-LIKELIHOOD: -15050.231
+Iteration 130 / LogL: -15053.173 / Time: 0h:2m:36s (0h:0m:-1s left)
+Refining ufboot trees with NNI 1 branch...
+100 samples done
+200 samples done
+300 samples done
+400 samples done
+500 samples done
+600 samples done
+700 samples done
+800 samples done
+900 samples done
+1000 samples done
+Total 1000 ufboot trees refined
+TREE SEARCH COMPLETED AFTER 130 ITERATIONS / Time: 0h:3m:51s
+
+--------------------------------------------------------------------
+|                    FINALIZING TREE SEARCH                        |
+--------------------------------------------------------------------
+Performs final model parameters optimization
+Estimate model parameters (epsilon = 0.010)
+1. Initial log-likelihood: -15050.231
+Optimal log-likelihood: -15050.229
+Rate parameters:  A-C: 3.16575  A-G: 15.45989  A-T: 10.18833  C-G: 1.35204  C-T: 47.61784  G-T: 1.00000
+Base frequencies:  A: 0.292  C: 0.157  G: 0.137  T: 0.414
+Proportion of invariable sites: 0.451
+Gamma shape alpha: 0.653
+Parameters optimization took 1 rounds (0.076 sec)
+BEST SCORE FOUND : -15050.229
+Creating bootstrap support values...
+Split supports printed to NEXUS file ml2\trees\M47702.splits.nex
+Total tree length: 3.395
+
+Total number of iterations: 130
+CPU time used for tree search: 428.797 sec (0h:7m:8s)
+Wall-clock time used for tree search: 151.410 sec (0h:2m:31s)
+Total CPU time used: 633.109 sec (0h:10m:33s)
+Total wall-clock time used: 232.216 sec (0h:3m:52s)
+UFBoot trees printed to ml2\trees\M47702.ufboot
+
+Computing bootstrap consensus tree...
+Reading input file ml2\trees\M47702.splits.nex...
+76 taxa and 987 splits.
+Consensus tree written to ml2\trees\M47702.contree
+Reading input trees file ml2\trees\M47702.contree
+Log-likelihood of consensus tree: -15051.347
+
+Analysis results written to: 
+  IQ-TREE report:                ml2\trees\M47702.iqtree
+  Maximum-likelihood tree:       ml2\trees\M47702.treefile
+  Likelihood distances:          ml2\trees\M47702.mldist
+
+Ultrafast bootstrap approximation results written to:
+  Split support values:          ml2\trees\M47702.splits.nex
+  Consensus tree:                ml2\trees\M47702.contree
+  UFBoot trees:                  ml2\trees\M47702.ufboot
+  Screen log file:               ml2\trees\M47702.log
+
+Date and Time: Mon May 04 13:56:24 2026

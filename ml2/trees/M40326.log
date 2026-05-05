@@ -1,0 +1,265 @@
+IQ-TREE version 3.1.1 for Windows 64-bit built Apr  2 2026
+Developed by Bui Quang Minh, Thomas Wong, Nhan Ly-Trong, Huaiyan Ren
+Contributed by Lam-Tung Nguyen, Dominik Schrempf, Chris Bielow,
+Olga Chernomor, Michael Woodhams, Diep Thi Hoang, Heiko Schmidt
+
+Host:    DESKTOP-I0VDDLU (AVX2, FMA3, 15 GB RAM)
+Command: iqtree-3.1.1-Windows\bin\iqtree3.exe -s ml2\datasets\M40326.nex -m MFP -B 1000 -bnni -T AUTO --prefix ml2\trees\M40326 --redo
+Seed:    345356 (Using SPRNG - Scalable Parallel Random Number Generator)
+Time:    Mon May 04 13:43:46 2026
+Kernel:  AVX+FMA - auto-detect threads (16 CPU cores detected)
+
+Reading alignment file ml2\datasets\M40326.nex ... Nexus format detected
+Alignment has 46 sequences with 1188 columns, 243 distinct patterns
+226 parsimony-informative, 126 singleton sites, 836 constant sites
+WARNING: Some sequence names are changed as follows:
+Ostrinia furnacalis FJ435436 Chiny + 1 -> Ostrinia_furnacalis_FJ435436_Chiny___1
+Ostrinia nubilalis DQ204894 USA + 1 -> Ostrinia_nubilalis_DQ204894_USA___1
+Ostrinia nubilalis DQ204910 USA + 2 -> Ostrinia_nubilalis_DQ204910_USA___2
+Ostrinia nubilalis DQ204912  USA + 1 -> Ostrinia_nubilalis_DQ204912__USA___1
+Ostrinia nubilalis DQ204914 USA + 18 -> Ostrinia_nubilalis_DQ204914_USA___18
+Ostrinia nubilalis Poland 005 + 1 -> Ostrinia_nubilalis_Poland_005___1
+Ostrinia nubilalis Poland 012 + 1 -> Ostrinia_nubilalis_Poland_012___1
+
+                                        Gap/Ambiguity  Composition  p-value
+Analyzing sequences: done in 0.0001242 secs
+   1  Chilo_suppressalis_HQ860290               0.59%    passed     92.96%
+   2  Cnaphalocrocis_medinalis_JQ647917         0.59%    passed     17.96%
+   3  Elophila_interruptalis_KC894961           0.59%    passed     94.01%
+   4  Ostrinia_furnacalis_AB746852_Japan        1.01%    passed     98.70%
+   5  Ostrinia_furnacalis_AF467260_China        0.59%    passed     99.95%
+   6  Ostrinia_furnacalis_DQ204878_Unknown      0.59%    passed     99.79%
+   7  Ostrinia_furnacalis_EU128663_Chiny        0.34%    passed     98.24%
+   8  Ostrinia_furnacalis_EU128664_Chiny        0.34%    passed     99.75%
+   9  Ostrinia_furnacalis_EU128665_Chiny        0.34%    passed     97.65%
+  10  Ostrinia_furnacalis_EU128666_Chiny        0.34%    passed     97.65%
+  11  Ostrinia_furnacalis_FJ435436_Chiny___1    0.34%    passed     98.09%
+  12  Ostrinia_kurentzovi_EU128654_Chiny        0.34%    passed     99.89%
+  13  Ostrinia_latipennis_EU128657_Chiny        0.34%    passed     93.58%
+  14  Ostrinia_latipennis_FJ435439_Chiny        0.34%    passed     91.26%
+  15  Ostrinia_narynensis_EU128655_Chiny        0.34%    passed     99.95%
+  16  Ostrinia_nubilalis_AF321877_Unknown       0.34%    passed     99.02%
+  17  Ostrinia_nubilalis_AF321878_Unknown       0.34%    passed     99.11%
+  18  Ostrinia_nubilalis_AF321879_Unknown       0.34%    passed     98.22%
+  19  Ostrinia_nubilalis_AF442957_USA           0.59%    passed     98.09%
+  20  Ostrinia_nubilalis_DQ204891_USA           0.59%    passed     99.96%
+  21  Ostrinia_nubilalis_DQ204894_USA___1       0.59%    passed     99.79%
+  22  Ostrinia_nubilalis_DQ204907_USA           0.59%    passed     99.80%
+  23  Ostrinia_nubilalis_DQ204908_USA           0.59%    passed     99.96%
+  24  Ostrinia_nubilalis_DQ204910_USA___2       0.59%    passed     99.82%
+  25  Ostrinia_nubilalis_DQ204911_USA           0.59%    passed     99.80%
+  26  Ostrinia_nubilalis_DQ204912__USA___1      0.59%    passed     99.91%
+  27  Ostrinia_nubilalis_DQ204913_USA           0.59%    passed     99.96%
+  28  Ostrinia_nubilalis_DQ204914_USA___18      0.59%    passed     99.93%
+  29  Ostrinia_nubilalis_DQ204915_USA           0.59%    passed     99.96%
+  30  Ostrinia_nubilalis_EU128659_Chiny         0.34%    passed     95.78%
+  31  Ostrinia_nubilalis_EU128660_France        0.34%    passed     96.36%
+  32  Ostrinia_nubilalis_Poland_003             0.59%    passed     99.82%
+  33  Ostrinia_nubilalis_Poland_005___1         0.59%    passed     99.80%
+  34  Ostrinia_nubilalis_Poland_008             0.59%    passed     95.35%
+  35  Ostrinia_nubilalis_Poland_009             0.59%    passed     99.51%
+  36  Ostrinia_nubilalis_Poland_011             0.59%    passed     99.79%
+  37  Ostrinia_nubilalis_Poland_012___1         0.59%    passed     98.75%
+  38  Ostrinia_nubilalis_Poland_013             0.59%    passed     99.80%
+  39  Ostrinia_nubilalis_Poland_018             0.59%    passed     99.96%
+  40  Ostrinia_nubilalis_Poland_025             0.59%    passed     99.93%
+  41  Ostrinia_nubilalis_Poland_029             0.59%    passed     99.10%
+  42  Ostrinia_orientalis_EU128653_Chiny        0.34%    passed     99.94%
+  43  Ostrinia_scapulalis_EU128656_Chiny        0.34%    passed     99.59%
+  44  Ostrinia_zealis_EU128658_Chiny            0.34%    passed     98.49%
+  45  Scirpophaga_incertulas_KF751706           0.59%    passed     10.20%
+  46  Tyspanodes_hypsalis_KM453724              0.59%    passed     34.23%
+****  TOTAL                                     0.51%  0 sequences failed composition chi2 test (p-value<5%; df=3)
+Checking for duplicate sequences: done in 0.0002085 secs
+
+
+Create initial parsimony tree by phylogenetic likelihood library (PLL)... 0.010 seconds
+Measuring multi-threading efficiency up to 16 CPU cores
+Increase to 10 rounds for branch lengths
+590 trees examined
+Threads: 1 / Time: 16.011 sec / Speedup: 1.000 / Efficiency: 100% / LogL: -6638
+Threads: 2 / Time: 12.680 sec / Speedup: 1.263 / Efficiency: 63% / LogL: -6638
+Threads: 3 / Time: 12.714 sec / Speedup: 1.259 / Efficiency: 42% / LogL: -6638
+Determining AUTO threadcount: done in 41.4298 secs using 197.9% CPU
+BEST NUMBER OF THREADS: 2
+
+Perform fast likelihood tree search using GTR+I+G model...
+Estimate model parameters (epsilon = 5.000)
+Perform nearest neighbor interchange...
+Estimate model parameters (epsilon = 1.000)
+1. Initial log-likelihood: -4916.635
+Optimal log-likelihood: -4915.909
+Rate parameters:  A-C: 3.56355  A-G: 9.96517  A-T: 10.74200  C-G: 3.83811  C-T: 37.94769  G-T: 1.00000
+Base frequencies:  A: 0.318  C: 0.153  G: 0.137  T: 0.391
+Proportion of invariable sites: 0.356
+Gamma shape alpha: 0.390
+Parameters optimization took 1 rounds (0.062 sec)
+Time for fast ML tree search: 0.233 seconds
+
+NOTE: ModelFinder requires 4 MB RAM!
+ModelFinder will test up to 968 DNA models (sample size: 1188 epsilon: 0.100) ...
+ No. Model         -LnL         df  AIC          AICc         BIC
+  1  JC            5596.957     89  11371.913    11386.503    11824.035
+  2  JC+I          5315.200     90  10810.400    10825.332    11267.603
+  3  JC+G4         5303.384     90  10786.767    10801.699    11243.970
+  4  JC+I+G4       5297.892     91  10777.783    10793.061    11240.066
+  5  JC+R2         5303.320     91  10788.641    10803.918    11250.923
+  6  JC+R3         5302.438     93  10790.876    10806.858    11263.318
+ 14  JC+I+R2       5301.948     92  10787.895    10803.523    11255.258
+ 15  JC+I+R3       5280.622     94  10749.245    10765.585    11226.767
+ 16  JC+I+R4       5280.208     96  10752.417    10769.487    11240.099
+ 37  JC+I+R3       5280.622     94  10749.245    10765.585    11226.767
+ 59  F81+I+R3      5280.588     94  10749.177    10765.517    11226.699
+ 81  F81+F+I+R3    5048.313     97  10290.625    10308.067    10783.388
+103  K2P+I+R3      5244.319     95  10678.639    10695.342    11161.241
+125  K2P+I+R3      5244.319     95  10678.639    10695.342    11161.241
+147  HKY+I+R3      5244.310     95  10678.620    10695.323    11161.222
+169  HKY+F+I+R3    4964.600     98  10125.201    10143.019    10623.043
+191  TNe+I+R3      5204.221     96  10600.441    10617.512    11088.124
+213  TNe+I+R3      5204.221     96  10600.441    10617.512    11088.124
+235  TN+I+R3       5204.199     96  10600.398    10617.469    11088.081
+257  TN+F+I+R3     4937.120     99  10072.241    10090.439    10575.163
+279  K3P+I+R3      5154.355     96  10500.710    10517.780    10988.392
+301  K3P+I+R3      5154.355     96  10500.710    10517.780    10988.392
+323  K3Pu+I+R3     5154.350     96  10500.699    10517.770    10988.382
+345  K3Pu+F+I+R3   4934.779     99  10067.558    10085.757    10570.481
+367  TPM2+I+R3     5156.413     96  10504.826    10521.897    10992.509
+389  TPM2+I+R3     5156.413     96  10504.826    10521.897    10992.509
+411  TPM2u+I+R3    5156.408     96  10504.816    10521.886    10992.498
+433  TPM2u+F+I+R3  4941.150     99  10080.299    10098.498    10583.222
+455  TPM3+I+R3     5213.152     96  10618.303    10635.374    11105.986
+477  TPM3+I+R3     5213.152     96  10618.303    10635.374    11105.986
+499  TPM3u+I+R3    5213.117     96  10618.233    10635.304    11105.916
+521  TPM3u+F+I+R3  4959.373     99  10116.747    10134.945    10619.669
+543  TIMe+I+R3     5113.866     97  10421.732    10439.174    10914.495
+565  TIMe+I+R3     5113.866     97  10421.732    10439.174    10914.495
+587  TIM+I+R3      5113.828     97  10421.656    10439.098    10914.419
+609  TIM+F+I+R3    4903.781     100 10007.562    10026.145    10515.565
+631  TIM2e+I+R3    5117.660     97  10429.321    10446.763    10922.083
+653  TIM2e+I+R3    5117.660     97  10429.321    10446.763    10922.083
+675  TIM2+I+R3     5117.653     97  10429.306    10446.748    10922.068
+697  TIM2+F+I+R3   4906.809     100 10013.619    10032.202    10521.621
+719  TIM3e+I+R3    5169.702     97  10533.405    10550.847    11026.167
+741  TIM3e+I+R3    5169.702     97  10533.405    10550.847    11026.167
+763  TIM3+I+R3     5169.664     97  10533.328    10550.770    11026.091
+785  TIM3+F+I+R3   4933.027     100 10066.053    10084.637    10574.056
+807  TVMe+I+R3     5107.839     98  10411.679    10429.497    10909.521
+829  TVMe+I+R3     5107.839     98  10411.679    10429.497    10909.521
+851  TVM+I+R3      5107.835     98  10411.671    10429.489    10909.513
+873  TVM+F+I+R3    4928.490     101 10058.980    10077.952    10572.062
+895  SYM+I+R3      5064.509     99  10327.019    10345.217    10829.941
+917  SYM+I+R3      5064.509     99  10327.019    10345.217    10829.941
+939  GTR+I+R3      5064.485     99  10326.969    10345.168    10829.892
+961  GTR+F+I+R3    4895.433     102 9994.866     10014.232    10513.029
+Akaike Information Criterion:           GTR+F+I+R3
+Corrected Akaike Information Criterion: GTR+F+I+R3
+Bayesian Information Criterion:         GTR+F+I+R3
+Best-fit model: GTR+F+I+R3 chosen according to BIC
+
+All model information printed to ml2\trees\M40326.model.gz
+CPU time for ModelFinder: 92.219 seconds (0h:1m:32s)
+Wall-clock time for ModelFinder: 46.655 seconds (0h:0m:46s)
+Generating 1000 samples for ultrafast bootstrap (seed: 345356)...
+
+NOTE: 2 MB RAM (0 GB) is required!
+Estimate model parameters (epsilon = 0.100)
+1. Initial log-likelihood: -4895.433
+Optimal log-likelihood: -4895.419
+Rate parameters:  A-C: 3.23663  A-G: 10.12707  A-T: 11.45301  C-G: 3.99708  C-T: 39.48486  G-T: 1.00000
+Base frequencies:  A: 0.318  C: 0.153  G: 0.137  T: 0.391
+Proportion of invariable sites: 0.534
+Site proportion and rates:  (0.183,0.229) (0.253,1.699) (0.029,18.141)
+Parameters optimization took 1 rounds (0.059 sec)
+Wrote distance file to... 
+Computing ML distances based on estimated model parameters...
+Calculating distance matrix: done in 0.0075618 secs
+Computing ML distances took 0.022651 sec (of wall-clock time) 0.062500 sec (of CPU time)
+Setting up auxiliary I and S matrices: done in 0.0001514 secs
+Constructing RapidNJ tree: done in 0.0003303 secs
+Computing RapidNJ tree took 0.013830 sec (of wall-clock time) 0.015625 sec (of CPU time)
+Log-likelihood of RapidNJ tree: -4916.072
+--------------------------------------------------------------------
+|             INITIALIZING CANDIDATE TREE SET                      |
+--------------------------------------------------------------------
+Generating 98 parsimony trees... 0.502 second
+Computing log-likelihood of 98 initial trees ... 0.400 seconds
+Current best score: -4895.419
+
+Do NNI search on 20 best initial trees
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 1: -4888.527
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 2: -4884.356
+Iteration 10 / LogL: -4884.358 / Time: 0h:0m:51s
+Iteration 20 / LogL: -4890.660 / Time: 0h:0m:55s
+Finish initializing candidate tree set (20)
+Current best tree score: -4884.356 / CPU time: 8.247
+Number of iterations: 20
+--------------------------------------------------------------------
+|               OPTIMIZING CANDIDATE TREE SET                      |
+--------------------------------------------------------------------
+Iteration 30 / LogL: -4884.361 / Time: 0h:0m:57s (0h:0m:27s left)
+Iteration 40 / LogL: -4886.206 / Time: 0h:1m:0s (0h:0m:21s left)
+Iteration 50 / LogL: -4884.365 / Time: 0h:1m:3s (0h:0m:17s left)
+Iteration 60 / LogL: -4884.360 / Time: 0h:1m:6s (0h:0m:13s left)
+Iteration 70 / LogL: -4884.364 / Time: 0h:1m:8s (0h:0m:10s left)
+Iteration 80 / LogL: -4896.569 / Time: 0h:1m:11s (0h:0m:6s left)
+Iteration 90 / LogL: -4884.823 / Time: 0h:1m:14s (0h:0m:3s left)
+Iteration 100 / LogL: -4887.200 / Time: 0h:1m:16s (0h:0m:0s left)
+Refining ufboot trees with NNI 1 branch...
+100 samples done
+200 samples done
+300 samples done
+400 samples done
+500 samples done
+600 samples done
+700 samples done
+800 samples done
+900 samples done
+1000 samples done
+Total 1000 ufboot trees refined
+TREE SEARCH COMPLETED AFTER 103 ITERATIONS / Time: 0h:1m:53s
+
+--------------------------------------------------------------------
+|                    FINALIZING TREE SEARCH                        |
+--------------------------------------------------------------------
+Performs final model parameters optimization
+Estimate model parameters (epsilon = 0.010)
+1. Initial log-likelihood: -4884.356
+Optimal log-likelihood: -4884.348
+Rate parameters:  A-C: 3.22991  A-G: 9.99826  A-T: 11.39134  C-G: 3.51380  C-T: 39.56934  G-T: 1.00000
+Base frequencies:  A: 0.318  C: 0.153  G: 0.137  T: 0.391
+Proportion of invariable sites: 0.535
+Site proportion and rates:  (0.182,0.231) (0.252,1.638) (0.030,18.001)
+Parameters optimization took 1 rounds (0.061 sec)
+BEST SCORE FOUND : -4884.348
+Creating bootstrap support values...
+Split supports printed to NEXUS file ml2\trees\M40326.splits.nex
+Total tree length: 1.549
+
+Total number of iterations: 103
+CPU time used for tree search: 127.078 sec (0h:2m:7s)
+Wall-clock time used for tree search: 66.281 sec (0h:1m:6s)
+Total CPU time used: 220.688 sec (0h:3m:40s)
+Total wall-clock time used: 113.782 sec (0h:1m:53s)
+UFBoot trees printed to ml2\trees\M40326.ufboot
+
+Computing bootstrap consensus tree...
+Reading input file ml2\trees\M40326.splits.nex...
+46 taxa and 2047 splits.
+Consensus tree written to ml2\trees\M40326.contree
+Reading input trees file ml2\trees\M40326.contree
+Log-likelihood of consensus tree: -4884.397
+
+Analysis results written to: 
+  IQ-TREE report:                ml2\trees\M40326.iqtree
+  Maximum-likelihood tree:       ml2\trees\M40326.treefile
+  Likelihood distances:          ml2\trees\M40326.mldist
+
+Ultrafast bootstrap approximation results written to:
+  Split support values:          ml2\trees\M40326.splits.nex
+  Consensus tree:                ml2\trees\M40326.contree
+  UFBoot trees:                  ml2\trees\M40326.ufboot
+  Screen log file:               ml2\trees\M40326.log
+
+Date and Time: Mon May 04 13:45:41 2026

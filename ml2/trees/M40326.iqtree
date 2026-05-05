@@ -1,0 +1,393 @@
+IQ-TREE 3.1.1 built Apr  2 2026
+
+Input file name: ml2\datasets\M40326.nex
+Type of analysis: ModelFinder + tree reconstruction + ultrafast bootstrap (1000 replicates)
+Random seed number: 345356
+
+REFERENCES
+----------
+
+To cite IQ-TREE 3 please use:
+
+Thomas K.F. Wong, Nhan Ly-Trong, Huaiyan Ren, Hector Banos, Andrew J. Roger,
+Edward Susko, Chris Bielow, Nicola De Maio, Nick Goldman, Matthew W. Hahn,
+Gavin Huttley, Robert Lanfear, Bui Quang Minh (2025)
+IQ-TREE 3: Phylogenomic Inference Software using Complex Evolutionary Models.
+Submitted.
+
+Since you used ModelFinder please also cite: 
+
+Subha Kalyaanamoorthy, Bui Quang Minh, Thomas KF Wong, Arndt von Haeseler,
+and Lars S Jermiin (2017) ModelFinder: Fast model selection for
+accurate phylogenetic estimates. Nature Methods, 14:587–589.
+https://doi.org/10.1038/nmeth.4285
+
+Since you used ultrafast bootstrap (UFBoot) please also cite: 
+
+Diep Thi Hoang, Olga Chernomor, Arndt von Haeseler, Bui Quang Minh,
+and Le Sy Vinh (2018) UFBoot2: Improving the ultrafast bootstrap
+approximation. Mol. Biol. Evol., 35:518–522.
+https://doi.org/10.1093/molbev/msx281
+
+SEQUENCE ALIGNMENT
+------------------
+
+NOTE: Alignment sequence type is auto-detected. If in doubt, specify it via -st option.
+Input data: 46 sequences with 1188 nucleotide sites
+Number of constant sites: 836 (= 70.3704% of all sites)
+Number of invariant (constant or ambiguous constant) sites: 836 (= 70.3704% of all sites)
+Number of parsimony informative sites: 226
+Number of distinct site patterns: 243
+
+ModelFinder
+-----------
+
+Best-fit model according to BIC: GTR+F+I+R3
+
+List of models sorted by BIC scores: 
+
+Model                  LogL         AIC      w-AIC        AICc     w-AICc         BIC      w-BIC
+GTR+F+I+R3        -4895.433    9994.866 +    0.998   10014.232 +    0.997   10513.029 +    0.772
+TIM+F+I+R3        -4903.781   10007.562 -  0.00175   10026.145 -  0.00258   10515.565 +    0.217
+TIM2+F+I+R3       -4906.809   10013.619 - 8.46e-005   10032.202 - 0.000125   10521.621 -   0.0105
+K3Pu+F+I+R3       -4934.779   10067.558 - 1.64e-016   10085.757 - 2.93e-016   10570.481 - 2.58e-013
+TVM+F+I+R3        -4928.490   10058.980 - 1.19e-014   10077.952 - 1.45e-014   10572.062 - 1.17e-013
+TIM3+F+I+R3       -4933.027   10066.053 - 3.48e-016   10084.637 - 5.14e-016   10574.056 - 4.32e-014
+TN+F+I+R3         -4937.120   10072.241 - 1.58e-017   10090.439 - 2.82e-017   10575.163 - 2.49e-014
+TPM2u+F+I+R3      -4941.150   10080.299 - 2.8e-019   10098.498 - 5.02e-019   10583.222 - 4.42e-016
+TPM3u+F+I+R3      -4959.373   10116.747 - 3.41e-027   10134.945 - 6.11e-027   10619.669 - 5.38e-024
+HKY+F+I+R3        -4964.600   10125.201 - 4.98e-029   10143.019 - 1.08e-028   10623.043 - 9.96e-025
+F81+F+I+R3        -5048.313   10290.625 - 5.97e-065   10308.067 - 1.56e-064   10783.388 - 1.51e-059
+GTR+I+R3          -5064.485   10326.969 - 7.66e-073   10345.168 - 1.37e-072   10829.892 - 1.21e-069
+SYM+I+R3          -5064.509   10327.019 - 7.47e-073   10345.217 - 1.34e-072   10829.941 - 1.18e-069
+SYM+I+R3          -5064.509   10327.019 - 7.47e-073   10345.217 - 1.34e-072   10829.941 - 1.18e-069
+TVM+I+R3          -5107.835   10411.671 - 3.1e-091   10429.489 - 6.71e-091   10909.513 - 6.2e-087
+TVMe+I+R3         -5107.839   10411.679 - 3.09e-091   10429.497 - 6.69e-091   10909.521 - 6.17e-087
+TVMe+I+R3         -5107.839   10411.679 - 3.09e-091   10429.497 - 6.69e-091   10909.521 - 6.17e-087
+TIM+I+R3          -5113.828   10421.656 - 2.1e-093   10439.098 - 5.5e-093   10914.419 - 5.33e-088
+TIMe+I+R3         -5113.866   10421.732 - 2.03e-093   10439.174 - 5.29e-093   10914.495 - 5.13e-088
+TIMe+I+R3         -5113.866   10421.732 - 2.03e-093   10439.174 - 5.29e-093   10914.495 - 5.13e-088
+TIM2+I+R3         -5117.653   10429.306 - 4.59e-095   10446.748 - 1.2e-094   10922.068 - 1.16e-089
+TIM2e+I+R3        -5117.660   10429.321 - 4.56e-095   10446.763 - 1.19e-094   10922.083 - 1.16e-089
+TIM2e+I+R3        -5117.660   10429.321 - 4.56e-095   10446.763 - 1.19e-094   10922.083 - 1.16e-089
+K3Pu+I+R3         -5154.350   10500.699 - 1.44e-110   10517.770 - 4.54e-110   10988.382 - 4.64e-104
+K3P+I+R3          -5154.355   10500.710 - 1.43e-110   10517.780 - 4.52e-110   10988.392 - 4.61e-104
+K3P+I+R3          -5154.355   10500.710 - 1.43e-110   10517.780 - 4.52e-110   10988.392 - 4.61e-104
+TPM2u+I+R3        -5156.408   10504.816 - 1.84e-111   10521.886 - 5.8e-111   10992.498 - 5.92e-105
+TPM2+I+R3         -5156.413   10504.826 - 1.83e-111   10521.897 - 5.77e-111   10992.509 - 5.89e-105
+TPM2+I+R3         -5156.413   10504.826 - 1.83e-111   10521.897 - 5.77e-111   10992.509 - 5.89e-105
+TIM3+I+R3         -5169.664   10533.328 - 1.18e-117   10550.770 - 3.1e-117   11026.091 -   3e-112
+TIM3e+I+R3        -5169.702   10533.405 - 1.14e-117   10550.847 - 2.98e-117   11026.167 - 2.89e-112
+TIM3e+I+R3        -5169.702   10533.405 - 1.14e-117   10550.847 - 2.98e-117   11026.167 - 2.89e-112
+TN+I+R3           -5204.199   10600.398 - 3.23e-132   10617.469 - 1.02e-131   11088.081 - 1.04e-125
+TNe+I+R3          -5204.221   10600.441 - 3.16e-132   10617.512 - 9.96e-132   11088.124 - 1.02e-125
+TNe+I+R3          -5204.221   10600.441 - 3.16e-132   10617.512 - 9.96e-132   11088.124 - 1.02e-125
+TPM3u+I+R3        -5213.117   10618.233 - 4.33e-136   10635.304 - 1.36e-135   11105.916 - 1.39e-129
+TPM3+I+R3         -5213.152   10618.303 - 4.18e-136   10635.374 - 1.32e-135   11105.986 - 1.35e-129
+TPM3+I+R3         -5213.152   10618.303 - 4.18e-136   10635.374 - 1.32e-135   11105.986 - 1.35e-129
+HKY+I+R3          -5244.310   10678.620 - 3.34e-149   10695.323 - 1.26e-148   11161.222 - 1.36e-141
+K2P+I+R3          -5244.319   10678.639 - 3.31e-149   10695.342 - 1.25e-148   11161.241 - 1.35e-141
+K2P+I+R3          -5244.319   10678.639 - 3.31e-149   10695.342 - 1.25e-148   11161.241 - 1.35e-141
+F81+I+R3          -5280.588   10749.177 - 1.6e-164   10765.517 - 7.24e-164   11226.699 - 8.25e-156
+JC+I+R3           -5280.622   10749.245 - 1.54e-164   10765.585 - 6.99e-164   11226.767 - 7.97e-156
+JC+I+R3           -5280.622   10749.245 - 1.54e-164   10765.585 - 6.99e-164   11226.767 - 7.97e-156
+JC+I+G4           -5297.892   10777.783 - 9.79e-171   10793.061 - 7.56e-170   11240.066 - 1.03e-158
+JC+I+R4           -5280.208   10752.417 - 3.16e-165   10769.487 - 9.94e-165   11240.099 - 1.02e-158
+JC+G4             -5303.384   10786.767 - 1.1e-172   10801.699 - 1.01e-171   11243.970 - 1.47e-159
+JC+R2             -5303.320   10788.641 - 4.3e-173   10803.918 - 3.32e-172   11250.923 - 4.53e-161
+JC+I+R2           -5301.948   10787.895 - 6.24e-173   10803.523 - 4.04e-172   11255.258 - 5.19e-162
+JC+R3             -5302.438   10790.876 - 1.41e-173   10806.858 - 7.63e-173   11263.318 - 9.21e-164
+JC+I              -5315.200   10810.400 - 8.1e-178   10825.332 - 7.43e-177   11267.603 - 1.08e-164
+JC                -5596.957   11371.913 - 9.49e-300   11386.503 - 1.03e-298   11824.035 - 1.61e-285
+
+AIC, w-AIC   : Akaike information criterion scores and weights.
+AICc, w-AICc : Corrected AIC scores and weights.
+BIC, w-BIC   : Bayesian information criterion scores and weights.
+
+Plus signs denote the 95% confidence sets.
+Minus signs denote significant exclusion.
+
+SUBSTITUTION PROCESS
+--------------------
+
+Model of substitution: GTR+F+I+R3
+
+Rate parameter R:
+
+  A-C: 3.2299
+  A-G: 9.9983
+  A-T: 11.3913
+  C-G: 3.5138
+  C-T: 39.5693
+  G-T: 1.0000
+
+State frequencies: (empirical counts from alignment)
+
+  pi(A) = 0.3177
+  pi(C) = 0.1535
+  pi(G) = 0.1374
+  pi(T) = 0.3915
+
+Rate matrix Q:
+
+  A   -0.7008   0.05489    0.1521    0.4938
+  C    0.1136    -1.882   0.05347     1.715
+  G    0.3517   0.05971   -0.4548   0.04335
+  T    0.4007    0.6724   0.01522    -1.088
+
+Model of rate heterogeneity: Invar+FreeRate with 3 categories
+Proportion of invariable sites: 0.5354
+Site proportion and rates:  (0.1823,0.231) (0.252,1.638) (0.03028,18)
+
+ Category  Relative_rate  Proportion
+  0         0              0.5354
+  1         0.231          0.1823
+  2         1.638          0.252
+  3         18             0.03028
+
+MAXIMUM LIKELIHOOD TREE
+-----------------------
+
+Log-likelihood of the tree: -4884.3476 (s.e. 160.8884)
+Unconstrained log-likelihood (without tree): -3712.8447
+Number of free parameters (#branches + #model parameters): 102
+Akaike information criterion (AIC) score: 9972.6952
+Corrected Akaike information criterion (AICc) score: 9992.0611
+Bayesian information criterion (BIC) score: 10490.8579
+
+Total tree length (sum of branch lengths): 1.5491
+Sum of internal branch lengths: 0.3779 (24.3935% of tree length)
+
+WARNING: 18 near-zero internal branches (<0.0008) should be treated with caution
+         Such branches are denoted by '**' in the figure below
+
+NOTE: Tree is UNROOTED although outgroup taxon 'Chilo_suppressalis_HQ860290' is drawn at root
+Numbers in parentheses are  ultrafast bootstrap support (%)
+
++--------------------------------------------Chilo_suppressalis_HQ860290
+|
+|                 +-------------Cnaphalocrocis_medinalis_JQ647917
+|           +-----| (69)
+|           |     +--------------------Tyspanodes_hypsalis_KM453724
+|      +----| (50)
+|      |    +----------------------------------------------Elophila_interruptalis_KC894961
++------| (51)
+|      |                                             +--Ostrinia_furnacalis_AB746852_Japan
+|      |                                          +--| (76)
+|      |                                          |  |     +--Ostrinia_furnacalis_EU128663_Chiny
+|      |                                          |  |  +--| (61)
+|      |                                          |  |  |  +**Ostrinia_furnacalis_FJ435436_Chiny___1
+|      |                                          |  +**| (46)
+|      |                                          |     +**Ostrinia_furnacalis_EU128665_Chiny
+|      |                                       +--| (96)
+|      |                                       |  +--Ostrinia_furnacalis_EU128666_Chiny
+|      |                                    +**| (30)
+|      |                                    |  +--Ostrinia_furnacalis_AF467260_China
+|      |                                 +**| (42)
+|      |                                 |  +**Ostrinia_furnacalis_EU128664_Chiny
+|      |                              +--| (95)
+|      |                              |  +--Ostrinia_furnacalis_DQ204878_Unknown
+|      |                        +-----| (98)
+|      |                        |     |                    +--Ostrinia_kurentzovi_EU128654_Chiny
+|      |                        |     |                 +--| (96)
+|      |                        |     |                 |  +--Ostrinia_narynensis_EU128655_Chiny
+|      |                        |     |              +**| (29)
+|      |                        |     |              |  |                       +--Ostrinia_nubilalis_AF321877_Unknown
+|      |                        |     |              |  |                    +--| (90)
+|      |                        |     |              |  |                    |  |  +--Ostrinia_nubilalis_AF321878_Unknown
+|      |                        |     |              |  |                    |  +--| (54)
+|      |                        |     |              |  |                    |     +--Ostrinia_nubilalis_AF321879_Unknown
+|      |                        |     |              |  |                 +--| (92)
+|      |                        |     |              |  |                 |  +--Ostrinia_nubilalis_AF442957_USA
+|      |                        |     |              |  |              +--| (87)
+|      |                        |     |              |  |              |  +--Ostrinia_nubilalis_EU128659_Chiny
+|      |                        |     |              |  |           +--| (100)
+|      |                        |     |              |  |           |  +**Ostrinia_nubilalis_EU128660_France
+|      |                        |     |              |  |        +**| (2)
+|      |                        |     |              |  |        |  +--Ostrinia_nubilalis_Poland_003
+|      |                        |     |              |  |     +**| (2)
+|      |                        |     |              |  |     |  |        +--Ostrinia_nubilalis_DQ204891_USA
+|      |                        |     |              |  |     |  |     +**| (3)
+|      |                        |     |              |  |     |  |     |  |           +--Ostrinia_nubilalis_DQ204894_USA___1
+|      |                        |     |              |  |     |  |     |  |        +**| (2)
+|      |                        |     |              |  |     |  |     |  |        |  |  +--Ostrinia_nubilalis_DQ204907_USA
+|      |                        |     |              |  |     |  |     |  |        |  +**| (4)
+|      |                        |     |              |  |     |  |     |  |        |     +--Ostrinia_nubilalis_Poland_018
+|      |                        |     |              |  |     |  |     |  |     +**| (1)
+|      |                        |     |              |  |     |  |     |  |     |  |     +--Ostrinia_nubilalis_DQ204908_USA
+|      |                        |     |              |  |     |  |     |  |     |  |  +**| (6)
+|      |                        |     |              |  |     |  |     |  |     |  |  |  +--Ostrinia_nubilalis_Poland_025
+|      |                        |     |              |  |     |  |     |  |     |  +**| (3)
+|      |                        |     |              |  |     |  |     |  |     |     +--Ostrinia_nubilalis_Poland_013
+|      |                        |     |              |  |     |  |     |  |  +**| (1)
+|      |                        |     |              |  |     |  |     |  |  |  +**Ostrinia_nubilalis_DQ204914_USA___18
+|      |                        |     |              |  |     |  |     |  +**| (1)
+|      |                        |     |              |  |     |  |     |     |  +--Ostrinia_nubilalis_DQ204913_USA
+|      |                        |     |              |  |     |  |     |     +**| (8)
+|      |                        |     |              |  |     |  |     |        +--Ostrinia_nubilalis_DQ204915_USA
+|      |                        |     |              |  |     |  |  +--| (45)
+|      |                        |     |              |  |     |  |  |  +--Ostrinia_nubilalis_DQ204911_USA
+|      |                        |     |              |  |     |  +**| (4)
+|      |                        |     |              |  |     |     |  +**Ostrinia_nubilalis_Poland_005___1
+|      |                        |     |              |  |     |     +--| (82)
+|      |                        |     |              |  |     |        |  +**Ostrinia_nubilalis_Poland_009
+|      |                        |     |              |  |     |        +--| (79)
+|      |                        |     |              |  |     |           +--Ostrinia_nubilalis_Poland_011
+|      |                        |     |              |  |  +**| (3)
+|      |                        |     |              |  |  |  +**Ostrinia_orientalis_EU128653_Chiny
+|      |                        |     |              |  +--| (45)
+|      |                        |     |              |     +--Ostrinia_nubilalis_DQ204912__USA___1
+|      |                        |     |           +--| (46)
+|      |                        |     |           |  +**Ostrinia_nubilalis_DQ204910_USA___2
+|      |                        |     |        +**| (52)
+|      |                        |     |        |  |  +**Ostrinia_nubilalis_Poland_012___1
+|      |                        |     |        |  +--| (75)
+|      |                        |     |        |     +--Ostrinia_nubilalis_Poland_029
+|      |                        |     |     +--| (56)
+|      |                        |     |     |  +------Ostrinia_zealis_EU128658_Chiny
+|      |                        |     |  +--| (81)
+|      |                        |     |  |  +--Ostrinia_scapulalis_EU128656_Chiny
+|      |                        |     +--| (64)
+|      |                        |        +--Ostrinia_nubilalis_Poland_008
+|      +------------------------| (100)
+|                               |  +**Ostrinia_latipennis_EU128657_Chiny
+|                               +--| (89)
+|                                  +--Ostrinia_latipennis_FJ435439_Chiny
+|
++-----------------------------------------------Scirpophaga_incertulas_KF751706
+
+Tree in newick format:
+
+(Chilo_suppressalis_HQ860290:0.2737305201,(((Cnaphalocrocis_medinalis_JQ647917:0.0875127115,Tyspanodes_hypsalis_KM453724:0.1316883783)69:0.0363762797,Elophila_interruptalis_KC894961:0.2864473577)50:0.0310545436,(((((((Ostrinia_furnacalis_AB746852_Japan:0.0026380127,((Ostrinia_furnacalis_EU128663_Chiny:0.0008563491,Ostrinia_furnacalis_FJ435436_Chiny___1:0.0000010249)61:0.0008554522,Ostrinia_furnacalis_EU128665_Chiny:0.0000010249)46:0.0000010249)76:0.0008567107,Ostrinia_furnacalis_EU128666_Chiny:0.0008568602)96:0.0026192841,Ostrinia_furnacalis_AF467260_China:0.0008588857)30:0.0000010249,Ostrinia_furnacalis_EU128664_Chiny:0.0000010249)42:0.0000010249,Ostrinia_furnacalis_DQ204878_Unknown:0.0008614267)95:0.0020937516,(((((((Ostrinia_kurentzovi_EU128654_Chiny:0.0044582401,Ostrinia_narynensis_EU128655_Chiny:0.0077667771)96:0.0088429057,((((((((Ostrinia_nubilalis_AF321877_Unknown:0.0014594990,(Ostrinia_nubilalis_AF321878_Unknown:0.0023841314,Ostrinia_nubilalis_AF321879_Unknown:0.0012529466)54:0.0009432128)90:0.0041702332,Ostrinia_nubilalis_AF442957_USA:0.0008968787)92:0.0038374226,Ostrinia_nubilalis_EU128659_Chiny:0.0008521101)87:0.0026610961,Ostrinia_nubilalis_EU128660_France:0.0000010249)100:0.0085269996,Ostrinia_nubilalis_Poland_003:0.0008730840)2:0.0000010249,(((Ostrinia_nubilalis_DQ204891_USA:0.0008856642,((((Ostrinia_nubilalis_DQ204894_USA___1:0.0008850176,(Ostrinia_nubilalis_DQ204907_USA:0.0008897295,Ostrinia_nubilalis_Poland_018:0.0008849927)4:0.0000010249)2:0.0000010249,((Ostrinia_nubilalis_DQ204908_USA:0.0008876503,Ostrinia_nubilalis_Poland_025:0.0017821491)6:0.0000010249,Ostrinia_nubilalis_Poland_013:0.0008859479)3:0.0000010249)1:0.0000010249,Ostrinia_nubilalis_DQ204914_USA___18:0.0000010249)1:0.0000010249,(Ostrinia_nubilalis_DQ204913_USA:0.0008873282,Ostrinia_nubilalis_DQ204915_USA:0.0008847598)8:0.0000010249)1:0.0000010249)3:0.0000010249,Ostrinia_nubilalis_DQ204911_USA:0.0008859279)45:0.0008798593,(Ostrinia_nubilalis_Poland_005___1:0.0000010249,(Ostrinia_nubilalis_Poland_009:0.0000010249,Ostrinia_nubilalis_Poland_011:0.0008806444)79:0.0017762883)82:0.0017661189)4:0.0000010249)2:0.0000010249,Ostrinia_orientalis_EU128653_Chiny:0.0000010249)3:0.0000010249,Ostrinia_nubilalis_DQ204912__USA___1:0.0017639819)45:0.0008716740)29:0.0000024535,Ostrinia_nubilalis_DQ204910_USA___2:0.0000010249)46:0.0009089795,(Ostrinia_nubilalis_Poland_012___1:0.0000010249,Ostrinia_nubilalis_Poland_029:0.0008666820)75:0.0008433150)52:0.0000024638,Ostrinia_zealis_EU128658_Chiny:0.0430138840)56:0.0057770980,Ostrinia_scapulalis_EU128656_Chiny:0.0115331709)81:0.0141348505,Ostrinia_nubilalis_Poland_008:0.0045632689)64:0.0057168198)98:0.0389238972,(Ostrinia_latipennis_EU128657_Chiny:0.0000010249,Ostrinia_latipennis_FJ435439_Chiny:0.0018884621)89:0.0092873589)100:0.1509951149)51:0.0431425228,Scirpophaga_incertulas_KF751706:0.2915553737);
+
+CONSENSUS TREE
+--------------
+
+Consensus tree is constructed from 1000 bootstrap trees
+Log-likelihood of consensus tree: -4884.396658
+Robinson-Foulds distance between ML tree and consensus tree: 26
+
+Branches with support >0.000000% are kept (extended consensus)
+Branch lengths are optimized by maximum likelihood on original alignment
+Numbers in parentheses are bootstrap supports (%)
+
++--------------------------------------------Chilo_suppressalis_HQ860290
+|
+|                 +-------------Cnaphalocrocis_medinalis_JQ647917
+|           +-----| (69)
+|           |     +--------------------Tyspanodes_hypsalis_KM453724
+|      +----| (50)
+|      |    +----------------------------------------------Elophila_interruptalis_KC894961
++------| (51)
+|      |                                             +--Ostrinia_furnacalis_AB746852_Japan
+|      |                                          +--| (76)
+|      |                                          |  |     +--Ostrinia_furnacalis_EU128663_Chiny
+|      |                                          |  |  +--| (61)
+|      |                                          |  |  |  +--Ostrinia_furnacalis_FJ435436_Chiny___1
+|      |                                          |  +--| (46)
+|      |                                          |     +--Ostrinia_furnacalis_EU128665_Chiny
+|      |                                       +--| (96)
+|      |                                       |  +--Ostrinia_furnacalis_EU128666_Chiny
+|      |                                    +--| (30)
+|      |                                    |  +--Ostrinia_furnacalis_AF467260_China
+|      |                                 +--| (42)
+|      |                                 |  +--Ostrinia_furnacalis_EU128664_Chiny
+|      |                              +--| (95)
+|      |                              |  +--Ostrinia_furnacalis_DQ204878_Unknown
+|      |                        +-----| (98)
+|      |                        |     |                    +--Ostrinia_kurentzovi_EU128654_Chiny
+|      |                        |     |                 +--| (96)
+|      |                        |     |                 |  +--Ostrinia_narynensis_EU128655_Chiny
+|      |                        |     |              +--| (29)
+|      |                        |     |              |  |                 +--Ostrinia_nubilalis_AF321877_Unknown
+|      |                        |     |              |  |              +--| (90)
+|      |                        |     |              |  |              |  |  +--Ostrinia_nubilalis_AF321878_Unknown
+|      |                        |     |              |  |              |  +--| (54)
+|      |                        |     |              |  |              |     +--Ostrinia_nubilalis_AF321879_Unknown
+|      |                        |     |              |  |           +--| (92)
+|      |                        |     |              |  |           |  +--Ostrinia_nubilalis_AF442957_USA
+|      |                        |     |              |  |        +--| (87)
+|      |                        |     |              |  |        |  +--Ostrinia_nubilalis_EU128659_Chiny
+|      |                        |     |              |  |     +--| (100)
+|      |                        |     |              |  |     |  +--Ostrinia_nubilalis_EU128660_France
+|      |                        |     |              |  |  +--| (28)
+|      |                        |     |              |  |  |  |              +--Ostrinia_nubilalis_DQ204891_USA
+|      |                        |     |              |  |  |  |           +--| (15)
+|      |                        |     |              |  |  |  |           |  +--Ostrinia_nubilalis_DQ204915_USA
+|      |                        |     |              |  |  |  |        +--| (7)
+|      |                        |     |              |  |  |  |        |  |        +--Ostrinia_nubilalis_DQ204907_USA
+|      |                        |     |              |  |  |  |        |  |     +--| (11)
+|      |                        |     |              |  |  |  |        |  |     |  +--Ostrinia_nubilalis_Poland_013
+|      |                        |     |              |  |  |  |        |  |  +--| (7)
+|      |                        |     |              |  |  |  |        |  |  |  |  +--Ostrinia_nubilalis_DQ204913_USA
+|      |                        |     |              |  |  |  |        |  |  |  +--| (20)
+|      |                        |     |              |  |  |  |        |  |  |     +--Ostrinia_nubilalis_Poland_018
+|      |                        |     |              |  |  |  |        |  +--| (7)
+|      |                        |     |              |  |  |  |        |     +--Ostrinia_nubilalis_DQ204914_USA___18
+|      |                        |     |              |  |  |  |     +--| (9)
+|      |                        |     |              |  |  |  |     |  +--Ostrinia_nubilalis_DQ204911_USA
+|      |                        |     |              |  |  |  |  +--| (14)
+|      |                        |     |              |  |  |  |  |  |  +--Ostrinia_nubilalis_DQ204894_USA___1
+|      |                        |     |              |  |  |  |  |  +--| (10)
+|      |                        |     |              |  |  |  |  |     +--Ostrinia_nubilalis_DQ204908_USA
+|      |                        |     |              |  |  |  +--| (45)
+|      |                        |     |              |  |  |     +--Ostrinia_nubilalis_Poland_025
+|      |                        |     |              |  +--| (45)
+|      |                        |     |              |     |        +--Ostrinia_nubilalis_DQ204912__USA___1
+|      |                        |     |              |     |     +--| (29)
+|      |                        |     |              |     |     |  |  +--Ostrinia_nubilalis_Poland_005___1
+|      |                        |     |              |     |     |  +--| (82)
+|      |                        |     |              |     |     |     |  +--Ostrinia_nubilalis_Poland_009
+|      |                        |     |              |     |     |     +--| (79)
+|      |                        |     |              |     |     |        +--Ostrinia_nubilalis_Poland_011
+|      |                        |     |              |     |  +--| (20)
+|      |                        |     |              |     |  |  +--Ostrinia_nubilalis_Poland_003
+|      |                        |     |              |     +--| (13)
+|      |                        |     |              |        +--Ostrinia_orientalis_EU128653_Chiny
+|      |                        |     |           +--| (46)
+|      |                        |     |           |  +--Ostrinia_nubilalis_DQ204910_USA___2
+|      |                        |     |        +--| (52)
+|      |                        |     |        |  |  +--Ostrinia_nubilalis_Poland_012___1
+|      |                        |     |        |  +--| (75)
+|      |                        |     |        |     +--Ostrinia_nubilalis_Poland_029
+|      |                        |     |     +--| (56)
+|      |                        |     |     |  +------Ostrinia_zealis_EU128658_Chiny
+|      |                        |     |  +--| (81)
+|      |                        |     |  |  +--Ostrinia_scapulalis_EU128656_Chiny
+|      |                        |     +--| (64)
+|      |                        |        +--Ostrinia_nubilalis_Poland_008
+|      +------------------------| (100)
+|                               |  +--Ostrinia_latipennis_EU128657_Chiny
+|                               +--| (89)
+|                                  +--Ostrinia_latipennis_FJ435439_Chiny
+|
++-----------------------------------------------Scirpophaga_incertulas_KF751706
+
+
+Consensus tree in newick format: 
+
+(Chilo_suppressalis_HQ860290:0.2739636338,(((Cnaphalocrocis_medinalis_JQ647917:0.0874917691,Tyspanodes_hypsalis_KM453724:0.1317097966)69:0.0363762775,Elophila_interruptalis_KC894961:0.2865172448)50:0.0310215001,(((((((Ostrinia_furnacalis_AB746852_Japan:0.0026380314,((Ostrinia_furnacalis_EU128663_Chiny:0.0008558437,Ostrinia_furnacalis_FJ435436_Chiny___1:0.0000026441)61:0.0008549372,Ostrinia_furnacalis_EU128665_Chiny:0.0000026441)46:0.0000026441)76:0.0008561314,Ostrinia_furnacalis_EU128666_Chiny:0.0008563462)96:0.0026191705,Ostrinia_furnacalis_AF467260_China:0.0008582127)30:0.0000026441,Ostrinia_furnacalis_EU128664_Chiny:0.0000026441)42:0.0000026441,Ostrinia_furnacalis_DQ204878_Unknown:0.0008607121)95:0.0020912036,(((((((Ostrinia_kurentzovi_EU128654_Chiny:0.0044582887,Ostrinia_narynensis_EU128655_Chiny:0.0077638332)96:0.0088432420,((((((Ostrinia_nubilalis_AF321877_Unknown:0.0014581396,(Ostrinia_nubilalis_AF321878_Unknown:0.0023831284,Ostrinia_nubilalis_AF321879_Unknown:0.0012516567)54:0.0009420606)90:0.0041689849,Ostrinia_nubilalis_AF442957_USA:0.0008959377)92:0.0038350444,Ostrinia_nubilalis_EU128659_Chiny:0.0008512016)87:0.0026595033,Ostrinia_nubilalis_EU128660_France:0.0000026441)100:0.0085225922,(((((Ostrinia_nubilalis_DQ204891_USA:0.0008844596,Ostrinia_nubilalis_DQ204915_USA:0.0008835370)15:0.0000026441,(((Ostrinia_nubilalis_DQ204907_USA:0.0008884349,Ostrinia_nubilalis_Poland_013:0.0008847088)11:0.0000026441,(Ostrinia_nubilalis_DQ204913_USA:0.0008860821,Ostrinia_nubilalis_Poland_018:0.0008837098)20:0.0000026441)7:0.0000026441,Ostrinia_nubilalis_DQ204914_USA___18:0.0000026441)7:0.0000026441)7:0.0000026441,Ostrinia_nubilalis_DQ204911_USA:0.0008847041)9:0.0000026441,(Ostrinia_nubilalis_DQ204894_USA___1:0.0008837840,Ostrinia_nubilalis_DQ204908_USA:0.0008864122)10:0.0000026441)14:0.0000026441,Ostrinia_nubilalis_Poland_025:0.0017809433)45:0.0008783473)28:0.0000026441,(((Ostrinia_nubilalis_DQ204912__USA___1:0.0017623972,(Ostrinia_nubilalis_Poland_005___1:0.0000024706,(Ostrinia_nubilalis_Poland_009:0.0000026441,Ostrinia_nubilalis_Poland_011:0.0008797207)79:0.0017744742)82:0.0017641293)29:0.0000026441,Ostrinia_nubilalis_Poland_003:0.0008721175)20:0.0000026441,Ostrinia_orientalis_EU128653_Chiny:0.0000026441)13:0.0000026441)45:0.0008709101)29:0.0000026441,Ostrinia_nubilalis_DQ204910_USA___2:0.0000026441)46:0.0009082338,(Ostrinia_nubilalis_Poland_012___1:0.0000026441,Ostrinia_nubilalis_Poland_029:0.0008661623)75:0.0008423798)52:0.0000022908,Ostrinia_zealis_EU128658_Chiny:0.0430146848)56:0.0057937370,Ostrinia_scapulalis_EU128656_Chiny:0.0115245046)81:0.0141407357,Ostrinia_nubilalis_Poland_008:0.0045761185)64:0.0057161803)98:0.0389365163,(Ostrinia_latipennis_EU128657_Chiny:0.0000026441,Ostrinia_latipennis_FJ435439_Chiny:0.0018887714)89:0.0092948358)100:0.1510394757)51:0.0430342091,Scirpophaga_incertulas_KF751706:0.2917583520);
+
+ALISIM COMMAND
+--------------
+To simulate an alignment of the same length as the original alignment, using the tree and model parameters estimated from this analysis, you can use the following command:
+
+--alisim simulated_MSA -t ml2\trees\M40326.treefile -m "GTR{3.22991,9.99826,11.3913,3.5138,39.5693}+F{0.317664,0.153461,0.137424,0.391451}+I{0.535391}+R3{0.182341,0.23098,0.251985,1.638,0.0302828,18.0014}" --length 1188
+
+To mimic the alignment used to produce this analysis, i.e. simulate an alignment of the same length as the original alignment, using the tree and model parameters estimated from this analysis *and* copying the same gap positions as the original alignment, you can use the following command:
+
+iqtree -s ml2\datasets\M40326.nex --alisim mimicked_MSA
+
+To simulate any number of alignments in either of the two commandlines above, use the --num-alignments options, for example mimic 100 alignments you would use the command line:
+
+iqtree -s ml2\datasets\M40326.nex --alisim mimicked_MSA --num-alignments 100
+
+For more information on using AliSim, please visit: www.iqtree.org/doc/AliSim
+
+TIME STAMP
+----------
+
+Date and time: Mon May 04 13:45:41 2026
+Total CPU time used: 220.6875 seconds (0h:3m:40s)
+Total wall-clock time used: 114.7374965 seconds (0h:1m:54s)
+

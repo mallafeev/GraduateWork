@@ -1,0 +1,483 @@
+IQ-TREE 3.1.1 built Apr  2 2026
+
+Input file name: ml2\datasets\M3141.nex
+Type of analysis: ModelFinder + tree reconstruction + ultrafast bootstrap (1000 replicates)
+Random seed number: 528335
+
+REFERENCES
+----------
+
+To cite IQ-TREE 3 please use:
+
+Thomas K.F. Wong, Nhan Ly-Trong, Huaiyan Ren, Hector Banos, Andrew J. Roger,
+Edward Susko, Chris Bielow, Nicola De Maio, Nick Goldman, Matthew W. Hahn,
+Gavin Huttley, Robert Lanfear, Bui Quang Minh (2025)
+IQ-TREE 3: Phylogenomic Inference Software using Complex Evolutionary Models.
+Submitted.
+
+Since you used ModelFinder please also cite: 
+
+Subha Kalyaanamoorthy, Bui Quang Minh, Thomas KF Wong, Arndt von Haeseler,
+and Lars S Jermiin (2017) ModelFinder: Fast model selection for
+accurate phylogenetic estimates. Nature Methods, 14:587–589.
+https://doi.org/10.1038/nmeth.4285
+
+Since you used ultrafast bootstrap (UFBoot) please also cite: 
+
+Diep Thi Hoang, Olga Chernomor, Arndt von Haeseler, Bui Quang Minh,
+and Le Sy Vinh (2018) UFBoot2: Improving the ultrafast bootstrap
+approximation. Mol. Biol. Evol., 35:518–522.
+https://doi.org/10.1093/molbev/msx281
+
+SEQUENCE ALIGNMENT
+------------------
+
+NOTE: Alignment sequence type is auto-detected. If in doubt, specify it via -st option.
+Input data: 47 sequences with 1542 nucleotide sites
+Number of constant sites: 890 (= 57.7173% of all sites)
+Number of invariant (constant or ambiguous constant) sites: 890 (= 57.7173% of all sites)
+Number of parsimony informative sites: 611
+Number of distinct site patterns: 649
+
+ModelFinder
+-----------
+
+Best-fit model according to BIC: GTR+F+R4
+
+List of models sorted by BIC scores: 
+
+Model                  LogL         AIC      w-AIC        AICc     w-AICc         BIC      w-BIC
+GTR+F+R4         -18284.955   36779.910 +    0.997   36795.412 +    0.996   37340.698 +    0.956
+GTR+F+I+R3       -18291.723   36791.445 -  0.00312   36806.644 -  0.00363   37346.892 -   0.0432
+TIM2+F+R4        -18300.064   36806.128 - 2.02e-006   36821.027 - 2.73e-006   37356.234 - 0.000405
+TIM2+F+I+R3      -18308.808   36821.616 - 8.76e-010   36836.218 - 1.37e-009   37366.381 - 2.53e-006
+GTR+F+R3         -18307.142   36820.283 - 1.71e-009   36835.182 - 2.3e-009   37370.389 - 3.41e-007
+TIM2+F+R3        -18324.201   36850.402 - 4.91e-016   36864.711 - 8.92e-016   37389.827 - 2.05e-011
+TIM+F+R4         -18354.835   36915.670 - 3.3e-030   36930.568 - 4.46e-030   37465.776 - 6.61e-028
+TIM+F+I+R3       -18362.521   36929.042 - 4.12e-033   36943.643 - 6.46e-033   37473.807 - 1.19e-029
+TIM3+F+R4        -18361.021   36928.042 - 6.8e-033   36942.941 - 9.18e-033   37478.148 - 1.36e-030
+TIM3+F+I+R3      -18369.346   36942.693 - 4.48e-036   36957.295 - 7.01e-036   37487.458 - 1.29e-032
+TN+F+R4          -18374.094   36952.189 - 3.88e-038   36966.790 - 6.08e-038   37496.954 - 1.12e-034
+TIM+F+R3         -18381.223   36964.447 - 8.45e-041   36978.755 - 1.53e-040   37503.871 - 3.53e-036
+TN+F+I+R3        -18382.918   36967.837 - 1.55e-041   36982.145 - 2.82e-041   37507.261 - 6.48e-037
+TIM3+F+R3        -18386.784   36975.568 - 3.25e-043   36989.876 - 5.9e-043   37514.992 - 1.36e-038
+GTR+I+R3         -18395.383   36992.766 - 5.99e-047   37007.075 - 1.09e-046   37532.191 - 2.5e-042
+SYM+I+R3         -18395.386   36992.772 - 5.98e-047   37007.080 - 1.08e-046   37532.196 - 2.5e-042
+SYM+I+R3         -18395.386   36992.772 - 5.98e-047   37007.080 - 1.08e-046   37532.196 - 2.5e-042
+GTR+R4           -18392.761   36989.522 - 3.03e-046   37004.124 - 4.76e-046   37534.287 - 8.78e-043
+SYM+R4           -18392.959   36989.919 - 2.49e-046   37004.521 - 3.9e-046   37534.684 - 7.2e-043
+SYM+R4           -18392.959   36989.919 - 2.49e-046   37004.521 - 3.9e-046   37534.684 - 7.2e-043
+TN+F+R3          -18401.320   37002.640 - 4.3e-049   37016.658 - 9.02e-049   37536.724 - 2.6e-043
+GTR+R3           -18406.406   37012.812 - 2.66e-051   37026.830 - 5.58e-051   37546.896 - 1.6e-045
+SYM+R3           -18406.553   37013.106 - 2.29e-051   37027.124 - 4.82e-051   37547.190 - 1.39e-045
+SYM+R3           -18406.553   37013.106 - 2.29e-051   37027.124 - 4.82e-051   37547.190 - 1.39e-045
+TVM+F+R4         -18395.833   36999.667 - 1.9e-048   37014.865 - 2.21e-048   37555.113 - 2.64e-047
+TVM+F+I+R3       -18406.888   37019.777 - 8.17e-053   37034.675 - 1.1e-052   37569.883 - 1.64e-050
+TPM2u+F+R4       -18412.774   37029.548 - 6.17e-055   37044.150 - 9.67e-055   37574.313 - 1.79e-051
+TPM2u+F+I+R3     -18425.650   37053.301 - 4.29e-060   37067.609 - 7.79e-060   37592.725 - 1.79e-055
+TVM+F+R3         -18425.382   37054.763 - 2.07e-060   37069.365 - 3.24e-060   37599.528 - 5.97e-057
+TIM2+R4          -18434.757   37069.514 - 1.29e-063   37083.532 - 2.72e-063   37603.598 - 7.81e-058
+TIM2e+R4         -18434.883   37069.766 - 1.14e-063   37083.784 - 2.39e-063   37603.850 - 6.88e-058
+TIM2e+R4         -18434.883   37069.766 - 1.14e-063   37083.784 - 2.39e-063   37603.850 - 6.88e-058
+TIM2+I+R3        -18439.586   37077.172 - 2.81e-065   37090.903 - 6.81e-065   37605.915 - 2.45e-058
+TIM2e+I+R3       -18439.588   37077.177 - 2.81e-065   37090.908 - 6.8e-065   37605.920 - 2.45e-058
+TIM2e+I+R3       -18439.588   37077.177 - 2.81e-065   37090.908 - 6.8e-065   37605.920 - 2.45e-058
+TIM2+R3          -18450.378   37096.756 - 1.57e-069   37110.203 - 4.39e-069   37620.158 - 1.98e-061
+TIM2e+R3         -18450.564   37097.128 - 1.3e-069   37110.575 - 3.64e-069   37620.530 - 1.64e-061
+TIM2e+R3         -18450.564   37097.128 - 1.3e-069   37110.575 - 3.64e-069   37620.530 - 1.64e-061
+TPM2u+F+R3       -18443.338   37086.677 - 2.43e-067   37100.695 - 5.09e-067   37620.760 - 1.46e-061
+K3Pu+F+R4        -18463.028   37130.056 - 9.23e-077   37144.658 - 1.45e-076   37674.822 - 2.67e-073
+TPM3u+F+R4       -18465.115   37134.230 - 1.15e-077   37148.832 - 1.8e-077   37678.995 - 3.31e-074
+K3Pu+F+I+R3      -18472.242   37146.484 - 2.5e-080   37160.793 - 4.54e-080   37685.909 - 1.04e-075
+TPM3u+F+I+R3     -18473.939   37149.879 - 4.58e-081   37164.187 - 8.31e-081   37689.303 - 1.91e-076
+HKY+F+R4         -18482.384   37166.768 - 9.85e-085   37181.076 - 1.79e-084   37706.192 - 4.12e-080
+HKY+F+I+R3       -18491.345   37182.690 - 3.44e-088   37196.708 - 7.21e-088   37716.774 - 2.07e-082
+K3Pu+F+R3        -18492.732   37185.464 - 8.58e-089   37199.482 - 1.8e-088   37719.548 - 5.18e-083
+TPM3u+F+R3       -18493.466   37186.932 - 4.12e-089   37200.950 - 8.65e-089   37721.016 - 2.49e-083
+HKY+F+R3         -18510.219   37218.439 - 5.93e-096   37232.170 - 1.44e-095   37747.181 - 5.17e-089
+TIM+I+R3         -18608.565   37415.131 - 1.15e-138   37428.862 - 2.8e-138   37943.874 - 1.01e-131
+TIMe+I+R3        -18608.620   37415.239 - 1.09e-138   37428.970 - 2.65e-138   37943.982 - 9.53e-132
+TIMe+I+R3        -18608.620   37415.239 - 1.09e-138   37428.970 - 2.65e-138   37943.982 - 9.53e-132
+TIM+R4           -18605.326   37410.651 - 1.08e-137   37424.669 - 2.27e-137   37944.735 - 6.54e-132
+TIMe+R4          -18605.601   37411.203 - 8.23e-138   37425.221 - 1.73e-137   37945.286 - 4.97e-132
+TIMe+R4          -18605.601   37411.203 - 8.23e-138   37425.221 - 1.73e-137   37945.286 - 4.97e-132
+TIM+R3           -18622.014   37440.028 - 4.53e-144   37453.475 - 1.26e-143   37963.430 - 5.7e-136
+TIMe+R3          -18622.218   37440.437 - 3.69e-144   37453.884 - 1.03e-143   37963.839 - 4.65e-136
+TIMe+R3          -18622.218   37440.437 - 3.69e-144   37453.884 - 1.03e-143   37963.839 - 4.65e-136
+TIM3+I+R3        -18625.760   37449.521 - 3.93e-146   37463.252 - 9.52e-146   37978.263 - 3.43e-139
+TIM3+R4          -18622.092   37444.184 - 5.67e-145   37458.202 - 1.19e-144   37978.267 - 3.42e-139
+TIM3e+I+R3       -18625.854   37449.708 - 3.58e-146   37463.439 - 8.67e-146   37978.450 - 3.12e-139
+TIM3e+I+R3       -18625.854   37449.708 - 3.58e-146   37463.439 - 8.67e-146   37978.450 - 3.12e-139
+TIM3e+R4         -18622.256   37444.513 - 4.81e-145   37458.531 - 1.01e-144   37978.597 - 2.9e-139
+TIM3e+R4         -18622.256   37444.513 - 4.81e-145   37458.531 - 1.01e-144   37978.597 - 2.9e-139
+TIM3+R3          -18638.253   37472.506 - 4.01e-151   37485.953 - 1.12e-150   37995.907 - 5.05e-143
+TIM3e+R3         -18638.446   37472.893 - 3.31e-151   37486.340 - 9.23e-151   37996.295 - 4.16e-143
+TIM3e+R3         -18638.446   37472.893 - 3.31e-151   37486.340 - 9.23e-151   37996.295 - 4.16e-143
+TN+R4            -18650.102   37498.204 - 1.05e-156   37511.935 - 2.55e-156   38026.947 - 9.2e-150
+TN+I+R3          -18653.871   37503.743 - 6.61e-158   37517.190 - 1.85e-157   38027.144 - 8.33e-150
+TNe+I+R3         -18653.928   37503.855 - 6.25e-158   37517.302 - 1.75e-157   38027.257 - 7.87e-150
+TNe+I+R3         -18653.928   37503.855 - 6.25e-158   37517.302 - 1.75e-157   38027.257 - 7.87e-150
+TNe+R4           -18650.368   37498.735 - 8.09e-157   37512.466 - 1.96e-156   38027.478 - 7.05e-150
+TNe+R4           -18650.368   37498.735 - 8.09e-157   37512.466 - 1.96e-156   38027.478 - 7.05e-150
+TN+R3            -18665.740   37525.481 - 1.26e-162   37538.647 - 4.05e-162   38043.542 - 2.29e-153
+TNe+R3           -18665.935   37525.869 - 1.04e-162   37539.035 - 3.33e-162   38043.930 - 1.89e-153
+TNe+R3           -18665.935   37525.869 - 1.04e-162   37539.035 - 3.33e-162   38043.930 - 1.89e-153
+TVM+R4           -18711.055   37624.110 - 4.82e-184   37638.418 - 8.75e-184   38163.534 - 2.01e-179
+TVMe+R4          -18711.118   37624.236 - 4.52e-184   37638.545 - 8.21e-184   38163.661 - 1.89e-179
+TVMe+R4          -18711.118   37624.236 - 4.52e-184   37638.545 - 8.21e-184   38163.661 - 1.89e-179
+TVM+I+R3         -18718.366   37636.731 - 8.76e-187   37650.749 - 1.84e-186   38170.815 - 5.28e-181
+TVMe+I+R3        -18718.419   37636.837 - 8.3e-187   37650.855 - 1.74e-186   38170.921 - 5.01e-181
+TVMe+I+R3        -18718.419   37636.837 - 8.3e-187   37650.855 - 1.74e-186   38170.921 - 5.01e-181
+TVM+R3           -18725.422   37648.844 - 2.05e-189   37662.575 - 4.97e-189   38177.586 - 1.79e-182
+TVMe+R3          -18725.503   37649.007 - 1.89e-189   37662.737 - 4.58e-189   38177.749 - 1.65e-182
+TVMe+R3          -18725.503   37649.007 - 1.89e-189   37662.737 - 4.58e-189   38177.749 - 1.65e-182
+TPM2u+R4         -18755.184   37708.368 - 2.44e-202   37722.099 - 5.9e-202   38237.111 - 2.12e-195
+TPM2+R4          -18755.264   37708.527 - 2.25e-202   37722.258 - 5.45e-202   38237.270 - 1.96e-195
+TPM2+R4          -18755.264   37708.527 - 2.25e-202   37722.258 - 5.45e-202   38237.270 - 1.96e-195
+TPM2u+I+R3       -18764.830   37725.661 - 4.28e-206   37739.108 - 1.19e-205   38249.063 - 5.39e-198
+TPM2+I+R3        -18764.891   37725.782 - 4.03e-206   37739.229 - 1.13e-205   38249.183 - 5.08e-198
+TPM2+I+R3        -18764.891   37725.782 - 4.03e-206   37739.229 - 1.13e-205   38249.183 - 5.08e-198
+TPM2u+R3         -18773.315   37740.629 - 2.41e-209   37753.795 - 7.73e-209   38258.690 - 4.38e-200
+TPM2+R3          -18773.388   37740.775 - 2.24e-209   37753.941 - 7.18e-209   38258.836 - 4.07e-200
+TPM2+R3          -18773.388   37740.775 - 2.24e-209   37753.941 - 7.18e-209   38258.836 - 4.07e-200
+K3Pu+R4          -18944.783   38087.565 - 1.11e-284   38101.296 - 2.69e-284   38616.308 - 9.67e-278
+K3P+R4           -18944.821   38087.642 - 1.07e-284   38101.373 - 2.58e-284   38616.385 - 9.3e-278
+K3P+R4           -18944.821   38087.642 - 1.07e-284   38101.373 - 2.58e-284   38616.385 - 9.3e-278
+K3P+I+R3         -18952.653   38101.306 - 1.15e-287   38114.753 - 3.21e-287   38624.708 - 1.45e-279
+K3P+I+R3         -18952.653   38101.306 - 1.15e-287   38114.753 - 3.21e-287   38624.708 - 1.45e-279
+K3Pu+I+R3        -18952.654   38101.308 - 1.15e-287   38114.755 - 3.21e-287   38624.710 - 1.45e-279
+TPM3u+R4         -18957.395   38112.790 - 3.69e-290   38126.521 - 8.95e-290   38641.533 - 3.22e-283
+TPM3+R4          -18957.412   38112.825 - 3.63e-290   38126.556 - 8.79e-290   38641.568 - 3.16e-283
+TPM3+R4          -18957.412   38112.825 - 3.63e-290   38126.556 - 8.79e-290   38641.568 - 3.16e-283
+TPM3u+I+R3       -18964.905   38125.809 - 5.5e-293   38139.256 - 1.54e-292   38649.211 - 6.93e-285
+TPM3+I+R3        -18964.911   38125.822 - 5.46e-293   38139.269 - 1.53e-292   38649.224 - 6.88e-285
+TPM3+I+R3        -18964.911   38125.822 - 5.46e-293   38139.269 - 1.53e-292   38649.224 - 6.88e-285
+K3Pu+R3          -18972.786   38139.571 - 5.65e-296   38152.738 - 1.81e-295   38657.632 - 1.03e-286
+K3P+R3           -18972.825   38139.649 - 5.43e-296   38152.816 - 1.75e-295   38657.710 - 9.89e-287
+K3P+R3           -18972.825   38139.649 - 5.43e-296   38152.816 - 1.75e-295   38657.710 - 9.89e-287
+TPM3u+R3         -18982.914   38159.829 - 2.26e-300   38172.995 - 7.24e-300   38677.890 - 4.1e-291
+TPM3+R3          -18983.070   38160.140 - 1.93e-300   38173.306 - 6.2e-300   38678.201 - 3.51e-291
+TPM3+R3          -18983.070   38160.140 - 1.93e-300   38173.306 - 6.2e-300   38678.201 - 3.51e-291
+HKY+R4           -18991.925   38179.850 - 1.01e-304   38193.297 - 2.83e-304   38703.252 - 1.28e-296
+K2P+R4           -18992.218   38180.435 - 7.56e-305   38193.882 - 2.11e-304   38703.837 - 9.52e-297
+K2P+R4           -18992.218   38180.435 - 7.56e-305   38193.882 - 2.11e-304   38703.837 - 9.52e-297
+HKY+I+R3         -19000.235   38194.469 - 6.78e-308   38207.635 - 2.18e-307   38712.530 - 1.23e-298
+K2P+I+R3         -19000.311   38194.621 - 6.28e-308   38207.788 - 2.02e-307   38712.682 - 1.14e-298
+K2P+I+R3         -19000.311   38194.621 - 6.28e-308   38207.788 - 2.02e-307   38712.682 - 1.14e-298
+HKY+R3           -19018.816   38229.632 - 1.57e-315   38242.521 - 5.79e-315   38742.352 - 4.12e-305
+K2P+R3           -19019.076   38230.153 - 1.21e-315   38243.041 - 4.46e-315   38742.873 - 3.18e-305
+K2P+R3           -19019.076   38230.153 - 1.21e-315   38243.041 - 4.46e-315   38742.873 - 3.18e-305
+F81+F+R4         -19822.603   39845.205 -        0   39859.223 -        0   40379.289 -        0
+F81+F+R3         -19832.195   39860.390 -        0   39873.837 -        0   40383.792 -        0
+F81+F+I+R3       -19829.211   39856.422 -        0   39870.153 -        0   40385.165 -        0
+F81+I+R3         -20185.555   40563.110 -        0   40575.999 -        0   41075.830 -        0
+JC+I+R3          -20185.602   40563.204 -        0   40576.092 -        0   41075.924 -        0
+JC+I+R3          -20185.602   40563.204 -        0   40576.092 -        0   41075.924 -        0
+F81+R3           -20189.330   40568.660 -        0   40581.274 -        0   41076.039 -        0
+JC+R3            -20189.648   40569.296 -        0   40581.910 -        0   41076.675 -        0
+JC+R3            -20189.648   40569.296 -        0   40581.910 -        0   41076.675 -        0
+F81+R4           -20185.362   40564.725 -        0   40577.891 -        0   41082.786 -        0
+JC+R4            -20185.567   40565.135 -        0   40578.301 -        0   41083.196 -        0
+JC+R4            -20185.567   40565.135 -        0   40578.301 -        0   41083.196 -        0
+JC+I+R4          -20184.613   40565.227 -        0   40578.674 -        0   41088.629 -        0
+JC+I+R2          -20202.952   40593.903 -        0   40606.246 -        0   41095.942 -        0
+JC+I+G4          -20216.575   40619.151 -        0   40631.225 -        0   41115.848 -        0
+JC+R2            -20264.997   40715.994 -        0   40728.069 -        0   41212.692 -        0
+JC+G4            -20270.985   40725.970 -        0   40737.779 -        0   41217.327 -        0
+JC+I             -20461.543   41107.087 -        0   41118.896 -        0   41598.443 -        0
+JC               -23391.223   46964.446 -        0   46975.994 -        0   47450.462 -        0
+
+AIC, w-AIC   : Akaike information criterion scores and weights.
+AICc, w-AICc : Corrected AIC scores and weights.
+BIC, w-BIC   : Bayesian information criterion scores and weights.
+
+Plus signs denote the 95% confidence sets.
+Minus signs denote significant exclusion.
+
+SUBSTITUTION PROCESS
+--------------------
+
+Model of substitution: GTR+F+R4
+
+Rate parameter R:
+
+  A-C: 3.5073
+  A-G: 17.5833
+  A-T: 7.7428
+  C-G: 1.5351
+  C-T: 48.9682
+  G-T: 1.0000
+
+State frequencies: (empirical counts from alignment)
+
+  pi(A) = 0.2868
+  pi(C) = 0.2352
+  pi(G) = 0.1632
+  pi(T) = 0.3147
+
+Rate matrix Q:
+
+  A   -0.5581   0.07508    0.2612    0.2218
+  C   0.09153    -1.517   0.02281     1.403
+  G    0.4589   0.03286   -0.5204   0.02864
+  T    0.2021     1.048   0.01486    -1.265
+
+Model of rate heterogeneity: FreeRate with 4 categories
+Site proportion and rates:  (0.5923,0.00875) (0.09544,0.7438) (0.2304,1.96) (0.08184,5.771)
+
+ Category  Relative_rate  Proportion
+  1         0.00875        0.5923
+  2         0.7438         0.09544
+  3         1.96           0.2304
+  4         5.771          0.08184
+
+MAXIMUM LIKELIHOOD TREE
+-----------------------
+
+Log-likelihood of the tree: -18282.6066 (s.e. 518.5123)
+Unconstrained log-likelihood (without tree): -6508.1309
+Number of free parameters (#branches + #model parameters): 105
+Akaike information criterion (AIC) score: 36775.2132
+Corrected Akaike information criterion (AICc) score: 36790.7146
+Bayesian information criterion (BIC) score: 37336.0010
+
+Total tree length (sum of branch lengths): 4.9651
+Sum of internal branch lengths: 2.5920 (52.2045% of tree length)
+
+WARNING: 2 near-zero internal branches (<0.0006) should be treated with caution
+         Such branches are denoted by '**' in the figure below
+
+NOTE: Tree is UNROOTED although outgroup taxon 'Chaetodipus_baileyi_27' is drawn at root
+Numbers in parentheses are  ultrafast bootstrap support (%)
+
++--Chaetodipus_baileyi_27
+|
++--Chaetodipus_baileyi_30
+|
+|                         +-----------Chaetodipus_californicus_22
+|                    +----| (99)
+|                    |    |       +----Chaetodipus_eremicus_26
+|                    |    +-------| (100)
+|                    |            +--Chaetodipus_intermedius_28
+|                 +--| (66)
+|                 |  |  +--------------Chaetodipus_formosus_19
+|                 |  +--| (39)
+|                 |     |             +--Chaetodipus_hispidus_4
+|                 |     +-------------| (100)
+|                 |                   +--Chaetodipus_hispidus_40
++-----------------| (100)
+                  |                            +---------Cratogeomys_perotensis
+                  |                         +--| (75)
+                  |                         |  +----------Pappogeomys_bulleri
+                  |                      +--| (78)
+                  |                      |  +----------Orthogeomys_grandis
+                  |        +-------------| (100)
+                  |        |             +-------Zygogeomys_trichopus
+                  |     +--| (82)
+                  |     |  |                           +--Dipdomys_heermanni_23
+                  |     |  |                     +-----| (100)
+                  |     |  |                     |     +--Dipodomys_panamintinus_18
+                  |     |  |                  +--| (86)
+                  |     |  |                  |  +-------Dipodomys_microps_36
+                  |     |  |               +--| (84)
+                  |     |  |               |  |             +--Dipodomys_ordii_16
+                  |     |  |               |  |          +--| (96)
+                  |     |  |               |  |          |  +--Dipodomys_ordii_3
+                  |     |  |               |  |       +--| (95)
+                  |     |  |               |  |       |  |  +--Dipodomys_ordii_28
+                  |     |  |               |  |       |  +--| (97)
+                  |     |  |               |  |       |     +--Dipodomys_ordii_38
+                  |     |  |               |  +-------| (100)
+                  |     |  |               |          +--Dipodomys_ordii_37
+                  |     |  |            +--| (98)
+                  |     |  |            |  |                 +--Dipodomys_merriami_19
+                  |     |  |            |  |              +**| (64)
+                  |     |  |            |  |              |  +**Dipodomys_merriami_20
+                  |     |  |            |  |           +--| (98)
+                  |     |  |            |  |           |  +--Dipodomys_merriami_35
+                  |     |  |            |  |        +--| (96)
+                  |     |  |            |  |        |  |  +--Dipodomys_merriami_2
+                  |     |  |            |  |        |  +--| (100)
+                  |     |  |            |  |        |     +**Dipodomys_merriami_26
+                  |     |  |            |  |   +----| (100)
+                  |     |  |            |  |   |    |  +--Dipodomys_merriami_32
+                  |     |  |            |  |   |    +--| (98)
+                  |     |  |            |  |   |       |  +--Dipodomys_merriami_33
+                  |     |  |            |  |   |       +**| (60)
+                  |     |  |            |  |   |          +--Dipodomys_merriami_6
+                  |     |  |            |  +---| (100)
+                  |     |  |            |      |  +-----Dipodomys_phillipsii_10
+                  |     |  |            |      +--| (95)
+                  |     |  |            |         +--Dipodomys_phillipsii_17
+                  |     |  |  +---------| (100)
+                  |     |  |  |         |  +-----Dipodomys_nelsoni_4
+                  |     |  |  |         +--| (100)
+                  |     |  |  |            +----Dipodomys_spectabilis_29
+                  |     |  +--| (78)
+                  |     |     |            +------------Heteromys_desmarestianus_15
+                  |     |     |      +-----| (89)
+                  |     |     |      |     |                   +--Heteromys_irroratus_10
+                  |     |     |      |     |                +--| (74)
+                  |     |     |      |     |                |  |  +--Heteromys_irroratus_17
+                  |     |     |      |     |                |  +--| (100)
+                  |     |     |      |     |                |     +--Heteromys_irroratus_7
+                  |     |     |      |     |             +--| (97)
+                  |     |     |      |     |             |  +--Heteromys_irroratus_11
+                  |     |     |      |     |          +--| (50)
+                  |     |     |      |     |          |  +--Heteromys_irroratus_8
+                  |     |     |      |     |  +-------| (100)
+                  |     |     |      |     |  |       +--Heteromys_irroratus_39
+                  |     |     |      |     +--| (62)
+                  |     |     |      |        |   +-------Heteromys_pictus_14
+                  |     |     |      |        +---| (97)
+                  |     |     |      |            +-------Heteromys_pictus_9
+                  |     |     +------| (100)
+                  |     |            +---------------Heteromys_salvini_1
+                  +-----| (99)
+                        |                         +-----Perognathus_flavus_13
+                        |                      +--| (90)
+                        |                      |  +--Perognathus_flavus_24
+                        |      +---------------| (100)
+                        |      |               +--Perognathus_merriami_5
+                        +------| (100)
+                               |            +--Perognathus_longimembris_19
+                               +------------| (100)
+                                            +--Perognathus_longimembris_36
+
+Tree in newick format:
+
+(Chaetodipus_baileyi_27:0.0016542941,Chaetodipus_baileyi_30:0.0009567797,(((Chaetodipus_californicus_22:0.1595071514,(Chaetodipus_eremicus_26:0.0731724732,Chaetodipus_intermedius_28:0.0465585855)100:0.1054073240)99:0.0675247374,(Chaetodipus_formosus_19:0.1932693935,(Chaetodipus_hispidus_4:0.0169630115,Chaetodipus_hispidus_40:0.0289397133)100:0.1792211569)39:0.0136059245)66:0.0443152159,(((((Cratogeomys_perotensis:0.1283822881,Pappogeomys_bulleri:0.1461187333)75:0.0174120751,Orthogeomys_grandis:0.1450310466)78:0.0357512419,Zygogeomys_trichopus:0.1093046927)100:0.1781522558,((((((Dipdomys_heermanni_23:0.0290856589,Dipodomys_panamintinus_18:0.0291223547)100:0.0809379325,Dipodomys_microps_36:0.1109053378)86:0.0323466224,(((Dipodomys_ordii_16:0.0069269096,Dipodomys_ordii_3:0.0091005947)96:0.0118633595,(Dipodomys_ordii_28:0.0113728562,Dipodomys_ordii_38:0.0110556202)97:0.0097140079)95:0.0151046475,Dipodomys_ordii_37:0.0289993995)100:0.1060463958)84:0.0217046711,(((((Dipodomys_merriami_19:0.0025992120,Dipodomys_merriami_20:0.0006457641)64:0.0000011762,Dipodomys_merriami_35:0.0012938662)98:0.0045544294,(Dipodomys_merriami_2:0.0006804446,Dipodomys_merriami_26:0.0006209766)100:0.0076184804)96:0.0100192739,(Dipodomys_merriami_32:0.0020098974,(Dipodomys_merriami_33:0.0019603625,Dipodomys_merriami_6:0.0019294306)60:0.0006446625)98:0.0086293201)100:0.0627024687,(Dipodomys_phillipsii_10:0.0754507383,Dipodomys_phillipsii_17:0.0495601812)95:0.0349632559)100:0.0559097445)98:0.0433647780,(Dipodomys_nelsoni_4:0.0759581222,Dipodomys_spectabilis_29:0.0628309391)100:0.0473790806)100:0.1311867835,((Heteromys_desmarestianus_15:0.1612422636,(((((Heteromys_irroratus_10:0.0027149335,(Heteromys_irroratus_17:0.0012816590,Heteromys_irroratus_7:0.0020249766)100:0.0095487165)74:0.0009905084,Heteromys_irroratus_11:0.0050326551)97:0.0103296567,Heteromys_irroratus_8:0.0352989545)50:0.0047324513,Heteromys_irroratus_39:0.0242987939)100:0.1051017692,(Heteromys_pictus_14:0.1028591930,Heteromys_pictus_9:0.1063445141)97:0.0520474535)62:0.0319057563)89:0.0757941293,Heteromys_salvini_1:0.2019702132)100:0.0976713809)78:0.0340012793)82:0.0380998189,(((Perognathus_flavus_13:0.0744035337,Perognathus_flavus_24:0.0355101792)90:0.0260407206,Perognathus_merriami_5:0.0319240352)100:0.2092210021,(Perognathus_longimembris_19:0.0037804896,Perognathus_longimembris_36:0.0224554877)100:0.1651188168)100:0.0977156436)99:0.0788682731)100:0.2287520320);
+
+CONSENSUS TREE
+--------------
+
+Consensus tree is constructed from 1000 bootstrap trees
+Log-likelihood of consensus tree: -18282.607144
+Robinson-Foulds distance between ML tree and consensus tree: 0
+
+Branches with support >0.000000% are kept (extended consensus)
+Branch lengths are optimized by maximum likelihood on original alignment
+Numbers in parentheses are bootstrap supports (%)
+
++--Chaetodipus_baileyi_27
+|
++--Chaetodipus_baileyi_30
+|
+|                         +-----------Chaetodipus_californicus_22
+|                    +----| (99)
+|                    |    |       +----Chaetodipus_eremicus_26
+|                    |    +-------| (100)
+|                    |            +--Chaetodipus_intermedius_28
+|                 +--| (66)
+|                 |  |  +--------------Chaetodipus_formosus_19
+|                 |  +--| (39)
+|                 |     |             +--Chaetodipus_hispidus_4
+|                 |     +-------------| (100)
+|                 |                   +--Chaetodipus_hispidus_40
++-----------------| (100)
+                  |                            +---------Cratogeomys_perotensis
+                  |                         +--| (75)
+                  |                         |  +----------Pappogeomys_bulleri
+                  |                      +--| (78)
+                  |                      |  +----------Orthogeomys_grandis
+                  |        +-------------| (100)
+                  |        |             +-------Zygogeomys_trichopus
+                  |     +--| (82)
+                  |     |  |                           +--Dipdomys_heermanni_23
+                  |     |  |                     +-----| (100)
+                  |     |  |                     |     +--Dipodomys_panamintinus_18
+                  |     |  |                  +--| (86)
+                  |     |  |                  |  +-------Dipodomys_microps_36
+                  |     |  |               +--| (84)
+                  |     |  |               |  |             +--Dipodomys_ordii_16
+                  |     |  |               |  |          +--| (96)
+                  |     |  |               |  |          |  +--Dipodomys_ordii_3
+                  |     |  |               |  |       +--| (95)
+                  |     |  |               |  |       |  |  +--Dipodomys_ordii_28
+                  |     |  |               |  |       |  +--| (97)
+                  |     |  |               |  |       |     +--Dipodomys_ordii_38
+                  |     |  |               |  +-------| (100)
+                  |     |  |               |          +--Dipodomys_ordii_37
+                  |     |  |            +--| (98)
+                  |     |  |            |  |                 +--Dipodomys_merriami_19
+                  |     |  |            |  |              +--| (64)
+                  |     |  |            |  |              |  +--Dipodomys_merriami_20
+                  |     |  |            |  |           +--| (98)
+                  |     |  |            |  |           |  +--Dipodomys_merriami_35
+                  |     |  |            |  |        +--| (96)
+                  |     |  |            |  |        |  |  +--Dipodomys_merriami_2
+                  |     |  |            |  |        |  +--| (100)
+                  |     |  |            |  |        |     +--Dipodomys_merriami_26
+                  |     |  |            |  |   +----| (100)
+                  |     |  |            |  |   |    |  +--Dipodomys_merriami_32
+                  |     |  |            |  |   |    +--| (98)
+                  |     |  |            |  |   |       |  +--Dipodomys_merriami_33
+                  |     |  |            |  |   |       +--| (60)
+                  |     |  |            |  |   |          +--Dipodomys_merriami_6
+                  |     |  |            |  +---| (100)
+                  |     |  |            |      |  +-----Dipodomys_phillipsii_10
+                  |     |  |            |      +--| (95)
+                  |     |  |            |         +---Dipodomys_phillipsii_17
+                  |     |  |  +---------| (100)
+                  |     |  |  |         |  +-----Dipodomys_nelsoni_4
+                  |     |  |  |         +--| (100)
+                  |     |  |  |            +----Dipodomys_spectabilis_29
+                  |     |  +--| (78)
+                  |     |     |            +-----------Heteromys_desmarestianus_15
+                  |     |     |      +-----| (89)
+                  |     |     |      |     |                   +--Heteromys_irroratus_10
+                  |     |     |      |     |                +--| (74)
+                  |     |     |      |     |                |  |  +--Heteromys_irroratus_17
+                  |     |     |      |     |                |  +--| (100)
+                  |     |     |      |     |                |     +--Heteromys_irroratus_7
+                  |     |     |      |     |             +--| (97)
+                  |     |     |      |     |             |  +--Heteromys_irroratus_11
+                  |     |     |      |     |          +--| (50)
+                  |     |     |      |     |          |  +--Heteromys_irroratus_8
+                  |     |     |      |     |  +-------| (100)
+                  |     |     |      |     |  |       +--Heteromys_irroratus_39
+                  |     |     |      |     +--| (62)
+                  |     |     |      |        |   +-------Heteromys_pictus_14
+                  |     |     |      |        +---| (97)
+                  |     |     |      |            +-------Heteromys_pictus_9
+                  |     |     +------| (100)
+                  |     |            +---------------Heteromys_salvini_1
+                  +-----| (99)
+                        |                         +-----Perognathus_flavus_13
+                        |                      +--| (90)
+                        |                      |  +--Perognathus_flavus_24
+                        |      +---------------| (100)
+                        |      |               +--Perognathus_merriami_5
+                        +------| (100)
+                               |            +--Perognathus_longimembris_19
+                               +------------| (100)
+                                            +--Perognathus_longimembris_36
+
+
+Consensus tree in newick format: 
+
+(Chaetodipus_baileyi_27:0.0016380192,Chaetodipus_baileyi_30:0.0009662142,(((Chaetodipus_californicus_22:0.1593161302,(Chaetodipus_eremicus_26:0.0731143462,Chaetodipus_intermedius_28:0.0464806795)100:0.1052623686)99:0.0675060720,(Chaetodipus_formosus_19:0.1930165770,(Chaetodipus_hispidus_4:0.0170002642,Chaetodipus_hispidus_40:0.0288628104)100:0.1789552357)39:0.0136539893)66:0.0442508985,(((((Cratogeomys_perotensis:0.1281454703,Pappogeomys_bulleri:0.1458406697)75:0.0174520290,Orthogeomys_grandis:0.1447724874)78:0.0356649820,Zygogeomys_trichopus:0.1092117303)100:0.1777835318,((((((Dipdomys_heermanni_23:0.0290733656,Dipodomys_panamintinus_18:0.0290884301)100:0.0808396235,Dipodomys_microps_36:0.1107983383)86:0.0323718104,(((Dipodomys_ordii_16:0.0069224847,Dipodomys_ordii_3:0.0090907999)96:0.0118563161,(Dipodomys_ordii_28:0.0113637851,Dipodomys_ordii_38:0.0110453354)97:0.0097049277)95:0.0150843405,Dipodomys_ordii_37:0.0289915369)100:0.1059280974)84:0.0217205364,(((((Dipodomys_merriami_19:0.0025963287,Dipodomys_merriami_20:0.0006443962)64:0.0000022658,Dipodomys_merriami_35:0.0012923769)98:0.0045500458,(Dipodomys_merriami_2:0.0006790816,Dipodomys_merriami_26:0.0006197226)100:0.0076140335)96:0.0100066672,(Dipodomys_merriami_32:0.0020077335,(Dipodomys_merriami_33:0.0019582826,Dipodomys_merriami_6:0.0019271553)60:0.0006432459)98:0.0086325496)100:0.0626184172,(Dipodomys_phillipsii_10:0.0754077472,Dipodomys_phillipsii_17:0.0495111434)95:0.0349900531)100:0.0558690900)98:0.0432798934,(Dipodomys_nelsoni_4:0.0759180252,Dipodomys_spectabilis_29:0.0627375077)100:0.0474215452)100:0.1310093876,((Heteromys_desmarestianus_15:0.1608462475,(((((Heteromys_irroratus_10:0.0027081353,(Heteromys_irroratus_17:0.0012791768,Heteromys_irroratus_7:0.0020196714)100:0.0095279010)74:0.0009899405,Heteromys_irroratus_11:0.0050210496)97:0.0103158147,Heteromys_irroratus_8:0.0352182253)50:0.0047467695,Heteromys_irroratus_39:0.0242289574)100:0.1049312506,(Heteromys_pictus_14:0.1026786716,Heteromys_pictus_9:0.1061110117)97:0.0519869563)62:0.0319517539)89:0.0757625207,Heteromys_salvini_1:0.2014867982)100:0.0974016202)78:0.0339907776)82:0.0380781428,(((Perognathus_flavus_13:0.0742965838,Perognathus_flavus_24:0.0354520704)90:0.0259917944,Perognathus_merriami_5:0.0319123600)100:0.2088299482,(Perognathus_longimembris_19:0.0038142121,Perognathus_longimembris_36:0.0223865182)100:0.1648324923)100:0.0976239172)99:0.0787454210)100:0.2283869763);
+
+ALISIM COMMAND
+--------------
+To simulate an alignment of the same length as the original alignment, using the tree and model parameters estimated from this analysis, you can use the following command:
+
+--alisim simulated_MSA -t ml2\trees\M3141.treefile -m "GTR{3.50728,17.5833,7.74278,1.53512,48.9682}+F{0.286787,0.235232,0.163249,0.314733}+R4{0.592308,0.00875044,0.095437,0.74379,0.230418,1.95956,0.0818368,5.77141}" --length 1542
+
+To mimic the alignment used to produce this analysis, i.e. simulate an alignment of the same length as the original alignment, using the tree and model parameters estimated from this analysis *and* copying the same gap positions as the original alignment, you can use the following command:
+
+iqtree -s ml2\datasets\M3141.nex --alisim mimicked_MSA
+
+To simulate any number of alignments in either of the two commandlines above, use the --num-alignments options, for example mimic 100 alignments you would use the command line:
+
+iqtree -s ml2\datasets\M3141.nex --alisim mimicked_MSA --num-alignments 100
+
+For more information on using AliSim, please visit: www.iqtree.org/doc/AliSim
+
+TIME STAMP
+----------
+
+Date and time: Mon May 04 13:34:55 2026
+Total CPU time used: 498.625 seconds (0h:8m:18s)
+Total wall-clock time used: 191.0949033 seconds (0h:3m:11s)
+

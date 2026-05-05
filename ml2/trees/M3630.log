@@ -1,0 +1,494 @@
+IQ-TREE version 3.1.1 for Windows 64-bit built Apr  2 2026
+Developed by Bui Quang Minh, Thomas Wong, Nhan Ly-Trong, Huaiyan Ren
+Contributed by Lam-Tung Nguyen, Dominik Schrempf, Chris Bielow,
+Olga Chernomor, Michael Woodhams, Diep Thi Hoang, Heiko Schmidt
+
+Host:    DESKTOP-I0VDDLU (AVX2, FMA3, 15 GB RAM)
+Command: iqtree-3.1.1-Windows\bin\iqtree3.exe -s ml2\datasets\M3630.nex -m MFP -B 1000 -bnni -T AUTO --prefix ml2\trees\M3630 --redo
+Seed:    550659 (Using SPRNG - Scalable Parallel Random Number Generator)
+Time:    Mon May 04 13:41:50 2026
+Kernel:  AVX+FMA - auto-detect threads (16 CPU cores detected)
+
+Reading alignment file ml2\datasets\M3630.nex ... Nexus format detected
+WARNING: 1 sites contain only gaps or ambiguous characters.
+Alignment has 68 sequences with 228 columns, 63 distinct patterns
+38 parsimony-informative, 5 singleton sites, 185 constant sites
+                                           Gap/Ambiguity  Composition  p-value
+Analyzing sequences: done in 0.0001415 secs
+   1  Hyphal_Swelling_Pythium_ultimum_Arizona_1    0.44%    passed    100.00%
+   2  Hyphal_Swelling_Pythium_ultimum_Arizona_2    0.44%    passed    100.00%
+   3  Hyphal_Swelling_Pythium_ultimum_Florida      0.44%    passed    100.00%
+   4  Hyphal_Swelling_Pythium_ultimum_Iowa         0.44%    passed    100.00%
+   5  Phytophthora_megasperma                      0.44%    passed    100.00%
+   6  Pythium_aphanidermatum_Florida               0.44%    passed    100.00%
+   7  Pythium_aphanidermatum_Hawaii                0.44%    passed    100.00%
+   8  Pythium_aphanidermatum_Japan_1               0.44%    passed    100.00%
+   9  Pythium_aphanidermatum_Japan_2               0.44%    passed    100.00%
+  10  Pythium_aphanidermatum_Korea                 0.44%    passed    100.00%
+  11  Pythium_aphanidermatum_Mexico                0.44%    passed    100.00%
+  12  Pythium_aphanidermatum_New_York              0.44%    passed    100.00%
+  13  Pythium_aphanidermatum_South_Africa          0.44%    passed    100.00%
+  14  Pythium_arrhenomanes_Australia               0.44%    passed    100.00%
+  15  Pythium_arrhenomanes_New_York                0.44%    passed    100.00%
+  16  Pythium_catenulatum_India                    0.44%    passed    100.00%
+  17  Pythium_deliense_Arizona                     0.44%    passed    100.00%
+  18  Pythium_graminicola_Florida                  0.44%    passed    100.00%
+  19  Pythium_graminicola_Jamaica                  0.44%    passed    100.00%
+  20  Pythium_graminicola_Japan_1                  0.44%    passed    100.00%
+  21  Pythium_graminicola_Japan_2                  0.44%    passed    100.00%
+  22  Pythium_heterothallicum_Canada_1             0.44%    passed    100.00%
+  23  Pythium_heterothallicum_Canada_2             0.44%    passed    100.00%
+  24  Pythium_insidiosum_Costa_Rica                0.44%    passed    100.00%
+  25  Pythium_insidiosum_New_Guinea                0.44%    passed    100.00%
+  26  Pythium_irregulare_Florida                   0.44%    passed    100.00%
+  27  Pythium_irregulare_Japan                     0.44%    passed    100.00%
+  28  Pythium_irregulare_Korea                     0.44%    passed    100.00%
+  29  Pythium_irregulare_Mississippi               0.44%    passed    100.00%
+  30  Pythium_irregulare_Washington                0.44%    passed    100.00%
+  31  Pythium_iwayamai_Japan                       0.44%    passed    100.00%
+  32  Pythium_mamillatum_California                0.44%    passed    100.00%
+  33  Pythium_myriotylum_Arizona                   0.44%    passed    100.00%
+  34  Pythium_myriotylum_Australia_1               0.44%    passed    100.00%
+  35  Pythium_myriotylum_Australia_2               0.44%    passed    100.00%
+  36  Pythium_myriotylum_Florida                   0.44%    passed    100.00%
+  37  Pythium_nunn_Colorado                        0.44%    passed    100.00%
+  38  Pythium_oligandrum_Florida                   0.44%    passed    100.00%
+  39  Pythium_oligandrum_Slovakia                  0.44%    passed    100.00%
+  40  Pythium_oligandrum_South_Africa              0.44%    passed    100.00%
+  41  Pythium_paddicum_Japan                       0.44%    passed    100.00%
+  42  Pythium_pulchrum_Ohio                        0.44%    passed    100.00%
+  43  Pythium_rostratum_Australia                  0.44%    passed    100.00%
+  44  Pythium_spinosum_Florida                     0.44%    passed    100.00%
+  45  Pythium_spinosum_Korea                       0.44%    passed    100.00%
+  46  Pythium_splendens_Florida                    0.44%    passed    100.00%
+  47  Pythium_splendens_South_Africa               0.44%    passed    100.00%
+  48  Pythium_sulcatum_Florida                     0.44%    passed    100.00%
+  49  Pythium_sylvaticum_Iowa                      0.44%    passed    100.00%
+  50  Pythium_sylvaticum_Kenya                     0.44%    passed    100.00%
+  51  Pythium_sylvaticum_Tennessee_1               0.44%    passed    100.00%
+  52  Pythium_sylvaticum_Tennessee_2               0.44%    passed    100.00%
+  53  Pythium_sylvaticum_Vancouver                 0.44%    passed    100.00%
+  54  Pythium_torulosum_Louisiana                  0.44%    passed    100.00%
+  55  Pythium_torulosum_New_York                   0.44%    passed    100.00%
+  56  Pythium_torulosum_Ohio                       0.44%    passed    100.00%
+  57  Pythium_ultimum_Florida                      0.44%    passed    100.00%
+  58  Pythium_ultimum_Hawaii                       0.44%    passed    100.00%
+  59  Pythium_ultimum_Korea                        0.44%    passed    100.00%
+  60  Pythium_ultimum_New_York                     0.44%    passed    100.00%
+  61  Pythium_ultimum_New_Zealand                  0.44%    passed    100.00%
+  62  Pythium_ultimum_Poland                       0.44%    passed    100.00%
+  63  Pythium_ultimum_Washington                   0.44%    passed    100.00%
+  64  Pythium_ultimum_sporang_Maryland             0.44%    passed    100.00%
+  65  Pythium_ultimum_sporang_South_Africa         0.44%    passed    100.00%
+  66  Pythium_ultimum_sporang_Spain                0.44%    passed    100.00%
+  67  Pythium_volutum_Japan                        0.44%    passed    100.00%
+  68  Pythium_volutum_Washington                   0.44%    passed    100.00%
+****  TOTAL                                        0.44%  0 sequences failed composition chi2 test (p-value<5%; df=19)
+NOTE: Hyphal_Swelling_Pythium_ultimum_Iowa is identical to Hyphal_Swelling_Pythium_ultimum_Arizona_1 but kept for subsequent analysis
+NOTE: Hyphal_Swelling_Pythium_ultimum_Florida is identical to Hyphal_Swelling_Pythium_ultimum_Arizona_2 but kept for subsequent analysis
+NOTE: Pythium_aphanidermatum_Hawaii is identical to Pythium_aphanidermatum_Florida but kept for subsequent analysis
+NOTE: Pythium_torulosum_New_York is identical to Pythium_catenulatum_India but kept for subsequent analysis
+NOTE: Pythium_graminicola_Jamaica is identical to Pythium_graminicola_Florida but kept for subsequent analysis
+NOTE: Pythium_heterothallicum_Canada_2 is identical to Pythium_heterothallicum_Canada_1 but kept for subsequent analysis
+NOTE: Pythium_irregulare_Japan is identical to Pythium_irregulare_Florida but kept for subsequent analysis
+NOTE: Pythium_myriotylum_Australia_1 is identical to Pythium_myriotylum_Arizona but kept for subsequent analysis
+NOTE: Pythium_oligandrum_Slovakia is identical to Pythium_oligandrum_Florida but kept for subsequent analysis
+NOTE: Pythium_volutum_Washington is identical to Pythium_volutum_Japan but kept for subsequent analysis
+Checking for duplicate sequences: done in 0.151266 secs using 216.9% CPU
+Identifying sites to remove: done in 0.0006244 secs using 2.252e+004% CPU
+NOTE: 31 identical sequences (see below) will be ignored for subsequent analysis
+NOTE: Pythium_ultimum_Florida (identical to Hyphal_Swelling_Pythium_ultimum_Arizona_2) is ignored but added at the end
+NOTE: Pythium_ultimum_Hawaii (identical to Hyphal_Swelling_Pythium_ultimum_Arizona_2) is ignored but added at the end
+NOTE: Pythium_ultimum_Korea (identical to Hyphal_Swelling_Pythium_ultimum_Arizona_2) is ignored but added at the end
+NOTE: Pythium_ultimum_New_York (identical to Hyphal_Swelling_Pythium_ultimum_Arizona_2) is ignored but added at the end
+NOTE: Pythium_ultimum_New_Zealand (identical to Hyphal_Swelling_Pythium_ultimum_Arizona_2) is ignored but added at the end
+NOTE: Pythium_ultimum_Poland (identical to Hyphal_Swelling_Pythium_ultimum_Arizona_2) is ignored but added at the end
+NOTE: Pythium_ultimum_Washington (identical to Hyphal_Swelling_Pythium_ultimum_Arizona_2) is ignored but added at the end
+NOTE: Pythium_ultimum_sporang_Maryland (identical to Hyphal_Swelling_Pythium_ultimum_Arizona_2) is ignored but added at the end
+NOTE: Pythium_ultimum_sporang_South_Africa (identical to Hyphal_Swelling_Pythium_ultimum_Arizona_2) is ignored but added at the end
+NOTE: Pythium_aphanidermatum_Japan_1 (identical to Pythium_aphanidermatum_Florida) is ignored but added at the end
+NOTE: Pythium_aphanidermatum_Japan_2 (identical to Pythium_aphanidermatum_Florida) is ignored but added at the end
+NOTE: Pythium_aphanidermatum_Korea (identical to Pythium_aphanidermatum_Florida) is ignored but added at the end
+NOTE: Pythium_aphanidermatum_South_Africa (identical to Pythium_aphanidermatum_Florida) is ignored but added at the end
+NOTE: Pythium_arrhenomanes_New_York (identical to Pythium_aphanidermatum_Florida) is ignored but added at the end
+NOTE: Pythium_torulosum_Ohio (identical to Pythium_catenulatum_India) is ignored but added at the end
+NOTE: Pythium_graminicola_Japan_1 (identical to Pythium_graminicola_Florida) is ignored but added at the end
+NOTE: Pythium_graminicola_Japan_2 (identical to Pythium_graminicola_Florida) is ignored but added at the end
+NOTE: Pythium_irregulare_Korea (identical to Pythium_irregulare_Florida) is ignored but added at the end
+NOTE: Pythium_irregulare_Mississippi (identical to Pythium_irregulare_Florida) is ignored but added at the end
+NOTE: Pythium_irregulare_Washington (identical to Pythium_irregulare_Florida) is ignored but added at the end
+NOTE: Pythium_paddicum_Japan (identical to Pythium_irregulare_Florida) is ignored but added at the end
+NOTE: Pythium_spinosum_Florida (identical to Pythium_irregulare_Florida) is ignored but added at the end
+NOTE: Pythium_spinosum_Korea (identical to Pythium_irregulare_Florida) is ignored but added at the end
+NOTE: Pythium_sylvaticum_Iowa (identical to Pythium_irregulare_Florida) is ignored but added at the end
+NOTE: Pythium_sylvaticum_Kenya (identical to Pythium_irregulare_Florida) is ignored but added at the end
+NOTE: Pythium_sylvaticum_Tennessee_1 (identical to Pythium_irregulare_Florida) is ignored but added at the end
+NOTE: Pythium_sylvaticum_Tennessee_2 (identical to Pythium_irregulare_Florida) is ignored but added at the end
+NOTE: Pythium_sylvaticum_Vancouver (identical to Pythium_irregulare_Florida) is ignored but added at the end
+NOTE: Pythium_myriotylum_Australia_2 (identical to Pythium_myriotylum_Arizona) is ignored but added at the end
+NOTE: Pythium_myriotylum_Florida (identical to Pythium_myriotylum_Arizona) is ignored but added at the end
+NOTE: Pythium_oligandrum_South_Africa (identical to Pythium_oligandrum_Florida) is ignored but added at the end
+Alignment was printed to ml2\trees\M3630.uniqueseq.phy
+
+For your convenience alignment with unique sequences printed to ml2\trees\M3630.uniqueseq.phy
+
+
+Create initial parsimony tree by phylogenetic likelihood library (PLL)... 0.020 seconds
+Measuring multi-threading efficiency up to 16 CPU cores
+Increase to 10 rounds for branch lengths
+238 trees examined
+Threads: 1 / Time: 16.008 sec / Speedup: 1.000 / Efficiency: 100% / LogL: -1807
+Threads: 2 / Time: 9.262 sec / Speedup: 1.728 / Efficiency: 86% / LogL: -1807
+Threads: 3 / Time: 6.388 sec / Speedup: 2.506 / Efficiency: 84% / LogL: -1807
+Threads: 4 / Time: 6.318 sec / Speedup: 2.534 / Efficiency: 63% / LogL: -1807
+Threads: 5 / Time: 6.408 sec / Speedup: 2.498 / Efficiency: 50% / LogL: -1807
+Determining AUTO threadcount: done in 44.4305 secs using 244.9% CPU
+BEST NUMBER OF THREADS: 3
+
+Perform fast likelihood tree search using LG+I+G model...
+Estimate model parameters (epsilon = 5.000)
+Perform nearest neighbor interchange...
+Estimate model parameters (epsilon = 1.000)
+1. Initial log-likelihood: -1173.221
+Optimal log-likelihood: -1173.215
+Proportion of invariable sites: 0.409
+Gamma shape alpha: 0.418
+Parameters optimization took 1 rounds (0.035 sec)
+Time for fast ML tree search: 0.134 seconds
+
+NOTE: ModelFinder requires 5 MB RAM!
+ModelFinder will test up to 1232 protein models (sample size: 228 epsilon: 0.100) ...
+ No. Model         -LnL         df  AIC          AICc         BIC
+  1  LG            1202.719     71  2547.438     2612.976     2790.922
+  2  LG+I          1173.424     72  2490.848     2558.668     2737.761
+  3  LG+G4         1173.178     72  2490.356     2558.176     2737.269
+  4  LG+I+G4       1173.215     73  2492.429     2562.585     2742.771
+  5  LG+R2         1173.399     73  2492.798     2562.954     2743.140
+  6  LG+R3         1173.160     75  2496.321     2571.321     2753.522
+ 14  LG+I+R2       1173.412     74  2494.825     2567.374     2748.596
+ 15  LG+I+R3       1173.137     76  2498.274     2575.784     2758.905
+ 24  LG+F+I        1147.738     91  2477.475     2600.593     2789.546
+ 25  LG+F+G4       1147.405     91  2476.811     2599.929     2788.881
+ 26  LG+F+I+G4     1147.457     92  2478.914     2605.669     2794.413
+ 27  LG+F+R2       1147.699     92  2479.398     2606.154     2794.898
+ 46  WAG+I         1184.995     72  2513.990     2581.809     2760.903
+ 47  WAG+G4        1184.818     72  2513.635     2581.455     2760.548
+ 48  WAG+I+G4      1184.949     73  2515.899     2586.055     2766.241
+ 49  WAG+R2        1184.971     73  2515.941     2586.097     2766.283
+ 68  WAG+F+I       1150.776     91  2483.552     2606.669     2795.622
+ 69  WAG+F+G4      1150.603     91  2483.206     2606.324     2795.276
+ 70  WAG+F+I+G4    1150.862     92  2485.723     2612.479     2801.223
+ 71  WAG+F+R2      1150.744     92  2485.489     2612.244     2800.989
+ 90  JTT+I         1177.333     72  2498.666     2566.485     2745.579
+ 91  JTT+G4        1177.141     72  2498.281     2566.100     2745.194
+ 92  JTT+I+G4      1177.251     73  2500.501     2570.657     2750.843
+ 93  JTT+R2        1177.292     73  2500.583     2570.739     2750.926
+112  JTT+F+I       1145.735     91  2473.471     2596.588     2785.541
+113  JTT+F+G4      1145.487     91  2472.975     2596.093     2785.045
+114  JTT+F+I+G4    1145.648     92  2475.296     2602.052     2790.796
+115  JTT+F+R2      1145.683     92  2475.365     2602.121     2790.865
+134  Q.PFAM+I      1177.261     72  2498.523     2566.342     2745.436
+135  Q.PFAM+G4     1177.011     72  2498.022     2565.841     2744.935
+136  Q.PFAM+I+G4   1177.077     73  2500.155     2570.310     2750.497
+137  Q.PFAM+R2     1177.193     73  2500.386     2570.542     2750.728
+156  Q.PFAM+F+I    1148.584     91  2479.168     2602.285     2791.238
+157  Q.PFAM+F+G4   1148.186     91  2478.373     2601.490     2790.443
+158  Q.PFAM+F+I+G4 1148.180     92  2480.360     2607.116     2795.860
+159  Q.PFAM+F+R2   1148.432     92  2480.864     2607.620     2796.364
+178  Q.BIRD+I      1186.124     72  2516.247     2584.066     2763.160
+179  Q.BIRD+G4     1185.665     72  2515.330     2583.150     2762.243
+180  Q.BIRD+I+G4   1185.372     73  2516.745     2586.901     2767.087
+181  Q.BIRD+R2     1185.835     73  2517.670     2587.826     2768.012
+200  Q.BIRD+F+I    1150.376     91  2482.752     2605.869     2794.822
+201  Q.BIRD+F+G4   1149.583     91  2481.165     2604.283     2793.236
+202  Q.BIRD+F+I+G4 1149.168     92  2482.335     2609.091     2797.835
+203  Q.BIRD+F+R2   1149.670     92  2483.341     2610.096     2798.840
+222  Q.MAMMAL+I    1188.008     72  2520.016     2587.835     2766.929
+223  Q.MAMMAL+G4   1187.620     72  2519.240     2587.059     2766.153
+224  Q.MAMMAL+I+G4 1187.490     73  2520.980     2591.136     2771.322
+225  Q.MAMMAL+R2   1187.445     73  2520.890     2591.046     2771.232
+244  Q.MAMMAL+F+I  1148.891     91  2479.782     2602.900     2791.852
+245  Q.MAMMAL+F+G4 1148.255     91  2478.509     2601.627     2790.580
+246  Q.MAMMAL+F+I+G4 1148.021     92  2480.042     2606.798     2795.542
+247  Q.MAMMAL+F+R2 1148.144     92  2480.289     2607.045     2795.789
+266  Q.INSECT+I    1172.599     72  2489.199     2557.018     2736.112
+267  Q.INSECT+G4   1172.366     72  2488.732     2556.551     2735.644
+268  Q.INSECT+I+G4 1172.409     73  2490.819     2560.975     2741.161
+269  Q.INSECT+R2   1172.218     73  2490.437     2560.593     2740.779
+288  Q.INSECT+F+I  1147.496     91  2476.991     2600.109     2789.062
+289  Q.INSECT+F+G4 1147.187     91  2476.374     2599.492     2788.444
+290  Q.INSECT+F+I+G4 1147.250     92  2478.501     2605.256     2794.000
+291  Q.INSECT+F+R2 1147.102     92  2478.204     2604.960     2793.704
+310  Q.PLANT+I     1170.082     72  2484.164     2551.984     2731.077
+311  Q.PLANT+G4    1169.735     72  2483.470     2551.290     2730.383
+312  Q.PLANT+I+G4  1169.635     73  2485.270     2555.426     2735.613
+313  Q.PLANT+R2    1169.415     73  2484.829     2554.985     2735.171
+332  Q.PLANT+F+I   1146.912     91  2475.824     2598.942     2787.895
+333  Q.PLANT+F+G4  1146.465     91  2474.930     2598.048     2787.001
+334  Q.PLANT+F+I+G4 1146.424     92  2476.849     2603.604     2792.348
+335  Q.PLANT+F+R2  1146.251     92  2476.502     2603.257     2792.002
+354  Q.YEAST+I     1170.546     72  2485.093     2552.912     2732.006
+355  Q.YEAST+G4    1170.291     72  2484.582     2552.401     2731.495
+356  Q.YEAST+I+G4  1170.273     73  2486.546     2556.702     2736.888
+357  Q.YEAST+R2    1170.163     73  2486.326     2556.482     2736.668
+376  Q.YEAST+F+I   1145.886     91  2473.773     2596.891     2785.843
+377  Q.YEAST+F+G4  1145.515     91  2473.031     2596.148     2785.101
+378  Q.YEAST+F+I+G4 1145.487     92  2474.974     2601.729     2790.473
+379  Q.YEAST+F+R2  1145.439     92  2474.878     2601.634     2790.378
+398  JTTDCMUT+I    1177.614     72  2499.228     2567.048     2746.141
+399  JTTDCMUT+G4   1177.424     72  2498.847     2566.666     2745.760
+400  JTTDCMUT+I+G4 1177.537     73  2501.075     2571.230     2751.417
+401  JTTDCMUT+R2   1177.312     73  2500.623     2570.779     2750.965
+420  JTTDCMUT+F+I  1145.409     91  2472.818     2595.935     2784.888
+421  JTTDCMUT+F+G4 1145.166     91  2472.331     2595.449     2784.401
+422  JTTDCMUT+F+I+G4 1145.334     92  2474.669     2601.424     2790.169
+423  JTTDCMUT+F+R2 1145.115     92  2474.230     2600.985     2789.729
+442  DCMUT+I       1197.736     72  2539.472     2607.291     2786.385
+443  DCMUT+G4      1197.523     72  2539.047     2606.866     2785.960
+444  DCMUT+I+G4    1197.767     73  2541.534     2611.690     2791.876
+445  DCMUT+R2      1197.461     73  2540.922     2611.078     2791.264
+464  DCMUT+F+I     1146.893     91  2475.785     2598.903     2787.856
+465  DCMUT+F+G4    1146.779     91  2475.558     2598.676     2787.628
+466  DCMUT+F+I+G4  1147.246     92  2478.492     2605.247     2793.991
+467  DCMUT+F+R2    1146.850     92  2477.701     2604.457     2793.201
+486  VT+I          1182.639     72  2509.278     2577.098     2756.191
+487  VT+G4         1182.511     72  2509.022     2576.842     2755.935
+488  VT+I+G4       1182.690     73  2511.380     2581.536     2761.722
+489  VT+R2         1182.468     73  2510.937     2581.093     2761.279
+508  VT+F+I        1153.572     91  2489.145     2612.263     2801.215
+509  VT+F+G4       1153.434     91  2488.867     2611.985     2800.938
+510  VT+F+I+G4     1153.690     92  2491.380     2618.135     2806.880
+511  VT+F+R2       1153.442     92  2490.884     2617.640     2806.384
+530  PMB+I         1187.068     72  2518.137     2585.956     2765.050
+531  PMB+G4        1186.931     72  2517.862     2585.681     2764.775
+532  PMB+I+G4      1187.175     73  2520.350     2590.506     2770.692
+533  PMB+R2        1186.894     73  2519.787     2589.943     2770.129
+552  PMB+F+I       1159.522     91  2501.044     2624.162     2813.115
+553  PMB+F+G4      1159.376     91  2500.751     2623.869     2812.822
+554  PMB+F+I+G4    1159.674     92  2503.347     2630.103     2818.847
+555  PMB+F+R2      1159.382     92  2502.764     2629.519     2818.263
+574  BLOSUM62+I    1181.372     72  2506.743     2574.562     2753.656
+575  BLOSUM62+G4   1181.222     72  2506.443     2574.263     2753.356
+576  BLOSUM62+I+G4 1181.400     73  2508.800     2578.956     2759.142
+577  BLOSUM62+R2   1181.184     73  2508.367     2578.523     2758.709
+596  BLOSUM62+F+I  1158.185     91  2498.370     2621.488     2810.441
+597  BLOSUM62+F+G4 1158.027     91  2498.053     2621.171     2810.123
+598  BLOSUM62+F+I+G4 1158.248     92  2500.497     2627.252     2815.996
+599  BLOSUM62+F+R2 1158.023     92  2500.046     2626.801     2815.545
+618  DAYHOFF+I     1197.616     72  2539.233     2607.052     2786.146
+619  DAYHOFF+G4    1197.402     72  2538.804     2606.623     2785.717
+620  DAYHOFF+I+G4  1197.631     73  2541.262     2611.418     2791.605
+621  DAYHOFF+R2    1197.322     73  2540.644     2610.799     2790.986
+640  DAYHOFF+F+I   1146.811     91  2475.622     2598.740     2787.692
+641  DAYHOFF+F+G4  1146.697     91  2475.393     2598.511     2787.464
+642  DAYHOFF+F+I+G4 1147.151     92  2478.303     2605.058     2793.803
+643  DAYHOFF+F+R2  1146.746     92  2477.492     2604.248     2792.992
+662  MTREV+I       1200.499     72  2544.997     2612.817     2791.910
+663  MTREV+G4      1199.848     72  2543.695     2611.514     2790.608
+664  MTREV+I+G4    1199.681     73  2545.362     2615.518     2795.704
+665  MTREV+R2      1199.697     73  2545.394     2615.550     2795.736
+684  MTREV+F+I     1148.405     91  2478.809     2601.927     2790.880
+685  MTREV+F+G4    1147.760     91  2477.520     2600.637     2789.590
+686  MTREV+F+I+G4  1147.751     92  2479.503     2606.258     2795.002
+687  MTREV+F+R2    1147.555     92  2479.110     2605.866     2794.610
+706  MTART+I       1182.379     72  2508.758     2576.578     2755.671
+707  MTART+G4      1181.445     72  2506.890     2574.709     2753.803
+708  MTART+I+G4    1180.857     73  2507.713     2577.869     2758.055
+709  MTART+R2      1181.404     73  2508.808     2578.964     2759.150
+728  MTART+F+I     1146.229     91  2474.458     2597.576     2786.529
+729  MTART+F+G4    1145.251     91  2472.501     2595.619     2784.571
+730  MTART+F+I+G4  1144.801     92  2473.603     2600.358     2789.102
+731  MTART+F+R2    1145.191     92  2474.382     2601.138     2789.882
+750  MTZOA+I       1174.123     72  2492.245     2560.065     2739.158
+751  MTZOA+G4      1173.448     72  2490.897     2558.716     2737.810
+752  MTZOA+I+G4    1173.189     73  2492.378     2562.533     2742.720
+753  MTZOA+R2      1173.455     73  2492.909     2563.065     2743.251
+772  MTZOA+F+I     1141.339     91  2464.679     2587.796     2776.749
+773  MTZOA+F+G4    1140.720     91  2463.441     2586.558     2775.511
+774  MTZOA+F+I+G4  1140.575     92  2465.149     2591.905     2780.649
+775  MTZOA+F+R2    1140.728     92  2465.456     2592.211     2780.956
+794  MTMET+I       1185.469     72  2514.937     2582.757     2761.850
+795  MTMET+G4      1184.975     72  2513.950     2581.770     2760.863
+796  MTMET+I+G4    1184.815     73  2515.629     2585.785     2765.971
+797  MTMET+R2      1184.991     73  2515.982     2586.138     2766.324
+816  MTMET+F+I     1141.999     91  2465.999     2589.117     2778.069
+817  MTMET+F+G4    1141.458     91  2464.916     2588.034     2776.987
+818  MTMET+F+I+G4  1141.431     92  2466.861     2593.617     2782.361
+819  MTMET+F+R2    1141.439     92  2466.879     2593.634     2782.379
+838  MTVER+I       1195.552     72  2535.104     2602.924     2782.017
+839  MTVER+G4      1194.796     72  2533.592     2601.411     2780.505
+840  MTVER+I+G4    1194.336     73  2534.672     2604.828     2785.014
+841  MTVER+R2      1194.824     73  2535.649     2605.804     2785.991
+860  MTVER+F+I     1142.536     91  2467.071     2590.189     2779.142
+861  MTVER+F+G4    1141.838     91  2465.676     2588.794     2777.747
+862  MTVER+F+I+G4  1141.726     92  2467.452     2594.207     2782.952
+863  MTVER+F+R2    1141.790     92  2467.581     2594.336     2783.081
+882  MTINV+I       1193.154     72  2530.308     2598.128     2777.221
+883  MTINV+G4      1192.820     72  2529.640     2597.459     2776.553
+884  MTINV+I+G4    1192.847     73  2531.695     2601.851     2782.037
+885  MTINV+R2      1192.850     73  2531.701     2601.856     2782.043
+904  MTINV+F+I     1143.546     91  2469.093     2592.211     2781.163
+905  MTINV+F+G4    1143.221     91  2468.442     2591.560     2780.513
+906  MTINV+F+I+G4  1143.313     92  2470.625     2597.381     2786.125
+907  MTINV+F+R2    1143.251     92  2470.502     2597.257     2786.001
+926  MTMAM+I       1195.719     72  2535.438     2603.257     2782.351
+927  MTMAM+G4      1194.276     72  2532.551     2600.371     2779.464
+928  MTMAM+I+G4    1193.215     73  2532.429     2602.585     2782.771
+929  MTMAM+R2      1194.285     73  2534.571     2604.726     2784.913
+948  MTMAM+F+I     1147.815     91  2477.629     2600.747     2789.700
+949  MTMAM+F+G4    1146.289     91  2474.578     2597.696     2786.649
+950  MTMAM+F+I+G4  1145.713     92  2475.426     2602.181     2790.926
+951  MTMAM+F+R2    1146.077     92  2476.154     2602.909     2791.653
+970  FLAVI+I       1179.633     72  2503.265     2571.085     2750.178
+971  FLAVI+G4      1178.779     72  2501.559     2569.378     2748.472
+972  FLAVI+I+G4    1178.580     73  2503.160     2573.315     2753.502
+973  FLAVI+R2      1178.455     73  2502.910     2573.066     2753.252
+992  FLAVI+F+I     1148.701     91  2479.402     2602.520     2791.473
+993  FLAVI+F+G4    1147.841     91  2477.682     2600.800     2789.753
+994  FLAVI+F+I+G4  1147.506     92  2479.013     2605.768     2794.513
+995  FLAVI+F+R2    1147.592     92  2479.183     2605.939     2794.683
+1014  HIVB+I        1185.994     72  2515.987     2583.807     2762.900
+1015  HIVB+G4       1185.653     72  2515.307     2583.126     2762.220
+1016  HIVB+I+G4     1185.325     73  2516.649     2586.805     2766.992
+1017  HIVB+R2       1185.136     73  2516.273     2586.429     2766.615
+1036  HIVB+F+I      1153.882     91  2489.765     2612.882     2801.835
+1037  HIVB+F+G4     1153.471     91  2488.942     2612.060     2801.012
+1038  HIVB+F+I+G4   1153.337     92  2490.674     2617.429     2806.174
+1039  HIVB+F+R2     1153.159     92  2490.318     2617.074     2805.818
+1058  HIVW+I        1197.145     72  2538.290     2606.109     2785.203
+1059  HIVW+G4       1196.782     72  2537.565     2605.384     2784.478
+1060  HIVW+I+G4     1196.265     73  2538.529     2608.685     2788.872
+1061  HIVW+R2       1196.343     73  2538.687     2608.842     2789.029
+1080  HIVW+F+I      1157.176     91  2496.352     2619.470     2808.423
+1081  HIVW+F+G4     1156.803     91  2495.606     2618.724     2807.677
+1082  HIVW+F+I+G4   1156.480     92  2496.959     2623.715     2812.459
+1083  HIVW+F+R2     1156.511     92  2497.022     2623.778     2812.522
+1102  FLU+I         1169.562     72  2483.124     2550.943     2730.036
+1103  FLU+G4        1169.071     72  2482.143     2549.962     2729.056
+1104  FLU+I+G4      1169.025     73  2484.050     2554.206     2734.393
+1105  FLU+R2        1168.865     73  2483.731     2553.887     2734.073
+1124  FLU+F+I       1142.587     91  2467.174     2590.291     2779.244
+1125  FLU+F+G4      1141.778     91  2465.556     2588.674     2777.627
+1126  FLU+F+I+G4    1141.664     92  2467.328     2594.083     2782.828
+1127  FLU+F+R2      1141.678     92  2467.356     2594.112     2782.856
+1146  RTREV+I       1184.159     72  2512.318     2580.138     2759.231
+1147  RTREV+G4      1183.901     72  2511.801     2579.621     2758.714
+1148  RTREV+I+G4    1183.792     73  2513.583     2583.739     2763.926
+1149  RTREV+R2      1183.883     73  2513.766     2583.922     2764.108
+1168  RTREV+F+I     1149.951     91  2481.902     2605.019     2793.972
+1169  RTREV+F+G4    1149.598     91  2481.195     2604.313     2793.266
+1170  RTREV+F+I+G4  1149.467     92  2482.934     2609.690     2798.434
+1171  RTREV+F+R2    1149.580     92  2483.161     2609.916     2798.661
+1190  CPREV+I       1168.987     72  2481.973     2549.793     2728.886
+1191  CPREV+G4      1168.782     72  2481.565     2549.384     2728.478
+1192  CPREV+I+G4    1169.011     73  2484.021     2554.177     2734.363
+1193  CPREV+R2      1168.842     73  2483.685     2553.841     2734.027
+1212  CPREV+F+I     1144.936     91  2471.872     2594.990     2783.943
+1213  CPREV+F+G4    1144.754     91  2471.508     2594.626     2783.579
+1214  CPREV+F+I+G4  1145.104     92  2474.208     2600.963     2789.707
+1215  CPREV+F+R2    1144.861     92  2473.722     2600.477     2789.221
+Akaike Information Criterion:           MTZOA+F+G4
+Corrected Akaike Information Criterion: CPREV+G4
+Bayesian Information Criterion:         CPREV+G4
+Best-fit model: CPREV+G4 chosen according to BIC
+
+All model information printed to ml2\trees\M3630.model.gz
+CPU time for ModelFinder: 127.422 seconds (0h:2m:7s)
+Wall-clock time for ModelFinder: 51.274 seconds (0h:0m:51s)
+Generating 1000 samples for ultrafast bootstrap (seed: 550659)...
+
+NOTE: 2 MB RAM (0 GB) is required!
+Estimate model parameters (epsilon = 0.100)
+1. Initial log-likelihood: -1168.820
+Optimal log-likelihood: -1168.783
+Gamma shape alpha: 0.128
+Parameters optimization took 1 rounds (0.023 sec)
+Wrote distance file to... 
+Computing ML distances based on estimated model parameters...
+Calculating distance matrix: done in 0.115904 secs using 283.1% CPU
+Computing ML distances took 0.129205 sec (of wall-clock time) 0.359375 sec (of CPU time)
+Setting up auxiliary I and S matrices: done in 0.0001193 secs
+Constructing RapidNJ tree: done in 0.0002757 secs
+Computing RapidNJ tree took 0.009846 sec (of wall-clock time) 0.000000 sec (of CPU time)
+Log-likelihood of RapidNJ tree: -1174.880
+--------------------------------------------------------------------
+|             INITIALIZING CANDIDATE TREE SET                      |
+--------------------------------------------------------------------
+Generating 98 parsimony trees... 0.441 second
+Computing log-likelihood of 98 initial trees ... 0.423 seconds
+Current best score: -1166.904
+
+Do NNI search on 20 best initial trees
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 1: -1166.827
+BETTER TREE FOUND at iteration 2: -1166.827
+Iteration 10 / LogL: -1168.779 / Time: 0h:0m:53s
+Iteration 20 / LogL: -1168.779 / Time: 0h:0m:55s
+Finish initializing candidate tree set (20)
+Current best tree score: -1166.827 / CPU time: 3.517
+Number of iterations: 20
+--------------------------------------------------------------------
+|               OPTIMIZING CANDIDATE TREE SET                      |
+--------------------------------------------------------------------
+Iteration 30 / LogL: -1169.264 / Time: 0h:0m:57s (0h:0m:14s left)
+Iteration 40 / LogL: -1181.656 / Time: 0h:0m:59s (0h:0m:12s left)
+Iteration 50 / LogL: -1166.829 / Time: 0h:1m:1s (0h:0m:10s left)
+Iteration 60 / LogL: -1173.546 / Time: 0h:1m:3s (0h:0m:8s left)
+Iteration 70 / LogL: -1167.221 / Time: 0h:1m:6s (0h:0m:6s left)
+Iteration 80 / LogL: -1167.222 / Time: 0h:1m:8s (0h:0m:4s left)
+Iteration 90 / LogL: -1171.080 / Time: 0h:1m:10s (0h:0m:2s left)
+Iteration 100 / LogL: -1172.919 / Time: 0h:1m:12s (0h:0m:0s left)
+Refining ufboot trees with NNI 1 branch...
+100 samples done
+200 samples done
+300 samples done
+400 samples done
+500 samples done
+600 samples done
+700 samples done
+800 samples done
+900 samples done
+1000 samples done
+Total 1000 ufboot trees refined
+TREE SEARCH COMPLETED AFTER 103 ITERATIONS / Time: 0h:1m:52s
+
+--------------------------------------------------------------------
+|                    FINALIZING TREE SEARCH                        |
+--------------------------------------------------------------------
+Performs final model parameters optimization
+Estimate model parameters (epsilon = 0.010)
+1. Initial log-likelihood: -1166.827
+Optimal log-likelihood: -1166.827
+Gamma shape alpha: 0.127
+Parameters optimization took 1 rounds (0.024 sec)
+BEST SCORE FOUND : -1166.827
+Creating bootstrap support values...
+Split supports printed to NEXUS file ml2\trees\M3630.splits.nex
+Total tree length: 0.355
+
+Total number of iterations: 103
+CPU time used for tree search: 173.609 sec (0h:2m:53s)
+Wall-clock time used for tree search: 61.079 sec (0h:1m:1s)
+Total CPU time used: 302.625 sec (0h:5m:2s)
+Total wall-clock time used: 113.064 sec (0h:1m:53s)
+UFBoot trees printed to ml2\trees\M3630.ufboot
+
+Computing bootstrap consensus tree...
+Reading input file ml2\trees\M3630.splits.nex...
+37 taxa and 706 splits.
+Consensus tree written to ml2\trees\M3630.contree
+Reading input trees file ml2\trees\M3630.contree
+Log-likelihood of consensus tree: -1166.836
+
+Analysis results written to: 
+  IQ-TREE report:                ml2\trees\M3630.iqtree
+  Maximum-likelihood tree:       ml2\trees\M3630.treefile
+  Likelihood distances:          ml2\trees\M3630.mldist
+
+Ultrafast bootstrap approximation results written to:
+  Split support values:          ml2\trees\M3630.splits.nex
+  Consensus tree:                ml2\trees\M3630.contree
+  UFBoot trees:                  ml2\trees\M3630.ufboot
+  Screen log file:               ml2\trees\M3630.log
+
+Date and Time: Mon May 04 13:43:46 2026

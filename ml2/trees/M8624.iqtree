@@ -1,0 +1,551 @@
+IQ-TREE 3.1.1 built Apr  2 2026
+
+Input file name: ml2\datasets\M8624.nex
+Type of analysis: ModelFinder + tree reconstruction + ultrafast bootstrap (1000 replicates)
+Random seed number: 634848
+
+REFERENCES
+----------
+
+To cite IQ-TREE 3 please use:
+
+Thomas K.F. Wong, Nhan Ly-Trong, Huaiyan Ren, Hector Banos, Andrew J. Roger,
+Edward Susko, Chris Bielow, Nicola De Maio, Nick Goldman, Matthew W. Hahn,
+Gavin Huttley, Robert Lanfear, Bui Quang Minh (2025)
+IQ-TREE 3: Phylogenomic Inference Software using Complex Evolutionary Models.
+Submitted.
+
+Since you used ModelFinder please also cite: 
+
+Subha Kalyaanamoorthy, Bui Quang Minh, Thomas KF Wong, Arndt von Haeseler,
+and Lars S Jermiin (2017) ModelFinder: Fast model selection for
+accurate phylogenetic estimates. Nature Methods, 14:587–589.
+https://doi.org/10.1038/nmeth.4285
+
+Since you used ultrafast bootstrap (UFBoot) please also cite: 
+
+Diep Thi Hoang, Olga Chernomor, Arndt von Haeseler, Bui Quang Minh,
+and Le Sy Vinh (2018) UFBoot2: Improving the ultrafast bootstrap
+approximation. Mol. Biol. Evol., 35:518–522.
+https://doi.org/10.1093/molbev/msx281
+
+SEQUENCE ALIGNMENT
+------------------
+
+NOTE: Alignment sequence type is auto-detected. If in doubt, specify it via -st option.
+Input data: 74 sequences with 472 nucleotide sites
+Number of constant sites: 238 (= 50.4237% of all sites)
+Number of invariant (constant or ambiguous constant) sites: 238 (= 50.4237% of all sites)
+Number of parsimony informative sites: 201
+Number of distinct site patterns: 253
+
+ModelFinder
+-----------
+
+Best-fit model according to BIC: GTR+F+I+G4
+
+List of models sorted by BIC scores: 
+
+Model                  LogL         AIC      w-AIC        AICc     w-AICc         BIC      w-BIC
+GTR+F+I+G4        -6975.796   14261.592 +    0.814   14414.630 +    0.994   14905.924 +    0.999
+GTR+F+I+R3        -6974.272   14264.544 +    0.186   14425.068 -  0.00538   14921.347 - 0.000447
+TVM+F+I+G4        -6986.797   14281.595 - 3.69e-005   14432.194 - 0.000153   14921.769 - 0.000362
+TVM+F+I+R3        -6983.233   14280.466 - 6.49e-005   14438.466 - 6.63e-006   14933.112 - 1.25e-006
+TIM+F+I+G4        -7001.282   14308.564 - 5.14e-011   14456.753 - 7.09e-010   14944.582 - 4.03e-009
+TIM+F+I+R3        -7000.483   14312.966 - 5.69e-012   14468.471 - 2.02e-012   14961.455 - 8.73e-013
+K3Pu+F+I+G4       -7013.209   14330.417 - 9.23e-016   14476.223 - 4.2e-014   14962.278 - 5.79e-013
+TIM2+F+I+G4       -7011.735   14329.471 - 1.48e-015   14477.659 - 2.05e-014   14965.488 - 1.16e-013
+K3Pu+F+I+R3       -7009.964   14329.928 - 1.18e-015   14482.966 - 1.44e-015   14974.260 - 1.45e-015
+TIM2+F+I+R3       -7010.885   14333.770 - 1.73e-016   14489.275 - 6.15e-017   14982.259 - 2.65e-017
+TPM2u+F+I+G4      -7023.279   14350.557 - 3.91e-020   14496.363 - 1.78e-018   14982.418 - 2.45e-017
+TPM2u+F+I+R3      -7019.823   14349.647 - 6.16e-020   14502.685 - 7.53e-020   14993.978 - 7.57e-020
+GTR+I+G4          -7044.393   14392.786 - 2.64e-029   14538.592 - 1.2e-027   15024.647 - 1.66e-026
+SYM+I+G4          -7044.398   14392.797 - 2.63e-029   14538.602 - 1.19e-027   15024.658 - 1.65e-026
+SYM+I+G4          -7044.398   14392.797 - 2.63e-029   14538.602 - 1.19e-027   15024.658 - 1.65e-026
+TIM3+F+I+G4       -7043.148   14392.296 - 3.38e-029   14540.484 - 4.66e-028   15028.313 - 2.65e-027
+GTR+I+R3          -7043.356   14396.712 - 3.71e-030   14549.750 - 4.54e-030   15041.043 - 4.56e-030
+SYM+I+R3          -7043.509   14397.018 - 3.19e-030   14550.056 - 3.89e-030   15041.349 - 3.91e-030
+SYM+I+R3          -7043.509   14397.018 - 3.19e-030   14550.056 - 3.89e-030   15041.349 - 3.91e-030
+TPM3u+F+I+G4      -7054.391   14412.781 - 1.2e-033   14558.587 - 5.47e-032   15044.642 - 7.54e-031
+TIM3+F+I+R3       -7042.595   14397.190 - 2.92e-030   14552.695 - 1.04e-030   15045.679 - 4.49e-031
+TPM3u+F+I+R3      -7050.974   14411.948 - 1.82e-033   14564.986 - 2.23e-033   15056.280 - 2.24e-033
+TN+F+I+G4         -7069.375   14442.749 - 3.74e-040   14588.555 - 1.7e-038   15074.610 - 2.34e-037
+TVM+I+G4          -7078.279   14458.558 - 1.38e-043   14602.008 - 2.04e-041   15086.261 - 6.92e-040
+TVMe+I+G4         -7078.297   14458.593 - 1.36e-043   14602.043 -   2e-041   15086.297 - 6.79e-040
+TVMe+I+G4         -7078.297   14458.593 - 1.36e-043   14602.043 -   2e-041   15086.297 - 6.79e-040
+HKY+F+I+G4        -7082.371   14466.743 - 2.3e-045   14610.193 - 3.4e-043   15094.447 - 1.15e-041
+TN+F+I+R3         -7070.574   14451.148 - 5.61e-042   14604.186 - 6.85e-042   15095.480 - 6.89e-042
+TVM+I+R3          -7074.626   14457.252 - 2.65e-043   14607.852 - 1.1e-042   15097.427 - 2.6e-042
+TVMe+I+R3         -7074.668   14457.336 - 2.54e-043   14607.935 - 1.05e-042   15097.511 - 2.5e-042
+TVMe+I+R3         -7074.668   14457.336 - 2.54e-043   14607.935 - 1.05e-042   15097.511 - 2.5e-042
+HKY+F+I+R3        -7079.463   14466.925 - 2.1e-045   14617.525 - 8.7e-045   15107.100 - 2.06e-044
+TIM+I+G4          -7129.038   14558.076 - 3.39e-065   14699.198 - 1.6e-062   15181.623 - 1.36e-060
+TIMe+I+G4         -7129.051   14558.103 - 3.34e-065   14699.224 - 1.58e-062   15181.650 - 1.34e-060
+TIMe+I+G4         -7129.051   14558.103 - 3.34e-065   14699.224 - 1.58e-062   15181.650 - 1.34e-060
+TIM+I+R3          -7128.517   14563.035 - 2.84e-066   14711.223 - 3.92e-065   15199.052 - 2.23e-064
+TIMe+I+R3         -7128.569   14563.137 - 2.7e-066   14711.326 - 3.72e-065   15199.155 - 2.11e-064
+TIMe+I+R3         -7128.569   14563.137 - 2.7e-066   14711.326 - 3.72e-065   15199.155 - 2.11e-064
+TIM2+I+G4         -7156.437   14612.875 - 4.27e-077   14753.996 - 2.02e-074   15236.422 - 1.71e-072
+TIM2e+I+G4        -7156.444   14612.889 - 4.24e-077   14754.010 -   2e-074   15236.436 - 1.7e-072
+TIM2e+I+G4        -7156.444   14612.889 - 4.24e-077   14754.010 -   2e-074   15236.436 - 1.7e-072
+TIM2+I+R3         -7153.108   14612.215 - 5.94e-077   14760.404 - 8.2e-076   15248.233 - 4.66e-075
+TIM2e+I+R3        -7153.129   14612.257 - 5.82e-077   14760.446 - 8.03e-076   15248.275 - 4.56e-075
+TIM2e+I+R3        -7153.129   14612.257 - 5.82e-077   14760.446 - 8.03e-076   15248.275 - 4.56e-075
+K3P+I+G4          -7166.584   14631.169 - 4.55e-081   14769.989 - 6.8e-078   15250.559 - 1.46e-075
+K3P+I+G4          -7166.584   14631.169 - 4.55e-081   14769.989 - 6.8e-078   15250.559 - 1.46e-075
+K3Pu+I+G4         -7166.589   14631.178 - 4.53e-081   14769.998 - 6.77e-078   15250.568 - 1.45e-075
+K3Pu+I+R3         -7162.057   14628.114 - 2.1e-080   14773.919 - 9.53e-079   15259.974 - 1.31e-077
+K3P+I+R3          -7162.057   14628.115 - 2.09e-080   14773.920 - 9.52e-079   15259.976 - 1.31e-077
+K3P+I+R3          -7162.057   14628.115 - 2.09e-080   14773.920 - 9.52e-079   15259.976 - 1.31e-077
+TPM2u+I+G4        -7181.322   14660.644 - 1.81e-087   14799.464 - 2.7e-084   15280.034 - 5.79e-082
+TPM2+I+G4         -7181.336   14660.672 - 1.78e-087   14799.491 - 2.67e-084   15280.061 - 5.71e-082
+TPM2+I+G4         -7181.336   14660.672 - 1.78e-087   14799.491 - 2.67e-084   15280.061 - 5.71e-082
+TPM2u+I+R3        -7175.547   14655.093 - 2.9e-086   14800.899 - 1.32e-084   15286.954 - 1.82e-083
+TPM2+I+R3         -7175.618   14655.237 - 2.7e-086   14801.043 - 1.23e-084   15287.098 - 1.69e-083
+TPM2+I+R3         -7175.618   14655.237 - 2.7e-086   14801.043 - 1.23e-084   15287.098 - 1.69e-083
+TIM3+I+G4         -7222.180   14744.360 - 1.2e-105   14885.481 - 5.67e-103   15367.907 - 4.8e-101
+TIM3e+I+G4        -7222.211   14744.422 - 1.16e-105   14885.544 - 5.49e-103   15367.969 - 4.65e-101
+TIM3e+I+G4        -7222.211   14744.422 - 1.16e-105   14885.544 - 5.49e-103   15367.969 - 4.65e-101
+TIM3+I+R3         -7223.397   14752.795 - 1.77e-107   14900.983 - 2.44e-106   15388.813 - 1.39e-105
+TIM3e+I+R3        -7223.475   14752.951 - 1.63e-107   14901.140 - 2.26e-106   15388.969 - 1.28e-105
+TIM3e+I+R3        -7223.475   14752.951 - 1.63e-107   14901.140 - 2.26e-106   15388.969 - 1.28e-105
+F81+F+I+G4        -7248.014   14796.028 - 7.23e-117   14937.149 - 3.42e-114   15419.575 - 2.9e-112
+F81+F+I+R3        -7240.999   14787.998 - 4.01e-115   14936.186 - 5.53e-114   15424.015 - 3.14e-113
+TPM3u+I+G4        -7269.380   14836.760 - 1.03e-125   14975.579 - 1.55e-122   15456.149 - 3.31e-120
+TPM3+I+G4         -7269.397   14836.794 - 1.02e-125   14975.614 - 1.52e-122   15456.184 - 3.25e-120
+TPM3+I+G4         -7269.397   14836.794 - 1.02e-125   14975.614 - 1.52e-122   15456.184 - 3.25e-120
+TPM3u+I+R3        -7266.468   14836.937 - 9.46e-126   14982.742 - 4.3e-124   15468.797 - 5.93e-123
+TPM3+I+R3         -7266.472   14836.943 - 9.43e-126   14982.749 - 4.29e-124   15468.804 - 5.91e-123
+TPM3+I+R3         -7266.472   14836.943 - 9.43e-126   14982.749 - 4.29e-124   15468.804 - 5.91e-123
+TN+I+G4           -7303.462   14904.925 - 1.63e-140   15043.745 - 2.44e-137   15524.315 - 5.22e-135
+TNe+I+G4          -7303.530   14905.059 - 1.53e-140   15043.879 - 2.28e-137   15524.449 - 4.88e-135
+TNe+I+G4          -7303.530   14905.059 - 1.53e-140   15043.879 - 2.28e-137   15524.449 - 4.88e-135
+TN+I+R3           -7302.887   14909.774 - 1.44e-141   15055.579 - 6.56e-140   15541.635 - 9.05e-139
+TNe+I+R3          -7302.909   14909.817 - 1.41e-141   15055.623 - 6.42e-140   15541.678 - 8.86e-139
+TNe+I+R3          -7302.909   14909.817 - 1.41e-141   15055.623 - 6.42e-140   15541.678 - 8.86e-139
+K2P+I+G4          -7341.489   14978.977 - 1.36e-156   15115.522 - 6.32e-153   15594.210 - 3.47e-150
+K2P+I+G4          -7341.489   14978.977 - 1.36e-156   15115.522 - 6.32e-153   15594.210 - 3.47e-150
+HKY+I+G4          -7341.490   14978.980 - 1.35e-156   15115.525 - 6.31e-153   15594.213 - 3.46e-150
+HKY+I+R3          -7336.393   14974.785 - 1.1e-155   15118.235 - 1.63e-153   15602.489 - 5.53e-152
+K2P+I+R3          -7336.408   14974.816 - 1.09e-155   15118.266 - 1.6e-153   15602.519 - 5.44e-152
+K2P+I+R3          -7336.408   14974.816 - 1.09e-155   15118.266 - 1.6e-153   15602.519 - 5.44e-152
+F81+I+G4          -7439.406   15172.812 - 1.1e-198   15307.109 - 1.58e-194   15783.888 - 2.25e-191
+JC+I+G4           -7439.487   15172.974 - 1.02e-198   15307.270 - 1.46e-194   15784.049 - 2.08e-191
+JC+I+G4           -7439.487   15172.974 - 1.02e-198   15307.270 - 1.46e-194   15784.049 - 2.08e-191
+F81+I+R3          -7433.120   15166.241 - 2.94e-197   15307.362 - 1.39e-194   15789.788 - 1.18e-192
+JC+I+R3           -7433.194   15166.389 - 2.73e-197   15307.510 - 1.29e-194   15789.936 - 1.09e-192
+JC+I+R3           -7433.194   15166.389 - 2.73e-197   15307.510 - 1.29e-194   15789.936 - 1.09e-192
+JC+R3             -7441.799   15181.599 - 1.36e-200   15320.419 - 2.03e-197   15800.989 - 4.35e-195
+JC+I+R4           -7433.279   15170.559 - 3.4e-198   15316.364 - 1.54e-196   15802.420 - 2.13e-195
+JC+R4             -7436.633   15175.265 - 3.23e-199   15318.715 - 4.76e-197   15802.969 - 1.62e-195
+JC+I+R2           -7451.294   15198.587 - 2.78e-204   15335.132 - 1.3e-200   15813.820 - 7.12e-198
+JC+G4             -7461.960   15215.921 - 4.79e-208   15347.995 - 2.09e-203   15822.840 - 7.83e-200
+JC+R2             -7498.000   15290.000 - 3.93e-224   15424.296 - 5.64e-220   15901.075 - 8.04e-217
+JC+I              -7668.417   15628.834 - 1.04e-297   15760.907 - 4.54e-293   16235.753 - 1.7e-289
+JC                -8555.526   17401.052 -        0   17530.929 -        0   18003.814 -        0
+
+AIC, w-AIC   : Akaike information criterion scores and weights.
+AICc, w-AICc : Corrected AIC scores and weights.
+BIC, w-BIC   : Bayesian information criterion scores and weights.
+
+Plus signs denote the 95% confidence sets.
+Minus signs denote significant exclusion.
+
+SUBSTITUTION PROCESS
+--------------------
+
+Model of substitution: GTR+F+I+G4
+
+Rate parameter R:
+
+  A-C: 1.7516
+  A-G: 9.9734
+  A-T: 7.7572
+  C-G: 1.0652
+  C-T: 16.5567
+  G-T: 1.0000
+
+State frequencies: (empirical counts from alignment)
+
+  pi(A) = 0.2673
+  pi(C) = 0.1947
+  pi(G) = 0.1549
+  pi(T) = 0.3831
+
+Rate matrix Q:
+
+  A   -0.9253   0.06495    0.2942    0.5661
+  C   0.08919    -1.329   0.03143     1.208
+  G    0.5079    0.0395   -0.6203   0.07298
+  T     0.395    0.6139    0.0295    -1.038
+
+Model of rate heterogeneity: Invar+Gamma with 4 categories
+Proportion of invariable sites: 0.4498
+Gamma shape alpha: 0.9025
+
+ Category  Relative_rate  Proportion
+  0         0              0.4498
+  1         0.2129         0.1376
+  2         0.8094         0.1376
+  3         1.784          0.1376
+  4         4.463          0.1376
+Relative rates are computed as MEAN of the portion of the Gamma distribution falling in the category.
+
+MAXIMUM LIKELIHOOD TREE
+-----------------------
+
+Log-likelihood of the tree: -6953.0587 (s.e. 348.8662)
+Unconstrained log-likelihood (without tree): -2101.6381
+Number of free parameters (#branches + #model parameters): 155
+Akaike information criterion (AIC) score: 14216.1174
+Corrected Akaike information criterion (AICc) score: 14369.1553
+Bayesian information criterion (BIC) score: 14860.4491
+
+Total tree length (sum of branch lengths): 4.9415
+Sum of internal branch lengths: 2.0852 (42.1980% of tree length)
+
+WARNING: 20 near-zero internal branches (<0.0021) should be treated with caution
+         Such branches are denoted by '**' in the figure below
+
+NOTE: Tree is UNROOTED although outgroup taxon 'Culicoides_actoni_Kag01_AB360971' is drawn at root
+Numbers in parentheses are  ultrafast bootstrap support (%)
+
++---------------------------Culicoides_actoni_Kag01_AB360971
+|
+|                              +**Culicoides_arakawae_Isg19_AB360974
+|              +---------------| (100)
+|              |               +--Culicoides_arakawae_Yng05_AB361004
+|           +--| (42)
+|           |  +------Culicoides_dubius_AB361000
+|        +--| (28)
+|        |  |     +----------Culicoides_japonicus_Ngs24_AB361001
+|        |  |  +--| (25)
+|        |  |  |  +--------------------Culicoides_truncorum_T1
+|        |  +--| (32)
+|        |     |  +---------------Culicoides_nipponensis_Isg22_AB360999
+|        |     +--| (91)
+|        |        |          +--------Simulium_bidentatum_SB147A_DQ534946
+|        |        +----------| (100)
+|        |                   +---------Simulium_rufibasis_SR163D_DQ534950
+|     +--| (71)
+|     |  |                         +--Culicoides_circumscriptus_C1
+|     |  |                      +**| (34)
+|     |  |                      |  |        +**Culicoides_circumscriptus_C2
+|     |  |                      |  |     +**| (38)
+|     |  |                      |  |     |  +**Culicoides_circumscriptus_C3
+|     |  |                      |  |  +**| (8)
+|     |  |                      |  |  |  +**Culicoides_circumscriptus_C4
+|     |  |                      |  +**| (11)
+|     |  |                      |     +**Culicoides_circumscriptus_C6
+|     |  |            +---------| (100)
+|     |  |            |         +**Culicoides_circumscriptus_C5
+|     |  |        +---| (89)
+|     |  |        |   |                          +**Culicoides_festivipennis_FV1
+|     |  |        |   |                       +**| (27)
+|     |  |        |   |                       |  +**Culicoides_festivipennis_FV3
+|     |  |        |   |                    +**| (54)
+|     |  |        |   |                    |  |  +--Culicoides_festivipennis_FV10
+|     |  |        |   |                    |  +**| (66)
+|     |  |        |   |                    |     |     +--Culicoides_festivipennis_FV4
+|     |  |        |   |                    |     |  +**| (20)
+|     |  |        |   |                    |     |  |  +--Culicoides_festivipennis_FV6
+|     |  |        |   |                    |     +**| (20)
+|     |  |        |   |                    |        |  +--Culicoides_festivipennis_FV5
+|     |  |        |   |                    |        +**| (16)
+|     |  |        |   |                    |           +--Culicoides_festivipennis_FV7
+|     |  |        |   |                 +**| (47)
+|     |  |        |   |                 |  +**Culicoides_festivipennis_FV2
+|     |  |        |   |              +--| (92)
+|     |  |        |   |              |  +**Culicoides_festivipennis_FV9
+|     |  |        |   +--------------| (100)
+|     |  |        |                  |     +**Culicoides_festivipennis_FV11
+|     |  |        |                  |  +**| (45)
+|     |  |        |                  |  |  +--Culicoides_festivipennis_FV12
+|     |  |        |                  +--| (73)
+|     |  |        |                     +**Culicoides_festivipennis_FV8
+|     |  |     +--| (55)
+|     |  |     |  |     +-----------Culicoides_segnis_SG1
+|     |  |     |  +-----| (98)
+|     |  |     |        |      +**Culicoides_segnis_SG2
+|     |  |     |        +------| (100)
+|     |  |     |               +**Culicoides_segnis_SG3
+|     |  |  +--| (17)
+|     |  |  |  |        +--------------------Culicoides_circumscriptus_CIR3_AF069248
+|     |  |  |  |     +--| (45)
+|     |  |  |  |     |  |         +**Culicoides_oxystoma_Isg20_AB360982
+|     |  |  |  |     |  +---------| (100)
+|     |  |  |  |     |            +--Culicoides_oxystoma_Kag11_AB360979
+|     |  |  |  |  +--| (16)
+|     |  |  |  |  |  |                 +--------------------------Culicoides_dewulfi_KEE23_AM236673
+|     |  |  |  |  |  |             +---| (45)
+|     |  |  |  |  |  |             |   +--------------Culicoides_pulicaris_MIL04_AM236709
+|     |  |  |  |  |  |          +--| (43)
+|     |  |  |  |  |  |          |  +-------------Culicoides_impunctatus_ROT04_AM236718
+|     |  |  |  |  |  |       +--| (39)
+|     |  |  |  |  |  |       |  +-----------------Culicoides_newsteadi_SGI02_AM236739
+|     |  |  |  |  |  |   +---| (68)
+|     |  |  |  |  |  |   |   +--------------Culicoides_punctatus_ROW01_AM236734
+|     |  |  |  |  |  +---| (49)
+|     |  |  |  |  |      +---------------Culicoides_grisescens_ROW05_AM236727
+|     |  |  |  +--| (35)
+|     |  |  |     |                          +**Culicoides_kibunensis_K1
+|     |  |  |     |                       +--| (88)
+|     |  |  |     |                       |  +**Culicoides_kibunensis_K2
+|     |  |  |     |                    +**| (64)
+|     |  |  |     |                    |  +**Culicoides_kibunensis_K5
+|     |  |  |     |  +-----------------| (100)
+|     |  |  |     |  |                 |  +**Culicoides_kibunensis_K3
+|     |  |  |     |  |                 +--| (85)
+|     |  |  |     |  |                    +**Culicoides_kibunensis_K4
+|     |  |  |     +--| (35)
+|     |  |  |        |                           +**Culicoides_simulator_S1
+|     |  |  |        |                        +**| (81)
+|     |  |  |        |                        |  +**Culicoides_simulator_S2
+|     |  |  |        |                     +--| (85)
+|     |  |  |        |                     |  +--Culicoides_simulator_S10
+|     |  |  |        |                  +**| (51)
+|     |  |  |        |                  |  +**Culicoides_simulator_S4
+|     |  |  |        |               +**| (66)
+|     |  |  |        |               |  +**Culicoides_simulator_S3
+|     |  |  |        |            +**| (10)
+|     |  |  |        |            |  +**Culicoides_simulator_S6
+|     |  |  |        |         +**| (3)
+|     |  |  |        |         |  +**Culicoides_simulator_S5
+|     |  |  |        |      +**| (45)
+|     |  |  |        |      |  |  +**Culicoides_simulator_S7
+|     |  |  |        |      |  +**| (16)
+|     |  |  |        |      |     +**Culicoides_simulator_S8
+|     |  |  |        +------| (99)
+|     |  |  |               +--Culicoides_simulator_S9
+|     |  +--| (30)
+|     |     |      +--Culicoides_pictipennis_P1
+|     |     +------| (95)
+|     |            +-------Culicoides_pictipennis_P2
+|  +--| (47)
+|  |  |                +--Culicoides_maculatus_Kag12_AB360986
+|  |  |  +-------------| (100)
+|  |  |  |             +**Culicoides_maculatus_Kag12_AB360987
+|  |  +--| (75)
+|  |     +-----------------Culicoides_wadai_Isg18_AB360997
++--| (61)
+|  |                   +**Culicoides_chiopterus_EWY01_AM236747
+|  |      +------------| (100)
+|  |      |            +--Culicoides_chiopterus_LMH01_AM236748
+|  +------| (97)
+|         |            +--Culicoides_obsoletus_CHO010_AM236653
+|         |  +---------| (100)
+|         |  |         +**Culicoides_obsoletus_CHO04_AM236652
+|         +--| (57)
+|            +---------Culicoides_scoticus_KEE12_AM236626
+|
+|           +-----Culicoides_bolitinos_BOL14_AF071928
+|        +--| (73)
+|        |  |                +--Culicoides_loxodontis_LOX1_AF069234
+|        |  |     +----------| (100)
+|        |  |     |          +**Culicoides_loxodontis_LOX10_AF069235
+|        |  |  +--| (65)
+|        |  |  |  +--Culicoides_pseudopallidipennis_AY286329
+|        |  +--| (73)
+|        |     |   +--Culicoides_tuttifrutti_TUT3_AF069244
+|        |     +---| (100)
+|        |         +**Culicoides_tuttifrutti_TUT7_AF069246
+|     +--| (61)
+|     |  +--------Culicoides_kwagga_KWA7_AF069241
+|  +--| (52)
+|  |  +-------Culicoides_brevitarsis_Naha17_AB360994
++--| (81)
+   |       +--Culicoides_imicola_SCON7_AF080537
+   +-------| (100)
+           +**Culicoides_imicola_SCON8_AF080538
+
+Tree in newick format:
+
+(Culicoides_actoni_Kag01_AB360971:0.2389796906,((((((Culicoides_arakawae_Isg19_AB360974:0.0000020198,Culicoides_arakawae_Yng05_AB361004:0.0041693587)100:0.1352467414,Culicoides_dubius_AB361000:0.0594887981)42:0.0218175615,((Culicoides_japonicus_Ngs24_AB361001:0.0990053047,Culicoides_truncorum_T1:0.1762984199)25:0.0027372161,(Culicoides_nipponensis_Isg22_AB360999:0.1384461028,(Simulium_bidentatum_SB147A_DQ534946:0.0794951486,Simulium_rufibasis_SR163D_DQ534950:0.0876489900)100:0.0948656131)91:0.0301507715)32:0.0096543863)28:0.0081372824,((((((Culicoides_circumscriptus_C1:0.0021698989,(((Culicoides_circumscriptus_C2:0.0020564518,Culicoides_circumscriptus_C3:0.0020667385)38:0.0020567260,Culicoides_circumscriptus_C4:0.0020590164)8:0.0000020989,Culicoides_circumscriptus_C6:0.0000010033)11:0.0000025335)34:0.0020537206,Culicoides_circumscriptus_C5:0.0000020055)100:0.0901956018,(((((Culicoides_festivipennis_FV1:0.0020534564,Culicoides_festivipennis_FV3:0.0021135875)27:0.0000020532,(Culicoides_festivipennis_FV10:0.0021357190,((Culicoides_festivipennis_FV4:0.0041204709,Culicoides_festivipennis_FV6:0.0041236723)20:0.0000028834,(Culicoides_festivipennis_FV5:0.0041295564,Culicoides_festivipennis_FV7:0.0041275705)16:0.0000029137)20:0.0000020233)66:0.0020522728)54:0.0020440566,Culicoides_festivipennis_FV2:0.0021149721)47:0.0020744309,Culicoides_festivipennis_FV9:0.0000024300)92:0.0058650841,((Culicoides_festivipennis_FV11:0.0000010033,Culicoides_festivipennis_FV12:0.0043111495)45:0.0000020805,Culicoides_festivipennis_FV8:0.0020973419)73:0.0028010908)100:0.1268176156)89:0.0338501013,(Culicoides_segnis_SG1:0.1009175865,(Culicoides_segnis_SG2:0.0019801812,Culicoides_segnis_SG3:0.0000025657)100:0.0661288209)98:0.0527697630)55:0.0269083657,(((Culicoides_circumscriptus_CIR3_AF069248:0.1818149452,(Culicoides_oxystoma_Isg20_AB360982:0.0013256102,Culicoides_oxystoma_Kag11_AB360979:0.0072684562)100:0.0891210962)45:0.0113790030,(((((Culicoides_dewulfi_KEE23_AM236673:0.2295821109,Culicoides_pulicaris_MIL04_AM236709:0.1291618888)45:0.0339335769,Culicoides_impunctatus_ROT04_AM236718:0.1196627849)43:0.0279660609,Culicoides_newsteadi_SGI02_AM236739:0.1569478325)39:0.0212942073,Culicoides_punctatus_ROW01_AM236734:0.1297505561)68:0.0414545688,Culicoides_grisescens_ROW05_AM236727:0.1402290045)49:0.0354123495)16:0.0074661745,((((Culicoides_kibunensis_K1:0.0019946905,Culicoides_kibunensis_K2:0.0020551460)88:0.0040163832,Culicoides_kibunensis_K5:0.0000024672)64:0.0012959379,(Culicoides_kibunensis_K3:0.0019944586,Culicoides_kibunensis_K4:0.0000025811)85:0.0027141528)100:0.1576480876,((((((((Culicoides_simulator_S1:0.0000024915,Culicoides_simulator_S2:0.0020633732)81:0.0000025365,Culicoides_simulator_S10:0.0156043067)85:0.0083707559,Culicoides_simulator_S4:0.0000020605)51:0.0000022007,Culicoides_simulator_S3:0.0020625793)66:0.0020616027,Culicoides_simulator_S6:0.0020617985)10:0.0000021740,Culicoides_simulator_S5:0.0000010033)3:0.0000020174,(Culicoides_simulator_S7:0.0020714140,Culicoides_simulator_S8:0.0020577221)16:0.0000025094)45:0.0000026484,Culicoides_simulator_S9:0.0021609763)99:0.0603662962)35:0.0218889103)35:0.0241386646)17:0.0057986303,(Culicoides_pictipennis_P1:0.0322425852,Culicoides_pictipennis_P2:0.0684531106)95:0.0649569292)30:0.0241432462)71:0.0207232436,((Culicoides_maculatus_Kag12_AB360986:0.0128434748,Culicoides_maculatus_Kag12_AB360987:0.0000022198)100:0.1243072171,Culicoides_wadai_Isg18_AB360997:0.1569967580)75:0.0224753169)47:0.0121629926,((Culicoides_chiopterus_EWY01_AM236747:0.0014799206,Culicoides_chiopterus_LMH01_AM236748:0.0049380950)100:0.1167552954,((Culicoides_obsoletus_CHO010_AM236653:0.0040275812,Culicoides_obsoletus_CHO04_AM236652:0.0019805940)100:0.0858927395,Culicoides_scoticus_KEE12_AM236626:0.0892246695)57:0.0127547273)97:0.0608865810)61:0.0186447991,((((Culicoides_bolitinos_BOL14_AF071928:0.0507094006,(((Culicoides_loxodontis_LOX1_AF069234:0.0063707586,Culicoides_loxodontis_LOX10_AF069235:0.0000023402)100:0.0948192107,Culicoides_pseudopallidipennis_AY286329:0.0317637245)65:0.0144856963,(Culicoides_tuttifrutti_TUT3_AF069244:0.0086308592,Culicoides_tuttifrutti_TUT7_AF069246:0.0000010033)100:0.0340801733)73:0.0172538977)73:0.0231815784,Culicoides_kwagga_KWA7_AF069241:0.0798840932)61:0.0199300239,Culicoides_brevitarsis_Naha17_AB360994:0.0752655754)52:0.0178190785,(Culicoides_imicola_SCON7_AF080537:0.0066033399,Culicoides_imicola_SCON8_AF080538:0.0000024751)100:0.0677996667)81:0.0263921172);
+
+CONSENSUS TREE
+--------------
+
+Consensus tree is constructed from 1000 bootstrap trees
+Log-likelihood of consensus tree: -6954.140195
+Robinson-Foulds distance between ML tree and consensus tree: 22
+
+Branches with support >0.000000% are kept (extended consensus)
+Branch lengths are optimized by maximum likelihood on original alignment
+Numbers in parentheses are bootstrap supports (%)
+
++--------------------------Culicoides_actoni_Kag01_AB360971
+|
+|                                   +--Culicoides_arakawae_Isg19_AB360974
+|                    +--------------| (100)
+|                    |              +--Culicoides_arakawae_Yng05_AB361004
+|                 +--| (42)
+|                 |  +-----Culicoides_dubius_AB361000
+|              +--| (14)
+|              |  |                           +--Culicoides_circumscriptus_C1
+|              |  |                        +--| (52)
+|              |  |                        |  |     +--Culicoides_circumscriptus_C4
+|              |  |                        |  |  +--| (26)
+|              |  |                        |  |  |  +--Culicoides_circumscriptus_C6
+|              |  |                        |  +--| (21)
+|              |  |                        |     +--Culicoides_circumscriptus_C5
+|              |  |                     +--| (41)
+|              |  |                     |  +--Culicoides_circumscriptus_C3
+|              |  |           +---------| (100)
+|              |  |           |         +--Culicoides_circumscriptus_C2
+|              |  |        +--| (89)
+|              |  |        |  |                         +--Culicoides_festivipennis_FV1
+|              |  |        |  |                      +--| (27)
+|              |  |        |  |                      |  +--Culicoides_festivipennis_FV3
+|              |  |        |  |                   +--| (54)
+|              |  |        |  |                   |  |  +--Culicoides_festivipennis_FV10
+|              |  |        |  |                   |  +--| (66)
+|              |  |        |  |                   |     |     +--Culicoides_festivipennis_FV4
+|              |  |        |  |                   |     |  +--| (22)
+|              |  |        |  |                   |     |  |  +--Culicoides_festivipennis_FV5
+|              |  |        |  |                   |     +--| (20)
+|              |  |        |  |                   |        |  +--Culicoides_festivipennis_FV6
+|              |  |        |  |                   |        +--| (20)
+|              |  |        |  |                   |           +--Culicoides_festivipennis_FV7
+|              |  |        |  |                +--| (47)
+|              |  |        |  |                |  +--Culicoides_festivipennis_FV2
+|              |  |        |  |             +--| (92)
+|              |  |        |  |             |  +--Culicoides_festivipennis_FV9
+|              |  |        |  +-------------| (100)
+|              |  |        |                |     +--Culicoides_festivipennis_FV11
+|              |  |        |                |  +--| (45)
+|              |  |        |                |  |  +--Culicoides_festivipennis_FV12
+|              |  |        |                +--| (73)
+|              |  |        |                   +--Culicoides_festivipennis_FV8
+|              |  |     +--| (55)
+|              |  |     |  |     +----------Culicoides_segnis_SG1
+|              |  |     |  +-----| (98)
+|              |  |     |        |      +--Culicoides_segnis_SG2
+|              |  |     |        +------| (100)
+|              |  |     |               +--Culicoides_segnis_SG3
+|              |  |  +--| (17)
+|              |  |  |  |        +--------------------Culicoides_circumscriptus_CIR3_AF069248
+|              |  |  |  |     +--| (45)
+|              |  |  |  |     |  |         +--Culicoides_oxystoma_Isg20_AB360982
+|              |  |  |  |     |  +---------| (100)
+|              |  |  |  |     |            +--Culicoides_oxystoma_Kag11_AB360979
+|              |  |  |  |  +--| (16)
+|              |  |  |  |  |  |                +-------------------------Culicoides_dewulfi_KEE23_AM236673
+|              |  |  |  |  |  |             +--| (45)
+|              |  |  |  |  |  |             |  +--------------Culicoides_pulicaris_MIL04_AM236709
+|              |  |  |  |  |  |          +--| (43)
+|              |  |  |  |  |  |          |  +------------Culicoides_impunctatus_ROT04_AM236718
+|              |  |  |  |  |  |       +--| (39)
+|              |  |  |  |  |  |       |  +-----------------Culicoides_newsteadi_SGI02_AM236739
+|              |  |  |  |  |  |   +---| (68)
+|              |  |  |  |  |  |   |   +--------------Culicoides_punctatus_ROW01_AM236734
+|              |  |  |  |  |  +---| (49)
+|              |  |  |  |  |      +---------------Culicoides_grisescens_ROW05_AM236727
+|              |  |  |  +--| (35)
+|              |  |  |     |                          +--Culicoides_kibunensis_K1
+|              |  |  |     |                       +--| (88)
+|              |  |  |     |                       |  +--Culicoides_kibunensis_K2
+|              |  |  |     |                    +--| (64)
+|              |  |  |     |                    |  +--Culicoides_kibunensis_K5
+|              |  |  |     |  +-----------------| (100)
+|              |  |  |     |  |                 |  +--Culicoides_kibunensis_K3
+|              |  |  |     |  |                 +--| (85)
+|              |  |  |     |  |                    +--Culicoides_kibunensis_K4
+|              |  |  |     +--| (35)
+|              |  |  |        |                     +--Culicoides_simulator_S1
+|              |  |  |        |                  +--| (81)
+|              |  |  |        |                  |  +--Culicoides_simulator_S2
+|              |  |  |        |               +--| (85)
+|              |  |  |        |               |  +--Culicoides_simulator_S10
+|              |  |  |        |            +--| (51)
+|              |  |  |        |            |  +--Culicoides_simulator_S4
+|              |  |  |        |         +--| (66)
+|              |  |  |        |         |  +--Culicoides_simulator_S3
+|              |  |  |        |      +--| (45)
+|              |  |  |        |      |  |     +--Culicoides_simulator_S5
+|              |  |  |        |      |  |  +--| (19)
+|              |  |  |        |      |  |  |  +--Culicoides_simulator_S6
+|              |  |  |        |      |  +--| (18)
+|              |  |  |        |      |     |  +--Culicoides_simulator_S7
+|              |  |  |        |      |     +--| (16)
+|              |  |  |        |      |        +--Culicoides_simulator_S8
+|              |  |  |        +------| (99)
+|              |  |  |               +--Culicoides_simulator_S9
+|              |  +--| (30)
+|              |     |      +--Culicoides_pictipennis_P1
+|              |     +------| (95)
+|              |            +------Culicoides_pictipennis_P2
+|           +--| (8)
+|           |  |  +---------------Culicoides_nipponensis_Isg22_AB360999
+|           |  +--| (91)
+|           |     |          +--------Simulium_bidentatum_SB147A_DQ534946
+|           |     +----------| (100)
+|           |                +---------Simulium_rufibasis_SR163D_DQ534950
+|        +--| (34)
+|        |  +-----------Culicoides_japonicus_Ngs24_AB361001
+|     +--| (71)
+|     |  +-------------------Culicoides_truncorum_T1
+|  +--| (47)
+|  |  |                +--Culicoides_maculatus_Kag12_AB360986
+|  |  |  +-------------| (100)
+|  |  |  |             +**Culicoides_maculatus_Kag12_AB360987
+|  |  +--| (75)
+|  |     +-----------------Culicoides_wadai_Isg18_AB360997
++--| (61)
+|  |                   +--Culicoides_chiopterus_EWY01_AM236747
+|  |      +------------| (100)
+|  |      |            +--Culicoides_chiopterus_LMH01_AM236748
+|  +------| (97)
+|         |            +--Culicoides_obsoletus_CHO010_AM236653
+|         |  +---------| (100)
+|         |  |         +--Culicoides_obsoletus_CHO04_AM236652
+|         +--| (57)
+|            +---------Culicoides_scoticus_KEE12_AM236626
+|
+|           +----Culicoides_bolitinos_BOL14_AF071928
+|        +--| (73)
+|        |  |                +--Culicoides_loxodontis_LOX1_AF069234
+|        |  |     +----------| (100)
+|        |  |     |          +--Culicoides_loxodontis_LOX10_AF069235
+|        |  |  +--| (65)
+|        |  |  |  +--Culicoides_pseudopallidipennis_AY286329
+|        |  +--| (73)
+|        |     |  +--Culicoides_tuttifrutti_TUT3_AF069244
+|        |     +--| (100)
+|        |        +--Culicoides_tuttifrutti_TUT7_AF069246
+|     +--| (61)
+|     |  +--------Culicoides_kwagga_KWA7_AF069241
+|  +--| (52)
+|  |  +-------Culicoides_brevitarsis_Naha17_AB360994
++--| (81)
+   |      +--Culicoides_imicola_SCON7_AF080537
+   +------| (100)
+          +--Culicoides_imicola_SCON8_AF080538
+
+
+Consensus tree in newick format: 
+
+(Culicoides_actoni_Kag01_AB360971:0.2367139678,((((((((Culicoides_arakawae_Isg19_AB360974:0.0000020407,Culicoides_arakawae_Yng05_AB361004:0.0041760724)100:0.1357240288,Culicoides_dubius_AB361000:0.0597823279)42:0.0228407967,(((((((Culicoides_circumscriptus_C1:0.0021741085,((Culicoides_circumscriptus_C4:0.0020630627,Culicoides_circumscriptus_C6:0.0000020372)26:0.0000020372,Culicoides_circumscriptus_C5:0.0020577645)21:0.0000020372)52:0.0020646362,Culicoides_circumscriptus_C3:0.0020649778)41:0.0000029142,Culicoides_circumscriptus_C2:0.0020498070)100:0.0887439851,(((((Culicoides_festivipennis_FV1:0.0020544951,Culicoides_festivipennis_FV3:0.0021148678)27:0.0000020372,(Culicoides_festivipennis_FV10:0.0021364755,((Culicoides_festivipennis_FV4:0.0041229714,Culicoides_festivipennis_FV5:0.0041320786)22:0.0000020372,(Culicoides_festivipennis_FV6:0.0041271905,Culicoides_festivipennis_FV7:0.0041301162)20:0.0000020372)20:0.0000020372)66:0.0020535267)54:0.0020454524,Culicoides_festivipennis_FV2:0.0021157040)47:0.0020752434,Culicoides_festivipennis_FV9:0.0000020372)92:0.0058772891,((Culicoides_festivipennis_FV11:0.0000020372,Culicoides_festivipennis_FV12:0.0043130951)45:0.0000020372,Culicoides_festivipennis_FV8:0.0020982475)73:0.0027951863)100:0.1286099528)89:0.0340091816,(Culicoides_segnis_SG1:0.1009588212,(Culicoides_segnis_SG2:0.0019843306,Culicoides_segnis_SG3:0.0000021931)100:0.0657339826)98:0.0531340610)55:0.0273810526,(((Culicoides_circumscriptus_CIR3_AF069248:0.1812671004,(Culicoides_oxystoma_Isg20_AB360982:0.0012235608,Culicoides_oxystoma_Kag11_AB360979:0.0073760711)100:0.0905423911)45:0.0095670545,(((((Culicoides_dewulfi_KEE23_AM236673:0.2295008921,Culicoides_pulicaris_MIL04_AM236709:0.1294397937)45:0.0337963005,Culicoides_impunctatus_ROT04_AM236718:0.1185661700)43:0.0308427165,Culicoides_newsteadi_SGI02_AM236739:0.1574969550)39:0.0197720886,Culicoides_punctatus_ROW01_AM236734:0.1288510574)68:0.0419760549,Culicoides_grisescens_ROW05_AM236727:0.1403707022)49:0.0360063029)16:0.0074251633,((((Culicoides_kibunensis_K1:0.0019983040,Culicoides_kibunensis_K2:0.0020592235)88:0.0040224014,Culicoides_kibunensis_K5:0.0000020372)64:0.0012998959,(Culicoides_kibunensis_K3:0.0019980239,Culicoides_kibunensis_K4:0.0000020372)85:0.0027166092)100:0.1562154786,((((((Culicoides_simulator_S1:0.0000020372,Culicoides_simulator_S2:0.0020657793)81:0.0000020372,Culicoides_simulator_S10:0.0156265718)85:0.0083850072,Culicoides_simulator_S4:0.0000020372)51:0.0000020372,Culicoides_simulator_S3:0.0020654636)66:0.0020644865,((Culicoides_simulator_S5:0.0000020372,Culicoides_simulator_S6:0.0020646820)19:0.0000020372,(Culicoides_simulator_S7:0.0020743395,Culicoides_simulator_S8:0.0020605956)16:0.0000020372)18:0.0000020372)45:0.0000020372,Culicoides_simulator_S9:0.0021640347)99:0.0621523916)35:0.0201617888)35:0.0232327477)17:0.0100551843,(Culicoides_pictipennis_P1:0.0337443748,Culicoides_pictipennis_P2:0.0670692688)95:0.0606257910)30:0.0250652149)14:0.0019860603,(Culicoides_nipponensis_Isg22_AB360999:0.1441079659,(Simulium_bidentatum_SB147A_DQ534946:0.0791710031,Simulium_rufibasis_SR163D_DQ534950:0.0887280438)100:0.0955576049)91:0.0341859971)8:0.0056851429,Culicoides_japonicus_Ngs24_AB361001:0.1080234085)34:0.0054856809,Culicoides_truncorum_T1:0.1772201323)71:0.0189033354,((Culicoides_maculatus_Kag12_AB360986:0.0128517702,Culicoides_maculatus_Kag12_AB360987:0.0000010797)100:0.1248524226,Culicoides_wadai_Isg18_AB360997:0.1557789923)75:0.0235040157)47:0.0113790640,((Culicoides_chiopterus_EWY01_AM236747:0.0014973729,Culicoides_chiopterus_LMH01_AM236748:0.0049356427)100:0.1135948063,((Culicoides_obsoletus_CHO010_AM236653:0.0040324784,Culicoides_obsoletus_CHO04_AM236652:0.0019827762)100:0.0867320627,Culicoides_scoticus_KEE12_AM236626:0.0879998120)57:0.0168118761)97:0.0633542218)61:0.0136466521,((((Culicoides_bolitinos_BOL14_AF071928:0.0510939022,(((Culicoides_loxodontis_LOX1_AF069234:0.0063708236,Culicoides_loxodontis_LOX10_AF069235:0.0000020372)100:0.0949997139,Culicoides_pseudopallidipennis_AY286329:0.0317663962)65:0.0149080676,(Culicoides_tuttifrutti_TUT3_AF069244:0.0086299019,Culicoides_tuttifrutti_TUT7_AF069246:0.0000020372)100:0.0340362625)73:0.0165025075)73:0.0235503164,Culicoides_kwagga_KWA7_AF069241:0.0795196409)61:0.0186977946,Culicoides_brevitarsis_Naha17_AB360994:0.0765034498)52:0.0192692996,(Culicoides_imicola_SCON7_AF080537:0.0066101282,Culicoides_imicola_SCON8_AF080538:0.0000020407)100:0.0666560016)81:0.0268939744);
+
+ALISIM COMMAND
+--------------
+To simulate an alignment of the same length as the original alignment, using the tree and model parameters estimated from this analysis, you can use the following command:
+
+--alisim simulated_MSA -t ml2\trees\M8624.treefile -m "GTR{1.75156,9.97336,7.75718,1.06521,16.5567}+F{0.26732,0.194661,0.15488,0.38314}+I{0.449784}+G4{0.902522}" --length 472
+
+To mimic the alignment used to produce this analysis, i.e. simulate an alignment of the same length as the original alignment, using the tree and model parameters estimated from this analysis *and* copying the same gap positions as the original alignment, you can use the following command:
+
+iqtree -s ml2\datasets\M8624.nex --alisim mimicked_MSA
+
+To simulate any number of alignments in either of the two commandlines above, use the --num-alignments options, for example mimic 100 alignments you would use the command line:
+
+iqtree -s ml2\datasets\M8624.nex --alisim mimicked_MSA --num-alignments 100
+
+For more information on using AliSim, please visit: www.iqtree.org/doc/AliSim
+
+TIME STAMP
+----------
+
+Date and time: Mon May 04 14:16:59 2026
+Total CPU time used: 752.484375 seconds (0h:12m:32s)
+Total wall-clock time used: 392.8138098 seconds (0h:6m:32s)
+

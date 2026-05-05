@@ -1,0 +1,82 @@
+IQ-TREE version 3.1.1 for Windows 64-bit built Apr  2 2026
+Developed by Bui Quang Minh, Thomas Wong, Nhan Ly-Trong, Huaiyan Ren
+Contributed by Lam-Tung Nguyen, Dominik Schrempf, Chris Bielow,
+Olga Chernomor, Michael Woodhams, Diep Thi Hoang, Heiko Schmidt
+
+Host:    DESKTOP-I0VDDLU (AVX2, FMA3, 15 GB RAM)
+Command: iqtree-3.1.1-Windows\bin\iqtree3.exe -s ml2\datasets\M190.nex -m MFP -B 1000 -bnni -T AUTO --prefix ml2\trees\M190 --redo
+Seed:    953705 (Using SPRNG - Scalable Parallel Random Number Generator)
+Time:    Mon May 04 13:01:57 2026
+Kernel:  AVX+FMA - auto-detect threads (16 CPU cores detected)
+
+Reading alignment file ml2\datasets\M190.nex ... Nexus format detected
+Skipping unknown block (SETS)...
+Skipping unknown block (CODONS)...
+Alignment has 60 sequences with 1014 columns, 536 distinct patterns
+320 parsimony-informative, 70 singleton sites, 624 constant sites
+                      Gap/Ambiguity  Composition  p-value
+Analyzing sequences: done in 0.00015 secs
+   1  Bicyclus_alboplagus    10.16%    passed     84.20%
+   2  Bicyclus_analis         7.59%    passed     66.67%
+   3  Bicyclus_angulosus      5.72%    passed     98.15%
+   4  Bicyclus_anisops        9.07%    passed     81.52%
+   5  Bicyclus_anynana       11.14%    passed     97.28%
+   6  Bicyclus_auricrudus     3.75%    passed     91.45%
+   7  Bicyclus_buea           5.72%    passed     99.46%
+   8  Bicyclus_campus        13.81%    passed     99.28%
+   9  Bicyclus_cottrelli     12.92%    passed     82.98%
+  10  Bicyclus_dentatus       6.02%    passed     70.60%
+  11  Bicyclus_dorothea      13.71%    passed     88.19%
+  12  Bicyclus_dubius         8.88%    passed      5.82%
+  13  Bicyclus_ena          100.00%    passed       nan%
+  14  Bicyclus_evadne        12.82%    passed     99.73%
+  15  Bicyclus_funebris       4.14%    passed     96.85%
+  16  Bicyclus_golo           9.57%    passed     88.33%
+  17  Bicyclus_graueri        5.42%    passed     80.05%
+  18  Bicyclus_hewitsoni      8.09%    passed     75.10%
+  19  Bicyclus_hyperanthus    5.82%    passed     38.27%
+  20  Bicyclus_iccius        12.33%    passed     82.36%
+  21  Bicyclus_ignobilis     16.27%    passed     98.70%
+  22  Bicyclus_istaris        7.50%    passed     81.15%
+  23  Bicyclus_italus        10.45%    passed     90.97%
+  24  Bicyclus_jefferyi       7.30%    passed     99.40%
+  25  Bicyclus_kenia          7.40%    passed     98.28%
+  26  Bicyclus_madetes        7.10%    passed     93.67%
+  27  Bicyclus_mandanes       8.19%    passed     90.74%
+  28  Bicyclus_matuta         8.48%    passed     99.39%
+  29  Bicyclus_medontias      9.66%    passed     92.28%
+  30  Bicyclus_mesogenus     14.00%    passed     95.83%
+  31  Bicyclus_mollitia       9.17%    passed     96.30%
+  32  Bicyclus_moyses         6.71%    passed     97.62%
+  33  Bicyclus_pavonis        7.10%    passed     88.37%
+  34  Bicyclus_persimilis    15.78%    passed     10.63%
+  35  Bicyclus_procorus       7.79%    passed     77.54%
+  36  Bicyclus_safitza_M      8.78%    passed     99.71%
+  37  Bicyclus_safitza_SA     9.07%    passed     98.15%
+  38  Bicyclus_safitza_U      8.28%    passed     98.11%
+  39  Bicyclus_sambulos      19.63%    passed     91.86%
+  40  Bicyclus_sanaos        11.83%    passed     99.28%
+  41  Bicyclus_sandace       11.24%    passed     91.49%
+  42  Bicyclus_sangmelina    11.34%    passed     78.51%
+  43  Bicyclus_sciathis       8.97%    passed     86.92%
+  44  Bicyclus_sebetus        7.20%    passed     70.78%
+  45  Bicyclus_smithi         7.20%    passed     82.45%
+  46  Bicyclus_sophrosyne     4.83%    passed     57.19%
+  47  Bicyclus_sweadneri     12.82%    passed     76.16%
+  48  Bicyclus_taenias        6.21%    passed     99.04%
+  49  Bicyclus_technatis     12.52%    passed     98.66%
+  50  Bicyclus_trilophus     22.68%    passed     74.60%
+  51  Bicyclus_uniformis     58.38%    passed     80.48%
+  52  Bicyclus_vansoni       20.81%    passed     95.34%
+  53  Bicyclus_vulgaris       4.73%    passed     61.61%
+  54  Bicyclus_xeneas        10.45%    passed     71.82%
+  55  Bicyclus_xeneoides      5.92%    passed     82.32%
+  56  Bicyclus_zinebi         7.99%    passed     87.50%
+  57  Halelesis_asochis      10.06%    passed     87.56%
+  58  Henotesia_peitho       10.85%    passed     56.83%
+  59  Henotesia_perspicua    11.44%    passed     48.71%
+  60  Mycalesis_franscisca    9.37%    passed     96.63%
+WARNING: 2 sequences contain more than 50% gaps/ambiguity
+****  TOTAL                  12.04%  0 sequences failed composition chi2 test (p-value<5%; df=3)
+WARNING: Sequence Bicyclus_ena contains only gaps or missing data
+ERROR: Some sequences (see above) are problematic, please check your alignment again

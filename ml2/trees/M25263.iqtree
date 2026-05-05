@@ -1,0 +1,313 @@
+IQ-TREE 3.1.1 built Apr  2 2026
+
+Input file name: ml2\datasets\M25263.nex
+Type of analysis: ModelFinder + tree reconstruction + ultrafast bootstrap (1000 replicates)
+Random seed number: 742210
+
+REFERENCES
+----------
+
+To cite IQ-TREE 3 please use:
+
+Thomas K.F. Wong, Nhan Ly-Trong, Huaiyan Ren, Hector Banos, Andrew J. Roger,
+Edward Susko, Chris Bielow, Nicola De Maio, Nick Goldman, Matthew W. Hahn,
+Gavin Huttley, Robert Lanfear, Bui Quang Minh (2025)
+IQ-TREE 3: Phylogenomic Inference Software using Complex Evolutionary Models.
+Submitted.
+
+Since you used ModelFinder please also cite: 
+
+Subha Kalyaanamoorthy, Bui Quang Minh, Thomas KF Wong, Arndt von Haeseler,
+and Lars S Jermiin (2017) ModelFinder: Fast model selection for
+accurate phylogenetic estimates. Nature Methods, 14:587–589.
+https://doi.org/10.1038/nmeth.4285
+
+Since you used ultrafast bootstrap (UFBoot) please also cite: 
+
+Diep Thi Hoang, Olga Chernomor, Arndt von Haeseler, Bui Quang Minh,
+and Le Sy Vinh (2018) UFBoot2: Improving the ultrafast bootstrap
+approximation. Mol. Biol. Evol., 35:518–522.
+https://doi.org/10.1093/molbev/msx281
+
+SEQUENCE ALIGNMENT
+------------------
+
+NOTE: Alignment sequence type is auto-detected. If in doubt, specify it via -st option.
+Input data: 26 sequences with 2158 nucleotide sites
+Number of constant sites: 1388 (= 64.3188% of all sites)
+Number of invariant (constant or ambiguous constant) sites: 1388 (= 64.3188% of all sites)
+Number of parsimony informative sites: 583
+Number of distinct site patterns: 770
+
+ModelFinder
+-----------
+
+Best-fit model according to BIC: GTR+F+I+G4
+
+List of models sorted by BIC scores: 
+
+Model                  LogL         AIC      w-AIC        AICc     w-AICc         BIC      w-BIC
+GTR+F+I+G4       -13534.157   27186.314 +        1   27189.688 +        1   27521.253 +        1
+TIM2+F+I+G4      -13558.871   27231.741 - 1.37e-010   27234.890 - 1.53e-010   27555.326 - 3.99e-008
+TIM+F+I+G4       -13591.642   27297.284 -   8e-025   27300.432 - 8.96e-025   27620.869 - 2.34e-022
+TIM3+F+I+G4      -13634.545   27383.089 - 1.87e-043   27386.238 - 2.09e-043   27706.675 - 5.45e-041
+TN+F+I+G4        -13642.122   27396.244 - 2.6e-046   27399.283 - 3.07e-046   27714.153 - 1.3e-042
+GTR+I+G4         -13677.017   27466.035 - 1.82e-061   27469.073 - 2.15e-061   27783.943 - 9.07e-058
+SYM+I+G4         -13677.041   27466.082 - 1.77e-061   27469.120 - 2.1e-061   27783.990 - 8.86e-058
+SYM+I+G4         -13677.041   27466.082 - 1.77e-061   27469.120 - 2.1e-061   27783.990 - 8.86e-058
+TVM+F+I+G4       -13672.971   27461.942 - 1.41e-060   27465.203 - 1.49e-060   27791.205 - 2.4e-059
+TPM2u+F+I+G4     -13707.737   27527.475 - 8.28e-075   27530.513 - 9.79e-075   27845.383 - 4.13e-071
+K3Pu+F+I+G4      -13731.867   27575.734 - 2.74e-085   27578.772 - 3.25e-085   27893.642 - 1.37e-081
+TIM2+I+G4        -13767.347   27642.694 - 7.91e-100   27645.518 - 1.04e-099   27949.248 - 1.15e-093
+TIM2e+I+G4       -13767.380   27642.760 - 7.66e-100   27645.584 - 1.01e-099   27949.315 - 1.12e-093
+TIM2e+I+G4       -13767.380   27642.760 - 7.66e-100   27645.584 - 1.01e-099   27949.315 - 1.12e-093
+TPM3u+F+I+G4     -13762.452   27636.904 - 1.43e-098   27639.942 - 1.69e-098   27954.812 - 7.14e-095
+HKY+F+I+G4       -13782.722   27675.443 - 6.12e-107   27678.374 - 7.64e-107   27987.675 - 5.22e-102
+TIM+I+G4         -13848.191   27804.382 - 6.14e-135   27807.207 - 8.08e-135   28110.937 - 8.95e-129
+TIMe+I+G4        -13848.267   27804.533 - 5.69e-135   27807.358 - 7.49e-135   28111.088 - 8.3e-129
+TIMe+I+G4        -13848.267   27804.533 - 5.69e-135   27807.358 - 7.49e-135   28111.088 - 8.3e-129
+TVM+I+G4         -13881.482   27872.963 - 7.87e-150   27875.894 - 9.83e-150   28185.195 - 6.71e-145
+TVMe+I+G4        -13881.514   27873.028 - 7.62e-150   27875.958 - 9.51e-150   28185.259 - 6.5e-145
+TVMe+I+G4        -13881.514   27873.028 - 7.62e-150   27875.958 - 9.51e-150   28185.259 - 6.5e-145
+TIM3+I+G4        -13906.941   27921.882 - 1.88e-160   27924.707 - 2.47e-160   28228.437 - 2.73e-154
+TIM3e+I+G4       -13906.971   27921.942 - 1.82e-160   27924.766 - 2.4e-160   28228.496 - 2.66e-154
+TIM3e+I+G4       -13906.971   27921.942 - 1.82e-160   27924.766 - 2.4e-160   28228.496 - 2.66e-154
+TN+I+G4          -13958.383   28022.767 - 2.33e-182   28025.487 - 3.23e-182   28323.644 - 5.79e-175
+TNe+I+G4         -13958.440   28022.880 - 2.2e-182   28025.600 - 3.05e-182   28323.758 - 5.47e-175
+TNe+I+G4         -13958.440   28022.880 - 2.2e-182   28025.600 - 3.05e-182   28323.758 - 5.47e-175
+TPM2u+I+G4       -13967.836   28041.672 - 1.82e-186   28044.393 - 2.53e-186   28342.550 - 4.55e-179
+TPM2+I+G4        -13967.862   28041.723 - 1.78e-186   28044.444 - 2.47e-186   28342.601 - 4.43e-179
+TPM2+I+G4        -13967.862   28041.723 - 1.78e-186   28044.444 - 2.47e-186   28342.601 - 4.43e-179
+K3Pu+I+G4        -14054.452   28214.904 - 4.41e-224   28217.625 - 6.12e-224   28515.782 - 1.1e-216
+K3P+I+G4         -14054.468   28214.936 - 4.34e-224   28217.657 - 6.02e-224   28515.814 - 1.08e-216
+K3P+I+G4         -14054.468   28214.936 - 4.34e-224   28217.657 - 6.02e-224   28515.814 - 1.08e-216
+TPM3u+I+G4       -14121.907   28349.814 - 2.23e-253   28352.535 - 3.1e-253   28650.692 - 5.56e-246
+TPM3+I+G4        -14121.949   28349.898 - 2.14e-253   28352.619 - 2.97e-253   28650.776 - 5.34e-246
+TPM3+I+G4        -14121.949   28349.898 - 2.14e-253   28352.619 - 2.97e-253   28650.776 - 5.34e-246
+HKY+I+G4         -14178.919   28461.838 - 1.06e-277   28464.456 - 1.54e-277   28757.039 - 4.49e-269
+K2P+I+G4         -14178.934   28461.868 - 1.04e-277   28464.486 - 1.52e-277   28757.068 - 4.43e-269
+K2P+I+G4         -14178.934   28461.868 - 1.04e-277   28464.486 - 1.52e-277   28757.068 - 4.43e-269
+F81+F+I+G4       -14282.147   28672.294 - 1.98e-323   28675.119 - 2.96e-323   28978.849 - 3.07e-317
+F81+I+G4         -14567.849   29237.698 -        0   29240.216 -        0   29527.222 -        0
+JC+I+G4          -14567.852   29237.704 -        0   29240.223 -        0   29527.228 -        0
+JC+I+G4          -14567.852   29237.704 -        0   29240.223 -        0   29527.228 -        0
+JC+I+R3          -14561.408   29230.816 -        0   29233.641 -        0   29537.371 -        0
+JC+I+R2          -14569.296   29242.593 -        0   29245.211 -        0   29537.793 -        0
+JC+R3            -14565.633   29237.265 -        0   29239.986 -        0   29538.143 -        0
+JC+G4            -14579.611   29259.221 -        0   29261.642 -        0   29543.068 -        0
+JC+R4            -14565.202   29240.405 -        0   29243.335 -        0   29552.636 -        0
+JC+I+R4          -14561.377   29234.755 -        0   29237.793 -        0   29552.663 -        0
+JC+R2            -14631.937   29365.874 -        0   29368.393 -        0   29655.398 -        0
+JC+I             -14868.241   29836.482 -        0   29838.903 -        0   30120.329 -        0
+JC               -16375.122   32848.243 -        0   32850.568 -        0   33126.413 -        0
+
+AIC, w-AIC   : Akaike information criterion scores and weights.
+AICc, w-AICc : Corrected AIC scores and weights.
+BIC, w-BIC   : Bayesian information criterion scores and weights.
+
+Plus signs denote the 95% confidence sets.
+Minus signs denote significant exclusion.
+
+SUBSTITUTION PROCESS
+--------------------
+
+Model of substitution: GTR+F+I+G4
+
+Rate parameter R:
+
+  A-C: 2.9629
+  A-G: 10.1011
+  A-T: 9.5898
+  C-G: 2.2903
+  C-T: 47.9239
+  G-T: 1.0000
+
+State frequencies: (empirical counts from alignment)
+
+  pi(A) = 0.2901
+  pi(C) = 0.2031
+  pi(G) = 0.168
+  pi(T) = 0.3388
+
+Rate matrix Q:
+
+  A   -0.5502   0.05968    0.1683    0.3222
+  C   0.08523    -1.733   0.03817      1.61
+  G    0.2906   0.04613   -0.3703    0.0336
+  T    0.2759    0.9652   0.01667    -1.258
+
+Model of rate heterogeneity: Invar+Gamma with 4 categories
+Proportion of invariable sites: 0.4969
+Gamma shape alpha: 0.637
+
+ Category  Relative_rate  Proportion
+  0         0              0.4969
+  1         0.1209         0.1258
+  2         0.6603         0.1258
+  3         1.787          0.1258
+  4         5.382          0.1258
+Relative rates are computed as MEAN of the portion of the Gamma distribution falling in the category.
+
+MAXIMUM LIKELIHOOD TREE
+-----------------------
+
+Log-likelihood of the tree: -13524.9686 (s.e. 345.4216)
+Unconstrained log-likelihood (without tree): -11082.8354
+Number of free parameters (#branches + #model parameters): 59
+Akaike information criterion (AIC) score: 27167.9373
+Corrected Akaike information criterion (AICc) score: 27171.3119
+Bayesian information criterion (BIC) score: 27502.8766
+
+Total tree length (sum of branch lengths): 4.8026
+Sum of internal branch lengths: 0.9696 (20.1903% of tree length)
+
+NOTE: Tree is UNROOTED although outgroup taxon 'Myrcidris_epicharis' is drawn at root
+Numbers in parentheses are  ultrafast bootstrap support (%)
+
++----------------------Myrcidris_epicharis
+|
+|                      +--Pseudomyrmex_dendroicus_AS31
+|                  +---| (100)
+|                  |   +--Pseudomyrmex_triplarinus_AS9
+|               +--| (49)
+|               |  +---Pseudomyrmex_mordax_AS51
+|            +--| (48)
+|            |  +----Pseudomyrmex_viduus_AS19
+|         +--| (99)
+|         |  +----Pseudomyrmex_triplaridis_AS20
+|      +--| (19)
+|      |  |     +--Pseudomyrmex_gebelli_AS68
+|      |  +-----| (66)
+|      |        +----Pseudomyrmex_longior_AS67
+|   +--| (18)
+|   |  |                    +--Pseudomyrmex_ferrugineus
+|   |  |                 +--| (71)
+|   |  |                 |  +---Pseudomyrmex_flavicornis
+|   |  |              +--| (98)
+|   |  |              |  +--Pseudomyrmex_mixtecus
+|   |  |           +--| (57)
+|   |  |           |  +-------Pseudomyrmex_peperi
+|   |  |        +--| (64)
+|   |  |        |  |  +----Pseudomyrmex_satanicus
+|   |  |        |  +--| (92)
+|   |  |        |     +-----Pseudomyrmex_spinicola
+|   |  |     +--| (100)
+|   |  |     |  +-------Pseudomyrmex_nigrocinctus
+|   |  |  +--| (65)
+|   |  |  |  |  +-----------Pseudomyrmex_haytianus
+|   |  |  |  +--| (64)
+|   |  |  |     +----Pseudomyrmex_perboscii
+|   |  +--| (61)
+|   |     +--------Pseudomyrmex_tachigaliae
++---| (97)
+|   |  +------Pseudomyrmex_elongatus_AS55
+|   +--| (47)
+|      |  +------Pseudomyrmex_godmani
+|      +--| (98)
+|         |      +--Pseudomyrmex_gracilis
+|         |   +--| (75)
+|         |   |  +--Pseudomyrmex_major
+|         +---| (100)
+|             +-----Pseudomyrmex_nigropilosus
+|
+|       +-------------------------------------------------Tetraponera_ambigua
+|    +--| (61)
+|    |  +--------------Tetraponera_punctulata
++----| (90)
+     +-------------Tetraponera_rufonigra
+
+Tree in newick format:
+
+(Myrcidris_epicharis:0.3986473602,(((((((Pseudomyrmex_dendroicus_AS31:0.0108757540,Pseudomyrmex_triplarinus_AS9:0.0155138945)100:0.0713618265,Pseudomyrmex_mordax_AS51:0.0822725682)49:0.0181802893,Pseudomyrmex_viduus_AS19:0.0907210702)48:0.0198245842,Pseudomyrmex_triplaridis_AS20:0.0928195909)99:0.0687408257,(Pseudomyrmex_gebelli_AS68:0.0644614332,Pseudomyrmex_longior_AS67:0.0935068748)66:0.1192393953)19:0.0240168371,(((((((Pseudomyrmex_ferrugineus:0.0532610989,Pseudomyrmex_flavicornis:0.0759668519)71:0.0130798716,Pseudomyrmex_mixtecus:0.0618409491)98:0.0449075478,Pseudomyrmex_peperi:0.1484457704)57:0.0142092193,(Pseudomyrmex_satanicus:0.0928929986,Pseudomyrmex_spinicola:0.1041731531)92:0.0322757324)64:0.0208146315,Pseudomyrmex_nigrocinctus:0.1445082443)100:0.0521852602,(Pseudomyrmex_haytianus:0.2082629416,Pseudomyrmex_perboscii:0.1015870685)64:0.0258811938)65:0.0086806201,Pseudomyrmex_tachigaliae:0.1690967605)61:0.0075846086)18:0.0152066436,(Pseudomyrmex_elongatus_AS55:0.1272474033,(Pseudomyrmex_godmani:0.1348808947,((Pseudomyrmex_gracilis:0.0373595426,Pseudomyrmex_major:0.0286322989)75:0.0136117141,Pseudomyrmex_nigropilosus:0.1052533810)100:0.0850918334)98:0.0410166410)47:0.0307589028)97:0.0747859322,((Tetraponera_ambigua:0.8705353169,Tetraponera_punctulata:0.2751515088)61:0.0656730050,Tetraponera_rufonigra:0.2449937823)90:0.1025223938);
+
+CONSENSUS TREE
+--------------
+
+Consensus tree is constructed from 1000 bootstrap trees
+Log-likelihood of consensus tree: -13527.434545
+Robinson-Foulds distance between ML tree and consensus tree: 4
+
+Branches with support >0.000000% are kept (extended consensus)
+Branch lengths are optimized by maximum likelihood on original alignment
+Numbers in parentheses are bootstrap supports (%)
+
++----------------------Myrcidris_epicharis
+|
+|                     +--Pseudomyrmex_dendroicus_AS31
+|                 +---| (100)
+|                 |   +--Pseudomyrmex_triplarinus_AS9
+|              +--| (49)
+|              |  +---Pseudomyrmex_mordax_AS51
+|           +--| (48)
+|           |  +----Pseudomyrmex_viduus_AS19
+|       +---| (99)
+|       |   +----Pseudomyrmex_triplaridis_AS20
+|    +--| (26)
+|    |  |     +------Pseudomyrmex_elongatus_AS55
+|    |  |  +--| (47)
+|    |  |  |  |  +-------Pseudomyrmex_godmani
+|    |  |  |  +--| (98)
+|    |  |  |     |       +--Pseudomyrmex_gracilis
+|    |  |  |     |    +--| (75)
+|    |  |  |     |    |  +--Pseudomyrmex_major
+|    |  |  |     +----| (100)
+|    |  |  |          +-----Pseudomyrmex_nigropilosus
+|    |  +--| (19)
+|    |     |      +---Pseudomyrmex_gebelli_AS68
+|    |     +------| (66)
+|    |            +---Pseudomyrmex_longior_AS67
++----| (97)
+|    |                    +--Pseudomyrmex_ferrugineus
+|    |                 +--| (71)
+|    |                 |  +---Pseudomyrmex_flavicornis
+|    |              +--| (98)
+|    |              |  +--Pseudomyrmex_mixtecus
+|    |           +--| (57)
+|    |           |  +-------Pseudomyrmex_peperi
+|    |        +--| (64)
+|    |        |  |  +----Pseudomyrmex_satanicus
+|    |        |  +--| (92)
+|    |        |     +-----Pseudomyrmex_spinicola
+|    |     +--| (100)
+|    |     |  +-------Pseudomyrmex_nigrocinctus
+|    |  +--| (65)
+|    |  |  |  +-----------Pseudomyrmex_haytianus
+|    |  |  +--| (64)
+|    |  |     +-----Pseudomyrmex_perboscii
+|    +--| (61)
+|       +--------Pseudomyrmex_tachigaliae
+|
+|        +-------------------------------------------------Tetraponera_ambigua
+|     +--| (61)
+|     |  +----------------Tetraponera_punctulata
++-----| (90)
+      +-------------Tetraponera_rufonigra
+
+
+Consensus tree in newick format: 
+
+(Myrcidris_epicharis:0.3921918540,((((((Pseudomyrmex_dendroicus_AS31:0.0109271516,Pseudomyrmex_triplarinus_AS9:0.0154829328)100:0.0709454634,Pseudomyrmex_mordax_AS51:0.0826388777)49:0.0182637802,Pseudomyrmex_viduus_AS19:0.0908448967)48:0.0180580730,Pseudomyrmex_triplaridis_AS20:0.0936184115)99:0.0829186120,((Pseudomyrmex_elongatus_AS55:0.1294484919,(Pseudomyrmex_godmani:0.1355349773,((Pseudomyrmex_gracilis:0.0372453648,Pseudomyrmex_major:0.0287459357)75:0.0137615361,Pseudomyrmex_nigropilosus:0.1050746819)100:0.0844019984)98:0.0429425734)47:0.0387684999,(Pseudomyrmex_gebelli_AS68:0.0793398802,Pseudomyrmex_longior_AS67:0.0789141317)66:0.1216059741)19:0.0069092268)26:0.0150301404,(((((((Pseudomyrmex_ferrugineus:0.0531240608,Pseudomyrmex_flavicornis:0.0759496572)71:0.0130979597,Pseudomyrmex_mixtecus:0.0619180528)98:0.0448772884,Pseudomyrmex_peperi:0.1483447017)57:0.0137919139,(Pseudomyrmex_satanicus:0.0925420290,Pseudomyrmex_spinicola:0.1041809704)92:0.0330449417)64:0.0206499044,Pseudomyrmex_nigrocinctus:0.1439025493)100:0.0527272247,(Pseudomyrmex_haytianus:0.2080597649,Pseudomyrmex_perboscii:0.1017706346)64:0.0255771076)65:0.0091403236,Pseudomyrmex_tachigaliae:0.1668243002)61:0.0000027837)97:0.0904560890,((Tetraponera_ambigua:0.8468318388,Tetraponera_punctulata:0.2869490859)61:0.0567381935,Tetraponera_rufonigra:0.2416416457)90:0.1068015023);
+
+ALISIM COMMAND
+--------------
+To simulate an alignment of the same length as the original alignment, using the tree and model parameters estimated from this analysis, you can use the following command:
+
+--alisim simulated_MSA -t ml2\trees\M25263.treefile -m "GTR{2.96288,10.1011,9.58979,2.29035,47.9239}+F{0.29007,0.203101,0.168049,0.33878}+I{0.496878}+G4{0.636955}" --length 2158
+
+To mimic the alignment used to produce this analysis, i.e. simulate an alignment of the same length as the original alignment, using the tree and model parameters estimated from this analysis *and* copying the same gap positions as the original alignment, you can use the following command:
+
+iqtree -s ml2\datasets\M25263.nex --alisim mimicked_MSA
+
+To simulate any number of alignments in either of the two commandlines above, use the --num-alignments options, for example mimic 100 alignments you would use the command line:
+
+iqtree -s ml2\datasets\M25263.nex --alisim mimicked_MSA --num-alignments 100
+
+For more information on using AliSim, please visit: www.iqtree.org/doc/AliSim
+
+TIME STAMP
+----------
+
+Date and time: Mon May 04 13:17:26 2026
+Total CPU time used: 312.890625 seconds (0h:5m:12s)
+Total wall-clock time used: 123.5278225 seconds (0h:2m:3s)
+

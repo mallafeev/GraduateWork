@@ -1,0 +1,50 @@
+IQ-TREE version 3.1.1 for Windows 64-bit built Apr  2 2026
+Developed by Bui Quang Minh, Thomas Wong, Nhan Ly-Trong, Huaiyan Ren
+Contributed by Lam-Tung Nguyen, Dominik Schrempf, Chris Bielow,
+Olga Chernomor, Michael Woodhams, Diep Thi Hoang, Heiko Schmidt
+
+Host:    DESKTOP-I0VDDLU (AVX2, FMA3, 15 GB RAM)
+Command: iqtree-3.1.1-Windows\bin\iqtree3.exe -s ml2\datasets\M4438.nex -m MFP -B 1000 -bnni -T AUTO --prefix ml2\trees\M4438 --redo
+Seed:    653726 (Using SPRNG - Scalable Parallel Random Number Generator)
+Time:    Mon May 04 13:45:41 2026
+Kernel:  AVX+FMA - auto-detect threads (16 CPU cores detected)
+
+Reading alignment file ml2\datasets\M4438.nex ... Nexus format detected
+Skipping unknown block (CODONS)...
+Alignment has 29 sequences with 684 columns, 436 distinct patterns
+371 parsimony-informative, 48 singleton sites, 265 constant sites
+                                Gap/Ambiguity  Composition  p-value
+Analyzing sequences: done in 0.0001197 secs
+   1  Dorvillea_albomaculata            8.33%    failed      0.01%
+   2  Dorvillea_erucaeformis            0.00%    failed      0.11%
+   3  Dorvillea_rubrovittata          100.00%    passed       nan%
+   4  Dorvillea_similis                 5.56%    failed      0.03%
+   5  Eunice_pennata                    1.32%    failed      0.01%
+   6  Iphitime_hartmanae                0.00%    passed     20.21%
+   7  Iphitime_paguri                   8.77%    failed      0.01%
+   8  Ophryotrocha_alborana             0.00%    passed     23.22%
+   9  Ophryotrocha_craigsmithi          5.70%    passed     56.84%
+  10  Ophryotrocha_eutrophila           0.00%    passed     53.37%
+  11  Ophryotrocha_geryonicola          1.02%    passed     31.85%
+  12  Ophryotrocha_globopalpata         0.15%    failed      1.37%
+  13  Ophryotrocha_gracilis             8.33%    passed     28.52%
+  14  Ophryotrocha_hartmanni            8.33%    passed     27.86%
+  15  Ophryotrocha_japonica             0.00%    failed      0.00%
+  16  Ophryotrocha_labronica            0.00%    failed      0.01%
+  17  Ophryotrocha_longidentata         0.44%    failed      0.36%
+  18  Ophryotrocha_maculata             6.58%    passed     80.99%
+  19  Ophryotrocha_notoglandulata       8.33%    failed      0.00%
+  20  Ophryotrocha_permanni             0.00%    failed      0.04%
+  21  Ophryotrocha_puerilis_puerilis   10.53%    failed      2.43%
+  22  Ophryotrocha_puerilis_siberti    10.53%    passed      6.19%
+  23  Ophryotrocha_robusta              8.33%    failed      1.42%
+  24  Ophryotrocha_rubra                0.00%    failed      0.11%
+  25  Ophryotrocha_scutellus           11.99%    passed     58.84%
+  26  Palpiphitime_lipovskyae           0.00%    passed      7.66%
+  27  Palpiphitime_lobifera             0.00%    passed     23.45%
+  28  Parougia_eliasoni                 0.00%    passed     15.43%
+  29  Protodorvillea_kefersteini       10.09%    failed      0.00%
+WARNING: 1 sequences contain more than 50% gaps/ambiguity
+****  TOTAL                             7.39%  15 sequences failed composition chi2 test (p-value<5%; df=3)
+WARNING: Sequence Dorvillea_rubrovittata contains only gaps or missing data
+ERROR: Some sequences (see above) are problematic, please check your alignment again

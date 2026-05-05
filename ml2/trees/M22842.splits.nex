@@ -1,0 +1,112 @@
+#nexus
+
+BEGIN Taxa;
+DIMENSIONS ntax=17;
+TAXLABELS
+[1] 'Aphanostoma_sp_IDAWHel19_GBFR837844'
+[2] 'Archaphanostoma_agile_IDUJ11202_COI'
+[3] 'Archaphanostoma_agile_IDUJ11341_COI'
+[4] 'Archaphanostoma_agile_IDUJ13262_COI'
+[5] 'Archaphanostoma_macrospiriferum_IDUJ0718_GBFR837845'
+[6] 'Archaphanostoma_macrospiriferum_IDUJ13240_COI'
+[7] 'Archaphanostoma_occulta_IDUJ11276_COI'
+[8] 'Archaphanostoma_occulta_IDUJ11277_COI'
+[9] 'Archaphanostoma_sublittoralis_IDUJ11331_COI'
+[10] 'Archaphanostoma_ylvae_IDUJ11224_COI'
+[11] 'Archaphanostoma_ylvae_IDUJ11225_COI'
+[12] 'Archaphanostoma_ylvae_IDUJ11267_COI'
+[13] 'Archaphanostoma_ylvae_IDUJ11309_COI'
+[14] 'Isodiametra_finkei_IDUJ12037_GBKF578508'
+[15] 'Isodiametra_norvegica_IDMHMa8_GBFR837870'
+[16] 'Praeconvoluta_castinea_IDMHMa7_GBFR837890'
+[17] 'Praeconvoluta_tigrina_IDMHMa6_GBFR837891'
+;
+END; [Taxa]
+
+BEGIN Splits;
+DIMENSIONS ntax=17 nsplits=80;
+FORMAT labels=no weights=yes confidences=no intervals=no;
+MATRIX
+	100	 2,
+	100	 4,
+	87	 2 4,
+	100	 3,
+	100	 2 3 4,
+	100	 5,
+	100	 6,
+	100	 5 6,
+	93	 2 3 4 5 6,
+	100	 7,
+	100	 8,
+	97	 7 8,
+	100	 9,
+	100	 7 8 9,
+	100	 10,
+	100	 11,
+	100	 13,
+	92	 11 13,
+	100	 12,
+	69	 11 12 13,
+	100	 10 11 12 13,
+	100	 7 8 9 10 11 12 13,
+	100	 14,
+	12	 7 8 9 10 11 12 13 14,
+	73	 1 15 16 17,
+	100	 15,
+	100	 17,
+	51	 15 17,
+	94	 1 16,
+	100	 16,
+	100	 1,
+	31	 10 11 13,
+	77	 1 14 15 16 17,
+	2	 1 14 16,
+	13	 2 3,
+	14	 14 17,
+	28	 1 15 16,
+	2	 1 15,
+	4	 2 3 4 5 6 14,
+	2	 1 2 3 4 5 6 14 16,
+	17	 1 16 17,
+	4	 7 8 9 10 11 12 13 17,
+	2	 10 13,
+	2	 10 11,
+	3	 1 15 17,
+	3	 1 2 3 4 14 15 16 17,
+	3	 11 12,
+	4	 1 14 16 17,
+	3	 8 9,
+	0	 10 12,
+	1	 1 17,
+	0	 10 12 13,
+	2	 1 2 3 4 5 6 15 16,
+	2	 1 2 3 4 15 16 17,
+	4	 14 15 17,
+	2	 1 5 6 14 15 16 17,
+	2	 1 14 15 16,
+	1	 14 15,
+	1	 5 6 14,
+	0	 14 16 17,
+	0	 2 3 4 5 6 15,
+	0	 2 3 4 5 6 14 15,
+	1	 16 17,
+	0	 1 2 3 4 5 6 16,
+	1	 12 13,
+	0	 15 16 17,
+	0	 1 5 6 14 15 16,
+	0	 14 16,
+	0	 9 10 11 12 13,
+	0	 8 9 10 11 12 13,
+	0	 2 3 4 14,
+	0	 2 3 4 14 17,
+	1	 2 3 4 5 6 14 17,
+	0	 10 11 12,
+	0	 1 2 3 4 14 15 16,
+	0	 1 2 3 4 15 16,
+	0	 15 16,
+	0	 10 11 12 13 17,
+	0	 2 3 4 5 6 17,
+	0	 7 8 9 10 11 12 13 15,
+;
+END; [Splits]
+

@@ -1,0 +1,546 @@
+IQ-TREE 3.1.1 built Apr  2 2026
+
+Input file name: ml2\datasets\M16791.nex
+Type of analysis: ModelFinder + tree reconstruction + ultrafast bootstrap (1000 replicates)
+Random seed number: 913096
+
+REFERENCES
+----------
+
+To cite IQ-TREE 3 please use:
+
+Thomas K.F. Wong, Nhan Ly-Trong, Huaiyan Ren, Hector Banos, Andrew J. Roger,
+Edward Susko, Chris Bielow, Nicola De Maio, Nick Goldman, Matthew W. Hahn,
+Gavin Huttley, Robert Lanfear, Bui Quang Minh (2025)
+IQ-TREE 3: Phylogenomic Inference Software using Complex Evolutionary Models.
+Submitted.
+
+Since you used ModelFinder please also cite: 
+
+Subha Kalyaanamoorthy, Bui Quang Minh, Thomas KF Wong, Arndt von Haeseler,
+and Lars S Jermiin (2017) ModelFinder: Fast model selection for
+accurate phylogenetic estimates. Nature Methods, 14:587–589.
+https://doi.org/10.1038/nmeth.4285
+
+Since you used ultrafast bootstrap (UFBoot) please also cite: 
+
+Diep Thi Hoang, Olga Chernomor, Arndt von Haeseler, Bui Quang Minh,
+and Le Sy Vinh (2018) UFBoot2: Improving the ultrafast bootstrap
+approximation. Mol. Biol. Evol., 35:518–522.
+https://doi.org/10.1093/molbev/msx281
+
+SEQUENCE ALIGNMENT
+------------------
+
+NOTE: Alignment sequence type is auto-detected. If in doubt, specify it via -st option.
+Input data: 53 sequences with 2677 nucleotide sites
+Number of constant sites: 2344 (= 87.5607% of all sites)
+Number of invariant (constant or ambiguous constant) sites: 2344 (= 87.5607% of all sites)
+Number of parsimony informative sites: 220
+Number of distinct site patterns: 290
+
+ModelFinder
+-----------
+
+Best-fit model according to BIC: TIM2+F+I
+
+List of models sorted by BIC scores: 
+
+Model                  LogL         AIC      w-AIC        AICc     w-AICc         BIC      w-BIC
+TIM2+F+I          -4506.413    9232.827 +   0.0575    9242.344 +   0.0682    9880.997 +    0.602
+TIM2+F+G4         -4506.917    9233.834 -   0.0348    9243.351 -   0.0412    9882.004 +    0.364
+GTR+F+I           -4502.146    9228.292 +    0.556    9238.164 +    0.551    9888.247 -    0.016
+TIM2+F+R2         -4506.694    9235.389 -    0.016    9245.082 -   0.0173    9889.451 -  0.00878
+GTR+F+G4          -4503.199    9230.398 +    0.194    9240.271 +    0.192    9890.353 -  0.00559
+TIM2+F+I+G4       -4507.400    9236.800 -  0.00789    9246.493 -  0.00856    9890.862 -  0.00434
+GTR+F+R2          -4502.842    9231.685 +    0.102    9241.737 +   0.0923    9897.532 - 0.000154
+GTR+F+I+G4        -4503.982    9233.964 -   0.0326    9244.017 -   0.0295    9899.811 - 4.94e-005
+TPM2u+F+I         -4522.177    9262.354 - 2.23e-008    9271.696 - 2.88e-008    9904.631 - 4.44e-006
+TPM2u+F+G4        -4522.186    9262.372 - 2.21e-008    9271.714 - 2.86e-008    9904.649 - 4.4e-006
+TIM+F+I           -4518.551    9257.103 - 3.08e-007    9266.620 - 3.65e-007    9905.273 - 3.22e-006
+TIM+F+G4          -4519.243    9258.485 - 1.54e-007    9268.002 - 1.83e-007    9906.655 - 1.61e-006
+TVM+F+I           -4517.377    9256.754 - 3.67e-007    9266.448 - 3.97e-007    9910.816 - 2.01e-007
+TVM+F+G4          -4517.707    9257.414 - 2.64e-007    9267.107 - 2.86e-007    9911.476 - 1.45e-007
+TPM2u+F+R2        -4522.260    9264.520 - 7.55e-009    9274.037 - 8.94e-009    9912.690 - 7.89e-008
+TIM+F+R2          -4518.533    9259.066 - 1.15e-007    9268.759 - 1.25e-007    9913.128 - 6.34e-008
+TIM+F+I+G4        -4519.586    9261.172 - 4.03e-008    9270.866 - 4.37e-008    9915.234 - 2.21e-008
+TPM2u+F+I+G4      -4523.791    9267.583 - 1.63e-009    9277.100 - 1.93e-009    9915.752 - 1.71e-008
+TVM+F+R2          -4517.722    9259.443 - 9.56e-008    9269.315 - 9.48e-008    9919.398 - 2.76e-009
+K3Pu+F+I          -4529.975    9277.951 - 9.15e-012    9287.292 - 1.18e-011    9920.228 - 1.82e-009
+K3Pu+F+G4         -4530.409    9278.819 - 5.93e-012    9288.160 - 7.66e-012    9921.096 - 1.18e-009
+TVM+F+I+G4        -4519.392    9262.785 - 1.8e-008    9272.657 - 1.78e-008    9922.739 - 5.19e-010
+K3Pu+F+R2         -4530.123    9280.246 - 2.9e-012    9289.763 - 3.44e-012    9928.416 - 3.04e-011
+TN+F+G4           -4534.583    9287.167 - 9.13e-014    9296.508 - 1.18e-013    9929.444 - 1.82e-011
+TIM3+F+G4         -4531.319    9282.639 - 8.78e-013    9292.156 - 1.04e-012    9930.809 - 9.18e-012
+TN+F+I            -4535.606    9289.212 - 3.28e-014    9298.554 - 4.24e-014    9931.490 - 6.53e-012
+TIM3+F+I          -4531.714    9283.427 - 5.92e-013    9292.944 - 7.01e-013    9931.597 - 6.19e-012
+K3Pu+F+I+G4       -4532.354    9284.708 - 3.12e-013    9294.225 - 3.7e-013    9932.878 - 3.26e-012
+TN+F+I+G4         -4533.809    9287.618 - 7.28e-014    9297.134 - 8.63e-014    9935.787 - 7.61e-013
+TN+F+R2           -4534.534    9289.069 - 3.53e-014    9298.586 - 4.17e-014    9937.239 - 3.68e-013
+TIM3+F+I+G4       -4531.033    9284.065 - 4.3e-013    9293.759 - 4.66e-013    9938.127 - 2.36e-013
+TIM3+F+R2         -4531.162    9284.325 - 3.78e-013    9294.018 - 4.1e-013    9938.387 - 2.08e-013
+HKY+F+G4          -4543.171    9302.341 - 4.63e-017    9311.510 - 6.52e-017    9938.726 - 1.75e-013
+TPM3u+F+G4        -4539.232    9296.464 - 8.74e-016    9305.806 - 1.13e-015    9938.741 - 1.74e-013
+TPM3u+F+I         -4539.549    9297.097 - 6.37e-016    9306.439 - 8.23e-016    9939.375 - 1.27e-013
+HKY+F+I           -4543.864    9303.728 - 2.31e-017    9312.896 - 3.26e-017    9940.113 - 8.76e-014
+HKY+F+R2          -4543.198    9304.395 - 1.66e-017    9313.737 - 2.14e-017    9946.672 - 3.3e-015
+TPM3u+F+R2        -4539.365    9298.730 - 2.81e-016    9308.247 - 3.33e-016    9946.900 - 2.94e-015
+HKY+F+I+G4        -4544.278    9306.555 - 5.63e-018    9315.897 - 7.27e-018    9948.832 - 1.12e-015
+TPM3u+F+I+G4      -4540.667    9301.334 - 7.66e-017    9310.851 - 9.07e-017    9949.503 -   8e-016
+GTR+G4            -4659.055    9536.109 -   8e-068    9545.451 - 1.03e-067   10178.387 - 1.59e-065
+SYM+G4            -4659.067    9536.134 - 7.9e-068    9545.476 - 1.02e-067   10178.411 - 1.57e-065
+SYM+G4            -4659.067    9536.134 - 7.9e-068    9545.476 - 1.02e-067   10178.411 - 1.57e-065
+GTR+I             -4660.353    9538.706 - 2.18e-068    9548.048 - 2.82e-068   10180.983 - 4.34e-066
+SYM+I             -4660.353    9538.706 - 2.18e-068    9548.048 - 2.82e-068   10180.984 - 4.34e-066
+SYM+I             -4660.353    9538.706 - 2.18e-068    9548.048 - 2.82e-068   10180.984 - 4.34e-066
+GTR+I+G4          -4658.421    9536.842 - 5.54e-068    9546.359 - 6.57e-068   10185.012 - 5.8e-067
+SYM+I+G4          -4658.434    9536.869 - 5.47e-068    9546.386 - 6.48e-068   10185.039 - 5.72e-067
+SYM+I+G4          -4658.434    9536.869 - 5.47e-068    9546.386 - 6.48e-068   10185.039 - 5.72e-067
+GTR+R2            -4659.478    9538.956 - 1.93e-068    9548.473 - 2.28e-068   10187.126 - 2.01e-067
+SYM+R2            -4659.495    9538.990 - 1.89e-068    9548.507 - 2.24e-068   10187.160 - 1.98e-067
+SYM+R2            -4659.495    9538.990 - 1.89e-068    9548.507 - 2.24e-068   10187.160 - 1.98e-067
+F81+F+G4          -4677.656    9569.312 - 4.93e-075    9578.309 - 7.58e-075   10199.804 - 3.56e-070
+F81+F+I           -4678.218    9570.436 - 2.81e-075    9579.433 - 4.32e-075   10200.929 - 2.03e-070
+TVMe+G4           -4677.892    9571.783 - 1.43e-075    9580.951 - 2.02e-075   10208.168 - 5.43e-072
+TVMe+G4           -4677.892    9571.783 - 1.43e-075    9580.951 - 2.02e-075   10208.168 - 5.43e-072
+TVM+G4            -4677.894    9571.789 - 1.43e-075    9580.957 - 2.02e-075   10208.174 - 5.42e-072
+F81+F+R2          -4678.042    9572.084 - 1.23e-075    9581.252 - 1.74e-075   10208.469 - 4.67e-072
+F81+F+I+G4        -4678.682    9573.364 - 6.51e-076    9582.532 - 9.17e-076   10209.749 - 2.46e-072
+TVMe+I            -4679.228    9574.456 - 3.77e-076    9583.624 - 5.31e-076   10210.841 - 1.43e-072
+TVMe+I            -4679.228    9574.456 - 3.77e-076    9583.624 - 5.31e-076   10210.841 - 1.43e-072
+TVM+I             -4679.231    9574.462 - 3.76e-076    9583.630 - 5.3e-076   10210.847 - 1.42e-072
+TVMe+I+G4         -4677.615    9573.230 - 6.96e-076    9582.572 - 8.99e-076   10215.508 - 1.38e-073
+TVMe+I+G4         -4677.615    9573.230 - 6.96e-076    9582.572 - 8.99e-076   10215.508 - 1.38e-073
+TVM+I+G4          -4677.618    9573.236 - 6.94e-076    9582.578 - 8.97e-076   10215.513 - 1.38e-073
+TIM2e+G4          -4685.962    9585.923 - 1.22e-078    9594.920 - 1.87e-078   10216.416 - 8.79e-074
+TIM2e+G4          -4685.962    9585.923 - 1.22e-078    9594.920 - 1.87e-078   10216.416 - 8.79e-074
+TIM2+G4           -4685.964    9585.927 - 1.22e-078    9594.924 - 1.87e-078   10216.420 - 8.77e-074
+TVM+R2            -4678.242    9574.484 - 3.72e-076    9583.826 - 4.8e-076   10216.762 - 7.39e-074
+TVMe+R2           -4678.294    9574.587 - 3.53e-076    9583.929 - 4.56e-076   10216.864 - 7.02e-074
+TVMe+R2           -4678.294    9574.587 - 3.53e-076    9583.929 - 4.56e-076   10216.864 - 7.02e-074
+TIM2e+I           -4686.480    9586.959 - 7.26e-079    9595.956 - 1.12e-078   10217.452 - 5.24e-074
+TIM2e+I           -4686.480    9586.959 - 7.26e-079    9595.956 - 1.12e-078   10217.452 - 5.24e-074
+TIM2+I            -4686.482    9586.963 - 7.25e-079    9595.960 - 1.11e-078   10217.456 - 5.23e-074
+TIM2+R2           -4685.995    9587.990 - 4.34e-079    9597.158 - 6.12e-079   10224.375 - 1.64e-075
+TIM2e+R2          -4686.020    9588.040 - 4.23e-079    9597.208 - 5.96e-079   10224.425 - 1.6e-075
+TIM2e+R2          -4686.020    9588.040 - 4.23e-079    9597.208 - 5.96e-079   10224.425 - 1.6e-075
+TIM2+I+G4         -4686.154    9588.308 - 3.7e-079    9597.477 - 5.22e-079   10224.693 - 1.4e-075
+TIM2e+I+G4        -4686.158    9588.315 - 3.69e-079    9597.483 - 5.2e-079   10224.700 - 1.4e-075
+TIM2e+I+G4        -4686.158    9588.315 - 3.69e-079    9597.483 - 5.2e-079   10224.700 - 1.4e-075
+TPM2u+G4          -4704.206    9620.412 - 3.95e-086    9629.238 - 6.61e-086   10245.012 - 5.42e-080
+TPM2+G4           -4704.207    9620.414 - 3.95e-086    9629.241 - 6.6e-086   10245.014 - 5.42e-080
+TPM2+G4           -4704.207    9620.414 - 3.95e-086    9629.241 - 6.6e-086   10245.014 - 5.42e-080
+TPM2+I            -4705.761    9623.522 - 8.35e-087    9632.348 - 1.4e-086   10248.122 - 1.15e-080
+TPM2+I            -4705.761    9623.522 - 8.35e-087    9632.348 - 1.4e-086   10248.122 - 1.15e-080
+TPM2u+I           -4705.780    9623.559 - 8.19e-087    9632.386 - 1.37e-086   10248.159 - 1.12e-080
+TPM2+I+G4         -4704.358    9622.716 - 1.25e-086    9631.713 - 1.92e-086   10253.209 -   9e-082
+TPM2+I+G4         -4704.358    9622.716 - 1.25e-086    9631.713 - 1.92e-086   10253.209 -   9e-082
+TPM2u+I+G4        -4704.370    9622.740 - 1.23e-086    9631.737 - 1.9e-086   10253.233 - 8.9e-082
+TPM2u+R2          -4704.746    9623.492 - 8.47e-087    9632.489 - 1.3e-086   10253.985 - 6.11e-082
+TPM2+R2           -4704.821    9623.642 - 7.86e-087    9632.638 - 1.21e-086   10254.134 - 5.67e-082
+TPM2+R2           -4704.821    9623.642 - 7.86e-087    9632.638 - 1.21e-086   10254.134 - 5.67e-082
+TIMe+G4           -4707.624    9629.248 - 4.77e-088    9638.244 - 7.32e-088   10259.740 - 3.44e-083
+TIMe+G4           -4707.624    9629.248 - 4.77e-088    9638.244 - 7.32e-088   10259.740 - 3.44e-083
+TIM+G4            -4707.626    9629.252 - 4.76e-088    9638.249 - 7.31e-088   10259.745 - 3.43e-083
+TIMe+I            -4707.983    9629.967 - 3.33e-088    9638.963 - 5.11e-088   10260.459 - 2.4e-083
+TIMe+I            -4707.983    9629.967 - 3.33e-088    9638.963 - 5.11e-088   10260.459 - 2.4e-083
+TIM+I             -4707.984    9629.969 - 3.32e-088    9638.965 - 5.11e-088   10260.461 - 2.4e-083
+TIM+I+G4          -4707.535    9631.070 - 1.92e-088    9640.238 - 2.7e-088   10267.455 - 7.26e-085
+TIMe+I+G4         -4707.543    9631.087 - 1.9e-088    9640.255 - 2.68e-088   10267.472 - 7.2e-085
+TIMe+I+G4         -4707.543    9631.087 - 1.9e-088    9640.255 - 2.68e-088   10267.472 - 7.2e-085
+TIM+R2            -4707.628    9631.257 - 1.75e-088    9640.425 - 2.46e-088   10267.642 - 6.61e-085
+TIMe+R2           -4707.640    9631.280 - 1.73e-088    9640.448 - 2.43e-088   10267.665 - 6.54e-085
+TIMe+R2           -4707.640    9631.280 - 1.73e-088    9640.448 - 2.43e-088   10267.665 - 6.54e-085
+K3P+G4            -4723.227    9658.454 - 2.17e-094    9667.280 - 3.63e-094   10283.054 - 2.98e-088
+K3P+G4            -4723.227    9658.454 - 2.17e-094    9667.280 - 3.63e-094   10283.054 - 2.98e-088
+K3Pu+G4           -4723.233    9658.465 - 2.16e-094    9667.292 - 3.61e-094   10283.065 - 2.96e-088
+K3P+I             -4723.312    9658.624 - 1.99e-094    9667.451 - 3.33e-094   10283.224 - 2.73e-088
+K3P+I             -4723.312    9658.624 - 1.99e-094    9667.451 - 3.33e-094   10283.224 - 2.73e-088
+K3Pu+I            -4723.313    9658.627 - 1.99e-094    9667.453 - 3.33e-094   10283.227 - 2.73e-088
+K3Pu+R2           -4723.132    9660.263 - 8.78e-095    9669.260 - 1.35e-094   10290.755 - 6.33e-090
+K3P+R2            -4723.140    9660.279 - 8.71e-095    9669.276 - 1.34e-094   10290.772 - 6.28e-090
+K3P+R2            -4723.140    9660.279 - 8.71e-095    9669.276 - 1.34e-094   10290.772 - 6.28e-090
+K3Pu+I+G4         -4724.041    9662.082 - 3.54e-095    9671.078 - 5.43e-095   10292.574 - 2.55e-090
+K3P+I+G4          -4724.042    9662.084 - 3.53e-095    9671.081 - 5.43e-095   10292.576 - 2.55e-090
+K3P+I+G4          -4724.042    9662.084 - 3.53e-095    9671.081 - 5.43e-095   10292.576 - 2.55e-090
+TIM3+G4           -4728.494    9670.988 - 4.12e-097    9679.985 - 6.32e-097   10301.481 - 2.97e-092
+TIM3e+G4          -4728.495    9670.989 - 4.11e-097    9679.986 - 6.32e-097   10301.482 - 2.97e-092
+TIM3e+G4          -4728.495    9670.989 - 4.11e-097    9679.986 - 6.32e-097   10301.482 - 2.97e-092
+TIM3+I+G4         -4726.589    9669.178 - 1.02e-096    9678.346 - 1.43e-096   10305.563 - 3.85e-093
+TIM3e+I+G4        -4726.598    9669.196 - 1.01e-096    9678.364 - 1.42e-096   10305.581 - 3.82e-093
+TIM3e+I+G4        -4726.598    9669.196 - 1.01e-096    9678.364 - 1.42e-096   10305.581 - 3.82e-093
+TIM3+I            -4731.180    9676.360 - 2.81e-098    9685.357 - 4.31e-098   10306.853 - 2.02e-093
+TIM3e+I           -4731.180    9676.361 - 2.8e-098    9685.357 - 4.31e-098   10306.853 - 2.02e-093
+TIM3e+I           -4731.180    9676.361 - 2.8e-098    9685.357 - 4.31e-098   10306.853 - 2.02e-093
+TIM3+R2           -4728.971    9673.941 - 9.4e-098    9683.110 - 1.33e-097   10310.326 - 3.56e-094
+TIM3e+R2          -4729.070    9674.140 - 8.51e-098    9683.308 - 1.2e-097   10310.525 - 3.22e-094
+TIM3e+R2          -4729.070    9674.140 - 8.51e-098    9683.308 - 1.2e-097   10310.525 - 3.22e-094
+TPM3u+G4          -4744.191    9700.383 - 1.7e-103    9709.209 - 2.85e-103   10324.983 - 2.34e-097
+TPM3+G4           -4744.191    9700.383 - 1.7e-103    9709.209 - 2.85e-103   10324.983 - 2.34e-097
+TPM3+G4           -4744.191    9700.383 - 1.7e-103    9709.209 - 2.85e-103   10324.983 - 2.34e-097
+TPM3u+I           -4745.856    9703.713 - 3.22e-104    9712.539 - 5.39e-104   10328.313 - 4.42e-098
+TPM3+I            -4745.857    9703.713 - 3.22e-104    9712.540 - 5.39e-104   10328.313 - 4.42e-098
+TPM3+I            -4745.857    9703.713 - 3.22e-104    9712.540 - 5.39e-104   10328.313 - 4.42e-098
+TPM3u+I+G4        -4743.283    9700.566 - 1.56e-103    9709.562 - 2.39e-103   10331.058 - 1.12e-098
+TPM3+I+G4         -4743.287    9700.575 - 1.55e-103    9709.571 - 2.38e-103   10331.067 - 1.12e-098
+TPM3+I+G4         -4743.287    9700.575 - 1.55e-103    9709.571 - 2.38e-103   10331.067 - 1.12e-098
+TPM3u+R2          -4744.978    9703.956 - 2.85e-104    9712.953 - 4.38e-104   10334.449 - 2.06e-099
+TPM3+R2           -4745.071    9704.142 - 2.6e-104    9713.139 -   4e-104   10334.635 - 1.87e-099
+TPM3+R2           -4745.071    9704.142 - 2.6e-104    9713.139 -   4e-104   10334.635 - 1.87e-099
+TNe+G4            -4749.127    9710.254 - 1.22e-105    9719.080 - 2.05e-105   10334.854 - 1.68e-099
+TNe+G4            -4749.127    9710.254 - 1.22e-105    9719.080 - 2.05e-105   10334.854 - 1.68e-099
+TN+G4             -4749.128    9710.257 - 1.22e-105    9719.083 - 2.05e-105   10334.857 - 1.68e-099
+TNe+I             -4750.602    9713.203 - 2.8e-106    9722.030 - 4.69e-106   10337.803 - 3.85e-100
+TNe+I             -4750.602    9713.203 - 2.8e-106    9722.030 - 4.69e-106   10337.803 - 3.85e-100
+TN+I              -4750.602    9713.205 - 2.8e-106    9722.031 - 4.68e-106   10337.805 - 3.84e-100
+TN+I+G4           -4748.303    9710.606 - 1.03e-105    9719.603 - 1.58e-105   10341.099 - 7.4e-101
+TNe+I+G4          -4748.312    9710.623 - 1.02e-105    9719.620 - 1.56e-105   10341.116 - 7.34e-101
+TNe+I+G4          -4748.312    9710.623 - 1.02e-105    9719.620 - 1.56e-105   10341.116 - 7.34e-101
+TN+R2             -4749.577    9713.155 - 2.87e-106    9722.151 - 4.41e-106   10343.647 - 2.07e-101
+TNe+R2            -4749.650    9713.300 - 2.67e-106    9722.297 - 4.1e-106   10343.792 - 1.92e-101
+TNe+R2            -4749.650    9713.300 - 2.67e-106    9722.297 - 4.1e-106   10343.792 - 1.92e-101
+HKY+G4            -4764.270    9738.540 - 8.83e-112    9747.198 - 1.61e-111   10357.247 - 2.31e-104
+K2P+G4            -4764.272    9738.544 - 8.81e-112    9747.202 - 1.6e-111   10357.252 - 2.3e-104
+K2P+G4            -4764.272    9738.544 - 8.81e-112    9747.202 - 1.6e-111   10357.252 - 2.3e-104
+HKY+I             -4765.329    9740.658 - 3.06e-112    9749.316 - 5.57e-112   10359.365 -   8e-105
+K2P+I             -4765.332    9740.664 - 3.05e-112    9749.322 - 5.55e-112   10359.371 - 7.97e-105
+K2P+I             -4765.332    9740.664 - 3.05e-112    9749.322 - 5.55e-112   10359.371 - 7.97e-105
+HKY+I+G4          -4764.290    9740.580 - 3.18e-112    9749.407 - 5.32e-112   10365.180 - 4.37e-106
+K2P+I+G4          -4764.294    9740.589 - 3.17e-112    9749.415 - 5.3e-112   10365.189 - 4.35e-106
+K2P+I+G4          -4764.294    9740.589 - 3.17e-112    9749.415 - 5.3e-112   10365.189 - 4.35e-106
+HKY+R2            -4764.917    9741.833 - 1.7e-112    9750.660 - 2.84e-112   10366.433 - 2.33e-106
+K2P+R2            -4764.954    9741.909 - 1.64e-112    9750.735 - 2.74e-112   10366.509 - 2.25e-106
+K2P+R2            -4764.954    9741.909 - 1.64e-112    9750.735 - 2.74e-112   10366.509 - 2.25e-106
+F81+G4            -4847.195    9902.390 - 2.32e-147    9910.881 - 4.6e-147   10515.205 - 1.16e-138
+JC+G4             -4847.197    9902.395 - 2.32e-147    9910.886 - 4.58e-147   10515.210 - 1.15e-138
+JC+G4             -4847.197    9902.395 - 2.32e-147    9910.886 - 4.58e-147   10515.210 - 1.15e-138
+F81+I             -4848.021    9904.042 - 1.02e-147    9912.534 - 2.01e-147   10516.857 - 5.06e-139
+JC+I              -4848.024    9904.048 - 1.01e-147    9912.539 - 2.01e-147   10516.863 - 5.04e-139
+JC+I              -4848.024    9904.048 - 1.01e-147    9912.539 - 2.01e-147   10516.863 - 5.04e-139
+F81+I+G4          -4847.650    9905.299 - 5.43e-148    9913.957 - 9.87e-148   10524.006 - 1.42e-140
+JC+I+G4           -4847.652    9905.304 - 5.41e-148    9913.962 - 9.85e-148   10524.012 - 1.41e-140
+JC+I+G4           -4847.652    9905.304 - 5.41e-148    9913.962 - 9.85e-148   10524.012 - 1.41e-140
+F81+R2            -4847.844    9905.689 - 4.47e-148    9914.347 - 8.13e-148   10524.396 - 1.17e-140
+JC+R2             -4847.867    9905.734 - 4.37e-148    9914.392 - 7.94e-148   10524.442 - 1.14e-140
+JC+R2             -4847.867    9905.734 - 4.37e-148    9914.392 - 7.94e-148   10524.442 - 1.14e-140
+JC+I+R2           -4847.903    9907.806 - 1.55e-148    9916.632 - 2.59e-148   10532.406 - 2.13e-142
+JC+R3             -4847.817    9909.634 - 6.21e-149    9918.631 - 9.54e-149   10540.127 - 4.48e-144
+JC+I+R3           -4846.715    9909.430 - 6.88e-149    9918.598 - 9.7e-149   10545.814 - 2.61e-145
+JC                -5003.736   10213.472 - 6.54e-215   10221.798 - 1.4e-214   10820.394 - 6.19e-205
+
+AIC, w-AIC   : Akaike information criterion scores and weights.
+AICc, w-AICc : Corrected AIC scores and weights.
+BIC, w-BIC   : Bayesian information criterion scores and weights.
+
+Plus signs denote the 95% confidence sets.
+Minus signs denote significant exclusion.
+
+SUBSTITUTION PROCESS
+--------------------
+
+Model of substitution: TIM2+F+I
+
+Rate parameter R:
+
+  A-C: 14.6414
+  A-G: 31.2702
+  A-T: 14.6414
+  C-G: 1.0000
+  C-T: 81.9677
+  G-T: 1.0000
+
+State frequencies: (empirical counts from alignment)
+
+  pi(A) = 0.3095
+  pi(C) = 0.1461
+  pi(G) = 0.149
+  pi(T) = 0.3953
+
+Rate matrix Q:
+
+  A   -0.7225    0.1228    0.2675    0.3322
+  C    0.2601    -2.128  0.008554      1.86
+  G    0.5555  0.008386   -0.5866   0.02269
+  T    0.2601    0.6874  0.008554   -0.9561
+
+Model of rate heterogeneity: Invar
+Proportion of invariable sites: 0.6888
+
+ Category  Relative_rate  Proportion
+  0         0              0.6888
+  1         3.214          0.3112
+
+MAXIMUM LIKELIHOOD TREE
+-----------------------
+
+Log-likelihood of the tree: -4505.5531 (s.e. 147.9669)
+Unconstrained log-likelihood (without tree): -7677.9392
+Number of free parameters (#branches + #model parameters): 110
+Akaike information criterion (AIC) score: 9231.1063
+Corrected Akaike information criterion (AICc) score: 9240.6231
+Bayesian information criterion (BIC) score: 9879.2760
+
+Total tree length (sum of branch lengths): 0.9078
+Sum of internal branch lengths: 0.2408 (26.5298% of tree length)
+
+WARNING: 18 near-zero internal branches (<0.0004) should be treated with caution
+         Such branches are denoted by '**' in the figure below
+
+NOTE: Tree is UNROOTED although outgroup taxon 'Galerucella_aquatica_EF133448' is drawn at root
+Numbers in parentheses are  ultrafast bootstrap support (%)
+
++--Galerucella_aquatica_EF133448
+|
+|                                   +**Galerucella_aquatica_EF133449
+|                                +**| (80)
+|                                |  +--Galerucella_sagittariae_AY247720
+|                             +**| (78)
+|                             |  |  +--Galerucella_sagittariae_PH2-15
+|                             |  +**| (43)
+|                             |     +--Galerucella_sagittariae_PH2-16
+|                          +**| (77)
+|                          |  +**Galerucella_sagittariae_PH2-14
+|                       +**| (82)
+|                       |  +**Galerucella_sagittariae_PH2-19
+|                    +**| (21)
+|                    |  +**Galerucella_sagittariae_PH2-11
+|                 +**| (31)
+|                 |  +**Galerucella_sagittariae_PH2-9
+|              +--| (51)
+|              |  |  +--Galerucella_sagittariae_PH2-10
+|              |  +--| (62)
+|              |     |  +--Galerucella_sagittariae_PH2-13
+|              |     +**| (74)
+|              |        +--Galerucella_sagittariae_PH2-20
+|           +**| (36)
+|           |  +**Galerucella_sagittariae_EF133445
+|        +--| (68)
+|        |  |  +**Galerucella_sagittariae_PH2-12
+|        |  +**| (95)
+|        |     +**Galerucella_sagittariae_PH2-17
+|     +--| (55)
+|     |  +**Galerucella_sagittariae_PH2-18
+|  +--| (83)
+|  |  +--Galerucella_nymphaeae_AY247722
++--| (99)
+|  |     +--Galerucella_birmanica_EF5122831
+|  |  +--| (100)
+|  |  |  +--Galerucella_birmanica_EF512833
+|  +--| (97)
+|     |                               +**Galerucella_calmariensis_EF133438
+|     |                            +--| (25)
+|     |                            |  |     +--Galerucella_calmariensis_PH2-3
+|     |                            |  |  +--| (53)
+|     |                            |  |  |  |  +**Galerucella_pusilla_PH2-6
+|     |                            |  |  |  +--| (100)
+|     |                            |  |  |     +**Galerucella_pusilla_PH2-8
+|     |                            |  +**| (45)
+|     |                            |     |  +--Galerucella_calmariensis_PH2-4
+|     |                            |     +**| (40)
+|     |                            |        +**Galerucella_calmariensis_PH2-5
+|     |                         +**| (21)
+|     |                         |  +**Galerucella_pusilla__EF133455
+|     |                      +--| (33)
+|     |                      |  +**Galerucella_calmariensis_PH2-2
+|     |                   +**| (63)
+|     |                   |  +--Galerucella_calmariensis_PH2-1
+|     |                +--| (91)
+|     |                |  |     +--Galerucella_calmariensis_EF133440
+|     |                |  |  +**| (50)
+|     |                |  |  |  +**Galerucella_pusilla_PH2-7
+|     |                |  +--| (88)
+|     |                |     +--Galerucella_pusilla_DQ155764
+|     |             +--| (100)
+|     |             |  |     +--Galerucella_tenella_EF133456
+|     |             |  |  +--| (95)
+|     |             |  |  |  +--Galerucella_tenella_EF133457
+|     |             |  +--| (93)
+|     |             |     |        +**Galerucella_tenella_PH1-35
+|     |             |     |     +**| (66)
+|     |             |     |     |  +--Galerucella_tenella_PH1-36
+|     |             |     |  +--| (59)
+|     |             |     |  |  |     +**Galerucella_tenella_PH1-37
+|     |             |     |  |  |  +--| (45)
+|     |             |     |  |  |  |  +**Galerucella_tenella_PH1-40
+|     |             |     |  |  +**| (88)
+|     |             |     |  |     +**Galerucella_tenella_PH1-39
+|     |             |     +--| (69)
+|     |             |        +**Galerucella_tenella_PH1-38
+|     |          +--| (45)
+|     |          |  |                   +**Galerucella_lineola_AY247726
+|     |          |  |                +--| (100)
+|     |          |  |                |  +**Galerucella_lineola_AY247727
+|     |          |  |             +--| (31)
+|     |          |  |             |  |  +**Galerucella_lineola_PH1-30
+|     |          |  |             |  +**| (55)
+|     |          |  |             |     +**Galerucella_lineola_PH1-32
+|     |          |  |          +--| (48)
+|     |          |  |          |  |  +--Galerucella_lineola_PH1-31
+|     |          |  |          |  +--| (77)
+|     |          |  |          |     +--Galerucella_lineola_PH1-34
+|     |          |  |       +--| (74)
+|     |          |  |       |  +**Galerucella_lineola_PH1-33
+|     |          |  +-------| (67)
+|     |          |          +-----------------------------------------Trirhabda_bacharidis
+|     |     +----| (93)
+|     |     |    +-----------------------------------Ophraella_communa
+|     |  +--| (95)
+|     |  |  |     +--Galerucella_grisescens_EF521825
+|     |  |  |  +--| (48)
+|     |  |  |  |  +--Galerucella_placida_EF133454
+|     |  |  +--| (94)
+|     |  |     +--Galerucella_grisescens_EF521826
+|     +--| (59)
+|        +--Galerucella_nipponensis_EF133444
+|
++--Galerucella_nymphaeae_EF133453
+
+Tree in newick format:
+
+(Galerucella_aquatica_EF133448:0.0031669681,((((((((((((Galerucella_aquatica_EF133449:0.0000011219,Galerucella_sagittariae_AY247720:0.0015045586)80:0.0000011217,(Galerucella_sagittariae_PH2-15:0.0007114631,Galerucella_sagittariae_PH2-16:0.0007125128)43:0.0000011217)78:0.0000011217,Galerucella_sagittariae_PH2-14:0.0000011219)77:0.0000011217,Galerucella_sagittariae_PH2-19:0.0000011219)82:0.0000024104,Galerucella_sagittariae_PH2-11:0.0000011219)21:0.0000025354,Galerucella_sagittariae_PH2-9:0.0000022757)31:0.0000023734,(Galerucella_sagittariae_PH2-10:0.0007004005,(Galerucella_sagittariae_PH2-13:0.0014185229,Galerucella_sagittariae_PH2-20:0.0007080066)74:0.0000022022)62:0.0007010516)51:0.0006976759,Galerucella_sagittariae_EF133445:0.0000011219)36:0.0000012743,(Galerucella_sagittariae_PH2-12:0.0000011219,Galerucella_sagittariae_PH2-17:0.0000011219)95:0.0000021853)68:0.0021312936,Galerucella_sagittariae_PH2-18:0.0000024167)55:0.0012940556,Galerucella_nymphaeae_AY247722:0.0076455356)83:0.0050829710,((Galerucella_birmanica_EF5122831:0.0012386870,Galerucella_birmanica_EF512833:0.0013515366)100:0.0086880195,((((((((((Galerucella_calmariensis_EF133438:0.0000011219,((Galerucella_calmariensis_PH2-3:0.0014305583,(Galerucella_pusilla_PH2-6:0.0000011219,Galerucella_pusilla_PH2-8:0.0000011219)100:0.0014611903)53:0.0007126387,(Galerucella_calmariensis_PH2-4:0.0007106546,Galerucella_calmariensis_PH2-5:0.0000011219)40:0.0000023558)45:0.0000023987)25:0.0007056459,Galerucella_pusilla__EF133455:0.0000011219)21:0.0000021871,Galerucella_calmariensis_PH2-2:0.0000021219)33:0.0007100368,Galerucella_calmariensis_PH2-1:0.0021709126)63:0.0000023139,((Galerucella_calmariensis_EF133440:0.0016251352,Galerucella_pusilla_PH2-7:0.0000011219)50:0.0000024362,Galerucella_pusilla_DQ155764:0.0012884508)88:0.0028519573)91:0.0072859191,((Galerucella_tenella_EF133456:0.0015400113,Galerucella_tenella_EF133457:0.0033475454)95:0.0049554262,(((Galerucella_tenella_PH1-35:0.0000011219,Galerucella_tenella_PH1-36:0.0007022503)66:0.0000011217,((Galerucella_tenella_PH1-37:0.0000011219,Galerucella_tenella_PH1-40:0.0000029740)45:0.0014198055,Galerucella_tenella_PH1-39:0.0000011219)88:0.0000023685)59:0.0007028595,Galerucella_tenella_PH1-38:0.0000021565)69:0.0025247286)93:0.0042043034)100:0.0264668956,(((((Galerucella_lineola_AY247726:0.0000011219,Galerucella_lineola_AY247727:0.0000011219)100:0.0144774855,(Galerucella_lineola_PH1-30:0.0000024777,Galerucella_lineola_PH1-32:0.0000023642)55:0.0000010631)31:0.0006949289,(Galerucella_lineola_PH1-31:0.0029217958,Galerucella_lineola_PH1-34:0.0006802597)77:0.0029235641)48:0.0007200930,Galerucella_lineola_PH1-33:0.0000026510)74:0.0109782453,Trirhabda_bacharidis:0.3026255478)67:0.0574294683)45:0.0089636639,Ophraella_communa:0.2598273564)93:0.0391147031,((Galerucella_grisescens_EF521825:0.0046228999,Galerucella_placida_EF133454:0.0266308819)48:0.0027408384,Galerucella_grisescens_EF521826:0.0024504953)94:0.0257899496)95:0.0069402516,Galerucella_nipponensis_EF133444:0.0162419630)59:0.0028805642)97:0.0085788020)99:0.0033386631,Galerucella_nymphaeae_EF133453:0.0015912046);
+
+CONSENSUS TREE
+--------------
+
+Consensus tree is constructed from 1000 bootstrap trees
+Log-likelihood of consensus tree: -4505.597498
+Robinson-Foulds distance between ML tree and consensus tree: 6
+
+Branches with support >0.000000% are kept (extended consensus)
+Branch lengths are optimized by maximum likelihood on original alignment
+Numbers in parentheses are bootstrap supports (%)
+
++--Galerucella_aquatica_EF133448
+|
+|                                   +--Galerucella_aquatica_EF133449
+|                                +--| (80)
+|                                |  +--Galerucella_sagittariae_AY247720
+|                             +--| (78)
+|                             |  |  +--Galerucella_sagittariae_PH2-15
+|                             |  +--| (43)
+|                             |     +--Galerucella_sagittariae_PH2-16
+|                          +--| (77)
+|                          |  +--Galerucella_sagittariae_PH2-14
+|                       +--| (82)
+|                       |  +--Galerucella_sagittariae_PH2-19
+|                    +--| (21)
+|                    |  +--Galerucella_sagittariae_PH2-11
+|                 +--| (31)
+|                 |  +--Galerucella_sagittariae_PH2-9
+|              +--| (51)
+|              |  |  +--Galerucella_sagittariae_PH2-10
+|              |  +--| (62)
+|              |     |  +--Galerucella_sagittariae_PH2-13
+|              |     +--| (74)
+|              |        +--Galerucella_sagittariae_PH2-20
+|           +--| (38)
+|           |  |  +--Galerucella_sagittariae_PH2-12
+|           |  +--| (95)
+|           |     +--Galerucella_sagittariae_PH2-17
+|        +--| (68)
+|        |  +--Galerucella_sagittariae_EF133445
+|     +--| (55)
+|     |  +--Galerucella_sagittariae_PH2-18
+|  +--| (83)
+|  |  +--Galerucella_nymphaeae_AY247722
++--| (99)
+|  |     +--Galerucella_birmanica_EF5122831
+|  |  +--| (100)
+|  |  |  +--Galerucella_birmanica_EF512833
+|  +--| (97)
+|     |                               +--Galerucella_calmariensis_EF133438
+|     |                            +--| (25)
+|     |                            |  |     +--Galerucella_calmariensis_PH2-3
+|     |                            |  |  +--| (53)
+|     |                            |  |  |  |  +--Galerucella_pusilla_PH2-6
+|     |                            |  |  |  +--| (100)
+|     |                            |  |  |     +--Galerucella_pusilla_PH2-8
+|     |                            |  +--| (45)
+|     |                            |     |  +--Galerucella_calmariensis_PH2-4
+|     |                            |     +--| (40)
+|     |                            |        +--Galerucella_calmariensis_PH2-5
+|     |                         +--| (21)
+|     |                         |  +--Galerucella_pusilla__EF133455
+|     |                      +--| (33)
+|     |                      |  +--Galerucella_calmariensis_PH2-2
+|     |                   +--| (63)
+|     |                   |  +--Galerucella_calmariensis_PH2-1
+|     |                +--| (91)
+|     |                |  |     +--Galerucella_calmariensis_EF133440
+|     |                |  |  +--| (50)
+|     |                |  |  |  +--Galerucella_pusilla_PH2-7
+|     |                |  +--| (88)
+|     |                |     +--Galerucella_pusilla_DQ155764
+|     |             +--| (100)
+|     |             |  |     +--Galerucella_tenella_EF133456
+|     |             |  |  +--| (95)
+|     |             |  |  |  +--Galerucella_tenella_EF133457
+|     |             |  +--| (93)
+|     |             |     |        +--Galerucella_tenella_PH1-35
+|     |             |     |     +--| (66)
+|     |             |     |     |  +--Galerucella_tenella_PH1-36
+|     |             |     |  +--| (59)
+|     |             |     |  |  |  +--Galerucella_tenella_PH1-37
+|     |             |     |  |  +--| (88)
+|     |             |     |  |     |  +--Galerucella_tenella_PH1-39
+|     |             |     |  |     +--| (48)
+|     |             |     |  |        +--Galerucella_tenella_PH1-40
+|     |             |     +--| (69)
+|     |             |        +--Galerucella_tenella_PH1-38
+|     |          +--| (45)
+|     |          |  |               +--Galerucella_lineola_AY247726
+|     |          |  |            +--| (100)
+|     |          |  |            |  +--Galerucella_lineola_AY247727
+|     |          |  |         +--| (48)
+|     |          |  |         |  |     +--Galerucella_lineola_PH1-30
+|     |          |  |         |  |  +--| (55)
+|     |          |  |         |  |  |  +--Galerucella_lineola_PH1-32
+|     |          |  |         |  +--| (37)
+|     |          |  |         |     |  +--Galerucella_lineola_PH1-31
+|     |          |  |         |     +--| (77)
+|     |          |  |         |        +--Galerucella_lineola_PH1-34
+|     |          |  |      +--| (74)
+|     |          |  |      |  +--Galerucella_lineola_PH1-33
+|     |          |  +------| (67)
+|     |          |         +-----------------------------------------Trirhabda_bacharidis
+|     |     +----| (93)
+|     |     |    +-----------------------------------Ophraella_communa
+|     |  +--| (95)
+|     |  |  |     +--Galerucella_grisescens_EF521825
+|     |  |  |  +--| (48)
+|     |  |  |  |  +--Galerucella_placida_EF133454
+|     |  |  +--| (94)
+|     |  |     +--Galerucella_grisescens_EF521826
+|     +--| (59)
+|        +--Galerucella_nipponensis_EF133444
+|
++--Galerucella_nymphaeae_EF133453
+
+
+Consensus tree in newick format: 
+
+(Galerucella_aquatica_EF133448:0.0031657083,((((((((((((Galerucella_aquatica_EF133449:0.0000024557,Galerucella_sagittariae_AY247720:0.0015035796)80:0.0000024557,(Galerucella_sagittariae_PH2-15:0.0007102195,Galerucella_sagittariae_PH2-16:0.0007112749)43:0.0000024557)78:0.0000024557,Galerucella_sagittariae_PH2-14:0.0000024557)77:0.0000024557,Galerucella_sagittariae_PH2-19:0.0000024557)82:0.0000024557,Galerucella_sagittariae_PH2-11:0.0000024557)21:0.0000024557,Galerucella_sagittariae_PH2-9:0.0000024557)31:0.0000024557,(Galerucella_sagittariae_PH2-10:0.0006991693,(Galerucella_sagittariae_PH2-13:0.0014172792,Galerucella_sagittariae_PH2-20:0.0007067666)74:0.0000024557)62:0.0006998172)51:0.0006987383,(Galerucella_sagittariae_PH2-12:0.0000024557,Galerucella_sagittariae_PH2-17:0.0000024557)95:0.0000024557)38:0.0011239364,Galerucella_sagittariae_EF133445:0.0000024557)68:0.0010036388,Galerucella_sagittariae_PH2-18:0.0000020943)55:0.0012923270,Galerucella_nymphaeae_AY247722:0.0076430147)83:0.0050814777,((Galerucella_birmanica_EF5122831:0.0012369325,Galerucella_birmanica_EF512833:0.0013503682)100:0.0086862680,((((((((((Galerucella_calmariensis_EF133438:0.0000024557,((Galerucella_calmariensis_PH2-3:0.0014286907,(Galerucella_pusilla_PH2-6:0.0000024557,Galerucella_pusilla_PH2-8:0.0000024557)100:0.0014592518)53:0.0007113732,(Galerucella_calmariensis_PH2-4:0.0007093748,Galerucella_calmariensis_PH2-5:0.0000024557)40:0.0000024557)45:0.0000809111)25:0.0002542487,Galerucella_pusilla__EF133455:0.0000024557)21:0.0003736516,Galerucella_calmariensis_PH2-2:0.0000024557)33:0.0007091804,Galerucella_calmariensis_PH2-1:0.0021699394)63:0.0000024580,((Galerucella_calmariensis_EF133440:0.0016239987,Galerucella_pusilla_PH2-7:0.0000020234)50:0.0000020943,Galerucella_pusilla_DQ155764:0.0012878354)88:0.0028498463)91:0.0072755972,((Galerucella_tenella_EF133456:0.0015386548,Galerucella_tenella_EF133457:0.0033458176)95:0.0049538981,(((Galerucella_tenella_PH1-35:0.0000024557,Galerucella_tenella_PH1-36:0.0007012740)66:0.0000024557,(Galerucella_tenella_PH1-37:0.0000024557,(Galerucella_tenella_PH1-39:0.0000024557,Galerucella_tenella_PH1-40:0.0007490308)48:0.0005306692)88:0.0001413317)59:0.0007018645,Galerucella_tenella_PH1-38:0.0000024557)69:0.0025214178)93:0.0042135653)100:0.0264908968,((((Galerucella_lineola_AY247726:0.0000024557,Galerucella_lineola_AY247727:0.0000024557)100:0.0144735063,((Galerucella_lineola_PH1-30:0.0000024557,Galerucella_lineola_PH1-32:0.0003438957)55:0.0003509665,(Galerucella_lineola_PH1-31:0.0029203253,Galerucella_lineola_PH1-34:0.0006791327)77:0.0029215240)37:0.0006580930)48:0.0000616297,Galerucella_lineola_PH1-33:0.0000020943)74:0.0123020248,Trirhabda_bacharidis:0.3013309177)67:0.0559016272)45:0.0089569227,Ophraella_communa:0.2596981049)93:0.0391055530,((Galerucella_grisescens_EF521825:0.0046225047,Galerucella_placida_EF133454:0.0266262632)48:0.0027401221,Galerucella_grisescens_EF521826:0.0024487834)94:0.0257809715)95:0.0069443256,Galerucella_nipponensis_EF133444:0.0162397599)59:0.0028786971)97:0.0085772476)99:0.0033381392,Galerucella_nymphaeae_EF133453:0.0015899764);
+
+ALISIM COMMAND
+--------------
+To simulate an alignment of the same length as the original alignment, using the tree and model parameters estimated from this analysis, you can use the following command:
+
+--alisim simulated_MSA -t ml2\trees\M16791.treefile -m "TIM2{14.6414,31.2702,81.9677}+F{0.30951,0.146119,0.149045,0.395327}+I{0.688817}" --length 2677
+
+To mimic the alignment used to produce this analysis, i.e. simulate an alignment of the same length as the original alignment, using the tree and model parameters estimated from this analysis *and* copying the same gap positions as the original alignment, you can use the following command:
+
+iqtree -s ml2\datasets\M16791.nex --alisim mimicked_MSA
+
+To simulate any number of alignments in either of the two commandlines above, use the --num-alignments options, for example mimic 100 alignments you would use the command line:
+
+iqtree -s ml2\datasets\M16791.nex --alisim mimicked_MSA --num-alignments 100
+
+For more information on using AliSim, please visit: www.iqtree.org/doc/AliSim
+
+TIME STAMP
+----------
+
+Date and time: Mon May 04 13:01:56 2026
+Total CPU time used: 377.40625 seconds (0h:6m:17s)
+Total wall-clock time used: 203.6530991 seconds (0h:3m:23s)
+

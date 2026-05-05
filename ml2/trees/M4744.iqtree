@@ -1,0 +1,442 @@
+IQ-TREE 3.1.1 built Apr  2 2026
+
+Input file name: ml2\datasets\M4744.nex
+Type of analysis: ModelFinder + tree reconstruction + ultrafast bootstrap (1000 replicates)
+Random seed number: 711840
+
+REFERENCES
+----------
+
+To cite IQ-TREE 3 please use:
+
+Thomas K.F. Wong, Nhan Ly-Trong, Huaiyan Ren, Hector Banos, Andrew J. Roger,
+Edward Susko, Chris Bielow, Nicola De Maio, Nick Goldman, Matthew W. Hahn,
+Gavin Huttley, Robert Lanfear, Bui Quang Minh (2025)
+IQ-TREE 3: Phylogenomic Inference Software using Complex Evolutionary Models.
+Submitted.
+
+Since you used ModelFinder please also cite: 
+
+Subha Kalyaanamoorthy, Bui Quang Minh, Thomas KF Wong, Arndt von Haeseler,
+and Lars S Jermiin (2017) ModelFinder: Fast model selection for
+accurate phylogenetic estimates. Nature Methods, 14:587–589.
+https://doi.org/10.1038/nmeth.4285
+
+Since you used ultrafast bootstrap (UFBoot) please also cite: 
+
+Diep Thi Hoang, Olga Chernomor, Arndt von Haeseler, Bui Quang Minh,
+and Le Sy Vinh (2018) UFBoot2: Improving the ultrafast bootstrap
+approximation. Mol. Biol. Evol., 35:518–522.
+https://doi.org/10.1093/molbev/msx281
+
+SEQUENCE ALIGNMENT
+------------------
+
+NOTE: Alignment sequence type is auto-detected. If in doubt, specify it via -st option.
+Input data: 36 sequences with 628 nucleotide sites
+Number of constant sites: 400 (= 63.6943% of all sites)
+Number of invariant (constant or ambiguous constant) sites: 400 (= 63.6943% of all sites)
+Number of parsimony informative sites: 214
+Number of distinct site patterns: 207
+
+ModelFinder
+-----------
+
+Best-fit model according to BIC: HKY+F+I+G4
+
+List of models sorted by BIC scores: 
+
+Model                  LogL         AIC      w-AIC        AICc     w-AICc         BIC      w-BIC
+HKY+F+I+G4        -3439.594    7029.189 +    0.153    7049.841 +    0.247    7362.379 +    0.785
+TPM2u+F+I+G4      -3438.735    7029.470 +    0.133    7050.711 +     0.16    7367.103 +    0.074
+K3Pu+F+I+G4       -3438.850    7029.700 +    0.118    7050.942 +    0.142    7367.333 +   0.0659
+TN+F+I+G4         -3439.544    7031.089 +   0.0592    7052.330 +   0.0711    7368.722 -   0.0329
+TPM3u+F+I+G4      -3439.701    7031.402 +   0.0506    7052.643 +   0.0608    7369.035 -   0.0282
+HKY+F+G4          -3448.237    7044.473 - 7.34e-005    7064.545 - 0.000158    7373.221 -  0.00347
+TIM2+F+I+G4       -3438.661    7031.322 +   0.0527    7053.162 -   0.0469    7373.397 -  0.00318
+TIM+F+I+G4        -3438.791    7031.582 -   0.0462    7053.422 -   0.0412    7373.658 -  0.00279
+TIM3+F+I+G4       -3439.493    7032.985 -   0.0229    7054.825 -   0.0204    7375.061 -  0.00138
+TVM+F+I+G4        -3436.516    7029.033 +    0.165    7051.481 +    0.109    7375.551 -  0.00108
+HKY+F+R3          -3440.510    7035.021 -  0.00829    7056.861 -  0.00738    7377.096 -   0.0005
+K3Pu+F+G4         -3447.320    7044.639 - 6.76e-005    7065.291 - 0.000109    7377.830 - 0.000347
+TPM2u+F+G4        -3447.439    7044.879 - 5.99e-005    7065.531 - 9.66e-005    7378.069 - 0.000307
+TPM2u+F+R3        -3438.479    7032.957 -   0.0233    7055.405 -   0.0153    7379.475 - 0.000152
+TN+F+G4           -3448.222    7046.444 - 2.74e-005    7067.096 - 4.42e-005    7379.635 - 0.000141
+TPM3u+F+G4        -3448.234    7046.468 - 2.71e-005    7067.120 - 4.37e-005    7379.659 - 0.000139
+K3Pu+F+R3         -3438.690    7033.381 -   0.0188    7055.829 -   0.0124    7379.899 - 0.000123
+TPM3u+F+R3        -3439.552    7035.105 -  0.00795    7057.553 -  0.00522    7381.623 - 5.2e-005
+GTR+F+I+G4        -3436.436    7030.871 +    0.066    7053.937 -   0.0318    7381.832 - 4.69e-005
+TN+F+R3           -3439.741    7035.481 -  0.00658    7057.929 -  0.00432    7381.999 - 4.31e-005
+TIM+F+G4          -3447.303    7046.605 - 2.53e-005    7067.847 - 3.04e-005    7384.238 - 1.41e-005
+TIM2+F+G4         -3447.429    7046.857 - 2.23e-005    7068.099 - 2.68e-005    7384.490 - 1.24e-005
+TIM2+F+R3         -3438.302    7034.604 -   0.0102    7057.669 -  0.00492    7385.564 - 7.25e-006
+TIM+F+R3          -3438.522    7035.043 -  0.00819    7058.109 -  0.00395    7386.004 - 5.82e-006
+TIM3+F+G4         -3448.224    7048.447 - 1.01e-005    7069.689 - 1.21e-005    7386.080 - 5.6e-006
+TVM+F+G4          -3445.417    7044.834 - 6.13e-005    7066.674 - 5.46e-005    7386.910 - 3.7e-006
+TIM3+F+R3         -3439.382    7036.763 -  0.00347    7059.829 -  0.00167    7387.724 - 2.46e-006
+TVM+F+R3          -3436.165    7032.330 -   0.0318    7056.023 -   0.0112    7387.733 - 2.45e-006
+GTR+F+G4          -3445.414    7046.828 - 2.26e-005    7069.276 - 1.49e-005    7393.346 - 1.48e-007
+GTR+F+R3          -3436.022    7034.044 -   0.0135    7058.374 -  0.00346    7393.890 - 1.13e-007
+TPM2u+I+G4        -3490.030    7126.060 - 1.41e-022    7145.561 - 4.04e-022    7450.365 - 6.15e-020
+TPM2+I+G4         -3490.077    7126.154 - 1.35e-022    7145.656 - 3.86e-022    7450.459 - 5.87e-020
+TPM2+I+G4         -3490.077    7126.154 - 1.35e-022    7145.656 - 3.86e-022    7450.459 - 5.87e-020
+TIM2+I+G4         -3487.522    7123.043 - 6.38e-022    7143.115 - 1.37e-021    7451.791 - 3.02e-020
+TIM2e+I+G4        -3487.555    7123.111 - 6.16e-022    7143.183 - 1.33e-021    7451.859 - 2.92e-020
+TIM2e+I+G4        -3487.555    7123.111 - 6.16e-022    7143.183 - 1.33e-021    7451.859 - 2.92e-020
+HKY+I+G4          -3494.491    7132.982 - 4.43e-024    7151.922 - 1.68e-023    7452.845 - 1.78e-020
+K2P+I+G4          -3494.530    7133.059 - 4.26e-024    7152.000 - 1.62e-023    7452.922 - 1.71e-020
+K2P+I+G4          -3494.530    7133.059 - 4.26e-024    7152.000 - 1.62e-023    7452.922 - 1.71e-020
+TN+I+G4           -3492.315    7130.630 - 1.44e-023    7150.132 - 4.12e-023    7454.935 - 6.26e-021
+TNe+I+G4          -3492.405    7130.811 - 1.31e-023    7150.312 - 3.76e-023    7455.116 - 5.72e-021
+TNe+I+G4          -3492.405    7130.811 - 1.31e-023    7150.312 - 3.76e-023    7455.116 - 5.72e-021
+TVM+I+G4          -3486.164    7122.327 - 9.12e-022    7142.979 - 1.47e-021    7455.518 - 4.68e-021
+TVMe+I+G4         -3486.216    7122.432 - 8.65e-022    7143.084 - 1.4e-021    7455.622 - 4.44e-021
+TVMe+I+G4         -3486.216    7122.432 - 8.65e-022    7143.084 - 1.4e-021    7455.622 - 4.44e-021
+TPM3u+I+G4        -3492.762    7131.524 - 9.18e-024    7151.026 - 2.63e-023    7455.830 -   4e-021
+TPM3+I+G4         -3492.799    7131.597 - 8.85e-024    7151.099 - 2.54e-023    7455.902 - 3.86e-021
+TPM3+I+G4         -3492.799    7131.597 - 8.85e-024    7151.099 - 2.54e-023    7455.902 - 3.86e-021
+GTR+I+G4          -3483.952    7119.904 - 3.06e-021    7141.145 - 3.68e-021    7457.537 - 1.7e-021
+TIM3+I+G4         -3490.409    7128.818 - 3.55e-023    7148.891 - 7.65e-023    7457.566 - 1.68e-021
+TIM3e+I+G4        -3490.427    7128.853 - 3.49e-023    7148.926 - 7.52e-023    7457.601 - 1.65e-021
+TIM3e+I+G4        -3490.427    7128.853 - 3.49e-023    7148.926 - 7.52e-023    7457.601 - 1.65e-021
+SYM+I+G4          -3484.001    7120.001 - 2.92e-021    7141.242 - 3.5e-021    7457.634 - 1.62e-021
+SYM+I+G4          -3484.001    7120.001 - 2.92e-021    7141.242 - 3.5e-021    7457.634 - 1.62e-021
+K3Pu+I+G4         -3494.383    7134.766 - 1.82e-024    7154.267 - 5.2e-024    7459.071 - 7.92e-022
+K3P+I+G4          -3494.413    7134.827 - 1.76e-024    7154.328 - 5.05e-024    7459.132 - 7.68e-022
+K3P+I+G4          -3494.413    7134.827 - 1.76e-024    7154.328 - 5.05e-024    7459.132 - 7.68e-022
+TIM2+R3           -3485.326    7122.651 - 7.76e-022    7143.893 - 9.31e-022    7460.285 - 4.32e-022
+TIM2e+R3          -3485.384    7122.769 - 7.31e-022    7144.010 - 8.78e-022    7460.402 - 4.07e-022
+TIM2e+R3          -3485.384    7122.769 - 7.31e-022    7144.010 - 8.78e-022    7460.402 - 4.07e-022
+TPM2u+R3          -3488.649    7127.299 - 7.59e-023    7147.951 - 1.22e-022    7460.489 - 3.9e-022
+TPM2+R3           -3488.711    7127.421 - 7.14e-023    7148.074 - 1.15e-022    7460.612 - 3.66e-022
+TPM2+R3           -3488.711    7127.421 - 7.14e-023    7148.074 - 1.15e-022    7460.612 - 3.66e-022
+TIM+I+G4          -3492.069    7132.138 - 6.75e-024    7152.211 - 1.46e-023    7460.886 - 3.19e-022
+TIMe+I+G4         -3492.085    7132.171 - 6.65e-024    7152.243 - 1.43e-023    7460.919 - 3.14e-022
+TIMe+I+G4         -3492.085    7132.171 - 6.65e-024    7152.243 - 1.43e-023    7460.919 - 3.14e-022
+TPM2+G4           -3499.767    7143.534 - 2.26e-026    7162.474 - 8.59e-026    7463.397 - 9.1e-023
+TPM2+G4           -3499.767    7143.534 - 2.26e-026    7162.474 - 8.59e-026    7463.397 - 9.1e-023
+TPM2u+G4          -3499.773    7143.546 - 2.25e-026    7162.486 - 8.54e-026    7463.408 - 9.05e-023
+HKY+R3            -3493.874    7135.748 - 1.11e-024    7155.820 - 2.39e-024    7464.496 - 5.25e-023
+K2P+R3            -3494.027    7136.053 - 9.54e-025    7156.126 - 2.06e-024    7464.801 - 4.51e-023
+K2P+R3            -3494.027    7136.053 - 9.54e-025    7156.126 - 2.06e-024    7464.801 - 4.51e-023
+TVM+R3            -3484.458    7122.917 - 6.79e-022    7144.757 - 6.05e-022    7464.992 - 4.1e-023
+TVMe+R3           -3484.536    7123.073 - 6.28e-022    7144.913 - 5.59e-022    7465.148 - 3.79e-023
+TVMe+R3           -3484.536    7123.073 - 6.28e-022    7144.913 - 5.59e-022    7465.148 - 3.79e-023
+HKY+G4            -3503.869    7149.738 - 1.02e-027    7168.126 - 5.09e-027    7465.158 - 3.77e-023
+K2P+G4            -3503.881    7149.761 - 1.01e-027    7168.150 - 5.03e-027    7465.181 - 3.73e-023
+K2P+G4            -3503.881    7149.761 - 1.01e-027    7168.150 - 5.03e-027    7465.181 - 3.73e-023
+GTR+R3            -3481.503    7119.006 - 4.8e-021    7141.454 - 3.15e-021    7465.524 - 3.14e-023
+SYM+R3            -3481.536    7119.071 - 4.65e-021    7141.519 - 3.05e-021    7465.589 - 3.04e-023
+SYM+R3            -3481.536    7119.071 - 4.65e-021    7141.519 - 3.05e-021    7465.589 - 3.04e-023
+TN+R3             -3491.339    7132.678 - 5.16e-024    7153.331 - 8.31e-024    7465.869 - 2.64e-023
+TNe+R3            -3491.470    7132.939 - 4.52e-024    7153.592 - 7.3e-024    7466.130 - 2.32e-023
+TNe+R3            -3491.470    7132.939 - 4.52e-024    7153.592 - 7.3e-024    7466.130 - 2.32e-023
+TIM2+G4           -3498.162    7142.324 - 4.15e-026    7161.826 - 1.19e-025    7466.630 - 1.81e-023
+TIM2e+G4          -3498.170    7142.340 - 4.12e-026    7161.841 - 1.18e-025    7466.645 - 1.79e-023
+TIM2e+G4          -3498.170    7142.340 - 4.12e-026    7161.841 - 1.18e-025    7466.645 - 1.79e-023
+TPM3u+R3          -3491.869    7133.738 - 3.04e-024    7154.390 - 4.89e-024    7466.928 - 1.56e-023
+TPM3+R3           -3491.941    7133.882 - 2.82e-024    7154.534 - 4.55e-024    7467.073 - 1.45e-023
+TPM3+R3           -3491.941    7133.882 - 2.82e-024    7154.534 - 4.55e-024    7467.073 - 1.45e-023
+TIM3+R3           -3488.921    7129.841 - 2.13e-023    7151.083 - 2.56e-023    7467.474 - 1.19e-023
+TIM3e+R3          -3488.968    7129.935 - 2.03e-023    7151.176 - 2.44e-023    7467.568 - 1.13e-023
+TIM3e+R3          -3488.968    7129.935 - 2.03e-023    7151.176 - 2.44e-023    7467.568 - 1.13e-023
+TNe+G4            -3502.238    7148.475 - 1.91e-027    7167.416 - 7.26e-027    7468.338 - 7.7e-024
+TNe+G4            -3502.238    7148.475 - 1.91e-027    7167.416 - 7.26e-027    7468.338 - 7.7e-024
+TN+G4             -3502.239    7148.478 - 1.91e-027    7167.418 - 7.26e-027    7468.341 - 7.69e-024
+TPM3+G4           -3502.403    7148.806 - 1.62e-027    7167.746 - 6.16e-027    7468.669 - 6.52e-024
+TPM3+G4           -3502.403    7148.806 - 1.62e-027    7167.746 - 6.16e-027    7468.669 - 6.52e-024
+TPM3u+G4          -3502.407    7148.814 - 1.62e-027    7167.755 - 6.13e-027    7468.677 - 6.5e-024
+TVM+G4            -3496.270    7140.540 - 1.01e-025    7160.612 - 2.18e-025    7469.288 - 4.79e-024
+TVMe+G4           -3496.292    7140.584 - 9.9e-026    7160.656 - 2.13e-025    7469.332 - 4.68e-024
+TVMe+G4           -3496.292    7140.584 - 9.9e-026    7160.656 - 2.13e-025    7469.332 - 4.68e-024
+K3Pu+R3           -3493.676    7137.353 - 4.98e-025    7158.005 - 8.03e-025    7470.543 - 2.55e-024
+K3P+R3            -3493.755    7137.511 - 4.6e-025    7158.163 - 7.42e-025    7470.701 - 2.36e-024
+K3P+R3            -3493.755    7137.511 - 4.6e-025    7158.163 - 7.42e-025    7470.701 - 2.36e-024
+TIM+R3            -3490.890    7133.781 - 2.97e-024    7155.022 - 3.57e-024    7471.414 - 1.65e-024
+K3P+G4            -3503.790    7151.579 - 4.06e-028    7170.520 - 1.54e-027    7471.442 - 1.63e-024
+K3P+G4            -3503.790    7151.579 - 4.06e-028    7170.520 - 1.54e-027    7471.442 - 1.63e-024
+K3Pu+G4           -3503.805    7151.610 - 3.99e-028    7170.550 - 1.52e-027    7471.472 - 1.61e-024
+TIMe+R3           -3490.950    7133.901 - 2.8e-024    7155.142 - 3.36e-024    7471.534 - 1.56e-024
+TIMe+R3           -3490.950    7133.901 - 2.8e-024    7155.142 - 3.36e-024    7471.534 - 1.56e-024
+TIM3+G4           -3500.768    7147.536 - 3.06e-027    7167.038 - 8.78e-027    7471.841 - 1.34e-024
+TIM3e+G4          -3500.770    7147.541 - 3.05e-027    7167.042 - 8.76e-027    7471.846 - 1.33e-024
+TIM3e+G4          -3500.770    7147.541 - 3.05e-027    7167.042 - 8.76e-027    7471.846 - 1.33e-024
+SYM+G4            -3494.720    7139.441 - 1.75e-025    7160.093 - 2.83e-025    7472.631 -   9e-025
+SYM+G4            -3494.720    7139.441 - 1.75e-025    7160.093 - 2.83e-025    7472.631 -   9e-025
+GTR+G4            -3494.721    7139.442 - 1.75e-025    7160.095 - 2.82e-025    7472.633 - 8.99e-025
+TIMe+G4           -3502.161    7150.323 - 7.6e-028    7169.825 - 2.18e-027    7474.628 - 3.31e-025
+TIMe+G4           -3502.161    7150.323 - 7.6e-028    7169.825 - 2.18e-027    7474.628 - 3.31e-025
+TIM+G4            -3502.164    7150.327 - 7.58e-028    7169.829 - 2.17e-027    7474.632 - 3.31e-025
+F81+F+I+G4        -3679.104    7506.209 - 3.99e-105    7526.281 - 8.6e-105    7834.957 - 1.89e-103
+F81+F+G4          -3684.341    7514.681 - 5.77e-107    7534.183 - 1.65e-106    7838.987 - 2.52e-104
+F81+F+R3          -3677.827    7507.654 - 1.94e-105    7528.895 - 2.33e-105    7845.287 - 1.08e-105
+F81+I+G4          -3718.683    7579.365 - 5.19e-121    7597.754 - 2.6e-120    7894.786 - 1.92e-116
+JC+I+G4           -3718.959    7579.917 - 3.94e-121    7598.306 - 1.97e-120    7895.338 - 1.46e-116
+JC+I+G4           -3718.959    7579.917 - 3.94e-121    7598.306 - 1.97e-120    7895.338 - 1.46e-116
+F81+G4            -3724.449    7588.897 - 4.42e-123    7606.743 - 2.9e-122    7899.875 - 1.51e-117
+JC+G4             -3724.449    7588.898 - 4.42e-123    7606.744 - 2.9e-122    7899.876 - 1.51e-117
+JC+G4             -3724.449    7588.898 - 4.42e-123    7606.744 - 2.9e-122    7899.876 - 1.51e-117
+F81+R3            -3716.178    7578.355 - 8.61e-121    7597.857 - 2.47e-120    7902.660 - 3.75e-118
+JC+R3             -3716.345    7578.690 - 7.28e-121    7598.191 - 2.09e-120    7902.995 - 3.17e-118
+JC+R3             -3716.345    7578.690 - 7.28e-121    7598.191 - 2.09e-120    7902.995 - 3.17e-118
+JC+I+R3           -3715.182    7578.365 - 8.56e-121    7598.437 - 1.85e-120    7907.113 - 4.05e-119
+JC+R2             -3728.052    7598.104 - 4.43e-125    7616.493 - 2.21e-124    7913.525 - 1.64e-120
+JC+R4             -3715.999    7581.998 - 1.39e-121    7602.650 - 2.25e-121    7915.189 - 7.14e-121
+JC+I+R2           -3726.463    7596.927 - 7.98e-125    7615.867 - 3.03e-124    7916.790 - 3.21e-121
+JC+I+R4           -3715.005    7582.010 - 1.38e-121    7603.252 - 1.66e-121    7919.643 - 7.7e-122
+JC+I              -3741.101    7622.202 - 2.59e-130    7640.047 - 1.7e-129    7933.179 - 8.86e-125
+JC                -3990.095    8118.191 - 5.14e-238    8135.502 - 4.4e-237    8424.726 - 1.62e-231
+
+AIC, w-AIC   : Akaike information criterion scores and weights.
+AICc, w-AICc : Corrected AIC scores and weights.
+BIC, w-BIC   : Bayesian information criterion scores and weights.
+
+Plus signs denote the 95% confidence sets.
+Minus signs denote significant exclusion.
+
+SUBSTITUTION PROCESS
+--------------------
+
+Model of substitution: HKY+F+I+G4
+
+Rate parameter R:
+
+  A-C: 1.0000
+  A-G: 11.2228
+  A-T: 1.0000
+  C-G: 1.0000
+  C-T: 11.2228
+  G-T: 1.0000
+
+State frequencies: (empirical counts from alignment)
+
+  pi(A) = 0.2494
+  pi(C) = 0.2059
+  pi(G) = 0.1904
+  pi(T) = 0.3543
+
+Rate matrix Q:
+
+  A   -0.8438   0.06443    0.6686    0.1109
+  C   0.07802    -1.382   0.05957     1.244
+  G    0.8757   0.06443    -1.051    0.1109
+  T   0.07802    0.7231   0.05957   -0.8607
+
+Model of rate heterogeneity: Invar+Gamma with 4 categories
+Proportion of invariable sites: 0.4811
+Gamma shape alpha: 0.5723
+
+ Category  Relative_rate  Proportion
+  0         0              0.4811
+  1         0.09143        0.1297
+  2         0.5714         0.1297
+  3         1.67           0.1297
+  4         5.376          0.1297
+Relative rates are computed as MEAN of the portion of the Gamma distribution falling in the category.
+
+MAXIMUM LIKELIHOOD TREE
+-----------------------
+
+Log-likelihood of the tree: -3437.8322 (s.e. 146.5795)
+Unconstrained log-likelihood (without tree): -2353.1370
+Number of free parameters (#branches + #model parameters): 75
+Akaike information criterion (AIC) score: 7025.6643
+Corrected Akaike information criterion (AICc) score: 7046.3165
+Bayesian information criterion (BIC) score: 7358.8548
+
+Total tree length (sum of branch lengths): 4.3560
+Sum of internal branch lengths: 2.8826 (66.1772% of tree length)
+
+WARNING: 2 near-zero internal branches (<0.0016) should be treated with caution
+         Such branches are denoted by '**' in the figure below
+
+NOTE: Tree is UNROOTED although outgroup taxon 'Asellus_aquaticus_DE' is drawn at root
+Numbers in parentheses are  ultrafast bootstrap support (%)
+
++--Asellus_aquaticus_DE
+|
+|                 +--Asellus_aquaticus_GR
+|              +--| (74)
+|              |  |  +--Asellus_aquaticus_Sv
+|              |  +--| (100)
+|              |     +**Asellus_aquaticus_j1
+|           +--| (93)
+|           |  +--Asellus_aquaticus_SE
+|        +--| (54)
+|        |  +--Asellus_aquaticus_NL
+|     +--| (44)
+|     |  |                                           +**Stenasellus_racovitzai_COR
+|     |  |                  +------------------------| (100)
+|     |  |                  |                        +------------Stenasellus_racovitzai_PTO
+|     |  |               +--| (64)
+|     |  |               |  +---Stenasellus_racovitzai_QUI
+|     |  +---------------| (95)
+|     |                  +-----------------------Stenasellus_virei_hussoni
+|  +--| (48)
+|  |  +**Asellus_aquaticus_HU
++--| (26)
+|  |  +--Asellus_aquaticus_YU
+|  +--| (67)
+|     +--Asellus_aquaticus_p1
+|
+|  +**Asellus_aquaticus_UK
++--| (53)
+   |                                  +**Proasellus_arnautovici_arnautovici_1
+   |                               +--| (91)
+   |                               |  |  +--Proasellus_arnautovici_arnautovici_2
+   |                               |  +--| (90)
+   |                               |     +--Proasellus_arnautovici_arnautovici_3
+   |                            +--| (66)
+   |                            |  |     +--Proasellus_remyi_f._remyi_Naum_1
+   |                            |  |  +**| (64)
+   |                            |  |  |  +--Proasellus_remyi_f._remyi_Naum_4
+   |                            |  +--| (98)
+   |                            |     |  +--Proasellus_remyi_f._remyi_Naum_2
+   |                            |     +--| (91)
+   |                            |        +**Proasellus_remyi_f._remyi_Naum_3
+   |                         +--| (70)
+   |                         |  |  +**Proasellus_remyi_f._acutangulus_1
+   |                         |  +--| (96)
+   |                         |     +--Proasellus_remyi_f._remyi_1
+   |                      +--| (89)
+   |                      |  +**Proasellus_remyi_f._acutangulus_2
+   |             +--------| (99)
+   |             |        |     +--Proasellus_arnautovici_elongatus_1
+   |             |        |  +--| (29)
+   |             |        |  |  |     +--Proasellus_gjorgjevici_f._litoralis_1
+   |             |        |  |  |  +--| (85)
+   |             |        |  |  |  |  |        +--Proasellus_gjorgjevici_f._litoralis_2
+   |             |        |  |  |  |  |     +--| (72)
+   |             |        |  |  |  |  |     |  +--Proasellus_gjorgjevici_f._litoralis_3
+   |             |        |  |  |  |  |  +--| (56)
+   |             |        |  |  |  |  |  |  |  +--Proasellus_gjorgjevici_f._typicus_1
+   |             |        |  |  |  |  |  |  +**| (23)
+   |             |        |  |  |  |  |  |     |  +--Proasellus_gjorgjevici_f._typicus_2
+   |             |        |  |  |  |  |  |     +--| (90)
+   |             |        |  |  |  |  |  |        +**Proasellus_gjorgjevici_f._typicus_4
+   |             |        |  |  |  |  +--| (98)
+   |             |        |  |  |  |     +**Proasellus_gjorgjevici_f._typicus_3
+   |             |        |  |  +--| (37)
+   |             |        |  |     +--Proasellus_remyi_f._nudus
+   |             |        +--| (72)
+   |             |           +--Proasellus_arnautovici_elongatus_2
+   +-------------| (98)
+                 |              +**Proasellus_coxalis_1
+                 +--------------| (100)
+                                +--Proasellus_coxalis_2
+
+Tree in newick format:
+
+(Asellus_aquaticus_DE:0.0197555567,((((((Asellus_aquaticus_GR:0.0535315937,(Asellus_aquaticus_Sv:0.0016586756,Asellus_aquaticus_j1:0.0000025785)100:0.0273878339)74:0.0028737330,Asellus_aquaticus_SE:0.0453162765)93:0.0650716350,Asellus_aquaticus_NL:0.0196057992)54:0.0070126120,(((Stenasellus_racovitzai_COR:0.0000028057,Stenasellus_racovitzai_PTO:0.3916484779)100:0.7371171940,Stenasellus_racovitzai_QUI:0.1166419432)64:0.1052180641,Stenasellus_virei_hussoni:0.7169869770)95:0.4688594752)44:0.0118063619,Asellus_aquaticus_HU:0.0000020544)48:0.0055657900,(Asellus_aquaticus_YU:0.0126038661,Asellus_aquaticus_p1:0.0052529698)67:0.0050218650)26:0.0019312354,(Asellus_aquaticus_UK:0.0000027446,((((((Proasellus_arnautovici_arnautovici_1:0.0000021713,(Proasellus_arnautovici_arnautovici_2:0.0049228563,Proasellus_arnautovici_arnautovici_3:0.0139060383)90:0.0084309953)91:0.0243539529,((Proasellus_remyi_f._remyi_Naum_1:0.0016468415,Proasellus_remyi_f._remyi_Naum_4:0.0032815425)64:0.0015896281,(Proasellus_remyi_f._remyi_Naum_2:0.0016342038,Proasellus_remyi_f._remyi_Naum_3:0.0000024949)91:0.0017141512)98:0.0102588423)66:0.0048336968,(Proasellus_remyi_f._acutangulus_1:0.0000026423,Proasellus_remyi_f._remyi_1:0.0016367580)96:0.0071073137)70:0.0048014926,Proasellus_remyi_f._acutangulus_2:0.0000021150)89:0.1031056861,((Proasellus_arnautovici_elongatus_1:0.0075391992,((Proasellus_gjorgjevici_f._litoralis_1:0.0248151157,(((Proasellus_gjorgjevici_f._litoralis_2:0.0016520884,Proasellus_gjorgjevici_f._litoralis_3:0.0016487949)72:0.0016428455,(Proasellus_gjorgjevici_f._typicus_1:0.0066537326,(Proasellus_gjorgjevici_f._typicus_2:0.0016282761,Proasellus_gjorgjevici_f._typicus_4:0.0000024949)90:0.0032767870)23:0.0000027753)56:0.0016351655,Proasellus_gjorgjevici_f._typicus_3:0.0000024956)98:0.0141317402)85:0.0371985040,Proasellus_remyi_f._nudus:0.0104719521)37:0.0069897320)29:0.0075034699,Proasellus_arnautovici_elongatus_2:0.0056006007)72:0.0862610886)99:0.2736219113,(Proasellus_coxalis_1:0.0000020535,Proasellus_coxalis_2:0.0032394627)100:0.4328167189)98:0.4084970199)53:0.0050089378);
+
+CONSENSUS TREE
+--------------
+
+Consensus tree is constructed from 1000 bootstrap trees
+Log-likelihood of consensus tree: -3438.214825
+Robinson-Foulds distance between ML tree and consensus tree: 4
+
+Branches with support >0.000000% are kept (extended consensus)
+Branch lengths are optimized by maximum likelihood on original alignment
+Numbers in parentheses are bootstrap supports (%)
+
++--Asellus_aquaticus_DE
+|
+|                 +--Asellus_aquaticus_GR
+|              +--| (74)
+|              |  |  +--Asellus_aquaticus_Sv
+|              |  +--| (100)
+|              |     +--Asellus_aquaticus_j1
+|           +--| (93)
+|           |  +--Asellus_aquaticus_SE
+|        +--| (54)
+|        |  +--Asellus_aquaticus_NL
+|     +--| (44)
+|     |  |                                           +--Stenasellus_racovitzai_COR
+|     |  |                  +------------------------| (100)
+|     |  |                  |                        +------------Stenasellus_racovitzai_PTO
+|     |  |               +--| (64)
+|     |  |               |  +---Stenasellus_racovitzai_QUI
+|     |  +---------------| (95)
+|     |                  +------------------------Stenasellus_virei_hussoni
+|  +--| (48)
+|  |  +--Asellus_aquaticus_HU
++--| (28)
+|  |  +--Asellus_aquaticus_UK
+|  +--| (53)
+|     |                                  +--Proasellus_arnautovici_arnautovici_1
+|     |                               +--| (91)
+|     |                               |  |  +--Proasellus_arnautovici_arnautovici_2
+|     |                               |  +--| (90)
+|     |                               |     +--Proasellus_arnautovici_arnautovici_3
+|     |                            +--| (66)
+|     |                            |  |     +--Proasellus_remyi_f._remyi_Naum_1
+|     |                            |  |  +--| (64)
+|     |                            |  |  |  +--Proasellus_remyi_f._remyi_Naum_4
+|     |                            |  +--| (98)
+|     |                            |     |  +--Proasellus_remyi_f._remyi_Naum_2
+|     |                            |     +--| (91)
+|     |                            |        +--Proasellus_remyi_f._remyi_Naum_3
+|     |                         +--| (70)
+|     |                         |  |  +--Proasellus_remyi_f._acutangulus_1
+|     |                         |  +--| (96)
+|     |                         |     +--Proasellus_remyi_f._remyi_1
+|     |                      +--| (89)
+|     |                      |  +--Proasellus_remyi_f._acutangulus_2
+|     |             +--------| (99)
+|     |             |        |     +--Proasellus_arnautovici_elongatus_1
+|     |             |        |  +--| (29)
+|     |             |        |  |  |     +--Proasellus_gjorgjevici_f._litoralis_1
+|     |             |        |  |  |  +--| (85)
+|     |             |        |  |  |  |  |           +--Proasellus_gjorgjevici_f._litoralis_2
+|     |             |        |  |  |  |  |        +--| (72)
+|     |             |        |  |  |  |  |        |  +--Proasellus_gjorgjevici_f._litoralis_3
+|     |             |        |  |  |  |  |     +--| (25)
+|     |             |        |  |  |  |  |     |  +--Proasellus_gjorgjevici_f._typicus_1
+|     |             |        |  |  |  |  |  +--| (56)
+|     |             |        |  |  |  |  |  |  |  +--Proasellus_gjorgjevici_f._typicus_2
+|     |             |        |  |  |  |  |  |  +--| (90)
+|     |             |        |  |  |  |  |  |     +--Proasellus_gjorgjevici_f._typicus_4
+|     |             |        |  |  |  |  +--| (98)
+|     |             |        |  |  |  |     +--Proasellus_gjorgjevici_f._typicus_3
+|     |             |        |  |  +--| (37)
+|     |             |        |  |     +--Proasellus_remyi_f._nudus
+|     |             |        +--| (72)
+|     |             |           +--Proasellus_arnautovici_elongatus_2
+|     +-------------| (98)
+|                   |              +--Proasellus_coxalis_1
+|                   +--------------| (100)
+|                                  +--Proasellus_coxalis_2
+|
+|  +--Asellus_aquaticus_YU
++--| (67)
+   +--Asellus_aquaticus_p1
+
+
+Consensus tree in newick format: 
+
+(Asellus_aquaticus_DE:0.0198933374,((((((Asellus_aquaticus_GR:0.0535299283,(Asellus_aquaticus_Sv:0.0016587621,Asellus_aquaticus_j1:0.0000025587)100:0.0273828988)74:0.0029014599,Asellus_aquaticus_SE:0.0453071204)93:0.0650471246,Asellus_aquaticus_NL:0.0196027819)54:0.0076599887,(((Stenasellus_racovitzai_COR:0.0000029475,Stenasellus_racovitzai_PTO:0.3916534676)100:0.7363535361,Stenasellus_racovitzai_QUI:0.1168473333)64:0.1050258503,Stenasellus_virei_hussoni:0.7171177220)95:0.4682739809)44:0.0111102419,Asellus_aquaticus_HU:0.0000021766)48:0.0056830925,(Asellus_aquaticus_UK:0.0000026235,((((((Proasellus_arnautovici_arnautovici_1:0.0000021766,(Proasellus_arnautovici_arnautovici_2:0.0049216669,Proasellus_arnautovici_arnautovici_3:0.0139021320)90:0.0084300851)91:0.0243508109,((Proasellus_remyi_f._remyi_Naum_1:0.0016462823,Proasellus_remyi_f._remyi_Naum_4:0.0032812535)64:0.0015874279,(Proasellus_remyi_f._remyi_Naum_2:0.0016333447,Proasellus_remyi_f._remyi_Naum_3:0.0000025587)91:0.0017148403)98:0.0102593481)66:0.0048339583,(Proasellus_remyi_f._acutangulus_1:0.0000025587,Proasellus_remyi_f._remyi_1:0.0016357793)96:0.0071048643)70:0.0048016609,Proasellus_remyi_f._acutangulus_2:0.0000025639)89:0.1029880051,((Proasellus_arnautovici_elongatus_1:0.0075369692,((Proasellus_gjorgjevici_f._litoralis_1:0.0248080075,((((Proasellus_gjorgjevici_f._litoralis_2:0.0016506549,Proasellus_gjorgjevici_f._litoralis_3:0.0016473212)72:0.0016413910,Proasellus_gjorgjevici_f._typicus_1:0.0066513105)25:0.0000025587,(Proasellus_gjorgjevici_f._typicus_2:0.0016268399,Proasellus_gjorgjevici_f._typicus_4:0.0000025587)90:0.0032751360)56:0.0016337249,Proasellus_gjorgjevici_f._typicus_3:0.0000025587)98:0.0141292390)85:0.0371868445,Proasellus_remyi_f._nudus:0.0104700934)37:0.0069882933)29:0.0075023025,Proasellus_arnautovici_elongatus_2:0.0055988486)72:0.0862979319)99:0.2737662410,(Proasellus_coxalis_1:0.0000025587,Proasellus_coxalis_2:0.0032384385)100:0.4326515283)98:0.4084644055)53:0.0065125703)28:0.0013150925,(Asellus_aquaticus_YU:0.0124589691,Asellus_aquaticus_p1:0.0053463543)67:0.0041970797);
+
+ALISIM COMMAND
+--------------
+To simulate an alignment of the same length as the original alignment, using the tree and model parameters estimated from this analysis, you can use the following command:
+
+--alisim simulated_MSA -t ml2\trees\M4744.treefile -m "HKY{11.2228}+F{0.249373,0.205922,0.190394,0.354311}+I{0.481095}+G4{0.572265}" --length 628
+
+To mimic the alignment used to produce this analysis, i.e. simulate an alignment of the same length as the original alignment, using the tree and model parameters estimated from this analysis *and* copying the same gap positions as the original alignment, you can use the following command:
+
+iqtree -s ml2\datasets\M4744.nex --alisim mimicked_MSA
+
+To simulate any number of alignments in either of the two commandlines above, use the --num-alignments options, for example mimic 100 alignments you would use the command line:
+
+iqtree -s ml2\datasets\M4744.nex --alisim mimicked_MSA --num-alignments 100
+
+For more information on using AliSim, please visit: www.iqtree.org/doc/AliSim
+
+TIME STAMP
+----------
+
+Date and time: Mon May 04 13:52:29 2026
+Total CPU time used: 226.34375 seconds (0h:3m:46s)
+Total wall-clock time used: 117.5893117 seconds (0h:1m:57s)
+

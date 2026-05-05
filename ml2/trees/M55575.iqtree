@@ -1,0 +1,397 @@
+IQ-TREE 3.1.1 built Apr  2 2026
+
+Input file name: ml2\datasets\M55575.nex
+Type of analysis: ModelFinder + tree reconstruction + ultrafast bootstrap (1000 replicates)
+Random seed number: 821744
+
+REFERENCES
+----------
+
+To cite IQ-TREE 3 please use:
+
+Thomas K.F. Wong, Nhan Ly-Trong, Huaiyan Ren, Hector Banos, Andrew J. Roger,
+Edward Susko, Chris Bielow, Nicola De Maio, Nick Goldman, Matthew W. Hahn,
+Gavin Huttley, Robert Lanfear, Bui Quang Minh (2025)
+IQ-TREE 3: Phylogenomic Inference Software using Complex Evolutionary Models.
+Submitted.
+
+Since you used ModelFinder please also cite: 
+
+Subha Kalyaanamoorthy, Bui Quang Minh, Thomas KF Wong, Arndt von Haeseler,
+and Lars S Jermiin (2017) ModelFinder: Fast model selection for
+accurate phylogenetic estimates. Nature Methods, 14:587–589.
+https://doi.org/10.1038/nmeth.4285
+
+Since you used ultrafast bootstrap (UFBoot) please also cite: 
+
+Diep Thi Hoang, Olga Chernomor, Arndt von Haeseler, Bui Quang Minh,
+and Le Sy Vinh (2018) UFBoot2: Improving the ultrafast bootstrap
+approximation. Mol. Biol. Evol., 35:518–522.
+https://doi.org/10.1093/molbev/msx281
+
+SEQUENCE ALIGNMENT
+------------------
+
+NOTE: Alignment sequence type is auto-detected. If in doubt, specify it via -st option.
+Input data: 46 sequences with 2270 nucleotide sites
+Number of constant sites: 1481 (= 65.2423% of all sites)
+Number of invariant (constant or ambiguous constant) sites: 1481 (= 65.2423% of all sites)
+Number of parsimony informative sites: 606
+Number of distinct site patterns: 920
+
+ModelFinder
+-----------
+
+Best-fit model according to BIC: GTR+I+G4
+
+List of models sorted by BIC scores: 
+
+Model                  LogL         AIC      w-AIC        AICc     w-AICc         BIC      w-BIC
+GTR+I+G4         -19154.002   38500.004 +    0.299   38508.575 +    0.307   39049.847 +    0.335
+SYM+I+G4         -19154.011   38500.023 +    0.296   38508.593 +    0.304   39049.866 +    0.332
+SYM+I+G4         -19154.011   38500.023 +    0.296   38508.593 +    0.304   39049.866 +    0.332
+TIM+I+G4         -19171.053   38530.107 - 8.68e-008   38538.318 - 1.07e-007   39068.495 - 2.99e-005
+TIMe+I+G4        -19171.059   38530.118 - 8.63e-008   38538.329 - 1.06e-007   39068.506 - 2.98e-005
+TIMe+I+G4        -19171.059   38530.118 - 8.63e-008   38538.329 - 1.06e-007   39068.506 - 2.98e-005
+GTR+F+I+G4       -19152.006   38502.013 +    0.109   38511.137 +   0.0852   39069.039 - 2.28e-005
+TVM+I+G4         -19178.355   38546.711 - 2.15e-011   38555.101 - 2.42e-011   39090.826 - 4.24e-010
+TVMe+I+G4        -19178.356   38546.713 - 2.15e-011   38555.103 - 2.42e-011   39090.829 - 4.23e-010
+TVMe+I+G4        -19178.356   38546.713 - 2.15e-011   38555.103 - 2.42e-011   39090.829 - 4.23e-010
+TIM+F+I+G4       -19176.161   38546.322 - 2.62e-011   38555.075 - 2.45e-011   39101.892 - 1.68e-012
+K3Pu+I+G4        -19197.485   38580.969 - 7.83e-019   38589.004 - 1.05e-018   39113.630 - 4.73e-015
+K3P+I+G4         -19197.522   38581.043 - 7.55e-019   38589.078 - 1.01e-018   39113.704 - 4.56e-015
+K3P+I+G4         -19197.522   38581.043 - 7.55e-019   38589.078 - 1.01e-018   39113.704 - 4.56e-015
+TVM+F+I+G4       -19185.426   38566.851 - 9.11e-016   38575.789 - 7.79e-016   39128.150 - 3.33e-018
+K3Pu+F+I+G4      -19213.343   38618.685 - 5.06e-027   38627.256 - 5.2e-027   39168.528 - 5.68e-027
+TIM3+I+G4        -19282.596   38753.191 - 3.14e-056   38761.403 - 3.85e-056   39291.580 - 1.08e-053
+TIM3e+I+G4       -19282.611   38753.221 - 3.09e-056   38761.433 - 3.8e-056   39291.609 - 1.07e-053
+TIM3e+I+G4       -19282.611   38753.221 - 3.09e-056   38761.433 - 3.8e-056   39291.609 - 1.07e-053
+TIM2+I+G4        -19284.694   38757.387 - 3.85e-057   38765.599 - 4.73e-057   39295.775 - 1.33e-054
+TIM2e+I+G4       -19284.707   38757.413 - 3.8e-057   38765.625 - 4.67e-057   39295.802 - 1.31e-054
+TIM2e+I+G4       -19284.707   38757.413 - 3.8e-057   38765.625 - 4.67e-057   39295.802 - 1.31e-054
+TIM2+F+I+G4      -19282.828   38759.657 - 1.24e-057   38768.410 - 1.16e-057   39315.228 - 7.92e-059
+TN+I+G4          -19302.631   38791.262 - 1.7e-064   38799.297 - 2.28e-064   39323.923 - 1.03e-060
+TNe+I+G4         -19302.667   38791.335 - 1.64e-064   38799.370 - 2.2e-064   39323.995 - 9.89e-061
+TNe+I+G4         -19302.667   38791.335 - 1.64e-064   38799.370 - 2.2e-064   39323.995 - 9.89e-061
+TPM3u+I+G4       -19309.003   38804.006 - 2.9e-067   38812.041 - 3.89e-067   39336.667 - 1.75e-063
+TPM3+I+G4        -19309.004   38804.008 - 2.9e-067   38812.043 - 3.89e-067   39336.669 - 1.75e-063
+TPM3+I+G4        -19309.004   38804.008 - 2.9e-067   38812.043 - 3.89e-067   39336.669 - 1.75e-063
+TIM3+F+I+G4      -19293.820   38781.640 - 2.08e-062   38790.394 - 1.95e-062   39337.211 - 1.33e-063
+TPM2u+I+G4       -19312.894   38811.788 - 5.92e-069   38819.823 - 7.94e-069   39344.449 - 3.58e-065
+TPM2+I+G4        -19312.895   38811.789 - 5.91e-069   38819.824 - 7.94e-069   39344.450 - 3.58e-065
+TPM2+I+G4        -19312.895   38811.789 - 5.91e-069   38819.824 - 7.94e-069   39344.450 - 3.58e-065
+TN+F+I+G4        -19311.810   38815.620 - 8.71e-070   38824.190 - 8.95e-070   39365.463 - 9.78e-070
+HKY+I+G4         -19331.890   38847.780 - 9.05e-077   38855.640 - 1.33e-076   39374.713 - 9.59e-072
+K2P+I+G4         -19331.955   38847.910 - 8.48e-077   38855.770 - 1.24e-076   39374.843 - 8.99e-072
+K2P+I+G4         -19331.955   38847.910 - 8.48e-077   38855.770 - 1.24e-076   39374.843 - 8.99e-072
+TPM2u+F+I+G4     -19320.608   38833.216 - 1.32e-073   38841.786 - 1.35e-073   39383.059 - 1.48e-073
+TPM3u+F+I+G4     -19330.850   38853.700 - 4.69e-078   38862.271 - 4.82e-078   39403.543 - 5.26e-078
+HKY+F+I+G4       -19352.345   38894.690 - 5.89e-087   38903.081 - 6.62e-087   39438.806 - 1.16e-085
+F81+I+G4         -20135.825   40453.650 -        0   40461.338 -        0   40974.855 -        0
+JC+I+G4          -20135.965   40453.930 -        0   40461.617 -        0   40975.135 -        0
+JC+I+G4          -20135.965   40453.930 -        0   40461.617 -        0   40975.135 -        0
+JC+I+R3          -20130.024   40448.048 -        0   40456.259 -        0   40986.436 -        0
+JC+R4            -20130.643   40451.286 -        0   40459.676 -        0   40995.402 -        0
+JC+R3            -20139.692   40465.385 -        0   40473.420 -        0   40998.046 -        0
+JC+I+R4          -20129.940   40451.880 -        0   40460.451 -        0   41001.723 -        0
+JC+R5            -20130.154   40454.308 -        0   40463.061 -        0   41009.879 -        0
+F81+F+I+G4       -20148.542   40485.084 -        0   40493.296 -        0   41023.473 -        0
+JC+I+R2          -20167.762   40519.524 -        0   40527.384 -        0   41046.457 -        0
+JC+G4            -20237.501   40655.003 -        0   40662.520 -        0   41170.481 -        0
+JC+R2            -20306.646   40795.291 -        0   40802.979 -        0   41316.497 -        0
+JC+I             -20692.439   41564.877 -        0   41572.394 -        0   42080.355 -        0
+JC               -23648.046   47474.092 -        0   47481.441 -        0   47983.843 -        0
+
+AIC, w-AIC   : Akaike information criterion scores and weights.
+AICc, w-AICc : Corrected AIC scores and weights.
+BIC, w-BIC   : Bayesian information criterion scores and weights.
+
+Plus signs denote the 95% confidence sets.
+Minus signs denote significant exclusion.
+
+SUBSTITUTION PROCESS
+--------------------
+
+Model of substitution: GTR+F+I+G4
+
+Rate parameter R:
+
+  A-C: 1.1571
+  A-G: 11.1613
+  A-T: 6.9406
+  C-G: 3.7914
+  C-T: 18.7974
+  G-T: 1.0000
+
+State frequencies: (empirical counts from alignment)
+
+  pi(A) = 0.2393
+  pi(C) = 0.2434
+  pi(G) = 0.2669
+  pi(T) = 0.2504
+
+Rate matrix Q:
+
+  A   -0.9414   0.05304    0.5611    0.3273
+  C   0.05214    -1.129    0.1906    0.8865
+  G    0.5029    0.1738   -0.7239   0.04716
+  T    0.3127    0.8617   0.05027    -1.225
+
+Model of rate heterogeneity: Invar+Gamma with 4 categories
+Proportion of invariable sites: 0.5766
+Gamma shape alpha: 0.7831
+
+ Category  Relative_rate  Proportion
+  0         0              0.5766
+  1         0.2172         0.1059
+  2         0.9452         0.1059
+  3         2.249          0.1059
+  4         6.035          0.1059
+Relative rates are computed as MEAN of the portion of the Gamma distribution falling in the category.
+
+MAXIMUM LIKELIHOOD TREE
+-----------------------
+
+Log-likelihood of the tree: -19149.4988 (s.e. 535.8815)
+Unconstrained log-likelihood (without tree): -12560.7134
+Number of free parameters (#branches + #model parameters): 99
+Akaike information criterion (AIC) score: 38496.9977
+Corrected Akaike information criterion (AICc) score: 38506.1221
+Bayesian information criterion (BIC) score: 39064.0237
+
+Total tree length (sum of branch lengths): 2.6448
+Sum of internal branch lengths: 0.9038 (34.1748% of tree length)
+
+WARNING: 1 near-zero internal branches (<0.0004) should be treated with caution
+         Such branches are denoted by '**' in the figure below
+
+NOTE: Tree is UNROOTED although outgroup taxon 'Ancula_gibbosa_CASIZ182028' is drawn at root
+Numbers in parentheses are  ultrafast bootstrap support (%)
+
++--------------------------Ancula_gibbosa_CASIZ182028
+|
++------------------------Aphelodoris_sp_1_CASIZ_176920
+|
+|                                            +--Asteronotus_cespitosus_CASIZ177226
+|                                         +**| (74)
+|                                         |  +--Asteronotus_cespitosus_CASIZ191163
+|                                      +--| (93)
+|                                      |  +**Asteronotus_cespitosus_CASIZ191321
+|                                   +--| (100)
+|                                   |  +**Asteronotus_cespitosus_CASIZ191096
+|                               +---| (100)
+|                               |   +---Asteronotus_hepaticus_CASIZ191310
+|                          +----| (100)
+|                          |    +-------Asteronotus_namuro_CASIZ192297
+|                       +--| (92)
+|                       |  |         +-----Asteronotus_marka_CASIZ192316A
+|                       |  |      +--| (69)
+|                       |  |      |  +------Asteronotus_mimeticus_CASIZ208221
+|                       |  +------| (100)
+|                       |         |             +--Asteronotus_spongicolus_CASIZ192317A
+|                       |         |          +--| (70)
+|                       |         |          |  +--Asteronotus_spongicolus_CASIZ194597
+|                       |         |       +--| (42)
+|                       |         |       |  +--Asteronotus_spongicolus_CASIZ200581A
+|                       |         |    +--| (49)
+|                       |         |    |  +--Asteronotus_spongicolus_CASIZ200662
+|                       |         +----| (100)
+|                       |              |  +--Asteronotus_spongicolus_CASIZ227580A
+|                       |              +--| (89)
+|                       |                 +--Asteronotus_spongicolus_CASIZ227581
+|                    +--| (100)
+|                    |  |            +--Hoplodoris_desmoparypha_CASIZ309550
+|                    |  |   +--------| (100)
+|                    |  |   |        +**Hoplodoris_desmoparypha_CASIZ70066
+|                    |  +---| (100)
+|                    |      |     +--Hoplodoris_rosans_CASIZ182837
+|                    |      +-----| (100)
+|                    |            +**Hoplodoris_rosans_CASIZ182921
+|                 +--| (89)
+|                 |  |            +--Thordisa_albomacula_CASIZ177688
+|                 |  |         +--| (39)
+|                 |  |         |  +**Thordisa_albomacula_CASIZ190821
+|                 |  |     +---| (100)
+|                 |  |     |   +--Thordisa_albomacula_CASIZ181345
+|                 |  |  +--| (100)
+|                 |  |  |  |      +--Thordisa_albomacula_CASIZ179586
+|                 |  |  |  |   +--| (55)
+|                 |  |  |  |   |  +--Thordisa_albomacula_CASIZ182834
+|                 |  |  |  +---| (100)
+|                 |  |  |      +--Thordisa_albomacula_CASIZ179590
+|                 |  +--| (100)
+|                 |     |    +--Thordisa_albomacula_CASIZ181136
+|                 |     +----| (100)
+|                 |          +--Thordisa_albomacula_CASIZ220322
+|              +--| (97)
+|              |  |                   +-----Sclerodoris_sp_CASIZ_182866
+|              |  |  +----------------| (100)
+|              |  |  |                +-----Sclerodoris_sp_CASIZ191525
+|              |  +--| (63)
+|              |     |       +-----Taringa_sp_CASIZ172039
+|              |     +-------| (100)
+|              |             +------Taringa_telopia_CASIZ182933
+|           +--| (48)
+|           |  |   +--------------Platydoris_sanguinea_CASIZ177762
+|           |  +---| (95)
+|           |      +-----------Sclerodoris_tuberculata_CASIZ190788
+|     +-----| (96)
+|     |     |                  +--------Carminodoris_flammea_CASIZ177628
+|     |     |           +------| (100)
+|     |     |           |      +----------Hoplodoris_nodulosa_EEDPHY959
+|     |     |        +--| (69)
+|     |     |        |  |        +-----Discodoris_boholiensis_CASIZ204802
+|     |     |        |  +--------| (100)
+|     |     |        |           +--------Discodoris_cebuensis_CASIZ190761
+|     |     |     +--| (97)
+|     |     |     |  +------------------Geitodoris_heathi_CASIZ181314
+|     |     |  +--| (58)
+|     |     |  |  +----------------Thordisa_bimaculata_CASIZ184516
+|     |     +--| (43)
+|     |        |     +------------Diaulula_sandiegensis_CASIZ181321
+|     |        |  +--| (91)
+|     |        |  |  +-------------Peltodoris_nobilis_CASIZ182223
+|     |        +--| (38)
+|     |           |             +-------Halgerda_carlsoni_CASIZ177575
+|     |           |  +----------| (100)
+|     |           |  |          +------Halgerda_dalanghita_CASIZ181264
+|     |           +--| (22)
+|     |              +-----------------Rostanga_calumus_EEDPHY935
++-----| (94)
+      +----------------------------------------------------Atagema_notacristata_CASIZ167980
+
+Tree in newick format:
+
+(Ancula_gibbosa_CASIZ182028:0.1415782254,Aphelodoris_sp_1_CASIZ_176920:0.1322620215,((((((((((((Asteronotus_cespitosus_CASIZ177226:0.0005699966,Asteronotus_cespitosus_CASIZ191163:0.0004771850)74:0.0000010023,Asteronotus_cespitosus_CASIZ191321:0.0000010024)93:0.0004844244,Asteronotus_cespitosus_CASIZ191096:0.0000020358)100:0.0196876159,Asteronotus_hepaticus_CASIZ191310:0.0224889317)100:0.0222702367,Asteronotus_namuro_CASIZ192297:0.0419050540)100:0.0285668045,((Asteronotus_marka_CASIZ192316A:0.0333076321,Asteronotus_mimeticus_CASIZ208221:0.0396145175)69:0.0074309343,((((Asteronotus_spongicolus_CASIZ192317A:0.0063041496,Asteronotus_spongicolus_CASIZ194597:0.0052769053)70:0.0021835019,Asteronotus_spongicolus_CASIZ200581A:0.0116655761)42:0.0006765513,Asteronotus_spongicolus_CASIZ200662:0.0072957489)49:0.0023867870,(Asteronotus_spongicolus_CASIZ227580A:0.0044963768,Asteronotus_spongicolus_CASIZ227581:0.0022395449)89:0.0034034179)100:0.0301045264)100:0.0396537458)92:0.0097816887,((Hoplodoris_desmoparypha_CASIZ309550:0.0046900361,Hoplodoris_desmoparypha_CASIZ70066:0.0000020381)100:0.0490700761,(Hoplodoris_rosans_CASIZ182837:0.0009555555,Hoplodoris_rosans_CASIZ182921:0.0000020730)100:0.0336822090)100:0.0234921109)100:0.0182211044,((((Thordisa_albomacula_CASIZ177688:0.0010025595,Thordisa_albomacula_CASIZ190821:0.0000010024)39:0.0008881936,Thordisa_albomacula_CASIZ181345:0.0018228477)100:0.0208536956,((Thordisa_albomacula_CASIZ179586:0.0028107507,Thordisa_albomacula_CASIZ182834:0.0004553295)55:0.0012364131,Thordisa_albomacula_CASIZ179590:0.0036840207)100:0.0251403019)100:0.0190175877,(Thordisa_albomacula_CASIZ181136:0.0063724482,Thordisa_albomacula_CASIZ220322:0.0064679837)100:0.0257104958)100:0.0178667184)89:0.0110138309,((Sclerodoris_sp_CASIZ_182866:0.0319641959,Sclerodoris_sp_CASIZ191525:0.0348178104)100:0.0895241753,(Taringa_sp_CASIZ172039:0.0348176873,Taringa_telopia_CASIZ182933:0.0393687376)100:0.0459721790)63:0.0102764739)97:0.0199344394,(Platydoris_sanguinea_CASIZ177762:0.0816768306,Sclerodoris_tuberculata_CASIZ190788:0.0648422121)95:0.0206732842)48:0.0074730489,(((((Carminodoris_flammea_CASIZ177628:0.0497991996,Hoplodoris_nodulosa_EEDPHY959:0.0613660266)100:0.0364568103,(Discodoris_boholiensis_CASIZ204802:0.0322357933,Discodoris_cebuensis_CASIZ190761:0.0479709128)100:0.0471014647)69:0.0145140342,Geitodoris_heathi_CASIZ181314:0.1007207704)97:0.0203852947,Thordisa_bimaculata_CASIZ184516:0.0897733549)58:0.0120832615,((Diaulula_sandiegensis_CASIZ181321:0.0715424800,Peltodoris_nobilis_CASIZ182223:0.0724474895)91:0.0185336745,((Halgerda_carlsoni_CASIZ177575:0.0422763947,Halgerda_dalanghita_CASIZ181264:0.0377654821)100:0.0568791045,Rostanga_calumus_EEDPHY935:0.0946765263)22:0.0032191776)38:0.0120671518)43:0.0075951982)96:0.0351801045,Atagema_notacristata_CASIZ167980:0.2751126469)94:0.0331542955);
+
+CONSENSUS TREE
+--------------
+
+Consensus tree is constructed from 1000 bootstrap trees
+Log-likelihood of consensus tree: -19149.888710
+Robinson-Foulds distance between ML tree and consensus tree: 2
+
+Branches with support >0.000000% are kept (extended consensus)
+Branch lengths are optimized by maximum likelihood on original alignment
+Numbers in parentheses are bootstrap supports (%)
+
++--------------------------Ancula_gibbosa_CASIZ182028
+|
++------------------------Aphelodoris_sp_1_CASIZ_176920
+|
+|                                            +--Asteronotus_cespitosus_CASIZ177226
+|                                         +--| (74)
+|                                         |  +--Asteronotus_cespitosus_CASIZ191163
+|                                      +--| (93)
+|                                      |  +--Asteronotus_cespitosus_CASIZ191321
+|                                   +--| (100)
+|                                   |  +--Asteronotus_cespitosus_CASIZ191096
+|                               +---| (100)
+|                               |   +---Asteronotus_hepaticus_CASIZ191310
+|                          +----| (100)
+|                          |    +-------Asteronotus_namuro_CASIZ192297
+|                       +--| (92)
+|                       |  |         +-----Asteronotus_marka_CASIZ192316A
+|                       |  |      +--| (69)
+|                       |  |      |  +------Asteronotus_mimeticus_CASIZ208221
+|                       |  +------| (100)
+|                       |         |             +--Asteronotus_spongicolus_CASIZ192317A
+|                       |         |          +--| (70)
+|                       |         |          |  +--Asteronotus_spongicolus_CASIZ194597
+|                       |         |       +--| (42)
+|                       |         |       |  +--Asteronotus_spongicolus_CASIZ200581A
+|                       |         |    +--| (49)
+|                       |         |    |  +--Asteronotus_spongicolus_CASIZ200662
+|                       |         +----| (100)
+|                       |              |  +--Asteronotus_spongicolus_CASIZ227580A
+|                       |              +--| (89)
+|                       |                 +--Asteronotus_spongicolus_CASIZ227581
+|                    +--| (100)
+|                    |  |            +--Hoplodoris_desmoparypha_CASIZ309550
+|                    |  |   +--------| (100)
+|                    |  |   |        +--Hoplodoris_desmoparypha_CASIZ70066
+|                    |  +---| (100)
+|                    |      |     +--Hoplodoris_rosans_CASIZ182837
+|                    |      +-----| (100)
+|                    |            +--Hoplodoris_rosans_CASIZ182921
+|                 +--| (89)
+|                 |  |            +--Thordisa_albomacula_CASIZ177688
+|                 |  |         +--| (39)
+|                 |  |         |  +--Thordisa_albomacula_CASIZ190821
+|                 |  |     +---| (100)
+|                 |  |     |   +--Thordisa_albomacula_CASIZ181345
+|                 |  |  +--| (100)
+|                 |  |  |  |      +--Thordisa_albomacula_CASIZ179586
+|                 |  |  |  |   +--| (55)
+|                 |  |  |  |   |  +--Thordisa_albomacula_CASIZ182834
+|                 |  |  |  +---| (100)
+|                 |  |  |      +--Thordisa_albomacula_CASIZ179590
+|                 |  +--| (100)
+|                 |     |    +--Thordisa_albomacula_CASIZ181136
+|                 |     +----| (100)
+|                 |          +--Thordisa_albomacula_CASIZ220322
+|              +--| (97)
+|              |  |                   +-----Sclerodoris_sp_CASIZ_182866
+|              |  |  +----------------| (100)
+|              |  |  |                +-----Sclerodoris_sp_CASIZ191525
+|              |  +--| (63)
+|              |     |       +-----Taringa_sp_CASIZ172039
+|              |     +-------| (100)
+|              |             +------Taringa_telopia_CASIZ182933
+|           +--| (48)
+|           |  |   +--------------Platydoris_sanguinea_CASIZ177762
+|           |  +---| (95)
+|           |      +-----------Sclerodoris_tuberculata_CASIZ190788
+|     +-----| (96)
+|     |     |                  +--------Carminodoris_flammea_CASIZ177628
+|     |     |           +------| (100)
+|     |     |           |      +----------Hoplodoris_nodulosa_EEDPHY959
+|     |     |        +--| (69)
+|     |     |        |  |        +-----Discodoris_boholiensis_CASIZ204802
+|     |     |        |  +--------| (100)
+|     |     |        |           +--------Discodoris_cebuensis_CASIZ190761
+|     |     |     +--| (97)
+|     |     |     |  +------------------Geitodoris_heathi_CASIZ181314
+|     |     |  +--| (58)
+|     |     |  |  +----------------Thordisa_bimaculata_CASIZ184516
+|     |     +--| (43)
+|     |        |        +------------Diaulula_sandiegensis_CASIZ181321
+|     |        |     +--| (91)
+|     |        |     |  +-------------Peltodoris_nobilis_CASIZ182223
+|     |        |  +--| (24)
+|     |        |  |  +-----------------Rostanga_calumus_EEDPHY935
+|     |        +--| (38)
+|     |           |          +-------Halgerda_carlsoni_CASIZ177575
+|     |           +----------| (100)
+|     |                      +------Halgerda_dalanghita_CASIZ181264
++-----| (94)
+      +----------------------------------------------------Atagema_notacristata_CASIZ167980
+
+
+Consensus tree in newick format: 
+
+(Ancula_gibbosa_CASIZ182028:0.1415547892,Aphelodoris_sp_1_CASIZ_176920:0.1320899822,((((((((((((Asteronotus_cespitosus_CASIZ177226:0.0005690637,Asteronotus_cespitosus_CASIZ191163:0.0004763430)74:0.0000027181,Asteronotus_cespitosus_CASIZ191321:0.0000027181)93:0.0004834779,Asteronotus_cespitosus_CASIZ191096:0.0000022023)100:0.0196697647,Asteronotus_hepaticus_CASIZ191310:0.0224536314)100:0.0222572916,Asteronotus_namuro_CASIZ192297:0.0418324376)100:0.0285294900,((Asteronotus_marka_CASIZ192316A:0.0332515965,Asteronotus_mimeticus_CASIZ208221:0.0395480600)69:0.0074360242,((((Asteronotus_spongicolus_CASIZ192317A:0.0062944477,Asteronotus_spongicolus_CASIZ194597:0.0052682748)70:0.0021807663,Asteronotus_spongicolus_CASIZ200581A:0.0116508877)42:0.0006776509,Asteronotus_spongicolus_CASIZ200662:0.0072836165)49:0.0023832720,(Asteronotus_spongicolus_CASIZ227580A:0.0044912015,Asteronotus_spongicolus_CASIZ227581:0.0022350772)89:0.0033980430)100:0.0300533659)100:0.0395847943)92:0.0097663174,((Hoplodoris_desmoparypha_CASIZ309550:0.0046840157,Hoplodoris_desmoparypha_CASIZ70066:0.0000027976)100:0.0490214253,(Hoplodoris_rosans_CASIZ182837:0.0009526366,Hoplodoris_rosans_CASIZ182921:0.0000027212)100:0.0336450052)100:0.0234695771)100:0.0181699072,((((Thordisa_albomacula_CASIZ177688:0.0009990831,Thordisa_albomacula_CASIZ190821:0.0000027181)39:0.0008851305,Thordisa_albomacula_CASIZ181345:0.0018198375)100:0.0208306289,((Thordisa_albomacula_CASIZ179586:0.0028071040,Thordisa_albomacula_CASIZ182834:0.0004538865)55:0.0012333830,Thordisa_albomacula_CASIZ179590:0.0036797368)100:0.0251050860)100:0.0190112112,(Thordisa_albomacula_CASIZ181136:0.0063693965,Thordisa_albomacula_CASIZ220322:0.0064563271)100:0.0256614604)100:0.0178637976)89:0.0110047884,((Sclerodoris_sp_CASIZ_182866:0.0319523386,Sclerodoris_sp_CASIZ191525:0.0347590969)100:0.0893971247,(Taringa_sp_CASIZ172039:0.0347822521,Taringa_telopia_CASIZ182933:0.0393220054)100:0.0458892595)63:0.0102889339)97:0.0199756330,(Platydoris_sanguinea_CASIZ177762:0.0815490016,Sclerodoris_tuberculata_CASIZ190788:0.0648023840)95:0.0205389095)48:0.0074798929,(((((Carminodoris_flammea_CASIZ177628:0.0497575712,Hoplodoris_nodulosa_EEDPHY959:0.0612774658)100:0.0364770354,(Discodoris_boholiensis_CASIZ204802:0.0322192271,Discodoris_cebuensis_CASIZ190761:0.0479129327)100:0.0469915782)69:0.0145119079,Geitodoris_heathi_CASIZ181314:0.1007642123)97:0.0204100116,Thordisa_bimaculata_CASIZ184516:0.0895286037)58:0.0120362541,(((Diaulula_sandiegensis_CASIZ181321:0.0712336236,Peltodoris_nobilis_CASIZ182223:0.0724558038)91:0.0181013827,Rostanga_calumus_EEDPHY935:0.0968371353)24:0.0011711161,(Halgerda_carlsoni_CASIZ177575:0.0422938865,Halgerda_dalanghita_CASIZ181264:0.0376966667)100:0.0591406426)38:0.0120365665)43:0.0076245893)96:0.0351528731,Atagema_notacristata_CASIZ167980:0.2745565899)94:0.0331883004);
+
+ALISIM COMMAND
+--------------
+To simulate an alignment of the same length as the original alignment, using the tree and model parameters estimated from this analysis, you can use the following command:
+
+--alisim simulated_MSA -t ml2\trees\M55575.treefile -m "GTR{1.15706,11.1613,6.94062,3.79138,18.7974}+F{0.239263,0.243398,0.266929,0.25041}+I{0.576553}+G4{0.783084}" --length 2270
+
+To mimic the alignment used to produce this analysis, i.e. simulate an alignment of the same length as the original alignment, using the tree and model parameters estimated from this analysis *and* copying the same gap positions as the original alignment, you can use the following command:
+
+iqtree -s ml2\datasets\M55575.nex --alisim mimicked_MSA
+
+To simulate any number of alignments in either of the two commandlines above, use the --num-alignments options, for example mimic 100 alignments you would use the command line:
+
+iqtree -s ml2\datasets\M55575.nex --alisim mimicked_MSA --num-alignments 100
+
+For more information on using AliSim, please visit: www.iqtree.org/doc/AliSim
+
+TIME STAMP
+----------
+
+Date and time: Mon May 04 14:02:02 2026
+Total CPU time used: 350.75 seconds (0h:5m:50s)
+Total wall-clock time used: 134.7898997 seconds (0h:2m:14s)
+

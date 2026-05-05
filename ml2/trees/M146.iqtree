@@ -1,0 +1,444 @@
+IQ-TREE 3.1.1 built Apr  2 2026
+
+Input file name: ml2\datasets\M146.nex
+Type of analysis: ModelFinder + tree reconstruction + ultrafast bootstrap (1000 replicates)
+Random seed number: 926316
+
+REFERENCES
+----------
+
+To cite IQ-TREE 3 please use:
+
+Thomas K.F. Wong, Nhan Ly-Trong, Huaiyan Ren, Hector Banos, Andrew J. Roger,
+Edward Susko, Chris Bielow, Nicola De Maio, Nick Goldman, Matthew W. Hahn,
+Gavin Huttley, Robert Lanfear, Bui Quang Minh (2025)
+IQ-TREE 3: Phylogenomic Inference Software using Complex Evolutionary Models.
+Submitted.
+
+Since you used ModelFinder please also cite: 
+
+Subha Kalyaanamoorthy, Bui Quang Minh, Thomas KF Wong, Arndt von Haeseler,
+and Lars S Jermiin (2017) ModelFinder: Fast model selection for
+accurate phylogenetic estimates. Nature Methods, 14:587–589.
+https://doi.org/10.1038/nmeth.4285
+
+Since you used ultrafast bootstrap (UFBoot) please also cite: 
+
+Diep Thi Hoang, Olga Chernomor, Arndt von Haeseler, Bui Quang Minh,
+and Le Sy Vinh (2018) UFBoot2: Improving the ultrafast bootstrap
+approximation. Mol. Biol. Evol., 35:518–522.
+https://doi.org/10.1093/molbev/msx281
+
+SEQUENCE ALIGNMENT
+------------------
+
+NOTE: Alignment sequence type is auto-detected. If in doubt, specify it via -st option.
+Input data: 37 sequences with 630 nucleotide sites
+Number of constant sites: 307 (= 48.7302% of all sites)
+Number of invariant (constant or ambiguous constant) sites: 307 (= 48.7302% of all sites)
+Number of parsimony informative sites: 237
+Number of distinct site patterns: 288
+
+ModelFinder
+-----------
+
+Best-fit model according to BIC: K3Pu+F+I+G4
+
+List of models sorted by BIC scores: 
+
+Model                  LogL         AIC      w-AIC        AICc     w-AICc         BIC      w-BIC
+K3Pu+F+I+G4       -6068.261   12292.521 -  0.00179   12314.888 -  0.00757   12639.288 +    0.568
+TVM+F+I+G4        -6062.221   12284.441 +    0.102   12308.048 +    0.232   12640.099 +    0.379
+TIM+F+I+G4        -6068.039   12294.079 - 0.000821   12317.060 -  0.00256   12645.290 -   0.0282
+GTR+F+I+G4        -6061.966   12285.933 -   0.0482   12310.173 +     0.08   12646.036 -   0.0195
+TVM+F+I+R3        -6057.475   12280.949 +    0.582   12306.488 +    0.505   12649.944 -  0.00276
+K3Pu+F+I+R3       -6063.999   12289.997 -  0.00632   12314.238 -   0.0105   12650.100 -  0.00255
+GTR+F+I+R3        -6057.295   12282.589 +    0.256   12308.791 +     0.16   12656.030 - 0.000131
+TIM+F+I+R3        -6063.901   12291.802 -  0.00256   12316.687 -  0.00308   12656.351 - 0.000112
+TVM+F+G4          -6085.944   12329.887 - 1.38e-011   12352.869 - 4.28e-011   12681.099 - 4.73e-010
+K3Pu+F+G4         -6093.002   12340.003 - 8.74e-014   12361.764 - 5.01e-013   12682.324 - 2.57e-010
+GTR+F+G4          -6085.607   12331.214 - 7.09e-012   12354.820 - 1.61e-011   12686.871 - 2.64e-011
+TIM+F+G4          -6092.454   12340.908 - 5.56e-014   12363.275 - 2.36e-013   12687.674 - 1.77e-011
+TPM3u+F+I+G4      -6092.587   12341.174 - 4.87e-014   12363.540 - 2.06e-013   12687.940 - 1.55e-011
+TIM3+F+I+G4       -6092.478   12342.956 -   2e-014   12365.938 - 6.22e-014   12694.168 - 6.88e-013
+TPM3u+F+I+R3      -6086.831   12335.661 - 7.67e-013   12359.902 - 1.27e-012   12695.764 - 3.09e-013
+TIM3+F+I+R3       -6086.900   12337.799 - 2.63e-013   12362.684 - 3.17e-013   12702.349 - 1.15e-014
+TPM2u+F+I+G4      -6100.076   12356.152 - 2.72e-017   12378.518 - 1.15e-016   12702.918 - 8.66e-015
+TIM2+F+I+G4       -6099.904   12357.808 - 1.19e-017   12380.790 - 3.71e-017   12709.020 - 4.09e-016
+TPM2u+F+I+R3      -6095.785   12353.570 - 9.9e-017   12377.811 - 1.64e-016   12713.674 -   4e-017
+HKY+F+I+G4        -6111.367   12376.733 - 9.24e-022   12398.494 - 5.3e-021   12719.054 - 2.71e-018
+TIM2+F+I+R3       -6095.711   12355.423 - 3.92e-017   12380.308 - 4.72e-017   12719.972 - 1.71e-018
+TN+F+I+G4         -6111.220   12378.439 - 3.94e-022   12400.806 - 1.67e-021   12725.205 - 1.25e-019
+TPM3u+F+G4        -6115.604   12385.208 - 1.34e-023   12406.969 - 7.66e-023   12727.528 - 3.92e-020
+HKY+F+I+R3        -6107.121   12374.242 - 3.21e-021   12397.848 - 7.32e-021   12729.899 - 1.2e-020
+TIM3+F+G4         -6115.679   12387.357 - 4.56e-024   12409.724 - 1.93e-023   12734.123 - 1.45e-021
+TN+F+I+R3         -6106.873   12375.747 - 1.51e-021   12399.988 - 2.51e-021   12735.850 - 6.11e-022
+TPM2u+F+G4        -6124.034   12402.067 - 2.92e-027   12423.828 - 1.67e-026   12744.388 - 8.55e-024
+TIM2+F+G4         -6123.959   12403.917 - 1.16e-027   12426.284 - 4.9e-027   12750.683 - 3.67e-025
+HKY+F+G4          -6136.152   12424.304 - 4.33e-032   12445.469 - 3.34e-031   12762.179 - 1.17e-027
+TN+F+G4           -6136.202   12426.404 - 1.51e-032   12448.165 - 8.68e-032   12768.725 - 4.44e-029
+GTR+I+G4          -6197.224   12550.448 - 1.75e-059   12572.815 - 7.43e-059   12897.214 - 5.58e-057
+SYM+I+G4          -6197.662   12551.323 - 1.13e-059   12573.690 - 4.8e-059   12898.089 - 3.6e-057
+SYM+I+G4          -6197.662   12551.323 - 1.13e-059   12573.690 - 4.8e-059   12898.089 - 3.6e-057
+GTR+I+R3          -6191.513   12545.026 - 2.64e-058   12569.267 - 4.38e-058   12905.129 - 1.07e-058
+SYM+I+R3          -6191.513   12545.026 - 2.64e-058   12569.267 - 4.38e-058   12905.130 - 1.07e-058
+SYM+I+R3          -6191.513   12545.026 - 2.64e-058   12569.267 - 4.38e-058   12905.130 - 1.07e-058
+TVM+I+G4          -6204.453   12562.905 - 3.46e-062   12584.666 - 1.98e-061   12905.226 - 1.02e-058
+TVMe+I+G4         -6204.480   12562.960 - 3.37e-062   12584.720 - 1.93e-061   12905.280 - 9.88e-059
+TVMe+I+G4         -6204.480   12562.960 - 3.37e-062   12584.720 - 1.93e-061   12905.280 - 9.88e-059
+TVM+I+R3          -6197.241   12554.482 - 2.34e-060   12578.088 - 5.32e-060   12910.139 - 8.7e-060
+TVMe+I+R3         -6197.308   12554.616 - 2.18e-060   12578.222 - 4.98e-060   12910.273 - 8.14e-060
+TVMe+I+R3         -6197.308   12554.616 - 2.18e-060   12578.222 - 4.98e-060   12910.273 - 8.14e-060
+GTR+G4            -6209.451   12572.902 - 2.34e-064   12594.663 - 1.34e-063   12915.223 - 6.85e-061
+SYM+G4            -6209.491   12572.982 - 2.24e-064   12594.743 - 1.29e-063   12915.302 - 6.59e-061
+SYM+G4            -6209.491   12572.982 - 2.24e-064   12594.743 - 1.29e-063   12915.302 - 6.59e-061
+TVM+G4            -6216.390   12584.780 - 6.15e-067   12605.945 - 4.75e-066   12922.655 - 1.67e-062
+TVMe+G4           -6216.443   12584.885 - 5.84e-067   12606.050 - 4.51e-066   12922.760 - 1.58e-062
+TVMe+G4           -6216.443   12584.885 - 5.84e-067   12606.050 - 4.51e-066   12922.760 - 1.58e-062
+F81+F+I+G4        -6234.577   12621.154 - 7.78e-075   12642.318 - 6.01e-074   12959.028 - 2.11e-070
+F81+F+I+R3        -6230.027   12618.053 - 3.66e-074   12641.035 - 1.14e-073   12969.265 - 1.26e-072
+TIM+I+G4          -6243.116   12638.231 - 1.52e-078   12659.396 - 1.18e-077   12976.106 - 4.12e-074
+TIMe+I+G4         -6243.229   12638.457 - 1.36e-078   12659.622 - 1.05e-077   12976.332 - 3.68e-074
+TIMe+I+G4         -6243.229   12638.457 - 1.36e-078   12659.622 - 1.05e-077   12976.332 - 3.68e-074
+TIM+I+R3          -6234.705   12627.409 - 3.41e-076   12650.391 - 1.06e-075   12978.621 - 1.17e-074
+TIMe+I+R3         -6234.744   12627.489 - 3.27e-076   12650.471 - 1.02e-075   12978.701 - 1.13e-074
+TIMe+I+R3         -6234.744   12627.489 - 3.27e-076   12650.471 - 1.02e-075   12978.701 - 1.13e-074
+F81+F+G4          -6251.294   12652.589 - 1.16e-081   12673.166 - 1.2e-080   12986.018 - 2.9e-076
+K3Pu+I+R3         -6244.358   12644.716 - 5.95e-080   12667.082 - 2.52e-079   12991.482 - 1.89e-077
+K3P+I+R3          -6244.373   12644.747 - 5.86e-080   12667.113 - 2.48e-079   12991.513 - 1.86e-077
+K3P+I+R3          -6244.373   12644.747 - 5.86e-080   12667.113 - 2.48e-079   12991.513 - 1.86e-077
+K3Pu+I+G4         -6254.568   12659.136 - 4.39e-083   12679.714 - 4.55e-082   12992.565 - 1.1e-077
+K3P+I+G4          -6254.606   12659.213 - 4.23e-083   12679.791 - 4.38e-082   12992.642 - 1.06e-077
+K3P+I+G4          -6254.606   12659.213 - 4.23e-083   12679.791 - 4.38e-082   12992.642 - 1.06e-077
+TIM+G4            -6256.887   12663.773 - 4.33e-084   12684.351 - 4.48e-083   12997.202 - 1.08e-078
+TIMe+G4           -6256.928   12663.856 - 4.15e-084   12684.433 - 4.3e-083   12997.285 - 1.04e-078
+TIMe+G4           -6256.928   12663.856 - 4.15e-084   12684.433 - 4.3e-083   12997.285 - 1.04e-078
+K3P+G4            -6266.933   12681.865 - 5.1e-088   12701.865 - 7.05e-087   13010.849 - 1.18e-081
+K3P+G4            -6266.933   12681.865 - 5.1e-088   12701.865 - 7.05e-087   13010.849 - 1.18e-081
+K3Pu+G4           -6266.935   12681.871 - 5.08e-088   12701.871 - 7.03e-087   13010.854 - 1.17e-081
+TPM3u+I+R3        -6271.885   12699.770 - 6.6e-092   12722.137 - 2.8e-091   13046.536 - 2.1e-089
+TPM3u+I+G4        -6281.592   12713.184 - 8.06e-095   12733.762 - 8.36e-094   13046.613 - 2.02e-089
+TPM3+I+R3         -6271.971   12699.943 - 6.05e-092   12722.309 - 2.56e-091   13046.709 - 1.92e-089
+TPM3+I+R3         -6271.971   12699.943 - 6.05e-092   12722.309 - 2.56e-091   13046.709 - 1.92e-089
+TPM3+I+G4         -6281.672   12713.345 - 7.44e-095   12733.922 - 7.71e-094   13046.774 - 1.86e-089
+TPM3+I+G4         -6281.672   12713.345 - 7.44e-095   12733.922 - 7.71e-094   13046.774 - 1.86e-089
+TIM3+I+G4         -6279.543   12711.086 - 2.3e-094   12732.251 - 1.78e-093   13048.961 - 6.24e-090
+TIM3e+I+G4        -6279.633   12711.266 - 2.1e-094   12732.431 - 1.63e-093   13049.141 - 5.7e-090
+TIM3e+I+G4        -6279.633   12711.266 - 2.1e-094   12732.431 - 1.63e-093   13049.141 - 5.7e-090
+TIM3+I+R3         -6270.404   12698.808 - 1.07e-091   12721.790 - 3.32e-091   13050.020 - 3.67e-090
+TIM3e+I+R3        -6270.445   12698.891 - 1.02e-091   12721.873 - 3.19e-091   13050.103 - 3.52e-090
+TIM3e+I+R3        -6270.445   12698.891 - 1.02e-091   12721.873 - 3.19e-091   13050.103 - 3.52e-090
+TPM3u+G4          -6293.278   12734.556 - 1.84e-099   12754.556 - 2.55e-098   13063.539 - 4.26e-093
+TPM3+G4           -6293.298   12734.596 - 1.81e-099   12754.596 - 2.5e-098   13063.579 - 4.17e-093
+TPM3+G4           -6293.298   12734.596 - 1.81e-099   12754.596 - 2.5e-098   13063.579 - 4.17e-093
+TIM3+G4           -6290.585   12731.169 -   1e-098   12751.747 - 1.04e-097   13064.598 - 2.51e-093
+TIM3e+G4          -6290.614   12731.229 - 9.73e-099   12751.806 - 1.01e-097   13064.658 - 2.43e-093
+TIM3e+G4          -6290.614   12731.229 - 9.73e-099   12751.806 - 1.01e-097   13064.658 - 2.43e-093
+TIM2+I+G4         -6343.263   12838.526 - 4.89e-122   12859.690 - 3.78e-121   13176.401 - 1.32e-117
+TIM2e+I+G4        -6343.346   12838.693 - 4.49e-122   12859.857 - 3.47e-121   13176.567 - 1.22e-117
+TIM2e+I+G4        -6343.346   12838.693 - 4.49e-122   12859.857 - 3.47e-121   13176.567 - 1.22e-117
+TIM2+I+R3         -6340.438   12838.875 - 4.1e-122   12861.857 - 1.28e-121   13190.087 - 1.41e-120
+TIM2e+I+R3        -6340.456   12838.911 - 4.03e-122   12861.893 - 1.25e-121   13190.123 - 1.39e-120
+TIM2e+I+R3        -6340.456   12838.911 - 4.03e-122   12861.893 - 1.25e-121   13190.123 - 1.39e-120
+TIM2+G4           -6354.978   12859.956 - 1.09e-126   12880.533 - 1.12e-125   13193.385 - 2.71e-121
+TIM2e+G4          -6355.004   12860.007 - 1.06e-126   12880.585 - 1.1e-125   13193.436 - 2.65e-121
+TIM2e+G4          -6355.004   12860.007 - 1.06e-126   12880.585 - 1.1e-125   13193.436 - 2.65e-121
+TPM2u+I+G4        -6357.041   12864.081 - 1.38e-127   12884.659 - 1.43e-126   13197.510 - 3.45e-122
+TPM2+I+G4         -6357.050   12864.100 - 1.37e-127   12884.678 - 1.42e-126   13197.529 - 3.42e-122
+TPM2+I+G4         -6357.050   12864.100 - 1.37e-127   12884.678 - 1.42e-126   13197.529 - 3.42e-122
+TPM2u+I+R3        -6351.916   12859.832 - 1.15e-126   12882.199 - 4.89e-126   13206.599 - 3.67e-124
+TPM2+I+R3         -6351.936   12859.872 - 1.13e-126   12882.239 - 4.79e-126   13206.638 - 3.6e-124
+TPM2+I+R3         -6351.936   12859.872 - 1.13e-126   12882.239 - 4.79e-126   13206.638 - 3.6e-124
+TPM2u+G4          -6367.341   12882.681 - 1.26e-131   12902.681 - 1.74e-130   13211.665 - 2.91e-125
+TPM2+G4           -6367.361   12882.722 - 1.24e-131   12902.722 - 1.71e-130   13211.705 - 2.85e-125
+TPM2+G4           -6367.361   12882.722 - 1.24e-131   12902.722 - 1.71e-130   13211.705 - 2.85e-125
+TN+I+G4           -6388.369   12926.737 - 3.42e-141   12947.315 - 3.54e-140   13260.166 - 8.56e-136
+TNe+I+G4          -6388.442   12926.885 - 3.18e-141   12947.462 - 3.29e-140   13260.314 - 7.95e-136
+TNe+I+G4          -6388.442   12926.885 - 3.18e-141   12947.462 - 3.29e-140   13260.314 - 7.95e-136
+TN+I+R3           -6380.234   12916.469 - 5.81e-139   12938.835 - 2.46e-138   13263.235 - 1.84e-136
+TNe+I+R3          -6380.295   12916.589 - 5.47e-139   12938.956 - 2.32e-138   13263.355 - 1.74e-136
+TNe+I+R3          -6380.295   12916.589 - 5.47e-139   12938.956 - 2.32e-138   13263.355 - 1.74e-136
+TN+G4             -6395.790   12939.581 - 5.56e-144   12959.581 - 7.69e-143   13268.564 - 1.28e-137
+TNe+G4            -6395.830   12939.660 - 5.35e-144   12959.660 - 7.39e-143   13268.643 - 1.23e-137
+TNe+G4            -6395.830   12939.660 - 5.35e-144   12959.660 - 7.39e-143   13268.643 - 1.23e-137
+HKY+I+R3          -6386.285   12926.570 - 3.72e-141   12948.331 - 2.13e-140   13268.891 - 1.09e-137
+K2P+I+R3          -6386.293   12926.586 - 3.69e-141   12948.346 - 2.12e-140   13268.906 - 1.08e-137
+K2P+I+R3          -6386.293   12926.586 - 3.69e-141   12948.346 - 2.12e-140   13268.906 - 1.08e-137
+HKY+I+G4          -6397.172   12942.344 - 1.4e-144   12962.344 - 1.93e-143   13271.328 - 3.23e-138
+K2P+I+G4          -6397.242   12942.483 - 1.3e-144   12962.483 - 1.8e-143   13271.467 - 3.01e-138
+K2P+I+G4          -6397.242   12942.483 - 1.3e-144   12962.483 - 1.8e-143   13271.467 - 3.01e-138
+HKY+G4            -6403.136   12952.272 - 9.75e-147   12971.704 - 1.79e-145   13276.810 - 2.08e-139
+K2P+G4            -6403.182   12952.364 - 9.32e-147   12971.795 - 1.71e-145   13276.901 - 1.99e-139
+K2P+G4            -6403.182   12952.364 - 9.32e-147   12971.795 - 1.71e-145   13276.901 - 1.99e-139
+F81+I+R3          -6416.877   12985.754 - 5.23e-154   13006.918 - 4.04e-153   13323.629 - 1.42e-149
+JC+I+R3           -6417.075   12986.150 - 4.29e-154   13007.315 - 3.32e-153   13324.025 - 1.16e-149
+JC+I+R3           -6417.075   12986.150 - 4.29e-154   13007.315 - 3.32e-153   13324.025 - 1.16e-149
+F81+I+G4          -6426.927   12999.854 - 4.54e-157   13019.286 - 8.34e-156   13324.392 - 9.68e-150
+JC+I+G4           -6426.995   12999.989 - 4.24e-157   13019.421 - 7.8e-156   13324.527 - 9.05e-150
+JC+I+G4           -6426.995   12999.989 - 4.24e-157   13019.421 - 7.8e-156   13324.527 - 9.05e-150
+JC+G4             -6431.914   13007.828 - 8.42e-159   13026.701 - 2.05e-157   13327.920 - 1.66e-150
+JC+G4             -6431.914   13007.828 - 8.42e-159   13026.701 - 2.05e-157   13327.920 - 1.66e-150
+F81+G4            -6431.915   13007.829 - 8.42e-159   13026.702 - 2.05e-157   13327.921 - 1.66e-150
+JC+R3             -6426.504   13003.008 - 9.38e-158   13023.586 - 9.72e-157   13336.437 - 2.35e-152
+JC+I+R4           -6416.965   12989.929 - 6.49e-155   13012.296 - 2.75e-154   13336.695 - 2.06e-152
+JC+R4             -6420.425   12994.851 - 5.54e-156   13016.612 - 3.18e-155   13337.171 - 1.63e-152
+JC+I+R2           -6431.470   13010.940 - 1.78e-159   13030.940 - 2.46e-158   13339.924 - 4.1e-153
+JC+R2             -6460.987   13067.974 - 7.33e-172   13087.406 - 1.35e-170   13392.512 - 1.56e-164
+JC+I              -6602.382   13348.764 - 7.8e-233   13367.636 - 1.9e-231   13668.856 - 1.54e-224
+JC                -7137.004   14416.008 -        0   14434.330 -        0   14731.654 -        0
+
+AIC, w-AIC   : Akaike information criterion scores and weights.
+AICc, w-AICc : Corrected AIC scores and weights.
+BIC, w-BIC   : Bayesian information criterion scores and weights.
+
+Plus signs denote the 95% confidence sets.
+Minus signs denote significant exclusion.
+
+SUBSTITUTION PROCESS
+--------------------
+
+Model of substitution: K3Pu+F+I+G4
+
+Rate parameter R:
+
+  A-C: 1.0000
+  A-G: 13.0542
+  A-T: 5.6541
+  C-G: 5.6541
+  C-T: 13.0542
+  G-T: 1.0000
+
+State frequencies: (empirical counts from alignment)
+
+  pi(A) = 0.2653
+  pi(C) = 0.1182
+  pi(G) = 0.18
+  pi(T) = 0.4366
+
+Rate matrix Q:
+
+  A    -1.131   0.02708    0.5384    0.5657
+  C    0.0608      -1.6    0.2332     1.306
+  G    0.7938    0.1531    -1.047    0.1001
+  T    0.3438    0.3535   0.04124   -0.7385
+
+Model of rate heterogeneity: Invar+Gamma with 4 categories
+Proportion of invariable sites: 0.4088
+Gamma shape alpha: 0.5473
+
+ Category  Relative_rate  Proportion
+  0         0              0.4088
+  1         0.07181        0.1478
+  2         0.4764         0.1478
+  3         1.441          0.1478
+  4         4.777          0.1478
+Relative rates are computed as MEAN of the portion of the Gamma distribution falling in the category.
+
+MAXIMUM LIKELIHOOD TREE
+-----------------------
+
+Log-likelihood of the tree: -6059.7623 (s.e. 243.8905)
+Unconstrained log-likelihood (without tree): -2633.8466
+Number of free parameters (#branches + #model parameters): 78
+Akaike information criterion (AIC) score: 12275.5247
+Corrected Akaike information criterion (AICc) score: 12297.8913
+Bayesian information criterion (BIC) score: 12622.2908
+
+Total tree length (sum of branch lengths): 13.6252
+Sum of internal branch lengths: 1.3945 (10.2343% of tree length)
+
+WARNING: 1 too long branches (>9.8000) should be treated with caution!
+NOTE: Tree is UNROOTED although outgroup taxon 'Aphelenchoides_besseyi' is drawn at root
+Numbers in parentheses are  ultrafast bootstrap support (%)
+
++--Aphelenchoides_besseyi
+|
+|  +--Bursaphelenchus_abietinus
++--| (100)
+|  +--Bursaphelenchus_hellenicus
+|
+|  +--Bursaphelenchus_abruptus
++--| (31)
+   |        +--Bursaphelenchus_borealis
+   |     +--| (36)
+   |     |  |     +--Bursaphelenchus_hofmanni
+   |     |  |  +--| (53)
+   |     |  |  |  |  +--Bursaphelenchus_sexdentati_177_GR
+   |     |  |  |  +--| (100)
+   |     |  |  |     +--Bursaphelenchus_sexdentati_178_DE
+   |     |  +--| (60)
+   |     |     +--Bursaphelenchus_poligraphi
+   |  +--| (62)
+   |  |  |     +--Bursaphelenchus_paracorneolus
+   |  |  |  +--| (62)
+   |  |  |  |  +--Bursaphelenchus_sexdentati_180_IT
+   |  |  +--| (59)
+   |  |     +--Bursaphelenchus_sexdentati_179_GR
+   +--| (32)
+      |        +--------------------------------------------------------Bursaphelenchus_cocophilus
+      |     +--| (57)
+      |     |  +**Bursaphelenchus_hylobianum
+      |  +--| (17)
+      |  |  |  +--Bursaphelenchus_eggersi
+      |  |  +--| (96)
+      |  |     +--Bursaphelenchus_tusciae
+      +--| (27)
+         |              +--Bursaphelenchus_fraudulentus_147_Helmstedt_DE
+         |           +--| (91)
+         |           |  +--Bursaphelenchus_fraudulentus_148_HUN
+         |        +--| (100)
+         |        |  |  +**Bursaphelenchus_fraudulentus_150_Krasnojarsk_RU
+         |        |  +--| (100)
+         |        |     +--Bursaphelenchus_fraudulentus_151_Zusmarshausen_DE
+         |     +--| (80)
+         |     |  |           +**Bursaphelenchus_mucronatus_163_JP
+         |     |  |        +--| (97)
+         |     |  |        |  +**Bursaphelenchus_mucronatus_168_Zusmarshausen_DE
+         |     |  |     +--| (100)
+         |     |  |     |  +**Bursaphelenchus_mucronatus_167_Gruenberg_DE
+         |     |  |  +--| (80)
+         |     |  |  |  |  +--Bursaphelenchus_mucronatus_164_Hanestad_NOR
+         |     |  |  |  +--| (88)
+         |     |  |  |     |  +**Bursaphelenchus_mucronatus_165_FIN
+         |     |  |  |     +--| (77)
+         |     |  |  |        +--Bursaphelenchus_mucronatus_166_DE
+         |     |  +--| (59)
+         |     |     |  +**Bursaphelenchus_xylophilus_185_CAN
+         |     |     +--| (100)
+         |     |        |     +**Bursaphelenchus_xylophilus_186_JP
+         |     |        |  +--| (74)
+         |     |        |  |  +--Bursaphelenchus_xylophilus_187_New_Brunswick_CAN
+         |     |        +--| (63)
+         |     |           +--Bursaphelenchus_xylophilus_188_Quebec_CAN
+         |  +--| (26)
+         |  |  |     +--Bursaphelenchus_fungivorus
+         |  |  |  +--| (94)
+         |  |  |  |  |     +**Bursaphelenchus_seani_174_California_USA
+         |  |  |  |  |  +--| (81)
+         |  |  |  |  |  |  +--Bursaphelenchus_seani_175_California_USA
+         |  |  |  |  +--| (99)
+         |  |  |  |     +**Bursaphelenchus_seani_176_California_USA
+         |  |  +--| (57)
+         |  |     +--Bursaphelenchus_sp._ex_Carpophilus_humeralis
+         +--| (30)
+            |  +--Bursaphelenchus_sp._ex_Halictidae
+            +--| (38)
+               +--Bursaphelenchus_sp._ex_Rhynchophorus_palmarum
+
+Tree in newick format:
+
+(Aphelenchoides_besseyi:0.2634960782,(Bursaphelenchus_abietinus:0.2414219530,Bursaphelenchus_hellenicus:0.2186020069)100:0.1681575262,(Bursaphelenchus_abruptus:0.1064042358,(((Bursaphelenchus_borealis:0.0946475615,((Bursaphelenchus_hofmanni:0.1654816233,(Bursaphelenchus_sexdentati_177_GR:0.0131370826,Bursaphelenchus_sexdentati_178_DE:0.0022490764)100:0.0802469984)53:0.0203146549,Bursaphelenchus_poligraphi:0.1122222650)60:0.0111835306)36:0.0166138184,((Bursaphelenchus_paracorneolus:0.3325750381,Bursaphelenchus_sexdentati_180_IT:0.0254553026)62:0.0334716211,Bursaphelenchus_sexdentati_179_GR:0.0600806805)59:0.0289980778)62:0.0195780367,(((Bursaphelenchus_cocophilus:9.9836048811,Bursaphelenchus_hylobianum:0.0000026422)57:0.3501293940,(Bursaphelenchus_eggersi:0.1148858242,Bursaphelenchus_tusciae:0.0817225910)96:0.0542306088)17:0.0045101255,(((((Bursaphelenchus_fraudulentus_147_Helmstedt_DE:0.0077305129,Bursaphelenchus_fraudulentus_148_HUN:0.0037237646)91:0.0077304929,(Bursaphelenchus_fraudulentus_150_Krasnojarsk_RU:0.0000010085,Bursaphelenchus_fraudulentus_151_Zusmarshausen_DE:0.0018919127)100:0.0071719489)100:0.0720211757,((((Bursaphelenchus_mucronatus_163_JP:0.0000010085,Bursaphelenchus_mucronatus_168_Zusmarshausen_DE:0.0000010085)97:0.0038559823,Bursaphelenchus_mucronatus_167_Gruenberg_DE:0.0000010085)100:0.0428034787,(Bursaphelenchus_mucronatus_164_Hanestad_NOR:0.0184927284,(Bursaphelenchus_mucronatus_165_FIN:0.0000025808,Bursaphelenchus_mucronatus_166_DE:0.0093763069)77:0.0074897992)88:0.0228486495)80:0.0183822116,(Bursaphelenchus_xylophilus_185_CAN:0.0000010085,((Bursaphelenchus_xylophilus_186_JP:0.0000010085,Bursaphelenchus_xylophilus_187_New_Brunswick_CAN:0.0018376800)74:0.0018398882,Bursaphelenchus_xylophilus_188_Quebec_CAN:0.0018659897)63:0.0018590006)100:0.0720227703)59:0.0221384210)80:0.0511149780,((Bursaphelenchus_fungivorus:0.0692788913,((Bursaphelenchus_seani_174_California_USA:0.0000010085,Bursaphelenchus_seani_175_California_USA:0.0019386783)81:0.0038642290,Bursaphelenchus_seani_176_California_USA:0.0000024954)99:0.1236532151)94:0.0497505439,Bursaphelenchus_sp._ex_Carpophilus_humeralis:0.0695034471)57:0.0147677255)26:0.0063604899,(Bursaphelenchus_sp._ex_Halictidae:0.1503971804,Bursaphelenchus_sp._ex_Rhynchophorus_palmarum:0.0748991021)38:0.0170744652)30:0.0181435433)27:0.0096863607)32:0.0182445179)31:0.0180513965);
+
+CONSENSUS TREE
+--------------
+
+Consensus tree is constructed from 1000 bootstrap trees
+Log-likelihood of consensus tree: -6059.768119
+Robinson-Foulds distance between ML tree and consensus tree: 0
+
+Branches with support >0.000000% are kept (extended consensus)
+Branch lengths are optimized by maximum likelihood on original alignment
+Numbers in parentheses are bootstrap supports (%)
+
++--Aphelenchoides_besseyi
+|
+|  +--Bursaphelenchus_abietinus
++--| (100)
+|  +--Bursaphelenchus_hellenicus
+|
+|  +--Bursaphelenchus_abruptus
++--| (31)
+   |        +--Bursaphelenchus_borealis
+   |     +--| (36)
+   |     |  |     +--Bursaphelenchus_hofmanni
+   |     |  |  +--| (53)
+   |     |  |  |  |  +--Bursaphelenchus_sexdentati_177_GR
+   |     |  |  |  +--| (100)
+   |     |  |  |     +--Bursaphelenchus_sexdentati_178_DE
+   |     |  +--| (60)
+   |     |     +--Bursaphelenchus_poligraphi
+   |  +--| (62)
+   |  |  |     +--Bursaphelenchus_paracorneolus
+   |  |  |  +--| (62)
+   |  |  |  |  +--Bursaphelenchus_sexdentati_180_IT
+   |  |  +--| (59)
+   |  |     +--Bursaphelenchus_sexdentati_179_GR
+   +--| (32)
+      |        +--------------------------------------------------------Bursaphelenchus_cocophilus
+      |     +--| (57)
+      |     |  +--Bursaphelenchus_hylobianum
+      |  +--| (17)
+      |  |  |  +--Bursaphelenchus_eggersi
+      |  |  +--| (96)
+      |  |     +--Bursaphelenchus_tusciae
+      +--| (27)
+         |              +--Bursaphelenchus_fraudulentus_147_Helmstedt_DE
+         |           +--| (91)
+         |           |  +--Bursaphelenchus_fraudulentus_148_HUN
+         |        +--| (100)
+         |        |  |  +--Bursaphelenchus_fraudulentus_150_Krasnojarsk_RU
+         |        |  +--| (100)
+         |        |     +--Bursaphelenchus_fraudulentus_151_Zusmarshausen_DE
+         |     +--| (80)
+         |     |  |           +--Bursaphelenchus_mucronatus_163_JP
+         |     |  |        +--| (97)
+         |     |  |        |  +--Bursaphelenchus_mucronatus_168_Zusmarshausen_DE
+         |     |  |     +--| (100)
+         |     |  |     |  +--Bursaphelenchus_mucronatus_167_Gruenberg_DE
+         |     |  |  +--| (80)
+         |     |  |  |  |  +--Bursaphelenchus_mucronatus_164_Hanestad_NOR
+         |     |  |  |  +--| (88)
+         |     |  |  |     |  +--Bursaphelenchus_mucronatus_165_FIN
+         |     |  |  |     +--| (77)
+         |     |  |  |        +--Bursaphelenchus_mucronatus_166_DE
+         |     |  +--| (59)
+         |     |     |  +--Bursaphelenchus_xylophilus_185_CAN
+         |     |     +--| (100)
+         |     |        |     +--Bursaphelenchus_xylophilus_186_JP
+         |     |        |  +--| (74)
+         |     |        |  |  +--Bursaphelenchus_xylophilus_187_New_Brunswick_CAN
+         |     |        +--| (63)
+         |     |           +--Bursaphelenchus_xylophilus_188_Quebec_CAN
+         |  +--| (26)
+         |  |  |     +--Bursaphelenchus_fungivorus
+         |  |  |  +--| (94)
+         |  |  |  |  |     +--Bursaphelenchus_seani_174_California_USA
+         |  |  |  |  |  +--| (81)
+         |  |  |  |  |  |  +--Bursaphelenchus_seani_175_California_USA
+         |  |  |  |  +--| (99)
+         |  |  |  |     +--Bursaphelenchus_seani_176_California_USA
+         |  |  +--| (57)
+         |  |     +--Bursaphelenchus_sp._ex_Carpophilus_humeralis
+         +--| (30)
+            |  +--Bursaphelenchus_sp._ex_Halictidae
+            +--| (38)
+               +--Bursaphelenchus_sp._ex_Rhynchophorus_palmarum
+
+
+Consensus tree in newick format: 
+
+(Aphelenchoides_besseyi:0.2631161296,(Bursaphelenchus_abietinus:0.2412125059,Bursaphelenchus_hellenicus:0.2183672487)100:0.1679220018,(Bursaphelenchus_abruptus:0.1062992088,(((Bursaphelenchus_borealis:0.0945506989,((Bursaphelenchus_hofmanni:0.1653231961,(Bursaphelenchus_sexdentati_177_GR:0.0130922905,Bursaphelenchus_sexdentati_178_DE:0.0022715234)100:0.0801525561)53:0.0203293677,Bursaphelenchus_poligraphi:0.1121146000)60:0.0111930755)36:0.0166241296,((Bursaphelenchus_paracorneolus:0.3323247218,Bursaphelenchus_sexdentati_180_IT:0.0254047646)62:0.0335165689,Bursaphelenchus_sexdentati_179_GR:0.0600201510)59:0.0289696148)62:0.0195625201,(((Bursaphelenchus_cocophilus:9.9617361707,Bursaphelenchus_hylobianum:0.0000024016)57:0.3494043106,(Bursaphelenchus_eggersi:0.1148082452,Bursaphelenchus_tusciae:0.0815944726)96:0.0540073956)17:0.0047852004,(((((Bursaphelenchus_fraudulentus_147_Helmstedt_DE:0.0077226229,Bursaphelenchus_fraudulentus_148_HUN:0.0037198079)91:0.0077236261,(Bursaphelenchus_fraudulentus_150_Krasnojarsk_RU:0.0000025542,Bursaphelenchus_fraudulentus_151_Zusmarshausen_DE:0.0018898625)100:0.0071651433)100:0.0719074924,((((Bursaphelenchus_mucronatus_163_JP:0.0000025542,Bursaphelenchus_mucronatus_168_Zusmarshausen_DE:0.0000025542)97:0.0038514502,Bursaphelenchus_mucronatus_167_Gruenberg_DE:0.0000025542)100:0.0427486064,(Bursaphelenchus_mucronatus_164_Hanestad_NOR:0.0184683183,(Bursaphelenchus_mucronatus_165_FIN:0.0000025597,Bursaphelenchus_mucronatus_166_DE:0.0093654435)77:0.0074865555)88:0.0228234768)80:0.0183661321,(Bursaphelenchus_xylophilus_185_CAN:0.0000025542,((Bursaphelenchus_xylophilus_186_JP:0.0000025542,Bursaphelenchus_xylophilus_187_New_Brunswick_CAN:0.0018356459)74:0.0018378675,Bursaphelenchus_xylophilus_188_Quebec_CAN:0.0018639747)63:0.0018568970)100:0.0719355023)59:0.0221511940)80:0.0511019925,((Bursaphelenchus_fungivorus:0.0691878297,((Bursaphelenchus_seani_174_California_USA:0.0000025542,Bursaphelenchus_seani_175_California_USA:0.0019368015)81:0.0038605890,Bursaphelenchus_seani_176_California_USA:0.0000023603)99:0.1235046247)94:0.0496945634,Bursaphelenchus_sp._ex_Carpophilus_humeralis:0.0694236576)57:0.0147196027)26:0.0063503890,(Bursaphelenchus_sp._ex_Halictidae:0.1502495442,Bursaphelenchus_sp._ex_Rhynchophorus_palmarum:0.0747943088)38:0.0170767688)30:0.0181257716)27:0.0096513737)32:0.0182251010)31:0.0181476410);
+
+ALISIM COMMAND
+--------------
+To simulate an alignment of the same length as the original alignment, using the tree and model parameters estimated from this analysis, you can use the following command:
+
+--alisim simulated_MSA -t ml2\trees\M146.treefile -m "K3Pu{13.0542,5.65407}+F{0.265313,0.118152,0.179965,0.436571}+I{0.408794}+G4{0.547289}" --length 630
+
+To mimic the alignment used to produce this analysis, i.e. simulate an alignment of the same length as the original alignment, using the tree and model parameters estimated from this analysis *and* copying the same gap positions as the original alignment, you can use the following command:
+
+iqtree -s ml2\datasets\M146.nex --alisim mimicked_MSA
+
+To simulate any number of alignments in either of the two commandlines above, use the --num-alignments options, for example mimic 100 alignments you would use the command line:
+
+iqtree -s ml2\datasets\M146.nex --alisim mimicked_MSA --num-alignments 100
+
+For more information on using AliSim, please visit: www.iqtree.org/doc/AliSim
+
+TIME STAMP
+----------
+
+Date and time: Mon May 04 12:52:03 2026
+Total CPU time used: 239.96875 seconds (0h:3m:59s)
+Total wall-clock time used: 130.003353 seconds (0h:2m:10s)
+

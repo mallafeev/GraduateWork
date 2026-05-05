@@ -1,0 +1,67 @@
+IQ-TREE version 3.1.1 for Windows 64-bit built Apr  2 2026
+Developed by Bui Quang Minh, Thomas Wong, Nhan Ly-Trong, Huaiyan Ren
+Contributed by Lam-Tung Nguyen, Dominik Schrempf, Chris Bielow,
+Olga Chernomor, Michael Woodhams, Diep Thi Hoang, Heiko Schmidt
+
+Host:    DESKTOP-I0VDDLU (AVX2, FMA3, 15 GB RAM)
+Command: iqtree-3.1.1-Windows\bin\iqtree3.exe -s ml2\datasets\M13320.nex -m MFP -B 1000 -bnni -T AUTO --prefix ml2\trees\M13320 --redo
+Seed:    435152 (Using SPRNG - Scalable Parallel Random Number Generator)
+Time:    Mon May 04 12:48:28 2026
+Kernel:  AVX+FMA - auto-detect threads (16 CPU cores detected)
+
+Reading alignment file ml2\datasets\M13320.nex ... Nexus format detected
+Alignment has 44 sequences with 1218 columns, 892 distinct patterns
+772 parsimony-informative, 104 singleton sites, 342 constant sites
+                      Gap/Ambiguity  Composition  p-value
+Analyzing sequences: done in 0.0004575 secs
+   1  Amphimedon              1.23%    failed      0.00%
+   2  Aphrocallistes          1.23%    failed      0.00%
+   3  Apis                    1.23%    failed      0.00%
+   4  Aplysia                 1.48%    failed      1.59%
+   5  Biemna                  1.23%    failed      0.67%
+   6  Branchiostoma           1.23%    passed      8.61%
+   7  Capitella               1.48%    failed      0.00%
+   8  Caulophacus             1.23%    failed      0.00%
+   9  Chondrilla              1.23%    failed      1.21%
+  10  Chondrosia              1.23%    failed      0.34%
+  11  Cinachyrella            1.23%    passed     28.96%
+  12  Clathrina             100.00%    passed       nan%
+  13  Craniella              19.21%    passed     15.94%
+  14  Crassostrea             1.97%    failed      4.71%
+  15  Cryptococcus            1.23%    failed      0.00%
+  16  Desmapsamma             6.90%    failed      0.01%
+  17  Ectyoplasia             1.23%    failed      2.44%
+  18  Grantessa             100.00%    passed       nan%
+  19  Heterochone             1.23%    failed      0.00%
+  20  Homo                    1.23%    failed      0.00%
+  21  Hydra                   1.23%    failed      0.07%
+  22  Hydractinia             1.72%    passed      5.50%
+  23  Ircinia                 2.46%    failed      0.00%
+  24  Ixodes                  1.23%    failed      0.00%
+  25  Leucetta              100.00%    passed       nan%
+  26  Leuconia              100.00%    passed       nan%
+  27  Monosiga_brevicollis    0.99%    failed      0.04%
+  28  Monosiga_ovata         22.66%    failed      0.00%
+  29  Negombata               1.23%    failed      0.00%
+  30  Nematostella            1.23%    passed      7.40%
+  31  Neurospora              1.23%    passed     24.09%
+  32  Oscarella               1.23%    passed      6.79%
+  33  Pelagia                 1.23%    failed      0.01%
+  34  Plakinastrella          1.23%    failed      0.66%
+  35  Rhopilema               1.23%    passed     89.38%
+  36  Saccoglossus            1.23%    failed      0.11%
+  37  Sarcotragus             1.48%    failed      0.00%
+  38  Schizosaccharomyces     0.99%    passed     21.90%
+  39  Strongylocentrotus      1.23%    failed      0.00%
+  40  Stylophora              1.23%    failed      0.00%
+  41  Tribolium               1.23%    failed      0.00%
+  42  Trichoplax              0.74%    passed      9.47%
+  43  Ustilago                0.99%    failed      0.06%
+  44  Walteria                5.42%    failed      0.00%
+WARNING: 4 sequences contain more than 50% gaps/ambiguity
+****  TOTAL                  11.37%  30 sequences failed composition chi2 test (p-value<5%; df=3)
+WARNING: Sequence Clathrina contains only gaps or missing data
+WARNING: Sequence Grantessa contains only gaps or missing data
+WARNING: Sequence Leucetta contains only gaps or missing data
+WARNING: Sequence Leuconia contains only gaps or missing data
+ERROR: Some sequences (see above) are problematic, please check your alignment again

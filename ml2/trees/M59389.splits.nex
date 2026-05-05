@@ -1,0 +1,37 @@
+#nexus
+
+BEGIN Taxa;
+DIMENSIONS ntax=7;
+TAXLABELS
+[1] 'Brada_sp_HQ326970'
+[2] 'Diplocirrus_toyoshioae_LC314567'
+[3] 'Poeobius_meseres_AleutianIs_LC508300'
+[4] 'Poeobius_meseres_Chile_SIOBICA9529'
+[5] 'Poeobius_meseres_Japan_JAMSTEC049020'
+[6] 'Poeobius_meseres_Japan_LC508299'
+[7] 'Poeobius_meseres_Monterey_EU694130'
+;
+END; [Taxa]
+
+BEGIN Splits;
+DIMENSIONS ntax=7 nsplits=15;
+FORMAT labels=no weights=yes confidences=no intervals=no;
+MATRIX
+	100	 2,
+	100	 3,
+	100	 5,
+	100	 6,
+	99	 5 6,
+	100	 3 5 6,
+	100	 4,
+	100	 7,
+	88	 4 7,
+	100	 1 2,
+	100	 1,
+	3	 1 2 7,
+	9	 1 2 4,
+	2	 3 5,
+	0	 3 4 7,
+;
+END; [Splits]
+

@@ -1,0 +1,512 @@
+IQ-TREE 3.1.1 built Apr  2 2026
+
+Input file name: ml2\datasets\M3052.nex
+Type of analysis: ModelFinder + tree reconstruction + ultrafast bootstrap (1000 replicates)
+Random seed number: 848008
+
+REFERENCES
+----------
+
+To cite IQ-TREE 3 please use:
+
+Thomas K.F. Wong, Nhan Ly-Trong, Huaiyan Ren, Hector Banos, Andrew J. Roger,
+Edward Susko, Chris Bielow, Nicola De Maio, Nick Goldman, Matthew W. Hahn,
+Gavin Huttley, Robert Lanfear, Bui Quang Minh (2025)
+IQ-TREE 3: Phylogenomic Inference Software using Complex Evolutionary Models.
+Submitted.
+
+Since you used ModelFinder please also cite: 
+
+Subha Kalyaanamoorthy, Bui Quang Minh, Thomas KF Wong, Arndt von Haeseler,
+and Lars S Jermiin (2017) ModelFinder: Fast model selection for
+accurate phylogenetic estimates. Nature Methods, 14:587–589.
+https://doi.org/10.1038/nmeth.4285
+
+Since you used ultrafast bootstrap (UFBoot) please also cite: 
+
+Diep Thi Hoang, Olga Chernomor, Arndt von Haeseler, Bui Quang Minh,
+and Le Sy Vinh (2018) UFBoot2: Improving the ultrafast bootstrap
+approximation. Mol. Biol. Evol., 35:518–522.
+https://doi.org/10.1093/molbev/msx281
+
+SEQUENCE ALIGNMENT
+------------------
+
+NOTE: Alignment sequence type is auto-detected. If in doubt, specify it via -st option.
+Input data: 44 sequences with 2083 nucleotide sites
+Number of constant sites: 411 (= 19.7312% of all sites)
+Number of invariant (constant or ambiguous constant) sites: 411 (= 19.7312% of all sites)
+Number of parsimony informative sites: 1312
+Number of distinct site patterns: 1661
+
+ModelFinder
+-----------
+
+Best-fit model according to BIC: TIM+F+R4
+
+List of models sorted by BIC scores: 
+
+Model                  LogL         AIC      w-AIC        AICc     w-AICc         BIC      w-BIC
+TIM+F+R4         -39261.718   78717.436 +    0.241   78727.014 +    0.274   79264.668 +    0.909
+TIM+F+I+R4       -39260.218   78716.437 +    0.397   78726.217 +    0.409   79269.310 +   0.0892
+GTR+F+R4         -39260.243   78718.485 +    0.142   78728.470 +    0.132   79277.000 -  0.00191
+GTR+F+I+R4       -39258.807   78717.613 +     0.22   78727.805 +    0.185   79281.770 - 0.000176
+TIM+F+I+R3       -39274.993   78741.986 - 1.12e-006   78751.363 - 1.42e-006   79283.576 - 7.12e-005
+GTR+F+I+R3       -39273.573   78743.145 - 6.29e-007   78752.925 - 6.48e-007   79296.019 - 1.41e-007
+TIM+F+R3         -39287.473   78764.946 - 1.16e-011   78774.125 - 1.61e-011   79300.894 - 1.24e-008
+GTR+F+R3         -39285.982   78765.964 - 6.98e-012   78775.542 - 7.95e-012   79313.196 - 2.63e-011
+K3Pu+F+R4        -39298.255   78788.510 - 8.87e-017   78797.887 - 1.12e-016   79330.100 - 5.62e-015
+K3Pu+F+I+R4      -39295.226   78784.453 - 6.74e-016   78794.031 - 7.69e-016   79331.685 - 2.55e-015
+TVM+F+R4         -39296.529   78789.058 - 6.74e-017   78798.838 - 6.95e-017   79341.931 - 1.52e-017
+TVM+F+I+R4       -39293.249   78784.497 - 6.6e-016   78794.482 - 6.13e-016   79343.012 - 8.83e-018
+K3Pu+F+I+R3      -39311.823   78813.646 - 3.09e-022   78822.825 - 4.3e-022   79349.594 - 3.29e-019
+TVM+F+I+R3       -39309.656   78813.311 - 3.65e-022   78822.889 - 4.16e-022   79360.543 - 1.38e-021
+K3Pu+F+R3        -39323.709   78835.418 - 5.78e-027   78844.401 - 8.87e-027   79365.725 - 1.03e-022
+TVM+F+R3         -39321.398   78834.796 - 7.89e-027   78844.174 - 9.94e-027   79376.386 -   5e-025
+TIM2+F+R4        -39443.048   79080.096 - 4.27e-080   79089.674 - 4.87e-080   79627.328 - 1.61e-079
+TIM2+F+I+R4      -39441.522   79079.044 - 7.23e-080   79088.824 - 7.45e-080   79631.917 - 1.63e-080
+TIM2+F+I+R3      -39458.112   79108.225 - 3.33e-086   79117.603 - 4.2e-086   79649.815 - 2.11e-084
+TIM3+F+R4        -39456.649   79107.297 - 5.3e-086   79116.875 - 6.04e-086   79654.529 -   2e-085
+TIM3+F+I+R4      -39456.643   79109.287 - 1.96e-086   79119.067 - 2.02e-086   79662.160 - 4.41e-087
+TIM2+F+R3        -39471.647   79133.294 - 1.2e-091   79142.474 - 1.67e-091   79669.243 - 1.28e-088
+TIM3+F+I+R3      -39473.717   79139.433 - 5.57e-093   79148.811 - 7.02e-093   79681.024 - 3.53e-091
+TPM2u+F+R4       -39476.389   79144.779 - 3.85e-094   79154.157 - 4.85e-094   79686.369 - 2.44e-092
+TPM2u+F+I+R4     -39473.692   79141.385 - 2.1e-093   79150.963 - 2.39e-093   79688.617 - 7.93e-093
+TIM3+F+R3        -39485.618   79161.237 - 1.03e-097   79170.417 - 1.43e-097   79697.185 - 1.09e-094
+TPM2u+F+I+R3     -39492.497   79174.994 - 1.06e-100   79184.173 - 1.47e-100   79710.942 - 1.12e-097
+TPM3u+F+R4       -39496.740   79185.481 - 5.58e-103   79194.859 - 7.03e-103   79727.071 - 3.54e-101
+TPM2u+F+R3       -39505.879   79199.759 - 4.43e-106   79208.743 - 6.79e-106   79730.066 - 7.92e-102
+TPM3u+F+I+R4     -39495.143   79184.287 - 1.01e-102   79193.865 - 1.16e-102   79731.519 - 3.83e-102
+TPM3u+F+I+R3     -39512.131   79214.263 - 3.14e-109   79223.443 - 4.37e-109   79750.212 - 3.34e-106
+TN+F+R4          -39511.548   79215.096 - 2.07e-109   79224.474 - 2.61e-109   79756.686 - 1.31e-107
+TN+F+I+R4        -39510.860   79215.720 - 1.51e-109   79225.298 - 1.73e-109   79762.952 - 5.72e-109
+TPM3u+F+R3       -39523.165   79234.331 - 1.38e-113   79243.314 - 2.11e-113   79764.638 - 2.46e-109
+TN+F+I+R3        -39530.586   79251.173 - 3.03e-117   79260.352 - 4.22e-117   79787.121 - 3.23e-114
+TN+F+R3          -39543.283   79274.566 - 2.52e-122   79283.550 - 3.87e-122   79804.873 - 4.51e-118
+HKY+F+R4         -39546.328   79282.655 - 4.42e-124   79291.835 - 6.15e-124   79818.604 - 4.71e-121
+HKY+F+I+R4       -39544.536   79281.072 - 9.76e-124   79290.450 - 1.23e-123   79822.663 - 6.19e-122
+HKY+F+I+R3       -39565.820   79319.641 - 4.11e-132   79328.625 - 6.31e-132   79849.948 - 7.35e-128
+HKY+F+R3         -39578.239   79342.478 - 4.52e-137   79351.269 - 7.64e-137   79867.144 - 1.36e-131
+F81+F+R4         -39655.104   79498.207 - 6.9e-171   79507.191 - 1.06e-170   80028.514 - 1.23e-166
+F81+F+I+R4       -39652.820   79495.640 - 2.49e-170   79504.819 - 3.47e-170   80031.588 - 2.65e-167
+F81+F+I+R3       -39669.288   79524.576 - 1.3e-176   79533.366 - 2.19e-176   80049.241 - 3.89e-171
+F81+F+R3         -39680.294   79544.587 - 5.86e-181   79553.186 - 1.09e-180   80063.611 - 2.95e-174
+GTR+I+R4         -39804.059   79802.118 - 7.01e-237   79811.695 - 7.99e-237   80349.349 - 2.65e-236
+SYM+I+R4         -39804.101   79802.203 - 6.72e-237   79811.781 - 7.66e-237   80349.435 - 2.54e-236
+SYM+I+R4         -39804.101   79802.203 - 6.72e-237   79811.781 - 7.66e-237   80349.435 - 2.54e-236
+GTR+R4           -39812.196   79816.393 - 5.57e-240   79825.771 - 7.02e-240   80357.983 - 3.53e-238
+SYM+R4           -39812.251   79816.503 - 5.27e-240   79825.880 - 6.64e-240   80358.093 - 3.34e-238
+SYM+R4           -39812.251   79816.503 - 5.27e-240   79825.880 - 6.64e-240   80358.093 - 3.34e-238
+GTR+I+R3         -39839.107   79868.215 - 3.11e-251   79877.394 - 4.33e-251   80404.163 - 3.31e-248
+SYM+I+R3         -39839.132   79868.263 - 3.04e-251   79877.443 - 4.22e-251   80404.212 - 3.23e-248
+SYM+I+R3         -39839.132   79868.263 - 3.04e-251   79877.443 - 4.22e-251   80404.212 - 3.23e-248
+GTR+R3           -39854.018   79896.037 - 2.83e-257   79905.021 - 4.34e-257   80426.344 - 5.05e-253
+SYM+R3           -39854.044   79896.088 - 2.76e-257   79905.072 - 4.23e-257   80426.395 - 4.93e-253
+SYM+R3           -39854.044   79896.088 - 2.76e-257   79905.072 - 4.23e-257   80426.395 - 4.93e-253
+TVM+I+R4         -39870.059   79932.117 - 4.14e-265   79941.495 - 5.21e-265   80473.707 - 2.62e-263
+TVMe+I+R4        -39870.126   79932.251 - 3.87e-265   79941.629 - 4.87e-265   80473.842 - 2.45e-263
+TVMe+I+R4        -39870.126   79932.251 - 3.87e-265   79941.629 - 4.87e-265   80473.842 - 2.45e-263
+TVM+R4           -39877.509   79945.017 - 6.54e-268   79954.197 - 9.09e-268   80480.966 - 6.96e-265
+TVMe+R4          -39877.607   79945.213 - 5.93e-268   79954.393 - 8.25e-268   80481.162 - 6.31e-265
+TVMe+R4          -39877.607   79945.213 - 5.93e-268   79954.393 - 8.25e-268   80481.162 - 6.31e-265
+TVM+I+R3         -39903.165   79994.330 - 1.28e-278   80003.314 - 1.96e-278   80524.637 - 2.29e-274
+TVMe+I+R3        -39903.265   79994.530 - 1.16e-278   80003.514 - 1.78e-278   80524.837 - 2.07e-274
+TVMe+I+R3        -39903.265   79994.530 - 1.16e-278   80003.514 - 1.78e-278   80524.837 - 2.07e-274
+TVM+R3           -39917.413   80020.826 - 2.26e-284   80029.617 - 3.82e-284   80545.492 - 6.78e-279
+TVMe+R3          -39917.462   80020.924 - 2.15e-284   80029.714 - 3.63e-284   80545.589 - 6.45e-279
+TVMe+R3          -39917.462   80020.924 - 2.15e-284   80029.714 - 3.63e-284   80545.589 - 6.45e-279
+TIM+I+R4         -40251.170   80692.340 -        0   80701.520 -        0   81228.289 -        0
+TIMe+I+R4        -40251.394   80692.788 -        0   80701.967 -        0   81228.736 -        0
+TIMe+I+R4        -40251.394   80692.788 -        0   80701.967 -        0   81228.736 -        0
+TIM+R4           -40255.892   80699.784 -        0   80708.768 -        0   81230.091 -        0
+TIMe+R4          -40256.101   80700.202 -        0   80709.186 -        0   81230.509 -        0
+TIMe+R4          -40256.101   80700.202 -        0   80709.186 -        0   81230.509 -        0
+TIM+I+R3         -40264.557   80715.113 -        0   80723.904 -        0   81239.779 -        0
+TIMe+I+R3        -40264.627   80715.255 -        0   80724.045 -        0   81239.920 -        0
+TIMe+I+R3        -40264.627   80715.255 -        0   80724.045 -        0   81239.920 -        0
+TIM+R3           -40273.350   80730.701 -        0   80739.300 -        0   81249.725 -        0
+TIMe+R3          -40273.406   80730.812 -        0   80739.411 -        0   81249.836 -        0
+TIMe+R3          -40273.406   80730.812 -        0   80739.411 -        0   81249.836 -        0
+K3Pu+I+R4        -40339.648   80867.297 -        0   80876.281 -        0   81397.604 -        0
+K3P+I+R4         -40339.832   80867.664 -        0   80876.648 -        0   81397.971 -        0
+K3P+I+R4         -40339.832   80867.664 -        0   80876.648 -        0   81397.971 -        0
+K3Pu+R4          -40346.986   80879.972 -        0   80888.762 -        0   81404.637 -        0
+K3P+R4           -40347.238   80880.475 -        0   80889.265 -        0   81405.141 -        0
+K3P+R4           -40347.238   80880.475 -        0   80889.265 -        0   81405.141 -        0
+K3Pu+I+R3        -40354.112   80892.223 -        0   80900.822 -        0   81411.247 -        0
+K3P+I+R3         -40354.119   80892.238 -        0   80900.837 -        0   81411.262 -        0
+K3P+I+R3         -40354.119   80892.238 -        0   80900.837 -        0   81411.262 -        0
+K3P+R3           -40362.554   80907.108 -        0   80915.518 -        0   81420.490 -        0
+K3P+R3           -40362.554   80907.108 -        0   80915.518 -        0   81420.490 -        0
+K3Pu+R3          -40362.558   80907.116 -        0   80915.526 -        0   81420.499 -        0
+TIM3+I+R4        -40802.020   81794.041 -        0   81803.220 -        0   82329.989 -        0
+TIM3e+I+R4       -40802.115   81794.231 -        0   81803.410 -        0   82330.179 -        0
+TIM3e+I+R4       -40802.115   81794.231 -        0   81803.410 -        0   82330.179 -        0
+TIM3+R4          -40812.130   81812.260 -        0   81821.244 -        0   82342.567 -        0
+TIM3e+R4         -40812.344   81812.689 -        0   81821.673 -        0   82342.996 -        0
+TIM3e+R4         -40812.344   81812.689 -        0   81821.673 -        0   82342.996 -        0
+TIM3e+I+R3       -40823.594   81833.188 -        0   81841.978 -        0   82357.853 -        0
+TIM3e+I+R3       -40823.594   81833.188 -        0   81841.978 -        0   82357.853 -        0
+TIM3+I+R3        -40823.595   81833.190 -        0   81841.980 -        0   82357.855 -        0
+TIM3+R3          -40832.943   81849.885 -        0   81858.484 -        0   82368.909 -        0
+TIM3e+R3         -40832.975   81849.950 -        0   81858.549 -        0   82368.974 -        0
+TIM3e+R3         -40832.975   81849.950 -        0   81858.549 -        0   82368.974 -        0
+TPM3u+I+R4       -40827.992   81843.983 -        0   81852.967 -        0   82374.290 -        0
+TPM3+I+R4        -40828.107   81844.214 -        0   81853.198 -        0   82374.521 -        0
+TPM3+I+R4        -40828.107   81844.214 -        0   81853.198 -        0   82374.521 -        0
+TPM3u+R4         -40835.490   81856.980 -        0   81865.770 -        0   82381.645 -        0
+TPM3+R4          -40835.519   81857.038 -        0   81865.829 -        0   82381.704 -        0
+TPM3+R4          -40835.519   81857.038 -        0   81865.829 -        0   82381.704 -        0
+TPM3u+I+R3       -40848.280   81880.559 -        0   81889.158 -        0   82399.583 -        0
+TPM3+I+R3        -40848.341   81880.683 -        0   81889.282 -        0   82399.707 -        0
+TPM3+I+R3        -40848.341   81880.683 -        0   81889.282 -        0   82399.707 -        0
+TPM3u+R3         -40858.295   81898.590 -        0   81907.000 -        0   82411.972 -        0
+TPM3+R3          -40858.323   81898.647 -        0   81907.057 -        0   82412.029 -        0
+TPM3+R3          -40858.323   81898.647 -        0   81907.057 -        0   82412.029 -        0
+TIM2+R4          -41107.741   82403.482 -        0   82412.466 -        0   82933.789 -        0
+TIM2+I+R4        -41103.942   82397.883 -        0   82407.063 -        0   82933.832 -        0
+TIM2e+I+R4       -41104.053   82398.106 -        0   82407.285 -        0   82934.054 -        0
+TIM2e+I+R4       -41104.053   82398.106 -        0   82407.285 -        0   82934.054 -        0
+TIM2e+R4         -41107.929   82403.858 -        0   82412.842 -        0   82934.165 -        0
+TIM2e+R4         -41107.929   82403.858 -        0   82412.842 -        0   82934.165 -        0
+TIM2+I+R3        -41113.690   82413.379 -        0   82422.170 -        0   82938.045 -        0
+TIM2e+I+R3       -41113.778   82413.555 -        0   82422.346 -        0   82938.221 -        0
+TIM2e+I+R3       -41113.778   82413.555 -        0   82422.346 -        0   82938.221 -        0
+TIM2+R3          -41131.935   82447.869 -        0   82456.468 -        0   82966.893 -        0
+TIM2e+R3         -41131.995   82447.991 -        0   82456.590 -        0   82967.015 -        0
+TIM2e+R3         -41131.995   82447.991 -        0   82456.590 -        0   82967.015 -        0
+TPM2u+I+R4       -41248.290   82684.581 -        0   82693.565 -        0   83214.888 -        0
+TPM2+I+R4        -41248.393   82684.787 -        0   82693.771 -        0   83215.094 -        0
+TPM2+I+R4        -41248.393   82684.787 -        0   82693.771 -        0   83215.094 -        0
+TPM2u+R4         -41253.011   82692.021 -        0   82700.812 -        0   83216.687 -        0
+TPM2+R4          -41253.027   82692.055 -        0   82700.845 -        0   83216.720 -        0
+TPM2+R4          -41253.027   82692.055 -        0   82700.845 -        0   83216.720 -        0
+TPM2u+I+R3       -41258.060   82700.120 -        0   82708.719 -        0   83219.143 -        0
+TPM2+I+R3        -41258.079   82700.157 -        0   82708.756 -        0   83219.181 -        0
+TPM2+I+R3        -41258.079   82700.157 -        0   82708.756 -        0   83219.181 -        0
+TPM2u+R3         -41271.835   82725.669 -        0   82734.079 -        0   83239.051 -        0
+TPM2+R3          -41271.884   82725.767 -        0   82734.177 -        0   83239.150 -        0
+TPM2+R3          -41271.884   82725.767 -        0   82734.177 -        0   83239.150 -        0
+TN+I+R3          -41775.603   83735.207 -        0   83743.806 -        0   84254.230 -        0
+TNe+I+R3         -41775.689   83735.377 -        0   83743.976 -        0   84254.401 -        0
+TNe+I+R3         -41775.689   83735.377 -        0   83743.976 -        0   84254.401 -        0
+TN+R4            -41772.022   83730.044 -        0   83738.834 -        0   84254.709 -        0
+TNe+R4           -41772.144   83730.288 -        0   83739.078 -        0   84254.953 -        0
+TNe+R4           -41772.144   83730.288 -        0   83739.078 -        0   84254.953 -        0
+TN+I+R4          -41769.220   83726.441 -        0   83735.424 -        0   84256.748 -        0
+TNe+I+R4         -41769.344   83726.687 -        0   83735.671 -        0   84256.994 -        0
+TNe+I+R4         -41769.344   83726.687 -        0   83735.671 -        0   84256.994 -        0
+TN+R3            -41782.911   83747.822 -        0   83756.232 -        0   84261.205 -        0
+TNe+R3           -41782.923   83747.846 -        0   83756.256 -        0   84261.229 -        0
+TNe+R3           -41782.923   83747.846 -        0   83756.256 -        0   84261.229 -        0
+K2P+I+R3         -41858.153   83898.306 -        0   83906.716 -        0   84411.689 -        0
+K2P+I+R3         -41858.153   83898.306 -        0   83906.716 -        0   84411.689 -        0
+HKY+I+R3         -41858.154   83898.308 -        0   83906.718 -        0   84411.690 -        0
+HKY+R4           -41856.322   83896.643 -        0   83905.242 -        0   84415.667 -        0
+K2P+R4           -41856.424   83896.847 -        0   83905.446 -        0   84415.871 -        0
+K2P+R4           -41856.424   83896.847 -        0   83905.446 -        0   84415.871 -        0
+HKY+I+R4         -41853.450   83892.900 -        0   83901.690 -        0   84417.565 -        0
+K2P+I+R4         -41853.591   83893.182 -        0   83901.973 -        0   84417.848 -        0
+K2P+I+R4         -41853.591   83893.182 -        0   83901.973 -        0   84417.848 -        0
+HKY+R3           -41865.118   83910.237 -        0   83918.459 -        0   84417.977 -        0
+K2P+R3           -41865.135   83910.270 -        0   83918.493 -        0   84418.011 -        0
+K2P+R3           -41865.135   83910.270 -        0   83918.493 -        0   84418.011 -        0
+F81+I+R3         -41902.322   83984.644 -        0   83992.867 -        0   84492.385 -        0
+JC+I+R3          -41902.380   83984.760 -        0   83992.983 -        0   84492.501 -        0
+JC+I+R3          -41902.380   83984.760 -        0   83992.983 -        0   84492.501 -        0
+F81+R4           -41900.428   83982.856 -        0   83991.265 -        0   84496.238 -        0
+JC+R4            -41900.543   83983.087 -        0   83991.497 -        0   84496.469 -        0
+JC+R4            -41900.543   83983.087 -        0   83991.497 -        0   84496.469 -        0
+F81+R3           -41909.220   83996.440 -        0   84004.478 -        0   84498.539 -        0
+JC+R3            -41909.257   83996.513 -        0   84004.551 -        0   84498.613 -        0
+JC+R3            -41909.257   83996.513 -        0   84004.551 -        0   84498.613 -        0
+F81+I+R4         -41898.285   83980.569 -        0   83989.168 -        0   84499.593 -        0
+JC+I+R4          -41898.451   83980.902 -        0   83989.501 -        0   84499.926 -        0
+JC+I+R4          -41898.451   83980.902 -        0   83989.501 -        0   84499.926 -        0
+JC+R5            -41899.654   83985.308 -        0   83994.099 -        0   84509.974 -        0
+JC+I+G4          -41922.759   84019.518 -        0   84027.193 -        0   84510.334 -        0
+JC+G4            -41929.359   84030.717 -        0   84038.214 -        0   84515.892 -        0
+JC+I+R2          -42026.216   84228.432 -        0   84236.287 -        0   84724.889 -        0
+JC+R2            -42129.535   84433.069 -        0   84440.744 -        0   84923.885 -        0
+JC+I             -43558.812   87289.623 -        0   87297.120 -        0   87774.798 -        0
+JC               -44936.115   90042.229 -        0   90049.550 -        0   90521.762 -        0
+
+AIC, w-AIC   : Akaike information criterion scores and weights.
+AICc, w-AICc : Corrected AIC scores and weights.
+BIC, w-BIC   : Bayesian information criterion scores and weights.
+
+Plus signs denote the 95% confidence sets.
+Minus signs denote significant exclusion.
+
+SUBSTITUTION PROCESS
+--------------------
+
+Model of substitution: TIM+F+R4
+
+Rate parameter R:
+
+  A-C: 1.0000
+  A-G: 3.7858
+  A-T: 2.6673
+  C-G: 2.6673
+  C-T: 2.4083
+  G-T: 1.0000
+
+State frequencies: (empirical counts from alignment)
+
+  pi(A) = 0.333
+  pi(C) = 0.1076
+  pi(G) = 0.1384
+  pi(T) = 0.421
+
+Rate matrix Q:
+
+  A    -1.109   0.06798     0.331    0.7095
+  C    0.2104    -1.084    0.2332    0.6407
+  G    0.7966    0.1813    -1.244     0.266
+  T    0.5612    0.1637   0.08744   -0.8124
+
+Model of rate heterogeneity: FreeRate with 4 categories
+Site proportion and rates:  (0.372,0.08592) (0.2423,0.5601) (0.2367,1.514) (0.149,3.181)
+
+ Category  Relative_rate  Proportion
+  1         0.08592        0.372
+  2         0.5601         0.2423
+  3         1.514          0.2367
+  4         3.181          0.149
+
+MAXIMUM LIKELIHOOD TREE
+-----------------------
+
+Log-likelihood of the tree: -39224.1476 (s.e. 608.4214)
+Unconstrained log-likelihood (without tree): -14581.1365
+Number of free parameters (#branches + #model parameters): 97
+Akaike information criterion (AIC) score: 78642.2952
+Corrected Akaike information criterion (AICc) score: 78651.8730
+Bayesian information criterion (BIC) score: 79189.5269
+
+Total tree length (sum of branch lengths): 9.0375
+Sum of internal branch lengths: 2.2662 (25.0751% of tree length)
+
+NOTE: Tree is UNROOTED although outgroup taxon 'Apocryptophagus_spinitarus' is drawn at root
+Numbers in parentheses are  ultrafast bootstrap support (%)
+
++--------------------------Apocryptophagus_spinitarus
+|
+|                   +---------Blastophaga_intermedia
+|           +-------| (100)
+|           |       +----------Blastophaga_malayana
+|        +--| (79)
+|        |  |     +-------Eupristina_verticillata
+|        |  |  +--| (78)
+|        |  |  |  |  +--------------Waterstoniella_brevigena
+|        |  |  |  +--| (53)
+|        |  |  |     +-----------------Waterstoniella_dubium
+|        |  +--| (77)
+|        |     |  +--------Platyscapa_corneri
+|        |     +--| (64)
+|        |        +---------------Platyscapa_fischeri
+|     +--| (70)
+|     |  |     +---------------Pleistodontes_plebejus
+|     |  |  +--| (99)
+|     |  |  |  +------Pleistodontes_rieki
+|     |  +--| (100)
+|     |     +-------Pleistodontes_rigisamos
+|  +--| (73)
+|  |  |                 +------------------Dolichoris_hombronianae
+|  |  +-----------------| (100)
+|  |                    +------Dolichoris_inornata
++--| (76)
+|  |     +--------Wiebesia_brusi
+|  |  +--| (100)
+|  |  |  +-----------Wiebesia_frustrata
+|  +--| (100)
+|     +-------Wiebesia_punctatae
+|
+|                 +--------------Ceratosolen_abnormis
+|              +--| (43)
+|              |  |   +-------Ceratosolen_armipes
+|              |  +---| (100)
+|              |      +------Ceratosolen_kaironkensis
+|           +--| (42)
+|           |  +--------Ceratosolen_grandii
+|        +--| (97)
+|        |  |     +--------Ceratosolen_medlerianus
+|        |  +-----| (100)
+|        |        +---------------Ceratosolen_riparianus
+|     +--| (46)
+|     |  |                                 +-------Ceratosolen_bisulcatus
+|     |  |                             +---| (100)
+|     |  |                             |   +-------Ceratosolen_corneri
+|     |  |                          +--| (53)
+|     |  |                          |  +---Ceratosolen_dentifer
+|     |  |                       +--| (90)
+|     |  |                       |  +---Ceratosolen_hooglandi
+|     |  |                  +----| (100)
+|     |  |                  |    +--Ceratosolen_vechti
+|     |  +------------------| (100)
+|     |                     +-----------Ceratosolen_nanus
+|  +--| (57)
+|  |  |              +--------------Ceratosolen_appendiculatus
+|  |  |           +--| (41)
+|  |  |           |  +---------------------------Ceratosolen_vissali
+|  |  |        +--| (45)
+|  |  |        |  |   +------------------Ceratosolen_blommersi
+|  |  |        |  +---| (80)
+|  |  |        |      +------------------------------------------Dolichoris_vasculosae
+|  |  |     +--| (49)
+|  |  |     |  |             +------Ceratosolen_cf_nexilis
+|  |  |     |  +-------------| (100)
+|  |  |     |                +-------Ceratosolen_nexilis
+|  |  |  +--| (46)
+|  |  |  |  +---------------Ceratosolen_emarginatus
+|  |  +--| (70)
+|  |     |  +---------Ceratosolen_capensis
+|  |     +--| (76)
+|  |        +---------Ceratosolen_fusciceps
++--| (94)
+   |               +-----Kradibia_copiosae
+   |      +--------| (100)
+   |      |        +------Kradibia_wassae
+   +------| (100)
+          |       +-----Kradibia_jacobsi
+          |    +--| (82)
+          |    |  |  +------Kradibia_ohuensis
+          |    |  +--| (96)
+          |    |     +------Kradibia_salembensis
+          +----| (100)
+               |       +---Liporrhopalum_gibbosae
+               +-------| (100)
+                       +---Liporrhopalum_virgatae
+
+Tree in newick format:
+
+(Apocryptophagus_spinitarus:0.3586206984,(((((Blastophaga_intermedia:0.1315334357,Blastophaga_malayana:0.1518903999)100:0.1056933719,((Eupristina_verticillata:0.1048859668,(Waterstoniella_brevigena:0.2085298534,Waterstoniella_dubium:0.2359866406)53:0.0110344996)78:0.0368914936,(Platyscapa_corneri:0.1252104949,Platyscapa_fischeri:0.2163472460)64:0.0226592773)77:0.0191501142)79:0.0174603458,((Pleistodontes_plebejus:0.2154713138,Pleistodontes_rieki:0.0994632865)99:0.0415697768,Pleistodontes_rigisamos:0.1066889722)100:0.0415230385)70:0.0035279959,(Dolichoris_hombronianae:0.2563889428,Dolichoris_inornata:0.0965571692)100:0.2396432927)73:0.0260622835,((Wiebesia_brusi:0.1183837157,Wiebesia_frustrata:0.1639075717)100:0.0503673536,Wiebesia_punctatae:0.1077247440)100:0.0380418767)76:0.0341123416,((((((Ceratosolen_abnormis:0.2062710524,(Ceratosolen_armipes:0.1132915753,Ceratosolen_kaironkensis:0.0932555816)100:0.0550002476)43:0.0221588354,Ceratosolen_grandii:0.1239729067)42:0.0281556681,(Ceratosolen_medlerianus:0.1288712841,Ceratosolen_riparianus:0.2133296322)100:0.0815029262)97:0.0406706977,(((((Ceratosolen_bisulcatus:0.1051297443,Ceratosolen_corneri:0.1140276335)100:0.0563202067,Ceratosolen_dentifer:0.0654792648)53:0.0124948291,Ceratosolen_hooglandi:0.0537670051)90:0.0146074747,Ceratosolen_vechti:0.0396177533)100:0.0729703931,Ceratosolen_nanus:0.1688119684)100:0.2557239592)46:0.0205063017,(((((Ceratosolen_appendiculatus:0.1994791909,Ceratosolen_vissali:0.3708425581)41:0.0430785950,(Ceratosolen_blommersi:0.2512093850,Dolichoris_vasculosae:0.5653990919)80:0.0534697908)45:0.0299842803,(Ceratosolen_cf_nexilis:0.0921151280,Ceratosolen_nexilis:0.1117778580)100:0.1876667016)49:0.0138740713,Ceratosolen_emarginatus:0.2155141530)46:0.0276431882,(Ceratosolen_capensis:0.1344230244,Ceratosolen_fusciceps:0.1396975330)76:0.0306077713)70:0.0338414846)57:0.0302414835,((Kradibia_copiosae:0.0828255414,Kradibia_wassae:0.0994993809)100:0.1304382585,((Kradibia_jacobsi:0.0828677177,(Kradibia_ohuensis:0.0933119657,Kradibia_salembensis:0.0933474450)96:0.0239249569)82:0.0090010368,(Liporrhopalum_gibbosae:0.0556085055,Liporrhopalum_virgatae:0.0599996696)100:0.1090851441)100:0.0660855623)100:0.0976140221)94:0.0317518602);
+
+CONSENSUS TREE
+--------------
+
+Consensus tree is constructed from 1000 bootstrap trees
+Log-likelihood of consensus tree: -39225.563110
+Robinson-Foulds distance between ML tree and consensus tree: 4
+
+Branches with support >0.000000% are kept (extended consensus)
+Branch lengths are optimized by maximum likelihood on original alignment
+Numbers in parentheses are bootstrap supports (%)
+
++--------------------------Apocryptophagus_spinitarus
+|
+|                   +---------Blastophaga_intermedia
+|           +-------| (100)
+|           |       +----------Blastophaga_malayana
+|        +--| (79)
+|        |  |     +-------Eupristina_verticillata
+|        |  |  +--| (78)
+|        |  |  |  |  +--------------Waterstoniella_brevigena
+|        |  |  |  +--| (53)
+|        |  |  |     +----------------Waterstoniella_dubium
+|        |  +--| (77)
+|        |     |  +--------Platyscapa_corneri
+|        |     +--| (64)
+|        |        +---------------Platyscapa_fischeri
+|     +--| (70)
+|     |  |     +---------------Pleistodontes_plebejus
+|     |  |  +--| (99)
+|     |  |  |  +------Pleistodontes_rieki
+|     |  +--| (100)
+|     |     +-------Pleistodontes_rigisamos
+|  +--| (73)
+|  |  |                 +------------------Dolichoris_hombronianae
+|  |  +-----------------| (100)
+|  |                    +------Dolichoris_inornata
++--| (76)
+|  |     +--------Wiebesia_brusi
+|  |  +--| (100)
+|  |  |  +-----------Wiebesia_frustrata
+|  +--| (100)
+|     +-------Wiebesia_punctatae
+|
+|                 +---------------Ceratosolen_abnormis
+|              +--| (34)
+|              |  +-------Ceratosolen_grandii
+|           +--| (51)
+|           |  |     +--------Ceratosolen_medlerianus
+|           |  +-----| (100)
+|           |        +---------------Ceratosolen_riparianus
+|        +--| (97)
+|        |  |   +--------Ceratosolen_armipes
+|        |  +---| (100)
+|        |      +-----Ceratosolen_kaironkensis
+|     +--| (46)
+|     |  |                                 +-------Ceratosolen_bisulcatus
+|     |  |                             +---| (100)
+|     |  |                             |   +-------Ceratosolen_corneri
+|     |  |                          +--| (53)
+|     |  |                          |  +---Ceratosolen_dentifer
+|     |  |                       +--| (90)
+|     |  |                       |  +---Ceratosolen_hooglandi
+|     |  |                  +----| (100)
+|     |  |                  |    +--Ceratosolen_vechti
+|     |  +------------------| (100)
+|     |                     +-----------Ceratosolen_nanus
+|  +--| (57)
+|  |  |              +--------------Ceratosolen_appendiculatus
+|  |  |           +--| (41)
+|  |  |           |  +---------------------------Ceratosolen_vissali
+|  |  |        +--| (45)
+|  |  |        |  |   +------------------Ceratosolen_blommersi
+|  |  |        |  +---| (80)
+|  |  |        |      +------------------------------------------Dolichoris_vasculosae
+|  |  |     +--| (49)
+|  |  |     |  |             +-----Ceratosolen_cf_nexilis
+|  |  |     |  +-------------| (100)
+|  |  |     |                +-------Ceratosolen_nexilis
+|  |  |  +--| (46)
+|  |  |  |  +---------------Ceratosolen_emarginatus
+|  |  +--| (70)
+|  |     |  +---------Ceratosolen_capensis
+|  |     +--| (76)
+|  |        +---------Ceratosolen_fusciceps
++--| (94)
+   |               +-----Kradibia_copiosae
+   |      +--------| (100)
+   |      |        +------Kradibia_wassae
+   +------| (100)
+          |       +-----Kradibia_jacobsi
+          |    +--| (82)
+          |    |  |  +------Kradibia_ohuensis
+          |    |  +--| (96)
+          |    |     +------Kradibia_salembensis
+          +----| (100)
+               |       +---Liporrhopalum_gibbosae
+               +-------| (100)
+                       +---Liporrhopalum_virgatae
+
+
+Consensus tree in newick format: 
+
+(Apocryptophagus_spinitarus:0.3595660849,(((((Blastophaga_intermedia:0.1316652753,Blastophaga_malayana:0.1519855826)100:0.1058131934,((Eupristina_verticillata:0.1051624139,(Waterstoniella_brevigena:0.2087555325,Waterstoniella_dubium:0.2362097590)53:0.0109806062)78:0.0369251779,(Platyscapa_corneri:0.1253629011,Platyscapa_fischeri:0.2164090931)64:0.0227008568)77:0.0191928267)79:0.0178281501,((Pleistodontes_plebejus:0.2158108659,Pleistodontes_rieki:0.0994595117)99:0.0415394776,Pleistodontes_rigisamos:0.1067448817)100:0.0412387732)70:0.0037302031,(Dolichoris_hombronianae:0.2560422011,Dolichoris_inornata:0.0968814742)100:0.2395981009)73:0.0260640107,((Wiebesia_brusi:0.1183527278,Wiebesia_frustrata:0.1639753561)100:0.0502426302,Wiebesia_punctatae:0.1077350726)100:0.0381841991)76:0.0328647253,((((((Ceratosolen_abnormis:0.2120044011,Ceratosolen_grandii:0.1170614762)34:0.0143463951,(Ceratosolen_medlerianus:0.1284202485,Ceratosolen_riparianus:0.2162578372)100:0.0911909632)51:0.0170833668,(Ceratosolen_armipes:0.1182934039,Ceratosolen_kaironkensis:0.0887030743)100:0.0606468856)97:0.0505116216,(((((Ceratosolen_bisulcatus:0.1051944198,Ceratosolen_corneri:0.1141939299)100:0.0563739339,Ceratosolen_dentifer:0.0654996880)53:0.0124459762,Ceratosolen_hooglandi:0.0538686543)90:0.0144137959,Ceratosolen_vechti:0.0396963116)100:0.0742076358,Ceratosolen_nanus:0.1681410588)100:0.2586495566)46:0.0218474707,(((((Ceratosolen_appendiculatus:0.1994914723,Ceratosolen_vissali:0.3711191305)41:0.0428343636,(Ceratosolen_blommersi:0.2507452561,Dolichoris_vasculosae:0.5678654922)80:0.0540629978)45:0.0292321730,(Ceratosolen_cf_nexilis:0.0914990733,Ceratosolen_nexilis:0.1126831523)100:0.1886411252)49:0.0148117078,Ceratosolen_emarginatus:0.2154519084)46:0.0267810971,(Ceratosolen_capensis:0.1344401895,Ceratosolen_fusciceps:0.1398829676)76:0.0316087364)70:0.0348503339)57:0.0288541298,((Kradibia_copiosae:0.0824202289,Kradibia_wassae:0.1000395885)100:0.1308739153,((Kradibia_jacobsi:0.0828140988,(Kradibia_ohuensis:0.0934319326,Kradibia_salembensis:0.0934162366)96:0.0239667761)82:0.0086146561,(Liporrhopalum_gibbosae:0.0557582733,Liporrhopalum_virgatae:0.0599469228)100:0.1094355830)100:0.0657732953)100:0.0989843400)94:0.0319239362);
+
+ALISIM COMMAND
+--------------
+To simulate an alignment of the same length as the original alignment, using the tree and model parameters estimated from this analysis, you can use the following command:
+
+--alisim simulated_MSA -t ml2\trees\M3052.treefile -m "TIM{3.78584,2.66726,2.40831}+F{0.33302,0.107587,0.138384,0.421009}+R4{0.371993,0.0859249,0.242324,0.560081,0.236654,1.51373,0.149029,3.18115}" --length 2083
+
+To mimic the alignment used to produce this analysis, i.e. simulate an alignment of the same length as the original alignment, using the tree and model parameters estimated from this analysis *and* copying the same gap positions as the original alignment, you can use the following command:
+
+iqtree -s ml2\datasets\M3052.nex --alisim mimicked_MSA
+
+To simulate any number of alignments in either of the two commandlines above, use the --num-alignments options, for example mimic 100 alignments you would use the command line:
+
+iqtree -s ml2\datasets\M3052.nex --alisim mimicked_MSA --num-alignments 100
+
+For more information on using AliSim, please visit: www.iqtree.org/doc/AliSim
+
+TIME STAMP
+----------
+
+Date and time: Mon May 04 13:23:31 2026
+Total CPU time used: 992.078125 seconds (0h:16m:32s)
+Total wall-clock time used: 284.7825713 seconds (0h:4m:44s)
+

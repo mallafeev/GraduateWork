@@ -1,0 +1,285 @@
+IQ-TREE version 3.1.1 for Windows 64-bit built Apr  2 2026
+Developed by Bui Quang Minh, Thomas Wong, Nhan Ly-Trong, Huaiyan Ren
+Contributed by Lam-Tung Nguyen, Dominik Schrempf, Chris Bielow,
+Olga Chernomor, Michael Woodhams, Diep Thi Hoang, Heiko Schmidt
+
+Host:    DESKTOP-I0VDDLU (AVX2, FMA3, 15 GB RAM)
+Command: iqtree-3.1.1-Windows\bin\iqtree3.exe -s ml2\datasets\M55575.nex -m MFP -B 1000 -bnni -T AUTO --prefix ml2\trees\M55575 --redo
+Seed:    821744 (Using SPRNG - Scalable Parallel Random Number Generator)
+Time:    Mon May 04 13:59:46 2026
+Kernel:  AVX+FMA - auto-detect threads (16 CPU cores detected)
+
+Reading alignment file ml2\datasets\M55575.nex ... Nexus format detected
+Alignment has 46 sequences with 2270 columns, 920 distinct patterns
+606 parsimony-informative, 183 singleton sites, 1481 constant sites
+                                      Gap/Ambiguity  Composition  p-value
+Analyzing sequences: done in 0.0001863 secs
+   1  Ancula_gibbosa_CASIZ182028              5.33%    passed     20.25%
+   2  Aphelodoris_sp_1_CASIZ_176920          18.72%    passed      8.80%
+   3  Asteronotus_cespitosus_CASIZ177226     21.98%    failed      0.01%
+   4  Asteronotus_cespitosus_CASIZ191096      7.84%    passed     85.06%
+   5  Asteronotus_cespitosus_CASIZ191163      3.13%    passed     99.82%
+   6  Asteronotus_cespitosus_CASIZ191321      2.20%    passed     99.91%
+   7  Asteronotus_hepaticus_CASIZ191310       2.16%    passed     99.96%
+   8  Asteronotus_marka_CASIZ192316A          3.17%    passed     83.40%
+   9  Asteronotus_mimeticus_CASIZ208221       2.11%    passed     62.68%
+  10  Asteronotus_namuro_CASIZ192297          4.19%    passed     95.67%
+  11  Asteronotus_spongicolus_CASIZ192317A    1.54%    passed     92.63%
+  12  Asteronotus_spongicolus_CASIZ194597     7.40%    passed     96.69%
+  13  Asteronotus_spongicolus_CASIZ200581A   41.67%    failed      0.00%
+  14  Asteronotus_spongicolus_CASIZ200662     5.20%    passed     82.84%
+  15  Asteronotus_spongicolus_CASIZ227580A   11.94%    passed     23.18%
+  16  Asteronotus_spongicolus_CASIZ227581     6.70%    passed     63.49%
+  17  Atagema_notacristata_CASIZ167980        3.39%    passed     11.97%
+  18  Carminodoris_flammea_CASIZ177628        2.20%    passed     62.36%
+  19  Diaulula_sandiegensis_CASIZ181321       4.80%    passed     62.57%
+  20  Discodoris_boholiensis_CASIZ204802      2.78%    passed     18.29%
+  21  Discodoris_cebuensis_CASIZ190761        1.50%    passed     13.41%
+  22  Geitodoris_heathi_CASIZ181314           4.32%    passed     18.18%
+  23  Halgerda_carlsoni_CASIZ177575           4.14%    passed     72.47%
+  24  Halgerda_dalanghita_CASIZ181264         4.98%    passed     93.56%
+  25  Hoplodoris_desmoparypha_CASIZ309550    52.91%    failed      0.00%
+  26  Hoplodoris_desmoparypha_CASIZ70066     13.30%    passed     70.72%
+  27  Hoplodoris_nodulosa_EEDPHY959          21.50%    passed     88.95%
+  28  Hoplodoris_rosans_CASIZ182837           3.30%    passed     65.25%
+  29  Hoplodoris_rosans_CASIZ182921           2.07%    passed     67.37%
+  30  Peltodoris_nobilis_CASIZ182223          2.11%    passed     57.89%
+  31  Platydoris_sanguinea_CASIZ177762        4.32%    passed     96.46%
+  32  Rostanga_calumus_EEDPHY935             27.80%    passed     84.96%
+  33  Sclerodoris_sp_CASIZ_182866             2.07%    passed     63.45%
+  34  Sclerodoris_sp_CASIZ191525              2.11%    passed     67.04%
+  35  Sclerodoris_tuberculata_CASIZ190788     6.12%    passed     64.97%
+  36  Taringa_sp_CASIZ172039                  4.32%    passed     56.65%
+  37  Taringa_telopia_CASIZ182933            22.07%    failed      0.01%
+  38  Thordisa_albomacula_CASIZ177688        32.25%    failed      0.00%
+  39  Thordisa_albomacula_CASIZ179586         1.81%    passed     96.53%
+  40  Thordisa_albomacula_CASIZ179590         4.45%    passed     95.24%
+  41  Thordisa_albomacula_CASIZ181136         1.67%    passed     97.41%
+  42  Thordisa_albomacula_CASIZ181345         3.22%    passed     89.26%
+  43  Thordisa_albomacula_CASIZ182834         1.76%    passed     97.94%
+  44  Thordisa_albomacula_CASIZ190821        31.37%    failed      0.00%
+  45  Thordisa_albomacula_CASIZ220322        37.62%    failed      0.00%
+  46  Thordisa_bimaculata_CASIZ184516         4.76%    passed     65.88%
+WARNING: 1 sequences contain more than 50% gaps/ambiguity
+****  TOTAL                                   9.92%  7 sequences failed composition chi2 test (p-value<5%; df=3)
+Checking for duplicate sequences: done in 0.0003725 secs
+
+
+Create initial parsimony tree by phylogenetic likelihood library (PLL)... 0.021 seconds
+Measuring multi-threading efficiency up to 16 CPU cores
+Increase to 10 rounds for branch lengths
+180 trees examined
+Threads: 1 / Time: 16.057 sec / Speedup: 1.000 / Efficiency: 100% / LogL: -26387
+Threads: 2 / Time: 10.407 sec / Speedup: 1.543 / Efficiency: 77% / LogL: -26387
+Threads: 3 / Time: 9.084 sec / Speedup: 1.768 / Efficiency: 59% / LogL: -26387
+Threads: 4 / Time: 8.571 sec / Speedup: 1.873 / Efficiency: 47% / LogL: -26387
+Determining AUTO threadcount: done in 44.161 secs using 224.9% CPU
+BEST NUMBER OF THREADS: 3
+
+Perform fast likelihood tree search using GTR+I+G model...
+Estimate model parameters (epsilon = 5.000)
+Perform nearest neighbor interchange...
+Estimate model parameters (epsilon = 1.000)
+1. Initial log-likelihood: -19175.791
+2. Current log-likelihood: -19172.285
+3. Current log-likelihood: -19169.452
+4. Current log-likelihood: -19166.826
+5. Current log-likelihood: -19164.464
+6. Current log-likelihood: -19162.323
+7. Current log-likelihood: -19160.455
+8. Current log-likelihood: -19158.826
+9. Current log-likelihood: -19157.423
+10. Current log-likelihood: -19156.233
+Optimal log-likelihood: -19154.893
+Rate parameters:  A-C: 1.18044  A-G: 11.16762  A-T: 6.93185  C-G: 3.75386  C-T: 18.72834  G-T: 1.00000
+Base frequencies:  A: 0.239  C: 0.243  G: 0.267  T: 0.250
+Proportion of invariable sites: 0.533
+Gamma shape alpha: 0.611
+Parameters optimization took 10 rounds (0.429 sec)
+Time for fast ML tree search: 0.842 seconds
+
+NOTE: ModelFinder requires 17 MB RAM!
+ModelFinder will test up to 968 DNA models (sample size: 2270 epsilon: 0.100) ...
+ No. Model         -LnL         df  AIC          AICc         BIC
+  1  JC            23648.046    89  47474.092    47481.441    47983.843
+  2  JC+I          20692.439    90  41564.877    41572.394    42080.355
+  3  JC+G4         20237.501    90  40655.003    40662.520    41170.481
+  4  JC+I+G4       20135.965    91  40453.930    40461.617    40975.135
+  5  JC+R2         20306.646    91  40795.291    40802.979    41316.497
+  6  JC+R3         20139.692    93  40465.385    40473.420    40998.046
+  7  JC+R4         20130.643    95  40451.286    40459.676    40995.402
+  8  JC+R5         20130.154    97  40454.308    40463.061    41009.879
+ 14  JC+I+R2       20167.762    92  40519.524    40527.384    41046.457
+ 15  JC+I+R3       20130.024    94  40448.048    40456.259    40986.436
+ 16  JC+I+R4       20129.940    96  40451.880    40460.451    41001.723
+ 26  JC+I+G4       20135.965    91  40453.930    40461.617    40975.135
+ 48  F81+I+G4      20135.825    91  40453.650    40461.337    40974.855
+ 70  F81+F+I+G4    20148.542    94  40485.084    40493.296    41023.473
+ 92  K2P+I+G4      19331.955    92  38847.910    38855.770    39374.843
+114  K2P+I+G4      19331.955    92  38847.910    38855.770    39374.843
+136  HKY+I+G4      19331.890    92  38847.780    38855.640    39374.713
+158  HKY+F+I+G4    19352.345    95  38894.690    38903.081    39438.806
+180  TNe+I+G4      19302.667    93  38791.335    38799.370    39323.995
+202  TNe+I+G4      19302.667    93  38791.335    38799.370    39323.995
+224  TN+I+G4       19302.631    93  38791.262    38799.297    39323.923
+246  TN+F+I+G4     19311.810    96  38815.620    38824.190    39365.463
+268  K3P+I+G4      19197.522    93  38581.043    38589.078    39113.704
+290  K3P+I+G4      19197.522    93  38581.043    38589.078    39113.704
+312  K3Pu+I+G4     19197.485    93  38580.969    38589.004    39113.630
+334  K3Pu+F+I+G4   19213.343    96  38618.685    38627.256    39168.528
+356  TPM2+I+G4     19312.895    93  38811.789    38819.824    39344.450
+378  TPM2+I+G4     19312.895    93  38811.789    38819.824    39344.450
+400  TPM2u+I+G4    19312.894    93  38811.788    38819.823    39344.449
+422  TPM2u+F+I+G4  19320.608    96  38833.216    38841.786    39383.059
+444  TPM3+I+G4     19309.004    93  38804.008    38812.043    39336.669
+466  TPM3+I+G4     19309.004    93  38804.008    38812.043    39336.669
+488  TPM3u+I+G4    19309.003    93  38804.006    38812.041    39336.667
+510  TPM3u+F+I+G4  19330.850    96  38853.700    38862.271    39403.543
+532  TIMe+I+G4     19171.059    94  38530.118    38538.329    39068.506
+554  TIMe+I+G4     19171.059    94  38530.118    38538.329    39068.506
+576  TIM+I+G4      19171.053    94  38530.107    38538.318    39068.495
+598  TIM+F+I+G4    19176.161    97  38546.322    38555.075    39101.892
+620  TIM2e+I+G4    19284.707    94  38757.413    38765.625    39295.802
+642  TIM2e+I+G4    19284.707    94  38757.413    38765.625    39295.802
+664  TIM2+I+G4     19284.694    94  38757.387    38765.599    39295.775
+686  TIM2+F+I+G4   19282.828    97  38759.657    38768.410    39315.228
+708  TIM3e+I+G4    19282.611    94  38753.221    38761.433    39291.609
+730  TIM3e+I+G4    19282.611    94  38753.221    38761.433    39291.609
+752  TIM3+I+G4     19282.596    94  38753.191    38761.403    39291.580
+774  TIM3+F+I+G4   19293.820    97  38781.640    38790.394    39337.211
+796  TVMe+I+G4     19178.356    95  38546.713    38555.103    39090.829
+818  TVMe+I+G4     19178.356    95  38546.713    38555.103    39090.829
+840  TVM+I+G4      19178.355    95  38546.711    38555.101    39090.826
+862  TVM+F+I+G4    19185.426    98  38566.851    38575.789    39128.150
+884  SYM+I+G4      19154.011    96  38500.023    38508.593    39049.866
+906  SYM+I+G4      19154.011    96  38500.023    38508.593    39049.866
+928  GTR+I+G4      19154.002    96  38500.004    38508.575    39049.847
+950  GTR+F+I+G4    19152.006    99  38502.013    38511.137    39069.039
+Akaike Information Criterion:           GTR+I+G4
+Corrected Akaike Information Criterion: GTR+I+G4
+Bayesian Information Criterion:         GTR+I+G4
+Best-fit model: GTR+I+G4 chosen according to BIC
+
+All model information printed to ml2\trees\M55575.model.gz
+CPU time for ModelFinder: 127.578 seconds (0h:2m:7s)
+Wall-clock time for ModelFinder: 53.881 seconds (0h:0m:53s)
+Generating 1000 samples for ultrafast bootstrap (seed: 821744)...
+
+NOTE: 9 MB RAM (0 GB) is required!
+Estimate model parameters (epsilon = 0.100)
+Thoroughly optimizing +I+G parameters from 10 start values...
+Init pinv, alpha: 0.000, 0.801 / Estimate: 0.000, 0.183 / LogL: -19275.167
+Init pinv, alpha: 0.072, 0.801 / Estimate: 0.567, 0.740 / LogL: -19152.156
+Init pinv, alpha: 0.145, 0.801 / Estimate: 0.569, 0.745 / LogL: -19152.105
+Init pinv, alpha: 0.217, 0.801 / Estimate: 0.568, 0.745 / LogL: -19152.081
+Init pinv, alpha: 0.290, 0.801 / Estimate: 0.568, 0.744 / LogL: -19152.127
+Init pinv, alpha: 0.362, 0.801 / Estimate: 0.568, 0.741 / LogL: -19152.114
+Init pinv, alpha: 0.435, 0.801 / Estimate: 0.569, 0.746 / LogL: -19152.071
+Init pinv, alpha: 0.507, 0.801 / Estimate: 0.569, 0.746 / LogL: -19152.073
+Init pinv, alpha: 0.580, 0.801 / Estimate: 0.579, 0.797 / LogL: -19151.991
+Init pinv, alpha: 0.652, 0.801 / Estimate: 0.582, 0.815 / LogL: -19152.049
+Optimal pinv,alpha: 0.579, 0.797 / LogL: -19151.991
+
+Parameters optimization took 5.698 sec
+Wrote distance file to... 
+Computing ML distances based on estimated model parameters...
+Calculating distance matrix: done in 0.0075013 secs using 624.9% CPU
+Computing ML distances took 0.027043 sec (of wall-clock time) 0.078125 sec (of CPU time)
+Setting up auxiliary I and S matrices: done in 0.000134 secs
+Constructing RapidNJ tree: done in 0.0004123 secs
+Computing RapidNJ tree took 0.012628 sec (of wall-clock time) 0.015625 sec (of CPU time)
+Log-likelihood of RapidNJ tree: -19363.590
+--------------------------------------------------------------------
+|             INITIALIZING CANDIDATE TREE SET                      |
+--------------------------------------------------------------------
+Generating 98 parsimony trees... 1.228 second
+Computing log-likelihood of 98 initial trees ... 0.745 seconds
+Current best score: -19151.991
+
+Do NNI search on 20 best initial trees
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 1: -19151.982
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 2: -19149.864
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 3: -19149.710
+Iteration 10 / LogL: -19153.508 / Time: 0h:1m:4s
+Iteration 20 / LogL: -19153.509 / Time: 0h:1m:6s
+Finish initializing candidate tree set (5)
+Current best tree score: -19149.710 / CPU time: 6.289
+Number of iterations: 20
+--------------------------------------------------------------------
+|               OPTIMIZING CANDIDATE TREE SET                      |
+--------------------------------------------------------------------
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 25: -19149.502
+Iteration 30 / LogL: -19150.531 / Time: 0h:1m:8s (0h:0m:46s left)
+Iteration 40 / LogL: -19151.777 / Time: 0h:1m:9s (0h:0m:34s left)
+UPDATE BEST LOG-LIKELIHOOD: -19149.501
+Iteration 50 / LogL: -19149.648 / Time: 0h:1m:11s (0h:0m:27s left)
+UPDATE BEST LOG-LIKELIHOOD: -19149.501
+Iteration 60 / LogL: -19149.860 / Time: 0h:1m:13s (0h:0m:22s left)
+Iteration 70 / LogL: -19149.649 / Time: 0h:1m:15s (0h:0m:17s left)
+Iteration 80 / LogL: -19149.651 / Time: 0h:1m:17s (0h:0m:13s left)
+UPDATE BEST LOG-LIKELIHOOD: -19149.500
+Iteration 90 / LogL: -19149.862 / Time: 0h:1m:19s (0h:0m:10s left)
+Iteration 100 / LogL: -19149.501 / Time: 0h:1m:21s (0h:0m:7s left)
+Iteration 110 / LogL: -19149.503 / Time: 0h:1m:23s (0h:0m:4s left)
+Iteration 120 / LogL: -19150.015 / Time: 0h:1m:25s (0h:0m:1s left)
+Refining ufboot trees with NNI 1 branch...
+100 samples done
+200 samples done
+300 samples done
+400 samples done
+500 samples done
+600 samples done
+700 samples done
+800 samples done
+900 samples done
+1000 samples done
+Total 968 ufboot trees refined
+TREE SEARCH COMPLETED AFTER 126 ITERATIONS / Time: 0h:2m:13s
+
+--------------------------------------------------------------------
+|                    FINALIZING TREE SEARCH                        |
+--------------------------------------------------------------------
+Performs final model parameters optimization
+Estimate model parameters (epsilon = 0.010)
+1. Initial log-likelihood: -19149.500
+Optimal log-likelihood: -19149.499
+Rate parameters:  A-C: 1.15706  A-G: 11.16134  A-T: 6.94062  C-G: 3.79138  C-T: 18.79743  G-T: 1.00000
+Base frequencies:  A: 0.239  C: 0.243  G: 0.267  T: 0.250
+Proportion of invariable sites: 0.577
+Gamma shape alpha: 0.783
+Parameters optimization took 1 rounds (0.059 sec)
+BEST SCORE FOUND : -19149.499
+Creating bootstrap support values...
+Split supports printed to NEXUS file ml2\trees\M55575.splits.nex
+Total tree length: 2.645
+
+Total number of iterations: 126
+CPU time used for tree search: 204.484 sec (0h:3m:24s)
+Wall-clock time used for tree search: 73.423 sec (0h:1m:13s)
+Total CPU time used: 350.750 sec (0h:5m:50s)
+Total wall-clock time used: 133.833 sec (0h:2m:13s)
+UFBoot trees printed to ml2\trees\M55575.ufboot
+
+Computing bootstrap consensus tree...
+Reading input file ml2\trees\M55575.splits.nex...
+46 taxa and 277 splits.
+Consensus tree written to ml2\trees\M55575.contree
+Reading input trees file ml2\trees\M55575.contree
+Log-likelihood of consensus tree: -19149.889
+
+Analysis results written to: 
+  IQ-TREE report:                ml2\trees\M55575.iqtree
+  Maximum-likelihood tree:       ml2\trees\M55575.treefile
+  Likelihood distances:          ml2\trees\M55575.mldist
+
+Ultrafast bootstrap approximation results written to:
+  Split support values:          ml2\trees\M55575.splits.nex
+  Consensus tree:                ml2\trees\M55575.contree
+  UFBoot trees:                  ml2\trees\M55575.ufboot
+  Screen log file:               ml2\trees\M55575.log
+
+Date and Time: Mon May 04 14:02:02 2026

@@ -1,0 +1,403 @@
+IQ-TREE 3.1.1 built Apr  2 2026
+
+Input file name: ml2\datasets\M35566.nex
+Type of analysis: ModelFinder + tree reconstruction + ultrafast bootstrap (1000 replicates)
+Random seed number: 350162
+
+REFERENCES
+----------
+
+To cite IQ-TREE 3 please use:
+
+Thomas K.F. Wong, Nhan Ly-Trong, Huaiyan Ren, Hector Banos, Andrew J. Roger,
+Edward Susko, Chris Bielow, Nicola De Maio, Nick Goldman, Matthew W. Hahn,
+Gavin Huttley, Robert Lanfear, Bui Quang Minh (2025)
+IQ-TREE 3: Phylogenomic Inference Software using Complex Evolutionary Models.
+Submitted.
+
+Since you used ModelFinder please also cite: 
+
+Subha Kalyaanamoorthy, Bui Quang Minh, Thomas KF Wong, Arndt von Haeseler,
+and Lars S Jermiin (2017) ModelFinder: Fast model selection for
+accurate phylogenetic estimates. Nature Methods, 14:587–589.
+https://doi.org/10.1038/nmeth.4285
+
+Since you used ultrafast bootstrap (UFBoot) please also cite: 
+
+Diep Thi Hoang, Olga Chernomor, Arndt von Haeseler, Bui Quang Minh,
+and Le Sy Vinh (2018) UFBoot2: Improving the ultrafast bootstrap
+approximation. Mol. Biol. Evol., 35:518–522.
+https://doi.org/10.1093/molbev/msx281
+
+SEQUENCE ALIGNMENT
+------------------
+
+NOTE: Alignment sequence type is auto-detected. If in doubt, specify it via -st option.
+Input data: 27 sequences with 587 nucleotide sites
+Number of constant sites: 344 (= 58.6031% of all sites)
+Number of invariant (constant or ambiguous constant) sites: 344 (= 58.6031% of all sites)
+Number of parsimony informative sites: 232
+Number of distinct site patterns: 275
+
+ModelFinder
+-----------
+
+Best-fit model according to BIC: TVM+F+I+G4
+
+List of models sorted by BIC scores: 
+
+Model                  LogL         AIC      w-AIC        AICc     w-AICc         BIC      w-BIC
+TVM+F+I+G4        -6356.603   12833.206 -    0.021   12847.122 -   0.0447   13095.708 +    0.571
+GTR+F+I+G4        -6353.737   12829.475 +    0.136   12843.882 +    0.226   13096.351 +    0.414
+TVM+F+I+R3        -6350.853   12827.706 +    0.329   12843.125 +     0.33   13103.333 -   0.0126
+GTR+F+I+R3        -6349.415   12826.830 +     0.51   12842.768 +    0.394   13106.831 -  0.00219
+TVM+F+R3          -6357.683   12839.366 - 0.000966   12854.275 -  0.00125   13110.618 -  0.00033
+GTR+F+R3          -6355.261   12836.523 -    0.004   12851.942 -  0.00402   13112.149 - 0.000154
+TIM2+F+I+G4       -6368.550   12855.101 - 3.7e-007   12868.535 -   1e-006   13113.227 - 8.96e-005
+TPM2u+F+I+G4      -6375.013   12866.027 - 1.57e-009   12878.989 - 5.38e-009   13119.778 - 3.39e-006
+TIM2+F+I+R3       -6363.786   12851.573 - 2.16e-006   12866.481 - 2.8e-006   13122.824 - 7.38e-007
+TPM2u+F+I+R3      -6368.320   12858.640 - 6.3e-008   12873.048 - 1.05e-007   13125.516 - 1.92e-007
+TIM2+F+R3         -6371.111   12864.222 - 3.87e-009   12878.630 - 6.44e-009   13131.099 - 1.18e-008
+TPM2u+F+R3        -6377.685   12875.371 - 1.47e-011   12889.287 - 3.12e-011   13137.872 - 3.99e-010
+TIM+F+I+G4        -6393.220   12904.440 - 7.15e-018   12917.874 - 1.94e-017   13162.566 - 1.73e-015
+K3Pu+F+I+G4       -6400.797   12917.594 - 9.95e-021   12930.556 - 3.41e-020   13171.345 - 2.15e-017
+TIM+F+I+R3        -6388.647   12901.294 - 3.45e-017   12916.203 - 4.46e-017   13172.546 - 1.18e-017
+TIM+F+R3          -6394.589   12911.178 - 2.46e-019   12925.585 - 4.1e-019   13178.054 - 7.5e-019
+K3Pu+F+I+R3       -6394.820   12911.639 - 1.95e-019   12926.047 - 3.25e-019   13178.516 - 5.96e-019
+K3Pu+F+R3         -6400.418   12920.836 - 1.97e-021   12934.752 - 4.19e-021   13183.338 - 5.34e-020
+TIM3+F+I+G4       -6406.027   12930.053 - 1.96e-023   12943.488 - 5.31e-023   13188.180 - 4.75e-021
+TPM3u+F+I+G4      -6410.775   12937.550 - 4.62e-025   12950.512 - 1.58e-024   13191.302 - 9.97e-022
+TIM3+F+I+R3       -6399.843   12923.686 - 4.73e-022   12938.594 - 6.13e-022   13194.937 - 1.62e-022
+TN+F+I+G4         -6413.527   12943.055 - 2.95e-026   12956.017 - 1.01e-025   13196.806 - 6.36e-023
+TIM3+F+R3         -6404.834   12931.668 - 8.75e-024   12946.076 - 1.46e-023   13198.545 - 2.67e-023
+TPM3u+F+R3        -6408.572   12937.145 - 5.66e-025   12951.061 - 1.2e-024   13199.646 - 1.54e-023
+TPM3u+F+I+R3      -6405.501   12933.002 - 4.49e-024   12947.410 - 7.47e-024   13199.879 - 1.37e-023
+TN+F+I+R3         -6405.527   12933.054 - 4.37e-024   12947.461 - 7.28e-024   13199.930 - 1.33e-023
+HKY+F+I+R3        -6411.233   12942.467 - 3.95e-026   12956.383 - 8.41e-026   13204.968 - 1.07e-024
+HKY+F+I+G4        -6422.145   12958.290 - 1.45e-029   12970.789 - 6.26e-029   13207.667 - 2.79e-025
+TN+F+R3           -6412.881   12945.762 - 7.61e-027   12959.679 - 1.62e-026   13208.264 - 2.07e-025
+SYM+I+G4          -6419.550   12955.101 - 7.14e-029   12968.063 - 2.45e-028   13208.852 - 1.54e-025
+SYM+I+G4          -6419.550   12955.101 - 7.14e-029   12968.063 - 2.45e-028   13208.852 - 1.54e-025
+GTR+I+G4          -6419.552   12955.103 - 7.13e-029   12968.066 - 2.44e-028   13208.855 - 1.54e-025
+HKY+F+R3          -6418.582   12955.165 - 6.91e-029   12968.599 - 1.87e-028   13213.291 - 1.67e-026
+TVM+I+G4          -6426.095   12966.190 - 2.79e-031   12978.689 - 1.21e-030   13215.566 - 5.36e-027
+TVMe+I+G4         -6426.096   12966.193 - 2.79e-031   12978.692 - 1.2e-030   13215.569 - 5.36e-027
+TVMe+I+G4         -6426.096   12966.193 - 2.79e-031   12978.692 - 1.2e-030   13215.569 - 5.36e-027
+GTR+R3            -6419.231   12958.462 - 1.33e-029   12972.379 - 2.83e-029   13220.964 - 3.61e-028
+SYM+R3            -6419.290   12958.580 - 1.25e-029   12972.496 - 2.67e-029   13221.082 - 3.4e-028
+SYM+R3            -6419.290   12958.580 - 1.25e-029   12972.496 - 2.67e-029   13221.082 - 3.4e-028
+GTR+I+R3          -6417.768   12957.535 - 2.11e-029   12971.943 - 3.51e-029   13224.412 - 6.44e-029
+SYM+I+R3          -6417.783   12957.566 - 2.08e-029   12971.973 - 3.46e-029   13224.442 - 6.34e-029
+SYM+I+R3          -6417.783   12957.566 - 2.08e-029   12971.973 - 3.46e-029   13224.442 - 6.34e-029
+TVM+R3            -6424.188   12966.376 - 2.54e-031   12979.810 - 6.88e-031   13224.502 - 6.15e-029
+TVMe+R3           -6424.298   12966.596 - 2.28e-031   12980.031 - 6.16e-031   13224.723 - 5.51e-029
+TVMe+R3           -6424.298   12966.596 - 2.28e-031   12980.031 - 6.16e-031   13224.723 - 5.51e-029
+TVM+I+R3          -6422.842   12965.685 - 3.59e-031   12979.601 - 7.64e-031   13228.186 - 9.75e-030
+TVMe+I+R3         -6422.948   12965.896 - 3.23e-031   12979.812 - 6.87e-031   13228.397 - 8.78e-030
+TVMe+I+R3         -6422.948   12965.896 - 3.23e-031   12979.812 - 6.87e-031   13228.397 - 8.78e-030
+TIM2+I+G4         -6465.182   13042.364 - 8.03e-048   13054.409 - 4.35e-047   13287.365 - 1.38e-042
+TIM2e+I+G4        -6465.186   13042.373 - 7.99e-048   13054.418 - 4.33e-047   13287.374 - 1.37e-042
+TIM2e+I+G4        -6465.186   13042.373 - 7.99e-048   13054.418 - 4.33e-047   13287.374 - 1.37e-042
+TPM2u+I+G4        -6473.161   13056.322 - 7.47e-051   13067.923 - 5.06e-050   13296.948 - 1.14e-044
+TPM2+I+G4         -6473.165   13056.329 - 7.45e-051   13067.930 - 5.04e-050   13296.956 - 1.14e-044
+TPM2+I+G4         -6473.165   13056.329 - 7.45e-051   13067.930 - 5.04e-050   13296.956 - 1.14e-044
+TIM2+I+R3         -6460.723   13039.446 - 3.45e-047   13052.881 - 9.34e-047   13297.572 - 8.36e-045
+TIM2e+I+R3        -6460.812   13039.624 - 3.16e-047   13053.059 - 8.55e-047   13297.751 - 7.65e-045
+TIM2e+I+R3        -6460.812   13039.624 - 3.16e-047   13053.059 - 8.55e-047   13297.751 - 7.65e-045
+TIM2+R3           -6464.235   13044.470 - 2.8e-048   13057.432 - 9.6e-048   13298.222 - 6.04e-045
+TIM2e+R3          -6464.344   13044.688 - 2.51e-048   13057.650 - 8.61e-048   13298.439 - 5.42e-045
+TIM2e+R3          -6464.344   13044.688 - 2.51e-048   13057.650 - 8.61e-048   13298.439 - 5.42e-045
+TPM2u+R3          -6472.875   13059.751 - 1.35e-051   13072.250 - 5.81e-051   13309.127 - 2.59e-047
+TPM2+R3           -6473.018   13060.035 - 1.17e-051   13072.534 - 5.04e-051   13309.411 - 2.25e-047
+TPM2+R3           -6473.018   13060.035 - 1.17e-051   13072.534 - 5.04e-051   13309.411 - 2.25e-047
+TPM2u+I+R3        -6470.496   13056.992 - 5.35e-051   13069.954 - 1.83e-050   13310.743 - 1.15e-047
+TPM2+I+R3         -6470.531   13057.061 - 5.16e-051   13070.023 - 1.77e-050   13310.813 - 1.11e-047
+TPM2+I+R3         -6470.531   13057.061 - 5.16e-051   13070.023 - 1.77e-050   13310.813 - 1.11e-047
+TIM+I+G4          -6482.534   13077.067 - 2.34e-055   13089.112 - 1.27e-054   13322.068 - 4.01e-050
+TIMe+I+G4         -6482.544   13077.087 - 2.31e-055   13089.132 - 1.25e-054   13322.089 - 3.97e-050
+TIMe+I+G4         -6482.544   13077.087 - 2.31e-055   13089.132 - 1.25e-054   13322.089 - 3.97e-050
+TIM+R3            -6480.714   13077.428 - 1.95e-055   13090.390 - 6.69e-055   13331.179 - 4.21e-052
+TIMe+R3           -6480.807   13077.614 - 1.78e-055   13090.576 - 6.1e-055   13331.365 - 3.84e-052
+TIMe+R3           -6480.807   13077.614 - 1.78e-055   13090.576 - 6.1e-055   13331.365 - 3.84e-052
+TIM+I+R3          -6478.863   13075.726 - 4.57e-055   13089.161 - 1.24e-054   13333.853 - 1.11e-052
+TIMe+I+R3         -6478.880   13075.759 - 4.5e-055   13089.194 - 1.22e-054   13333.886 - 1.09e-052
+TIMe+I+R3         -6478.880   13075.759 - 4.5e-055   13089.194 - 1.22e-054   13333.886 - 1.09e-052
+K3Pu+I+G4         -6492.065   13094.130 - 4.61e-059   13105.731 - 3.12e-058   13334.757 - 7.04e-053
+K3P+I+G4          -6492.082   13094.165 - 4.53e-059   13105.765 - 3.07e-058   13334.791 - 6.92e-053
+K3P+I+G4          -6492.082   13094.165 - 4.53e-059   13105.765 - 3.07e-058   13334.791 - 6.92e-053
+K3Pu+R3           -6488.382   13090.764 - 2.48e-058   13103.263 - 1.07e-057   13340.140 - 4.77e-054
+K3P+R3            -6488.447   13090.893 - 2.33e-058   13103.392 -   1e-057   13340.269 - 4.47e-054
+K3P+R3            -6488.447   13090.893 - 2.33e-058   13103.392 -   1e-057   13340.269 - 4.47e-054
+K3Pu+I+R3         -6486.438   13088.876 - 6.38e-058   13101.838 - 2.19e-057   13342.628 - 1.38e-054
+K3P+I+R3          -6486.473   13088.945 - 6.16e-058   13101.907 - 2.11e-057   13342.697 - 1.33e-054
+K3P+I+R3          -6486.473   13088.945 - 6.16e-058   13101.907 - 2.11e-057   13342.697 - 1.33e-054
+TIM3+I+G4         -6496.410   13104.821 - 2.2e-061   13116.866 - 1.19e-060   13349.822 - 3.77e-056
+TIM3e+I+G4        -6496.420   13104.840 - 2.18e-061   13116.885 - 1.18e-060   13349.841 - 3.73e-056
+TIM3e+I+G4        -6496.420   13104.840 - 2.18e-061   13116.885 - 1.18e-060   13349.841 - 3.73e-056
+TIM3+R3           -6496.081   13108.161 - 4.14e-062   13121.124 - 1.42e-061   13361.913 - 8.93e-059
+TPM3u+I+G4        -6505.664   13121.327 - 5.73e-065   13132.928 - 3.88e-064   13361.953 - 8.75e-059
+TPM3+I+G4         -6505.671   13121.343 - 5.68e-065   13132.944 - 3.85e-064   13361.969 - 8.68e-059
+TPM3+I+G4         -6505.671   13121.343 - 5.68e-065   13132.944 - 3.85e-064   13361.969 - 8.68e-059
+TIM3e+R3          -6496.174   13108.347 - 3.77e-062   13121.310 - 1.29e-061   13362.099 - 8.14e-059
+TIM3e+R3          -6496.174   13108.347 - 3.77e-062   13121.310 - 1.29e-061   13362.099 - 8.14e-059
+TIM3+I+R3         -6494.894   13107.787 - 4.99e-062   13121.222 - 1.35e-061   13365.914 - 1.21e-059
+TIM3e+I+R3        -6494.960   13107.919 - 4.67e-062   13121.354 - 1.26e-061   13366.046 - 1.13e-059
+TIM3e+I+R3        -6494.960   13107.919 - 4.67e-062   13121.354 - 1.26e-061   13366.046 - 1.13e-059
+TPM3u+R3          -6503.179   13120.359 - 9.29e-065   13132.858 - 4.02e-064   13369.735 - 1.79e-060
+TPM3+R3           -6503.317   13120.634 - 8.1e-065   13133.133 - 3.5e-064   13370.011 - 1.56e-060
+TPM3+R3           -6503.317   13120.634 - 8.1e-065   13133.133 - 3.5e-064   13370.011 - 1.56e-060
+TPM3u+I+R3        -6501.578   13119.155 - 1.7e-064   13132.117 - 5.81e-064   13372.907 - 3.66e-061
+TPM3+I+R3         -6501.630   13119.259 - 1.61e-064   13132.222 - 5.52e-064   13373.011 - 3.47e-061
+TPM3+I+R3         -6501.630   13119.259 - 1.61e-064   13132.222 - 5.52e-064   13373.011 - 3.47e-061
+TN+I+G4           -6528.633   13167.266 - 6.06e-075   13178.867 - 4.1e-074   13407.892 - 9.26e-069
+TNe+I+G4          -6528.673   13167.345 - 5.82e-075   13178.946 - 3.94e-074   13407.972 - 8.9e-069
+TNe+I+G4          -6528.673   13167.345 - 5.82e-075   13178.946 - 3.94e-074   13407.972 - 8.9e-069
+TN+I+R3           -6522.328   13160.656 - 1.65e-073   13173.618 - 5.66e-073   13414.407 - 3.56e-070
+TNe+I+R3          -6522.345   13160.691 - 1.62e-073   13173.653 - 5.56e-073   13414.442 - 3.5e-070
+TNe+I+R3          -6522.345   13160.691 - 1.62e-073   13173.653 - 5.56e-073   13414.442 - 3.5e-070
+TN+R3             -6525.873   13165.746 - 1.3e-074   13178.245 - 5.6e-074   13415.123 - 2.49e-070
+TNe+R3            -6525.987   13165.974 - 1.16e-074   13178.473 - 4.99e-074   13415.350 - 2.22e-070
+TNe+R3            -6525.987   13165.974 - 1.16e-074   13178.473 - 4.99e-074   13415.350 - 2.22e-070
+HKY+I+G4          -6539.918   13187.836 - 2.07e-079   13199.002 - 1.74e-078   13424.088 - 2.82e-072
+K2P+I+G4          -6539.918   13187.837 - 2.07e-079   13199.002 - 1.74e-078   13424.088 - 2.82e-072
+K2P+I+G4          -6539.918   13187.837 - 2.07e-079   13199.002 - 1.74e-078   13424.088 - 2.82e-072
+HKY+R3            -6536.302   13184.604 - 1.04e-078   13196.649 - 5.64e-078   13429.605 - 1.78e-073
+K2P+R3            -6536.481   13184.962 - 8.7e-079   13197.007 - 4.72e-078   13429.964 - 1.49e-073
+K2P+R3            -6536.481   13184.962 - 8.7e-079   13197.007 - 4.72e-078   13429.964 - 1.49e-073
+HKY+I+R3          -6533.940   13181.880 - 4.06e-078   13194.379 - 1.76e-077   13431.256 - 7.82e-074
+K2P+I+R3          -6533.985   13181.970 - 3.89e-078   13194.469 - 1.68e-077   13431.346 - 7.47e-074
+K2P+I+R3          -6533.985   13181.970 - 3.89e-078   13194.469 - 1.68e-077   13431.346 - 7.47e-074
+F81+F+I+G4        -6698.199   13508.397 - 5.09e-149   13520.443 - 2.76e-148   13753.399 - 8.72e-144
+F81+F+R3          -6694.258   13504.516 - 3.54e-148   13517.478 - 1.21e-147   13758.267 - 7.65e-145
+F81+F+I+R3        -6691.419   13500.838 - 2.23e-147   13514.272 - 6.03e-147   13758.964 - 5.4e-145
+JC+I+G4           -6803.681   13713.361 - 1.58e-193   13724.100 - 1.65e-192   13945.237 - 1.92e-185
+JC+I+G4           -6803.681   13713.361 - 1.58e-193   13724.100 - 1.65e-192   13945.237 - 1.92e-185
+F81+I+G4          -6803.681   13713.362 - 1.58e-193   13724.101 - 1.65e-192   13945.238 - 1.92e-185
+F81+R3            -6800.577   13711.153 - 4.77e-193   13722.754 - 3.23e-192   13951.780 - 7.29e-187
+JC+R3             -6800.759   13711.517 - 3.98e-193   13723.118 - 2.69e-192   13952.144 - 6.08e-187
+JC+R3             -6800.759   13711.517 - 3.98e-193   13723.118 - 2.69e-192   13952.144 - 6.08e-187
+F81+I+R3          -6797.907   13707.813 - 2.53e-192   13719.859 - 1.37e-191   13952.815 - 4.35e-187
+JC+I+R3           -6797.958   13707.916 - 2.41e-192   13719.961 - 1.31e-191   13952.917 - 4.13e-187
+JC+I+R3           -6797.958   13707.916 - 2.41e-192   13719.961 - 1.31e-191   13952.917 - 4.13e-187
+JC+R4             -6800.434   13714.868 - 7.45e-194   13727.367 - 3.22e-193   13964.244 - 1.43e-189
+JC+I+R4           -6797.868   13711.737 - 3.56e-193   13724.699 - 1.22e-192   13965.488 - 7.69e-190
+JC+R2             -6823.454   13752.908 - 4.09e-202   13763.647 - 4.26e-201   13984.784 - 4.97e-194
+JC+I+R2           -6822.375   13752.751 - 4.43e-202   13763.916 - 3.72e-201   13989.002 - 6.03e-195
+JC+G4             -6843.910   13791.820 - 1.45e-210   13802.143 - 1.86e-209   14019.322 - 1.57e-201
+JC+I              -6856.556   13817.111 - 4.68e-216   13827.433 - 6.01e-215   14044.612 - 5.06e-207
+JC                -8040.393   16182.787 -        0   16192.701 -        0   16405.913 -        0
+
+AIC, w-AIC   : Akaike information criterion scores and weights.
+AICc, w-AICc : Corrected AIC scores and weights.
+BIC, w-BIC   : Bayesian information criterion scores and weights.
+
+Plus signs denote the 95% confidence sets.
+Minus signs denote significant exclusion.
+
+SUBSTITUTION PROCESS
+--------------------
+
+Model of substitution: TVM+F+I+G4
+
+Rate parameter R:
+
+  A-C: 2.8601
+  A-G: 21.6765
+  A-T: 10.3482
+  C-G: 1.1499
+  C-T: 21.6765
+  G-T: 1.0000
+
+State frequencies: (empirical counts from alignment)
+
+  pi(A) = 0.2147
+  pi(C) = 0.2081
+  pi(G) = 0.206
+  pi(T) = 0.3712
+
+Rate matrix Q:
+
+  A    -1.199   0.08019    0.6016    0.5175
+  C   0.08272    -1.199   0.03192     1.084
+  G    0.6269   0.03224   -0.7091   0.05001
+  T    0.2993    0.6077   0.02776   -0.9348
+
+Model of rate heterogeneity: Invar+Gamma with 4 categories
+Proportion of invariable sites: 0.581
+Gamma shape alpha: 2.327
+
+ Category  Relative_rate  Proportion
+  0         0              0.581
+  1         0.7862         0.1047
+  2         1.637          0.1047
+  3         2.569          0.1047
+  4         4.555          0.1047
+Relative rates are computed as MEAN of the portion of the Gamma distribution falling in the category.
+
+MAXIMUM LIKELIHOOD TREE
+-----------------------
+
+Log-likelihood of the tree: -6352.2102 (s.e. 280.1179)
+Unconstrained log-likelihood (without tree): -2586.8839
+Number of free parameters (#branches + #model parameters): 60
+Akaike information criterion (AIC) score: 12824.4204
+Corrected Akaike information criterion (AICc) score: 12838.3368
+Bayesian information criterion (BIC) score: 13086.9219
+
+Total tree length (sum of branch lengths): 4.6850
+Sum of internal branch lengths: 1.0641 (22.7124% of tree length)
+
+NOTE: Tree is UNROOTED although outgroup taxon 'Craterolophus_convolvulus_GERMANY' is drawn at root
+Numbers in parentheses are  ultrafast bootstrap support (%)
+
++**Craterolophus_convolvulus_GERMANY
+|
++**Craterolophus_convolvulus_UK
+|
+|                                   +----------------Depastromorpha_africana
+|                             +-----| (37)
+|                             |     +-----------------Lucernariopsis_campanulata
+|                          +--| (37)
+|                          |  |      +----------------------Depastromorpha_sp_AUS
+|                          |  |  +---| (40)
+|                          |  |  |   |       +-------------------Haliclystus_tenuis
+|                          |  |  |   |   +---| (64)
+|                          |  |  |   |   |   +---------Stenoscyphus_inabai
+|                          |  |  |   +---| (84)
+|                          |  |  |       +------Stenoscyphus_sp_AUS
+|                          |  +--| (30)
+|                          |     |        +-----Haliclystus_antarcticus_ANT
+|                          |     |     +--| (66)
+|                          |     |     |  +-----Haliclystus_sanjuanensis
+|                          |     |  +--| (85)
+|                          |     |  |  +--------Haliclystus_californensis
+|                          |     +--| (66)
+|                          |        |  +----------Haliclystus_octoradiatus
+|                          |        +--| (77)
+|                          |           +--------Haliclystus_stejnegeri
+|                       +--| (36)
+|                       |  +-------------Manania_gwilliami
+|                    +--| (28)
+|                    |  |   +---------------------------Kishinouyea_sp_MOOREA
+|                    |  +---| (69)
+|                    |      +--------------Kishinouyea_sp_SAF
+|                 +--| (20)
+|                 |  +-------------------Sasakiella_cruciformis
+|              +--| (67)
+|              |  |        +----------------Kishinouyea_sp_NZ
+|              |  |  +-----| (46)
+|              |  |  |     +------------Lucernariopsis_sp_NZ
+|              |  +--| (27)
+|              |     |           +-----------------Lipkea_ruspoliana
+|              |     |      +----| (95)
+|              |     |      |    +------------Lipkea_sp_JAPAN
+|              |     |  +---| (77)
+|              |     |  |   |         +--Lucernaria_bathyphila_DEEPSEA
+|              |     |  |   |      +--| (98)
+|              |     |  |   |      |  |  +--Lucernaria_janetae
+|              |     |  |   |      |  +--| (97)
+|              |     |  |   |      |     +--Lucernaria_sp_EPR
+|              |     |  |   +------| (100)
+|              |     |  |          +------Lucernaria_sainthilarei
+|              |     +--| (59)
+|              |        +--------------Lucernariopsis_cruxmelitensis
++--------------| (100)
+               +----Lucernariopsis_vanhoeffeni
+
+Tree in newick format:
+
+(Craterolophus_convolvulus_GERMANY:0.0016628213,Craterolophus_convolvulus_UK:0.0000010005,(((((((Depastromorpha_africana:0.1959495754,Lucernariopsis_campanulata:0.2095548328)37:0.0701171446,((Depastromorpha_sp_AUS:0.2669827098,((Haliclystus_tenuis:0.2300204593,Stenoscyphus_inabai:0.1188342275)64:0.0466045678,Stenoscyphus_sp_AUS:0.0824416757)84:0.0542666939)40:0.0502917615,(((Haliclystus_antarcticus_ANT:0.0701806387,Haliclystus_sanjuanensis:0.0714263435)66:0.0220687978,Haliclystus_californensis:0.1130676879)85:0.0417710110,(Haliclystus_octoradiatus:0.1339191296,Haliclystus_stejnegeri:0.1072900431)77:0.0286350077)66:0.0217482679)30:0.0173068354)37:0.0357688156,Manania_gwilliami:0.1606248066)36:0.0185357276,(Kishinouyea_sp_MOOREA:0.3319101191,Kishinouyea_sp_SAF:0.1812044787)69:0.0518100059)28:0.0190856176,Sasakiella_cruciformis:0.2391006938)20:0.0063536610,((Kishinouyea_sp_NZ:0.2007474727,Lucernariopsis_sp_NZ:0.1519304825)46:0.0703904345,(((Lipkea_ruspoliana:0.2109427507,Lipkea_sp_JAPAN:0.1549009040)95:0.0686344326,((Lucernaria_bathyphila_DEEPSEA:0.0341183010,(Lucernaria_janetae:0.0149575676,Lucernaria_sp_EPR:0.0073177326)97:0.0150809651)98:0.0278187361,Lucernaria_sainthilarei:0.0901366472)100:0.0883800032)77:0.0482764000,Lucernariopsis_cruxmelitensis:0.1778292105)59:0.0252577104)27:0.0270189875)67:0.0321591918,Lucernariopsis_vanhoeffeni:0.0638968350)100:0.1767004525);
+
+CONSENSUS TREE
+--------------
+
+Consensus tree is constructed from 1000 bootstrap trees
+Log-likelihood of consensus tree: -6354.128460
+Robinson-Foulds distance between ML tree and consensus tree: 8
+
+Branches with support >0.000000% are kept (extended consensus)
+Branch lengths are optimized by maximum likelihood on original alignment
+Numbers in parentheses are bootstrap supports (%)
+
++--Craterolophus_convolvulus_GERMANY
+|
++--Craterolophus_convolvulus_UK
+|
+|                                   +---------------Depastromorpha_africana
+|                               +---| (48)
+|                               |   +-------------------Depastromorpha_sp_AUS
+|                          +----| (22)
+|                          |    +-------------------Lucernariopsis_campanulata
+|                       +--| (37)
+|                       |  |           +-----Haliclystus_antarcticus_ANT
+|                       |  |        +--| (66)
+|                       |  |        |  +-----Haliclystus_sanjuanensis
+|                       |  |     +--| (85)
+|                       |  |     |  +--------Haliclystus_californensis
+|                       |  |  +--| (66)
+|                       |  |  |  |  +----------Haliclystus_octoradiatus
+|                       |  |  |  +--| (77)
+|                       |  |  |     +--------Haliclystus_stejnegeri
+|                       |  +--| (12)
+|                       |     |          +-------------------Haliclystus_tenuis
+|                       |     |       +--| (64)
+|                       |     |       |  +---------Stenoscyphus_inabai
+|                       |     +-------| (84)
+|                       |             +-------Stenoscyphus_sp_AUS
+|                    +--| (36)
+|                    |  +-------------Manania_gwilliami
+|                 +--| (20)
+|                 |  |     +--------------------------Kishinouyea_sp_MOOREA
+|                 |  |  +--| (69)
+|                 |  |  |  +---------------Kishinouyea_sp_SAF
+|                 |  +--| (31)
+|                 |     +-----------------Sasakiella_cruciformis
+|              +--| (67)
+|              |  |        +----------------Kishinouyea_sp_NZ
+|              |  |  +-----| (46)
+|              |  |  |     +------------Lucernariopsis_sp_NZ
+|              |  +--| (27)
+|              |     |           +------------------Lipkea_ruspoliana
+|              |     |      +----| (95)
+|              |     |      |    +------------Lipkea_sp_JAPAN
+|              |     |  +---| (77)
+|              |     |  |   |         +--Lucernaria_bathyphila_DEEPSEA
+|              |     |  |   |      +--| (98)
+|              |     |  |   |      |  |  +--Lucernaria_janetae
+|              |     |  |   |      |  +--| (97)
+|              |     |  |   |      |     +--Lucernaria_sp_EPR
+|              |     |  |   +------| (100)
+|              |     |  |          +-------Lucernaria_sainthilarei
+|              |     +--| (59)
+|              |        +--------------Lucernariopsis_cruxmelitensis
++--------------| (100)
+               +----Lucernariopsis_vanhoeffeni
+
+
+Consensus tree in newick format: 
+
+(Craterolophus_convolvulus_GERMANY:0.0016569011,Craterolophus_convolvulus_UK:0.0000022537,(((((((Depastromorpha_africana:0.1793099049,Depastromorpha_sp_AUS:0.2313232420)48:0.0448825340,Lucernariopsis_campanulata:0.2242118676)22:0.0559505143,((((Haliclystus_antarcticus_ANT:0.0690946883,Haliclystus_sanjuanensis:0.0719858017)66:0.0236586182,Haliclystus_californensis:0.1101143260)85:0.0414963429,(Haliclystus_octoradiatus:0.1333093030,Haliclystus_stejnegeri:0.1075189725)77:0.0284429355)66:0.0229566998,((Haliclystus_tenuis:0.2298100070,Stenoscyphus_inabai:0.1159006741)64:0.0394259424,Stenoscyphus_sp_AUS:0.0903695180)84:0.0995866814)12:0.0134693080)37:0.0377050260,Manania_gwilliami:0.1604001123)36:0.0178431640,((Kishinouyea_sp_MOOREA:0.3111736121,Kishinouyea_sp_SAF:0.1790330544)69:0.0288696533,Sasakiella_cruciformis:0.2044682010)31:0.0438681938)20:0.0265933540,((Kishinouyea_sp_NZ:0.1997830154,Lucernariopsis_sp_NZ:0.1501359591)46:0.0680792362,(((Lipkea_ruspoliana:0.2127039269,Lipkea_sp_JAPAN:0.1546177549)95:0.0668584790,((Lucernaria_bathyphila_DEEPSEA:0.0339871259,(Lucernaria_janetae:0.0148788395,Lucernaria_sp_EPR:0.0073427921)97:0.0150789201)98:0.0277387329,Lucernaria_sainthilarei:0.0897746997)100:0.0891869042)77:0.0469934741,Lucernariopsis_cruxmelitensis:0.1779103128)59:0.0244798426)27:0.0267694796)67:0.0303730464,Lucernariopsis_vanhoeffeni:0.0643476364)100:0.1745517951);
+
+ALISIM COMMAND
+--------------
+To simulate an alignment of the same length as the original alignment, using the tree and model parameters estimated from this analysis, you can use the following command:
+
+--alisim simulated_MSA -t ml2\trees\M35566.treefile -m "TVM{2.8601,21.6765,10.3482,1.14991}+F{0.214666,0.2081,0.20602,0.371213}+I{0.581012}+G4{2.32673}" --length 587
+
+To mimic the alignment used to produce this analysis, i.e. simulate an alignment of the same length as the original alignment, using the tree and model parameters estimated from this analysis *and* copying the same gap positions as the original alignment, you can use the following command:
+
+iqtree -s ml2\datasets\M35566.nex --alisim mimicked_MSA
+
+To simulate any number of alignments in either of the two commandlines above, use the --num-alignments options, for example mimic 100 alignments you would use the command line:
+
+iqtree -s ml2\datasets\M35566.nex --alisim mimicked_MSA --num-alignments 100
+
+For more information on using AliSim, please visit: www.iqtree.org/doc/AliSim
+
+TIME STAMP
+----------
+
+Date and time: Mon May 04 13:38:25 2026
+Total CPU time used: 205.796875 seconds (0h:3m:25s)
+Total wall-clock time used: 110.4302538 seconds (0h:1m:50s)
+
