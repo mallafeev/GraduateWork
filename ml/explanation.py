@@ -6,6 +6,7 @@ import pandas as pd
 FEATURE_LABELS = {
     'branch_length': 'длина ветви',
     'depth': 'глубина узла',
+    # Старые
     'n_leaves_subtree': 'число листьев в поддереве',
     'subtree_fraction': 'доля поддерева',
     'subtree_balance': 'баланс поддерева',
@@ -21,6 +22,11 @@ FEATURE_LABELS = {
     'gc_mean_clade': 'средний GC в кладе',
     'gc_std_clade': 'разброс GC в кладе',
     'mean_pairwise_pdist_clade': 'средняя p-distance внутри клады',
+    # Новые (для v3)
+    'n_children': 'число дочерних узлов',
+    'clade_size_log': 'логарифм размера клады',
+    'relative_branch_length': 'относительная длина ветви',
+    'depth_ratio': 'отношение глубины к максимуму',
 }
 
 

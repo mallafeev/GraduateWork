@@ -80,10 +80,9 @@ class MainWindow(QMainWindow):
         models = []
         seen = set()
         preferred = [
-            ("RF model v1", base / "models" / "model_v1.pkl"),
-            ("RF model v1 (ml_outputs_v1)", base / "ml_outputs_v1" / "model_v1.pkl"),
-            ("RF model v1 nested", base / "ml_outputs_v1" / "ml_outputs_v1" / "model_v1.pkl"),
-            ("RF model v2 (IQ-TREE)", base / "ml2" / "ml_outputs_v1" / "model_v2.pkl"),
+            ("RF model v1.18", base / "ml_outputs_v1" / "ml_outputs_v1" / "model_v1.pkl"),
+            ("RF model v2.38", base / "ml2" / "ml_outputs_v1" / "model_v1.pkl"),
+            ("RF model v3.56", base / "ml3" / "ml_outputs_v2_updated" / "model_v2.pkl"),
         ]
         for label, path in preferred:
             path = path.resolve()

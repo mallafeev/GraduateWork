@@ -1,31 +1,31 @@
+# ml/predictor_core.py
 from __future__ import annotations
-
 from pathlib import Path
-
 import pandas as pd
 from Bio.Align import MultipleSeqAlignment
 from Bio.Phylo.BaseTree import Tree
-
 from .explanation import FeatureExplanationBuilder
-from .feature_constants import FEATURE_COLUMNS
+from .feature_constants import FEATURE_COLUMNS  # Оставляем как фоллбэк
 from .feature_extractor import TreeFeatureExtractor
 from .model_loader import FeatureImportanceRepository, MetadataRepository, ModelInferenceError, SerializedModelLoader
 
-
 class FeatureFrameBuilder:
-    def build(self, feature_rows) -> pd.DataFrame:
+    # Принимаем список колонок динамически!
+    def build(self, feature_rows, feature_columns: list[str]) -> pd.DataFrame:
         X = pd.DataFrame([row.features for row in feature_rows])
-        for col in FEATURE_COLUMNS:
+        # 1. Добавляем недостающие колонки как NaN (если экстрактор их не сгенерировал)
+        for col in feature_columns:
             if col not in X.columns:
                 X[col] = pd.NA
-        return X[FEATURE_COLUMNS]
-
+        # 2. Выбираем ТОЛЬКО те колонки, которые ожидает модель (отбрасываем лишние)
+        return X[feature_columns]
 
 class PredictionExecutor:
     def predict(self, model, X: pd.DataFrame):
         try:
             return model.predict(X)
         except Exception:
+            # Фоллбэк для пайплайнов с импутером (как в старых версиях)
             if hasattr(model, 'named_steps') and 'rf' in model.named_steps:
                 rf = model.named_steps['rf']
                 imputer = model.named_steps.get('imputer')
@@ -39,7 +39,6 @@ class PredictionExecutor:
                     X_num = X_num.fillna(X_num.median(numeric_only=True))
                 return rf.predict(X_num)
             raise
-
 
 class PredictionResultAssembler:
     def assemble(self, feature_rows, preds, explanations) -> list[dict]:
@@ -55,7 +54,6 @@ class PredictionResultAssembler:
             })
         return results
 
-
 class RandomForestBootstrapPredictor:
     def __init__(self) -> None:
         self.model = None
@@ -63,6 +61,10 @@ class RandomForestBootstrapPredictor:
         self.model_path = ''
         self.metadata_path = ''
         self.feature_importance_map: dict[str, float] = {}
+        
+        # Добавляем поле для хранения ожидаемых колонок
+        self.expected_feature_columns = FEATURE_COLUMNS 
+
         self.model_loader = SerializedModelLoader()
         self.metadata_repository = MetadataRepository()
         self.importance_repository = FeatureImportanceRepository()
@@ -76,14 +78,24 @@ class RandomForestBootstrapPredictor:
         resolved_model_path = Path(model_path).resolve()
         if not resolved_model_path.exists():
             raise ModelInferenceError(f'Файл модели не найден: {resolved_model_path}')
+        
         metadata, resolved_metadata = self.metadata_repository.load(metadata_path)
+        
         if self.model is not None and self.model_path == str(resolved_model_path) and self.metadata_path == resolved_metadata:
             return False
+
         self.model = self.model_loader.load(resolved_model_path)
         self.model_path = str(resolved_model_path)
         self.metadata_path = resolved_metadata
-        self.feature_importance_map = self.importance_repository.load(self.model, resolved_model_path)
         self.metadata = metadata
+        
+        # === КЛЮЧЕВОЙ МОМЕНТ: Читаем колонки из метаданных ===
+        self.expected_feature_columns = metadata.get("feature_columns")
+        if not self.expected_feature_columns:
+            # Если в метаданных нет списка (старая модель), используем константы по умолчанию
+            self.expected_feature_columns = FEATURE_COLUMNS
+
+        self.feature_importance_map = self.importance_repository.load(self.model, resolved_model_path)
         self.metadata.setdefault('feature_importances', self.feature_importance_map)
         return True
 
@@ -94,10 +106,14 @@ class RandomForestBootstrapPredictor:
     def predict_tree(self, tree: Tree, alignment: MultipleSeqAlignment) -> list[dict]:
         if self.model is None:
             raise ModelInferenceError('Модель не загружена.')
+        
         feature_rows = self.feature_extractor.extract(tree, alignment)
         if not feature_rows:
             return []
-        X = self.frame_builder.build(feature_rows)
+        
+        # Передаем ожидаемые колонки в билдер
+        X = self.frame_builder.build(feature_rows, self.expected_feature_columns)
+        
         preds = self.prediction_executor.predict(self.model, X)
         explanations = self.explanation_builder.build(X, self.feature_importance_map)
         return self.result_assembler.assemble(feature_rows, preds, explanations)

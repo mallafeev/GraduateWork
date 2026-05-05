@@ -1,0 +1,61 @@
+{
+  "n_rows_total": 1600,
+  "n_datasets_total": 39,
+  "cv_mae": 16.45511898220373,
+  "cv_rmse": 22.264693578189082,
+  "cv_r2": 0.4917853327362879,
+  "feature_columns": [
+    "branch_length",
+    "depth",
+    "subtree_fraction",
+    "subtree_balance",
+    "mean_child_branch_length",
+    "std_child_branch_length",
+    "n_children",
+    "clade_size_log",
+    "relative_branch_length",
+    "depth_ratio",
+    "taxa_count",
+    "alignment_length",
+    "gap_fraction_global",
+    "gc_mean_global",
+    "gc_std_global",
+    "variable_site_fraction_global",
+    "gap_fraction_clade",
+    "gc_mean_clade",
+    "gc_std_clade",
+    "mean_pairwise_pdist_clade"
+  ],
+  "fold_metrics": [
+    {
+      "fold": 1,
+      "mae": 21.72546070236697,
+      "rmse": 29.712781110845043,
+      "r2": -0.011307366587187229
+    },
+    {
+      "fold": 2,
+      "mae": 17.060816304087115,
+      "rmse": 22.10542719443125,
+      "r2": 0.6093761856304255
+    },
+    {
+      "fold": 3,
+      "mae": 15.730121727690317,
+      "rmse": 21.392362627359244,
+      "r2": 0.5804055452225361
+    },
+    {
+      "fold": 4,
+      "mae": 12.316849994481789,
+      "rmse": 17.996328856410788,
+      "r2": 0.6319617731989051
+    },
+    {
+      "fold": 5,
+      "mae": 15.442346182392457,
+      "rmse": 20.116568101899098,
+      "r2": 0.6484905262167598
+    }
+  ]
+}
