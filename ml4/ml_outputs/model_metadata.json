@@ -1,0 +1,39 @@
+{
+  "n_rows_total": 1233,
+  "mae": 7.948083539724029,
+  "rmse": 10.911701215877864,
+  "r2": 0.8852299872166431,
+  "cv_r2_mean": 0.4834519112015636,
+  "best_params": {
+    "max_depth": 12,
+    "max_features": 0.8,
+    "min_samples_leaf": 5,
+    "min_samples_split": 11,
+    "n_estimators": 420
+  },
+  "pred_range": "11.3–99.9",
+  "feature_columns": [
+    "branch_length",
+    "depth",
+    "n_leaves_subtree",
+    "subtree_fraction",
+    "subtree_balance",
+    "mean_child_branch_length",
+    "std_child_branch_length",
+    "taxa_count",
+    "alignment_length",
+    "gap_fraction_global",
+    "gc_mean_global",
+    "gc_std_global",
+    "variable_site_fraction_global",
+    "gap_fraction_clade",
+    "gc_mean_clade",
+    "gc_std_clade",
+    "mean_pairwise_pdist_clade",
+    "bl_cv",
+    "gap_var_clade",
+    "gc_extreme",
+    "tiny_clade",
+    "deep_node"
+  ]
+}

@@ -55,7 +55,7 @@ class TreeBuildWorker(QObject):
         try:
             service = AnalysisService()
             artifacts = service.build_tree_from_alignment(self.alignment, method=self.method)
-        except Exception as exc:  # noqa: BLE001
+        except Exception as exc: 
             self.failed.emit(str(exc))
             return
         self.finished.emit(artifacts)
@@ -80,9 +80,10 @@ class MainWindow(QMainWindow):
         models = []
         seen = set()
         preferred = [
-            ("RF model v1.18", base / "ml_outputs_v1" / "ml_outputs_v1" / "model_v1.pkl"),
-            ("RF model v2.38", base / "ml2" / "ml_outputs_v1" / "model_v1.pkl"),
-            ("RF model v3.56", base / "ml3" / "ml_outputs_v2_updated" / "model_v2.pkl"),
+            ("RF model v1.18", base / "ml1" / "ml_outputs" / "model_v1.pkl"),
+            ("RF model v2.38", base / "ml2" / "ml_outputs" / "model_v2.pkl"),
+            ("RF model v3.30", base / "ml4" / "ml_outputs" / "model_v4.pkl"),
+            ("RF model v4.30", base / "ml5" / "ml_outputs" / "model_v5.pkl"),
         ]
         for label, path in preferred:
             path = path.resolve()
@@ -102,7 +103,6 @@ class MainWindow(QMainWindow):
     def _build_ui(self):
         self._build_actions()
         self._build_menu()
-        self._build_toolbar()
         central = QWidget()
         self.setCentralWidget(central)
         outer = QVBoxLayout(central)
@@ -323,13 +323,6 @@ class MainWindow(QMainWindow):
         controls.addWidget(self.chk_show_branch_lengths)
         controls.addWidget(self.chk_show_predictions)
         controls.addSpacing(16)
-        controls.addWidget(QLabel("Масштаб:"))
-        controls.addWidget(self.btn_zoom_out)
-        controls.addWidget(self.btn_zoom_in)
-        controls.addWidget(self.btn_fit_tree)
-        controls.addSpacing(16)
-        controls.addWidget(QLabel("Интервал листьев:"))
-        controls.addWidget(self.leaf_spacing_slider, stretch=1)
         layout.addLayout(controls)
         self.tree_canvas = PhyloTreeCanvas()
         self.tree_scroll = QScrollArea()
@@ -497,6 +490,13 @@ class MainWindow(QMainWindow):
             self.model_path_edit.setText(data.get("path", ""))
         else:
             self.model_path_edit.clear()
+
+    def _normalize_taxon_name(self, name: str) -> str:
+        """Приводит имя таксона к единому виду: убирает кавычки и заменяет пробелы."""
+        if not name:
+            return ""
+        name = name.strip().strip("'\"")
+        return name.replace(" ", "_")
     def load_model(self):
         data = self.combo_model_select.currentData()
         if not isinstance(data, dict):
@@ -526,42 +526,66 @@ class MainWindow(QMainWindow):
     def validate_input(self):
         lines = []
         self.state.input_validated = False
+        self.state.taxa_consistent = True
+
         if self.state.alignment_file:
             try:
                 meta = self.service.inspect_alignment_file(self.state.alignment_file)
                 lines.append(f"Выравнивание: файл корректный ({meta['format']}).")
-                lines.append("Найдены блоки: " + ", ".join(meta.get("present_blocks", [])))
+                lines.append("   Найдены блоки: " + ", ".join(meta.get("present_blocks", [])))
                 if self.state.alignment is not None:
                     aln = self.state.alignment
-                    lines.append(f"Таксонов: {len(aln)}, длина выравнивания: {aln.get_alignment_length()}.")
+                    lines.append(f"   Таксонов: {len(aln)}, длина выравнивания: {aln.get_alignment_length()}.")
             except Exception as exc:
                 lines.append(f"Выравнивание: ошибка проверки — {exc}")
         else:
             lines.append("Выравнивание не загружено.")
+
         if self.state.tree_file:
             try:
                 meta = self.service.inspect_tree_file(self.state.tree_file)
                 lines.append(f"Дерево: файл корректный ({meta['format']}).")
-                lines.append("Найдены блоки: " + ", ".join(meta.get("present_blocks", [])))
+                lines.append("   Найдены блоки: " + ", ".join(meta.get("present_blocks", [])))
                 if self.state.tree is not None:
-                    lines.append(f"Терминальных узлов: {len(self.state.tree.get_terminals())}.")
+                    lines.append(f"   Терминальных узлов: {len(self.state.tree.get_terminals())}.")
             except Exception as exc:
                 lines.append(f"Дерево: ошибка проверки — {exc}")
         else:
             lines.append("Дерево не загружено.")
+
         if self.state.model_loaded:
             lines.append("Модель Random Forest загружена.")
         else:
             lines.append("Модель Random Forest не загружена.")
+
+
         if self.state.alignment is not None and self.state.tree is not None:
-            aln_taxa = {record.id for record in self.state.alignment}
-            tree_taxa = {clade.name for clade in self.state.tree.get_terminals()}
-            common = len(aln_taxa & tree_taxa)
-            lines.append(f"Совпадающих таксонов между alignment и tree: {common}/{len(aln_taxa)}.")
-        self.state.input_validated = any("файл корректный" in line for line in lines)
+            aln_taxa = {self._normalize_taxon_name(record.id) for record in self.state.alignment}
+            tree_taxa = {self._normalize_taxon_name(clade.name) for clade in self.state.tree.get_terminals() if clade.name}
+            common = aln_taxa & tree_taxa
+            only_in_aln = aln_taxa - tree_taxa
+            only_in_tree = tree_taxa - aln_taxa
+
+            if not common:
+                lines.append("\nКРИТИЧЕСКОЕ НЕСОВПАДЕНИЕ: Множества таксонов полностью не пересекаются!")
+                lines.append(f"   В выравнивании, но нет в дереве: {', '.join(sorted(only_in_aln)) or '—'}")
+                lines.append(f"   В дереве, но нет в выравнивании: {', '.join(sorted(only_in_tree)) or '—'}")
+                self.state.taxa_consistent = False
+            elif only_in_aln or only_in_tree:
+                lines.append("\n ЧАСТИЧНОЕ НЕСОВПАДЕНИЕ таксонов:")
+                if only_in_aln:
+                    lines.append(f"   Отсутствуют в дереве: {', '.join(sorted(only_in_aln))}")
+                if only_in_tree:
+                    lines.append(f"   Отсутствуют в выравнивании: {', '.join(sorted(only_in_tree))}")
+                lines.append(f"   Совпадает: {len(common)}/{len(aln_taxa)} таксонов.")
+                self.state.taxa_consistent = False
+            else:
+                lines.append(f"\nВсе таксоны полностью согласованы ({len(common)}/{len(aln_taxa)}).")
+
         self.validation_notes.setPlainText("\n".join(lines))
-        self._append_log("Проверка входных данных выполнена.")
+        self.state.input_validated = self.state.taxa_consistent and any("" in line for line in lines)
         self._refresh_state_view()
+        self._append_log("Проверка входных данных выполнена.")
     def build_tree(self):
         if self.state.alignment is None:
             self._error("Для построения дерева сначала загрузите NEXUS/FASTA файл с выравниванием.")
@@ -579,11 +603,28 @@ class MainWindow(QMainWindow):
 
     def predict_bootstrap(self):
         if self.state.tree is None or self.state.alignment is None:
-            self._error("Для предсказания нужен и alignment, и tree.")
+            self._error("Для предсказания нужно загрузить выравнивание и дерево.")
             return
         if not self.state.model_loaded:
             self._error("Сначала выберите и загрузите модель Random Forest.")
             return
+
+        aln_taxa = {self._normalize_taxon_name(record.id) for record in self.state.alignment}
+        tree_taxa = {self._normalize_taxon_name(clade.name) for clade in self.state.tree.get_terminals() if clade.name}
+        print("\n--- ОТЛАДКА ТАКСОНОВ ---")
+        print("В выравнивании:", sorted(aln_taxa))
+        print("В дереве:", sorted(tree_taxa))
+        print("Только в выравнивании:", sorted(aln_taxa - tree_taxa))
+        print("Только в дереве:", sorted(tree_taxa - aln_taxa))
+        print("------------------------\n")
+        if aln_taxa != tree_taxa:
+            missing_in_tree = aln_taxa - tree_taxa
+            extra_in_tree = tree_taxa - aln_taxa
+            msg = "Предсказание заблокировано: выравнивание и дерево не парные.\n\n"
+            msg += "\nЗагрузите дерево, построенное именно на этом выравнивании, или сначала постройте его заново."
+            self._error(msg)
+            return
+
         busy = self._show_busy("Предсказание bootstrap", "Модель считает predicted bootstrap для внутренних узлов...")
         try:
             predictions = self.service.predict_bootstrap(self.state.tree, self.state.alignment)
@@ -591,6 +632,7 @@ class MainWindow(QMainWindow):
             self._hide_busy(busy)
             self._error(f"Не удалось выполнить предсказание: {exc}")
             return
+
         self._hide_busy(busy)
         pred_map = {row["node_id"]: row["predicted_bootstrap"] for row in predictions}
         pred_rows = {row["node_id"]: row for row in predictions}
@@ -601,6 +643,7 @@ class MainWindow(QMainWindow):
             row["feature_influence_text"] = pred_info.get("feature_influence_text", "")
             if row["predicted_bootstrap"] is not None:
                 row["support_source"] = "predicted_rf"
+
         self.state.analysis_completed = True
         self._populate_node_rows(self.state.node_rows)
         self._update_tree_view()
@@ -742,7 +785,7 @@ class MainWindow(QMainWindow):
     def _now(self):
         return datetime.now().strftime("%H:%M:%S")
     def show_about(self):
-        QMessageBox.about(self, "О программе", "Рабочий прототип для диплома:\n- загрузка NEXUS/FASTA;\n- построение NJ-дерева;\n- предсказание bootstrap моделью Random Forest;\n- визуализация дерева с подсветкой по достоверности.")
+        QMessageBox.about(self, "О программе", "Диплом:\n- загрузка NEXUS/FASTA;\n- построение NJ-дерева;\n- предсказание bootstrap моделью Random Forest;\n- визуализация дерева с подсветкой по достоверности.")
 def run():
     app = QApplication(sys.argv)
     app.setApplicationName(APP_TITLE)

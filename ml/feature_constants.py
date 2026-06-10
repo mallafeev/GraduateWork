@@ -6,6 +6,10 @@ FEATURE_COLUMNS = [
     'subtree_balance',
     'mean_child_branch_length',
     'std_child_branch_length',
+    'n_children',
+    'clade_size_log',
+    'relative_branch_length',
+    'depth_ratio',
     'taxa_count',
     'alignment_length',
     'gap_fraction_global',
@@ -17,6 +21,5 @@ FEATURE_COLUMNS = [
     'gc_std_clade',
     'mean_pairwise_pdist_clade',
 ]
-
 VALID_DNA = set('ACGT')
 DNA_PLUS_GAP = set('ACGT-?')

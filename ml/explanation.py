@@ -1,17 +1,17 @@
 from __future__ import annotations
-
 import pandas as pd
-
 
 FEATURE_LABELS = {
     'branch_length': 'длина ветви',
     'depth': 'глубина узла',
-    # Старые
-    'n_leaves_subtree': 'число листьев в поддереве',
     'subtree_fraction': 'доля поддерева',
     'subtree_balance': 'баланс поддерева',
     'mean_child_branch_length': 'средняя длина дочерних ветвей',
     'std_child_branch_length': 'разброс длин дочерних ветвей',
+    'n_children': 'число дочерних узлов',
+    'clade_size_log': 'логарифм размера клады',
+    'relative_branch_length': 'относительная длина ветви',
+    'depth_ratio': 'относительная глубина',
     'taxa_count': 'число таксонов',
     'alignment_length': 'длина выравнивания',
     'gap_fraction_global': 'глобальная доля пропусков',
@@ -22,13 +22,7 @@ FEATURE_LABELS = {
     'gc_mean_clade': 'средний GC в кладе',
     'gc_std_clade': 'разброс GC в кладе',
     'mean_pairwise_pdist_clade': 'средняя p-distance внутри клады',
-    # Новые (для v3)
-    'n_children': 'число дочерних узлов',
-    'clade_size_log': 'логарифм размера клады',
-    'relative_branch_length': 'относительная длина ветви',
-    'depth_ratio': 'отношение глубины к максимуму',
 }
-
 
 class FeatureExplanationBuilder:
     def build(self, X: pd.DataFrame, feature_importance_map: dict[str, float]) -> list[dict]:
@@ -44,9 +38,15 @@ class FeatureExplanationBuilder:
         for _, row in numeric.iterrows():
             items = []
             for col in numeric.columns:
-                value = float(row[col]) if pd.notna(row[col]) else 0.0
+                val = row[col]
+                if pd.isna(val):
+                    value = 0.0
+                    direction = 'отсутствует'
+                else:
+                    value = float(val)
+                    direction = 'выше среднего' if value >= float(medians[col]) else 'ниже среднего'
+                
                 score = abs((value - float(medians[col])) / float(stds[col])) * importances.get(col, 0.0)
-                direction = 'выше среднего' if value >= float(medians[col]) else 'ниже среднего'
                 items.append({
                     'feature': col,
                     'label': FEATURE_LABELS.get(col, col),

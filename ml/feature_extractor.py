@@ -1,4 +1,3 @@
-# ml/feature_extractor.py
 from __future__ import annotations
 from dataclasses import dataclass
 import numpy as np
@@ -30,16 +29,13 @@ class TreeFeatureExtractor:
         seqs = self.sequence_mapper.to_dict(alignment)
         global_stats = self.alignment_stats_calculator.calculate(seqs)
         depths = tree.depths()
-        
-        # Считаем максимальную глубину дерева для нормализации
         max_depth = max(depths.values()) if depths else 1.0
-        
         rows: list[NodeFeatureRow] = []
         for idx, clade in enumerate(tree.get_nonterminals(order='level'), start=1):
-            rows.append(self._build_row(idx, clade, depths, seqs, global_stats, max_depth))
+            rows.append(self._build_row(idx, clade, depths, max_depth, seqs, global_stats))
         return rows
 
-    def _build_row(self, idx: int, clade, depths, seqs: dict[str, str], global_stats: dict[str, float], max_depth: float) -> NodeFeatureRow:
+    def _build_row(self, idx: int, clade, depths, max_depth: float, seqs: dict[str, str], global_stats: dict[str, float]) -> NodeFeatureRow:
         branch_length = max(float(clade.branch_length or 0.0), 0.0)
         depth = float(depths.get(clade, 0.0))
         leaf_names = self.leaf_collector.get_leaf_names(clade)
@@ -47,9 +43,7 @@ class TreeFeatureExtractor:
         clade_stats = self.clade_stats_calculator.calculate(leaf_names, seqs)
         child_branch_lengths = [max(float(ch.branch_length or 0.0), 0.0) for ch in clade.clades]
 
-        # Формируем ПОЛНЫЙ набор признаков (старые + новые)
         features = {
-            # === СТАРЫЕ ПРИЗНАКИ (для моделей v1, v2) ===
             'branch_length': branch_length,
             'depth': depth,
             'n_leaves_subtree': float(n_leaves),
@@ -57,14 +51,10 @@ class TreeFeatureExtractor:
             'subtree_balance': float(self.balance_calculator.calculate(clade)),
             'mean_child_branch_length': float(np.mean(child_branch_lengths)) if child_branch_lengths else 0.0,
             'std_child_branch_length': float(np.std(child_branch_lengths)) if child_branch_lengths else 0.0,
-            
-            # === НОВЫЕ ПРИЗНАКИ (для модели v3) ===
             'n_children': float(len(clade.clades)),
             'clade_size_log': float(np.log1p(n_leaves)),
             'relative_branch_length': float(branch_length / max_depth) if max_depth > 0 else 0.0,
             'depth_ratio': float(depth / max_depth) if max_depth > 0 else 0.0,
-            
-            # === ГЛОБАЛЬНЫЕ И ЛОКАЛЬНЫЕ СТАТИСТИКИ ===
             **global_stats,
             **clade_stats,
         }
